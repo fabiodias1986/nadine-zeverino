@@ -5,72 +5,86 @@ import Image from 'next/image';
 
 export default function ProfileSection() {
   return (
-    <section className="relative bg-white py-20 overflow-hidden">
+    <section className="relative bg-gray-50 py-20 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Imagem da Advogada */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Imagem da Advogada - Subtle Premium Style */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="relative rounded-2xl overflow-hidden border border-gray-100">
+              <div className="relative rounded-3xl overflow-hidden border-2 border-gray-300 shadow-xl">
                 <div className="aspect-[3/4]">
                   <Image 
                     src="/media/profile.jpg"
-                    alt="Nadine Everino - Advogada em Portimão"
+                    alt="Nadine Isabel Zeverino - Advogada em Portimão"
                     fill
-                    className="object-cover object-top transition-transform duration-500 hover:scale-105"
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 
-                {/* Overlay discreto */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Subtle Premium Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 
-                {/* Informação profissional */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-                  <h3 className="text-2xl font-bold text-white mb-1">Nadine Everino</h3>
-                  <p className="text-gray-200 text-sm">Advogada em Portimão | Inscrita na Ordem dos Advogados</p>
+                {/* Informação profissional - Enhanced */}
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <h3 className="text-2xl font-bold text-white mb-2">Nadine Isabel Zeverino</h3>
+                  <p className="text-gray-200 text-base font-medium">Advogada</p>
                 </div>
-                
-                {/* Elemento decorativo */}
-                <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-[#E83241]/10 rounded-xl transform rotate-6"></div>
               </div>
+              
+              {/* Subtle Decorative Element */}
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#E83241]/5 rounded-xl"></div>
             </motion.div>
 
-            {/* Conteúdo textual */}
+            {/* Conteúdo textual - Clean Modern Layout */}
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="space-y-6"
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="space-y-8"
             >
-              <div className="inline-block px-4 py-1.5 bg-[#E83241]/5 text-[#E83241] text-sm font-medium rounded-full">
-                Sobre Mim
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E83241]/5 text-[#E83241] text-sm font-bold rounded-full border border-[#E83241]/10">
+                <span className="w-2 h-2 bg-[#E83241] rounded-full"></span>
+                <span>SOBRE MIM</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight">
-                Advogada especializada em <span className="text-[#E83241]">Portimão</span>
+              {/* Title */}
+              <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+                Advogada especializada em 
+                <span className="block text-[#E83241] mt-2">Portugal</span>
               </h2>
               
-              <div className="h-1 w-12 bg-[#E83241] mt-3 mb-6"></div>
+              {/* Divider */}
+              <div className="h-1 w-20 bg-[#E83241]"></div>
               
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer soluções jurídicas personalizadas e resultados excepcionais para clientes em Portimão e região algarvia.
-              </p>
+              {/* Description */}
+              <div className="space-y-6">
+                <p className="text-gray-700 text-lg leading-relaxed font-medium">
+                  Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer 
+                  <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span> e 
+                  <span className="text-[#E83241] font-bold"> resultados excepcionais</span> para clientes em Portimão e região algarvia.
+                </p>
+                
+                <p className="text-gray-700 text-lg leading-relaxed font-medium">
+                  Minha abordagem combina 
+                  <span className="text-gray-900 font-bold"> rigor jurídico</span> com 
+                  <span className="text-gray-900 font-bold"> empatia</span>, garantindo que cada cliente receba não apenas representação legal, mas também 
+                  <span className="text-gray-900 font-bold"> orientação clara e transparente</span> em cada etapa do processo.
+                </p>
+              </div>
               
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Minha abordagem combina rigor jurídico com empatia, garantindo que cada cliente receba não apenas representação legal, mas também orientação clara e transparente em cada etapa do processo.
-              </p>
-              
-              {/* Áreas de especialização */}
-              <div className="space-y-3 mt-6">
-                <h3 className="text-lg font-semibold text-black">Áreas de especialização</h3>
-                <div className="grid grid-cols-2 gap-2">
+              {/* Áreas de especialização - Modern Grid */}
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-gray-900">Áreas de especialização</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     "Direito Civil",
                     "Direito Comercial",
@@ -79,22 +93,21 @@ export default function ProfileSection() {
                   ].map((area, index) => (
                     <motion.div
                       key={index}
-                      initial={{ opacity: 0, x: -10 }}
+                      initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: 0.1 * index }}
-                      className="flex items-center gap-2.5 py-2.5 px-3 bg-gray-50 rounded-xl"
+                      transition={{ duration: 0.5, delay: 0.1 * index }}
+                      whileHover={{ x: 5 }}
+                      className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#E83241]"></span>
-                      <span className="text-gray-700">{area}</span>
+                      <div className="w-3 h-3 bg-[#E83241] rounded-full flex-shrink-0"></div>
+                      <span className="text-gray-800 font-medium">{area}</span>
                     </motion.div>
                   ))}
                 </div>
               </div>
             </motion.div>
           </div>
-          
-         
         </div>
       </div>
     </section>

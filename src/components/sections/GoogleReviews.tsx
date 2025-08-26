@@ -11,63 +11,63 @@ interface Review {
 const reviews: Review[] = [
   {
     id: 1,
-    name: "Maria Silva",
+    name: "T",
     rating: 5,
-    comment: "Excelente profissional! A Dra. Nadine resolveu o meu caso imobiliário com muita competência e dedicação. Recomendo vivamente os seus serviços."
+    comment: "A very professional lawyer. She speaks English very well. Nadine guided us through a horrible buying process of our property. We are forever grateful of her perseverance."
   },
   {
     id: 2,
-    name: "João Santos",
+    name: "Tonica Rebeca",
     rating: 5,
-    comment: "Advocada muito competente e atenciosa. Conseguiu resolver uma questão familiar complexa de forma rápida e eficaz. Serviço de excelência."
+    comment: "Uma profissional que transmite confiança desde o primeiro contacto! Sempre disponível para qualquer dúvida!Recomendo plenamente os seus serviços!"
   },
   {
     id: 3,
-    name: "Ana Costa",
+    name: "graciete arsenio",
     rating: 5,
-    comment: "Profissionalismo exemplar! A Dra. Nadine orientou-me durante todo o processo legal, sempre disponível para esclarecer dúvidas. Muito satisfeita."
+    comment: "Sempre desponivel quando preciso. Gosto muito da dra Nadine uma boa profissional e boa conselheira quando preciso de algum conselho. Beijinhos"
   },
   {
     id: 4,
-    name: "Carlos Pereira",
+    name: "Nuno Rosado",
     rating: 5,
-    comment: "Excepcional! Resolveu o meu caso empresarial com estratégia e conhecimento. Comunicação clara e resultados concretos. Recomendo sem hesitação."
+    comment: "Recomendo 🙂👌👌 Excelente receção no atendimento. Sempre máxima atenção e empenho para assunto no qual nós colocamos. Profissionalismo acima⬆ de tudo ⭐⭐⭐⭐⭐. "
   },
   {
     id: 5,
-    name: "Luisa Rodrigues",
+    name: "Annika Karppinen",
     rating: 5,
-    comment: "Muito profissional e dedicada. Ajudou-me numa questão de direito civil de forma eficiente. Sempre disponível e com explicações claras."
+    comment: "En duktig och pålitlig advokat. Bra på engelska. Anlitade henne i samband med vårt lägenhetsköp i portugal. Allt gick väldigt smidigt!"
   },
   {
     id: 6,
-    name: "Pedro Oliveira",
+    name: "Bruna Monteiro",
     rating: 5,
-    comment: "Advogada de excelência! Conseguiu um resultado fantástico no meu processo. Muito satisfeito com a dedicação e competência demonstrada."
+    comment: "Simpática, boa profissional, recomendo vivamente, obrigada pela sua disponibilidade"
   },
   {
     id: 7,
-    name: "Sofia Mendes",
+    name: "Erik Hollander",
     rating: 5,
-    comment: "Serviço impecável! A Dra. Nadine é muito competente e conseguiu resolver a minha questão legal de forma rápida e eficaz. Recomendo vivamente."
+    comment: "Nadine is the best, communicates fast and is very reliable. I would recommend her to anyone"
   },
   {
     id: 8,
-    name: "Miguel Torres",
+    name: "Carina Paixão",
     rating: 5,
-    comment: "Excelente profissional! Muito atenciosa e sempre disponível. Conseguiu resolver o meu caso com grande competência. Serviço de qualidade superior."
+    comment: "Simpática,boa profissional e sempre disponível para responder a qualquer dúvida. ⭐⭐⭐⭐⭐"
   },
   {
     id: 9,
-    name: "Carla Fernandes",
+    name: "Rodrigo Costa",
     rating: 5,
-    comment: "Advogada muito competente! Resolveu uma questão complexa de direito imobiliário de forma brilhante. Comunicação excelente e resultados concretos."
+    comment: "Disponível, rápida, eficiente, simpática. 5 estrelas fáceis!"
   },
   {
     id: 10,
-    name: "Ricardo Almeida",
+    name: "John Brock",
     rating: 5,
-    comment: "Profissional de excelência! A Dra. Nadine demonstrou grande conhecimento e dedicação ao meu caso. Muito satisfeito com o resultado obtido."
+    comment: "Very helpful with our Portuguese residency."
   }
 ];
 
@@ -199,7 +199,7 @@ export default function GoogleReviews() {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <a
-            href="https://google.com/search?q=nadine+everino+advogada"
+            href="https://www.google.com/search?sca_esv=b80a8cdde4dd043f&tbm=lcl&sxsrf=AE3TifNOaXlEYH-gZLdnNzJBXaXOJOLkQA:1756200464488&q=Nadine+Isabel+Zeverino+-+Advogada/Lawyer/Advocaat+Cr%C3%ADticas&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MjSysDA2sjA2NrUwMTWyMDIy2cDI-IrR2i8xJTMvVcGzODEpNUchKrUstSgzL19BV8ExpSw_PTElUd8nsbwytUgfxE9OTCxRcC46vLYkMzmxeBErJboBqfoZuJYAAAA&rldimm=2128832833584528224&hl=pt-PT&sa=X&ved=2ahUKEwjZhtzGlKiPAxUudqQEHeQ_GC4Q9fQKegQIShAF&biw=1366&bih=641&dpr=1#lkt=LocalPoiReviews"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#E83241] text-white rounded-xl font-medium hover:bg-[#E83241]/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
