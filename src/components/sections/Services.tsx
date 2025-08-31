@@ -1,7 +1,7 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
-import { ChevronRight, Sparkles, Calendar, Eye } from 'lucide-react';
+import { ChevronRight, Calendar, Eye } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
@@ -12,7 +12,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ service, index }: ServiceCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
   const Icon = service.icon;
   
   return (

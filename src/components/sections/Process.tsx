@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { FaRegLightbulb, FaRegBuilding, FaGavel, FaCheckCircle } from 'react-icons/fa';
-import MeetingCTA from '@/components/MeetingCTA';
 
 export default function Process() {
   const steps = [

@@ -9,10 +9,6 @@ export default function NadineLawCTA() {
 
   useEffect(() => {
     setIsVisible(true);
-    interface MousePosition {
-      x: number;
-      y: number;
-    }
 
     interface Achievement {
       icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;

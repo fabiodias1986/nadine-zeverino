@@ -2,10 +2,7 @@
 import { ServiceType } from '@/types/Service';
 import { 
   FaRegBuilding, 
-  FaUsers, 
   FaShieldAlt, 
-  FaBalanceScale, 
-  FaTrademark, 
   FaHome,
   FaGlobe,
   FaHandshake,

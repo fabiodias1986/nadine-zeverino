@@ -1,8 +1,5 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "about page"
-  },
+ 
   "Navbar": {
     "home": "Home",
     "about": "About",

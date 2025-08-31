@@ -1,5 +1,7 @@
+'use client';
 import React, { useState, useEffect } from 'react';
-import { Star, Quote, ChevronLeft, ChevronRight, ExternalLink, Play, Pause } from 'lucide-react';
+import { Star, Quote, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface Review {
   id: number;
@@ -73,7 +75,7 @@ const reviews: Review[] = [
 
 export default function GoogleReviews() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 
   const averageRating = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
@@ -112,28 +114,32 @@ export default function GoogleReviews() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Header */}
+        {/* Header - COM MESMO UI DO BRANDING */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#E83241]/5 border border-[#E83241]/10 rounded-full px-4 py-2 mb-6">
-            <Star className="text-[#E83241] w-4 h-4 fill-current" />
-            <span className="text-[#E83241] text-sm font-medium">Avaliações Google</span>
-          </div>
+          {/* Badge com branding consistente */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2 bg-[#E83241]/10 backdrop-blur-sm border border-[#E83241]/20 rounded-full px-5 py-2.5 mb-6"
+          >
+            <Star className="text-[#E83241] text-sm" />
+            <span className="text-[#E83241] font-semibold text-sm uppercase tracking-wider">
+              Avaliações Google
+            </span>
+          </motion.div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            O que dizem os nossos clientes
+          {/* TÍTULO com branding consistente */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight">
+            <span className="block">O que dizem os</span>
+            <span className="block text-[#E83241]">
+              Nossos Clientes
+            </span>
           </h2>
           
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star 
-                  key={i} 
-                  className="w-6 h-6 text-[#E83241] fill-current drop-shadow-sm" 
-                />
-              ))}
-            </div>
-            <span className="text-2xl font-bold text-black">{averageRating.toFixed(1)}</span>
-          </div>
+          
+          
         </div>
 
         {/* Main Slideshow */}
@@ -143,7 +149,7 @@ export default function GoogleReviews() {
           onMouseLeave={() => setIsHovered(false)}
         >
           {/* Review Card */}
-          <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+          <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
             {/* Decorative top border */}
             <div className="h-1 bg-gradient-to-r from-[#E83241] via-[#E83241]/80 to-[#E83241]"></div>
             
@@ -195,7 +201,20 @@ export default function GoogleReviews() {
           </button>
         </div>
 
-        
+        {/* Indicators */}
+        <div className="flex justify-center mt-8 gap-2">
+          {reviews.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentIndex ? 'bg-[#E83241] w-8' : 'bg-gray-300'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
         {/* CTA Section */}
         <div className="text-center mt-16">
           <a

@@ -96,7 +96,7 @@ export default function ServicesPage() {
       {/* Page Header - Reusable Component */}
       <PageHeader 
         title="ÁREAS DE ATUAÇÃO"
-        subtitle="Soluções jurídicas especializadas com foco em resultados excepcionais e proteção integral dos seus interesses"
+        subtitle="Soluções jurídicas especializadas com foco em resultados e proteção integral dos seus interesses"
       />
       
       {/* Search and Filters Section - Light Background */}

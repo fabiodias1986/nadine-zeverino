@@ -1,12 +1,9 @@
 'use client';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { FaBalanceScale, FaShieldVirus, FaAward, FaCalendarAlt, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
-import {Link} from '@/i18n/navigation';
 
 export default function Hero() {
-  const [activeCard, setActiveCard] = useState(0);
 
   const specialties = [
     { icon: <FaHome />, title: "Direito Imobiliário" },
