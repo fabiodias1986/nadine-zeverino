@@ -3,68 +3,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import MeetingCTA from '@/components/MeetingCTA';
+import PageHeader from '@/components/layout/PageHeader';
 
 const SobreMimPage: React.FC = () => {
     const specialties = [
-        "Direito Civil",
-        "Direito Comercial", 
-        "Direito Imobiliário",
-        "Contratos e Negócios",
-        "Mediação e Resolução de Conflitos",
-        "Consultoria Jurídica Empresarial"
+       "Direito de Família e Sucessões",
+        "Direito Comercial e das Sociedades",
+        "Direito Imobiliário e Construção",
+        "Direito Penal e Contraordenacional"
     ];
 
     const values = [
         { 
             title: "Ética", 
-            description: "Compromisso com a integridade e a transparência em cada atuação.",
+            description: "Compromisso com a integridade e a transparência em cada atuação jurídica.",
             icon: "⚖️"
         },
         { 
             title: "Excelência", 
-            description: "Busca constante por qualidade e precisão em cada serviço.",
+            description: "Busca constante por qualidade e precisão em cada serviço prestado.",
             icon: "⭐"
         },
         { 
             title: "Proximidade", 
-            description: "Relacionamento direto e humano com cada cliente.",
+            description: "Relacionamento direto e humano com cada cliente e caso específico.",
             icon: "🤝"
         }
     ];
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Hero Section - Dark Background */}
-            <div className="relative py-20 md:py-32 bg-gray-900 overflow-hidden">
-                <div className="absolute inset-0">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-95" />
-                </div>
-                
-                <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-                    <motion.div 
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-center max-w-4xl mx-auto"
-                    >
-                        <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#E83241]/20 rounded-full mb-8 border-2 border-[#E83241]/30">
-                            <span className="text-[#E83241] text-base font-bold">ADVOCACIA DE EXCELÊNCIA</span>
-                        </div>
-                        
-                        <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                            <span className="block text-white">NADINE ISABEL</span>
-                            <span className="block text-[#E83241]">
-                                ZEVERINO
-                            </span>
-                        </h1>
-                        
-                        <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-medium">
-                            Advogada especializada em <span className="text-white font-bold">Portimão</span> com mais de 
-                            <span className="text-[#E83241] font-bold"> 10 anos de experiência</span>
-                        </p>
-                    </motion.div>
-                </div>
-            </div>
+            {/* Page Header - Reusable Component */}
+            <PageHeader 
+                title="NADINE ISABEL ZEVERINO"
+                subtitle="Advogada especializada em Portugal com mais de 10 anos de experiência"
+               
+            />
 
             {/* Main Content */}
             <div className="container mx-auto px-6 max-w-7xl -mt-16 relative z-20">
@@ -80,18 +55,18 @@ const SobreMimPage: React.FC = () => {
                             <div className="aspect-[3/4] relative">
                                 <Image 
                                     src="/media/profile.jpg"
-                                    alt="Nadine Isabel Zeverino - Advogada em Portimão"
+                                    alt="Nadine Isabel Zeverino - Advogada em Portimão, Portugal"
                                     fill
                                     className="object-cover object-top"
                                     sizes="(max-width: 768px) 100vw, 50vw"
+                                    priority
                                 />
                             </div>
                             
                             {/* Info Overlay */}
                             <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
                                 <h3 className="text-2xl font-bold text-white mb-2">Nadine Isabel Zeverino</h3>
-                                <p className="text-gray-200 text-lg font-medium">Advogada em Portimão</p>
-                                <p className="text-gray-300 text-sm mt-1">Inscrita na Ordem dos Advogados</p>
+                                <p className="text-gray-200 text-lg font-medium">Advogada em Portugal</p>
                             </div>
                         </div>
                     </motion.div>
@@ -118,7 +93,7 @@ const SobreMimPage: React.FC = () => {
                                 Com mais de 10 anos de experiência no exercício da advocacia em Portugal, ofereço 
                                 <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span>, 
                                 <span className="text-[#E83241] font-bold"> éticas</span> e 
-                                <span className="text-[#E83241] font-bold"> eficazes</span> para particulares e empresas em Portimão e em todo o Algarve.
+                                <span className="text-[#E83241] font-bold"> eficazes</span> para particulares e empresas em Portimão e região Algarvia.
                             </p>
                             
                             <p className="text-gray-700 text-lg leading-relaxed font-medium">
@@ -141,12 +116,15 @@ const SobreMimPage: React.FC = () => {
                 >
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                            ÁREAS DE <span className="text-[#E83241]">ESPECIALIZAÇÃO</span>
+                            ÁREAS DE <span className="text-[#E83241]">ATUAÇÃO</span>
                         </h2>
                         <div className="h-1.5 w-24 bg-[#E83241] mx-auto"></div>
+                        <p className="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
+                            Soluções jurídicas especializadas com foco em resultados excepcionais
+                        </p>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {specialties.map((area, index) => (
                             <motion.div
                                 key={index}
@@ -200,7 +178,7 @@ const SobreMimPage: React.FC = () => {
                     </div>
                 </motion.div>
 
-                {/* CTA Section */}
+                {/* Meeting CTA Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -208,21 +186,12 @@ const SobreMimPage: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="mt-24 mb-20"
                 >
-                    <div className="bg-gradient-to-r from-[#E83241] to-[#B83232] rounded-2xl border-2 border-[#E83241] p-12 text-center shadow-2xl">
-                        <h3 className="text-3xl md:text-4xl font-black text-white mb-6">
-                            PRECISA DE ASSESSORIA JURÍDICA?
-                        </h3>
-                        <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-                            Agende uma reunião personalizada e descubra como podemos proteger os seus interesses
-                        </p>
-                        <button className="px-8 py-5 bg-white text-[#E83241] text-xl font-bold rounded-2xl 
-                                          hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                            MARQUE UMA CONSULTA
-                        </button>
-                        <p className="mt-6 text-white/80 text-lg">
-                            Atendimentos presenciais em Portimão ou remotamente
-                        </p>
-                    </div>
+                    <MeetingCTA 
+                        title="Pronto para Proteger os Seus Direitos?"
+                        subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
+                        buttonText="Marcar Consulta Gratuita"
+                        showPhoneOption={true}
+                    />
                 </motion.div>
             </div>
         </div>

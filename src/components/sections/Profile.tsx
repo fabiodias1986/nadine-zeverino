@@ -66,11 +66,11 @@ export default function ProfileSection() {
               <div className="h-1 w-20 bg-[#E83241]"></div>
               
               {/* Description */}
-              <div className="space-y-6">
+              <div className="space-y-6 text-justify">
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
                   Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer 
                   <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span> e 
-                  <span className="text-[#E83241] font-bold"> resultados excepcionais</span> para clientes em Portimão e região algarvia.
+                  <span className="text-[#E83241] font-bold"> resultados excepcionais</span> para os seus clientes.
                 </p>
                 
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
@@ -86,10 +86,10 @@ export default function ProfileSection() {
                 <h3 className="text-2xl font-bold text-gray-900">Áreas de especialização</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Direito Civil",
-                    "Direito Comercial",
-                    "Direito Imobiliário",
-                    "Contratos e Negócios"
+                    "Direito de Família e Sucessões",
+                    "Direito Comercial e das Sociedades",
+                    "Direito Imobiliário e Construção",
+                    "Direito Penal e Contraordenacional"
                   ].map((area, index) => (
                     <motion.div
                       key={index}

@@ -92,8 +92,7 @@ export default function NadineLawCTA() {
               
               {/* Simplified Description */}
               <p className="text-xl text-white/70 leading-relaxed max-w-lg">
-                Proteção jurídica completa com <span className="font-semibold text-[#E83241]">resultados comprovados</span> 
-                em todo Portugal.
+                Proteção jurídica completa com <span className="font-semibold text-[#E83241]">resultados comprovados.</span> 
               </p>
             </div>
 

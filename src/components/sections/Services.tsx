@@ -1,7 +1,7 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
-import { ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronRight, Sparkles, Calendar, Eye } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
@@ -46,7 +46,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
         <div 
           className="absolute inset-0 opacity-5 rounded-2xl"
           style={{
-            backgroundImage: `url("image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E")`
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E")`
           }}
         />
         
@@ -125,7 +125,7 @@ export default function ServicesSection() {
       </motion.div>
       
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        {/* Header Section */}
+        {/* Header Section - COM BRANDING CONSISTENTE */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,26 +142,26 @@ export default function ServicesSection() {
             className="h-0.5 bg-gradient-to-r from-[#E83241]/50 via-[#E83241]/30 to-[#E83241]/50 mx-auto mb-6"
           />
           
-          {/* Título em PT de Portugal */}
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          {/* TÍTULO COM BRANDING CONSISTENTE */}
+          <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
-              Especialização
+              Áreas de 
             </span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-[#E83241]/70 to-[#E83241]">
-              Jurídica
+            <span className="block text-[#E83241]">
+              Atuação
             </span>
           </h2>
           
-          {/* Subtítulo */}
+          {/* SUBTÍTULO COM BRANDING CONSISTENTE */}
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Soluções jurídicas especializadas com foco em resultados excecionais e 
-            <span className="text-[#E83241] font-medium"> proteção integral</span> dos seus interesses
+            Soluções jurídicas especializadas com foco em resultados e 
+            <span className="text-[#E83241] font-bold"> proteção integral</span> dos seus interesses
           </motion.p>
         </motion.div>
         
@@ -172,55 +172,61 @@ export default function ServicesSection() {
           ))}
         </div>
         
-        {/* CTA Section */}
+        {/* Buttons Section - Sem texto CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mt-16"
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-16"
         >
-          <div className="bg-gradient-to-br from-white/5 via-white/2 to-transparent backdrop-blur-xl rounded-2xl border border-white/10 p-6 max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-white mb-3">
-              Precisa de Assessoria Jurídica Especializada?
-            </h3>
-            <p className="text-white/50 mb-6 text-sm leading-relaxed">
-              Agende uma reunião personalizada e descubra como podemos proteger os seus interesses
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <motion.button
-                whileHover={{ 
-                  scale: 1.02,
-                  boxShadow: "0 10px 25px -5px rgba(232, 50, 65, 0.2)"
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="group relative px-6 py-3 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-medium rounded-xl overflow-hidden"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  Agendar Reunião
-                  <motion.div
-                    animate={{ x: [0, 4, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
-                    <ChevronRight className="w-4 h-4" />
-                  </motion.div>
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-              </motion.button>
-              
-              {/* Botão para ver todos os serviços - redireciona para /servicos */}
-              <motion.button
-                whileHover={{ 
-                  backgroundColor: "rgba(232, 50, 65, 0.05)",
-                  borderColor: "#E83241"
-                }}
-                onClick={() => router.push('/servicos')}
-                className="px-6 py-3 border border-white/15 text-white font-medium rounded-xl hover:border-[#E83241]/30 transition-all duration-200 backdrop-blur-sm"
-              >
-                Ver todos os serviços
-              </motion.button>
-            </div>
-          </div>
+          {/* Botão Agendar Reunião */}
+          <motion.button
+            whileHover={{ 
+              scale: 1.05,
+              boxShadow: "0 20px 40px -10px rgba(232, 50, 65, 0.3)"
+            }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => router.push('/contacto')}
+            className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl flex items-center gap-3"
+          >
+            <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <span>Agendar Reunião</span>
+            <motion.div
+              animate={{ x: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              <ChevronRight className="w-4 h-4" />
+            </motion.div>
+            
+            {/* Efeito de brilho */}
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+              animate={{ x: ['-100%', '200%'] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            />
+          </motion.button>
+          
+          {/* Botão Ver todos os serviços */}
+          <motion.button
+            whileHover={{ 
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              borderColor: "#E83241",
+              scale: 1.05
+            }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => router.push('/servicos')}
+            className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241] transition-all duration-300 backdrop-blur-sm flex items-center gap-3"
+          >
+            <Eye className="w-5 h-5" />
+            <span>Todos os Serviços</span>
+            <motion.div
+              animate={{ x: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}
+            >
+              <ChevronRight className="w-4 h-4" />
+            </motion.div>
+          </motion.button>
         </motion.div>
       </div>
       

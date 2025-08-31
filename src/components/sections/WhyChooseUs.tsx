@@ -1,37 +1,39 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaRegLightbulb, FaRegBuilding, FaGavel, FaCheckCircle, FaArrowRight, FaStar } from 'react-icons/fa';
+
 export default function WhyChooseUs() {
   const values = [
     {
       title: 'Transparência Total',
-      description: 'Comunicação 100% transparente sobre seu caso jurídico. Você sempre saberá exatamente onde estamos e quais são os próximos passos, sem burocracias ou jargões desnecessários.',
+      description: 'Comunicação 100% transparente sobre o seu caso jurídico. Será sempre informado sobre o estado do processo e os próximos passos, sem burocracias ou linguagem jurídica desnecessária.',
       icon: <FaRegLightbulb className="text-[#E83241] text-4xl" />,
       highlight: 'Sem surpresas',
       metric: '98% satisfação'
     },
     {
-      title: 'Estratégia Sob Medida',
-      description: 'Cada cliente recebe uma estratégia jurídica personalizada e exclusiva. Analisamos profundamente seu caso para criar soluções que realmente funcionam para sua situação específica.',
+      title: 'Estratégia Personalizada',
+      description: 'Cada cliente recebe uma estratégia jurídica desenvolvida especificamente para a sua situação. Analisamos cuidadosamente cada caso para criar soluções eficazes e adequadas às suas necessidades.',
       icon: <FaRegBuilding className="text-[#E83241] text-4xl" />,
-      highlight: 'Soluções únicas',
+      highlight: 'Soluções específicas',
       metric: '10+ anos de experiência'
     },
     {
       title: 'Resultados Comprovados',
-      description: 'Nosso foco está em conquistar resultados tangíveis e duradouros para nossos clientes. Não trabalhamos apenas com processos - trabalhamos para mudanças reais na sua vida.',
+      description: 'O nosso foco está em obter resultados concretos e duradouros para os nossos clientes. Trabalhamos não apenas para processos, mas para soluções reais que melhorem a sua situação jurídica.',
       icon: <FaGavel className="text-[#E83241] text-4xl" />,
       highlight: 'Impacto real',
       metric: '100+ casos resolvidos'
     },
     {
       title: 'Excelência Reconhecida',
-      description: 'Mais de uma década de experiência resolvendo os casos mais complexos do direito português. Nossa reputação foi construída caso a caso, com ética e resultados excepcionais.',
+      description: 'Mais de uma década de experiência na resolução dos casos mais complexos do direito português. A nossa reputação foi construída através de resultados consistentes e conduta ética irrepreensível.',
       icon: <FaCheckCircle className="text-[#E83241] text-4xl" />,
       highlight: 'Tradição em resultados',
-      metric: 'Escritório altamente qualificado'
+      metric: 'Escritório certificado'
     },
   ];
+
   return (
     <section className="relative bg-gradient-to-br from-slate-50 via-white to-slate-50 py-32 overflow-hidden">
       {/* Background Effects */}
@@ -51,25 +53,26 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto"
         >
-          {/* Header Section */}
+         {/* Header Section - Título e subtítulo centralizados */}
           <div className="text-center mb-20">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center justify-center gap-2 bg-[#E83241]/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6"
+              className="inline-flex items-center justify-center gap-2 bg-[#E83241]/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6 mx-auto"
             >
               <FaStar className="text-[#E83241] text-sm" />
               <span className="text-[#E83241] font-semibold text-sm uppercase tracking-wider">
-                Por que escolher nosso escritório
+                
+                POR que nos escolher
               </span>
             </motion.div>
-            <h2 className=" text-5xl md:text-6xl font-black text-black mb-6 leading-tight flex justify-center">
-              Advocacia de Confiança, à Medida do Seu Caso
+            <h2 className="text-5xl md:text-6xl font-black text-black mb-6 leading-tight text-center">
+              <span className="text-[#E83241]">Vantagens</span> que nos<br />Distinguem
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Mais de 100 clientes confiam em nossa experiência jurídica há mais de uma década.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed text-center">
+              <span className="font-bold text-[#E83241]">100+ casos resolvidos</span> com <span className="font-bold">98% de satisfação</span>
             </p>
           </div>
           {/* Timeline Container */}
@@ -265,16 +268,7 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-center mt-20"
           >
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(232, 50, 65, 0.3)" }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-gradient-to-r from-[#E83241] to-red-600 text-white font-bold px-8 md:px-12 py-4 rounded-full text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
-            >
-              <span className="flex items-center gap-3">
-                Converse connosco!
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-              </span>
-            </motion.button>
+           
           </motion.div>
         </motion.div>
       </div>

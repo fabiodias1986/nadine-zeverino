@@ -2,9 +2,11 @@
 
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Filter, Grid, List, ChevronDown, Sparkles } from 'lucide-react';
+import { Search, Filter, Grid, List, ChevronDown } from 'lucide-react';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
+import MeetingCTA from '@/components/MeetingCTA';
+import PageHeader from '@/components/layout/PageHeader';
 
 interface ServiceCardProps {
   service: ServiceType;
@@ -23,7 +25,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
       whileHover={{ y: -8 }}
       className={`${viewMode === 'list' ? 'flex items-start gap-8 p-8' : 'p-8'} 
         bg-white rounded-2xl border-2 border-gray-300 hover:border-[#E83241] 
-        transition-all duration-300 shadow-md hover:shadow-xl`}
+        transition-all duration-300 shadow-md hover:shadow-xl flex flex-col h-full`}
     >
       {/* Icon */}
       <div className={`${viewMode === 'list' ? 'flex-shrink-0' : 'mx-auto mb-6'} 
@@ -32,7 +34,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
         <Icon className="w-10 h-10 text-white" />
       </div>
       
-      <div className={`${viewMode === 'list' ? 'flex-grow' : ''}`}>
+      <div className={`${viewMode === 'list' ? 'flex-grow' : 'flex-grow'}`}>
         <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#E83241] transition-colors">
           {service.title}
         </h3>
@@ -41,7 +43,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
         </p>
         
         {/* Features */}
-        <div className={`${viewMode === 'list' ? 'grid grid-cols-2 gap-3' : 'space-y-3'} mb-6`}>
+        <div className={`${viewMode === 'list' ? 'grid grid-cols-2 gap-3' : 'space-y-3'} mb-6 flex-grow`}>
           {service.features.slice(0, viewMode === 'list' ? 4 : 3).map((feature, i) => (
             <div key={i} className="flex items-start gap-3">
               <div className="w-2 h-2 bg-[#E83241] rounded-full mt-2 flex-shrink-0" />
@@ -49,7 +51,10 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
             </div>
           ))}
         </div>
-        
+      </div>
+      
+      {/* Fixed "Saber mais" button at the bottom */}
+      <div className="mt-auto pt-4">
         <button className="text-[#E83241] text-base font-bold flex items-center gap-2 group">
           Saber mais
           <ChevronDown className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -88,38 +93,11 @@ export default function ServicesPage() {
   
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Hero Section - Dark Background */}
-      <div className="relative py-24 overflow-hidden bg-gray-900">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-90" />
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-          <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#E83241]/20 rounded-full mb-8 border-2 border-[#E83241]/30">
-              <Sparkles className="w-5 h-5 text-[#E83241]" />
-              <span className="text-[#E83241] text-base font-bold">ESPECIALIZAÇÃO JURÍDICA</span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-              <span className="block text-white">NOSSOS</span>
-              <span className="block text-[#E83241]">
-                SERVIÇOS
-              </span>
-            </h1>
-            
-            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-16 font-medium">
-              Soluções jurídicas especializadas com foco em resultados excepcionais e 
-              <span className="text-[#E83241] font-bold"> proteção integral</span> dos seus interesses
-            </p>
-          </motion.div>
-        </div>
-      </div>
+      {/* Page Header - Reusable Component */}
+      <PageHeader 
+        title="ÁREAS DE ATUAÇÃO"
+        subtitle="Soluções jurídicas especializadas com foco em resultados excepcionais e proteção integral dos seus interesses"
+      />
       
       {/* Search and Filters Section - Light Background */}
       <div className="container mx-auto px-6 max-w-7xl -mt-12 relative z-20">
@@ -135,7 +113,7 @@ export default function ServicesPage() {
               <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-500" />
               <input
                 type="text"
-                placeholder="Pesquisar serviços..."
+                placeholder="Pesquisar áreas de atuação..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-14 pr-6 py-5 bg-gray-50 border-2 border-gray-300 
@@ -183,7 +161,7 @@ export default function ServicesPage() {
           
           {/* Results Info */}
           <div className="mt-6 text-lg text-gray-700 font-bold">
-            Mostrando <span className="text-[#E83241]">{filteredServices.length}</span> de <span className="text-[#E83241]">{services.length}</span> serviços
+            Mostrando <span className="text-[#E83241]">{filteredServices.length}</span> de <span className="text-[#E83241]">{services.length}</span> áreas de atuação
           </div>
         </motion.div>
       </div>
@@ -197,7 +175,7 @@ export default function ServicesPage() {
             className="text-center py-24"
           >
             <div className="text-8xl mb-6">🔍</div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">NENHUM SERVIÇO ENCONTRADO</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">NENHUMA ÁREA DE ATUAÇÃO ENCONTRADA</h3>
             <p className="text-xl text-gray-600">Tente ajustar os filtros ou termos de pesquisa</p>
           </motion.div>
         ) : (
@@ -219,28 +197,21 @@ export default function ServicesPage() {
         )}
       </div>
       
-      {/* CTA Section - Dark Background */}
-      <div className="bg-gray-900 py-20">
+      {/* Meeting CTA Section */}
+      <div className="py-20">
         <div className="container mx-auto px-6 max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl border-2 border-[#E83241] 
-                       p-12 text-center max-w-5xl mx-auto shadow-2xl"
           >
-            <h3 className="text-4xl font-black text-gray-900 mb-6">
-              PRECISA DE ASSESSORIA JURÍDICA?
-            </h3>
-            <p className="text-2xl text-gray-700 mb-10 max-w-3xl mx-auto font-medium">
-              Agende uma reunião personalizada e descubra como podemos proteger os seus interesses
-            </p>
-            <button className="px-10 py-6 bg-[#E83241] text-white text-xl font-bold rounded-2xl 
-                              hover:bg-[#d02a37] hover:shadow-2xl transition-all duration-300 
-                              border-2 border-[#E83241] hover:border-[#d02a37] transform hover:-translate-y-1">
-              AGENDAR CONSULTA
-            </button>
+            <MeetingCTA 
+              title="Pronto para Proteger os Seus Direitos?"
+              subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
+              buttonText="Agendar Reunião Gratuita"
+              showPhoneOption={true}
+            />
           </motion.div>
         </div>
       </div>
