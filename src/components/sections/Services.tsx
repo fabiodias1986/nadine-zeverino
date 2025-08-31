@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
 import { ChevronRight, Calendar, Eye } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
 
@@ -12,7 +12,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ service, index }: ServiceCardProps) => {
-  const [, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const Icon = service.icon;
   
   return (
@@ -125,7 +125,7 @@ export default function ServicesSection() {
       </motion.div>
       
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        {/* Header Section - COM BRANDING CONSISTENTE */}
+        {/* Header Section */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,25 +142,25 @@ export default function ServicesSection() {
             className="h-0.5 bg-gradient-to-r from-[#E83241]/50 via-[#E83241]/30 to-[#E83241]/50 mx-auto mb-6"
           />
           
-          {/* TÍTULO COM BRANDING CONSISTENTE */}
+          {/* Título em PT de Portugal */}
           <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
-              Áreas de 
+              Áreas de
             </span>
-            <span className="block text-[#E83241]">
+            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-[#E83241]/70 to-[#E83241]">
               Atuação
             </span>
           </h2>
           
-          {/* SUBTÍTULO COM BRANDING CONSISTENTE */}
+          {/* Subtítulo */}
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Soluções jurídicas especializadas com foco em resultados e 
+            Soluções jurídicas especializadas com foco em resultados excepcionais e 
             <span className="text-[#E83241] font-bold"> proteção integral</span> dos seus interesses
           </motion.p>
         </motion.div>
@@ -172,7 +172,7 @@ export default function ServicesSection() {
           ))}
         </div>
         
-        {/* Buttons Section - Sem texto CTA */}
+        {/* Buttons Section - COM LINKS CORRETOS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -180,15 +180,17 @@ export default function ServicesSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mt-16"
         >
-          {/* Botão Agendar Reunião */}
-          <motion.button
+          {/* Botão Agendar Reunião - External Link */}
+          <motion.a
+            href="https://calendly.com/nadinezeverino" // Substitua pela sua URL real
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ 
               scale: 1.05,
               boxShadow: "0 20px 40px -10px rgba(232, 50, 65, 0.3)"
             }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => router.push('/contacto')}
-            className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl flex items-center gap-3"
+            className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl flex items-center justify-center gap-3 w-full sm:w-auto"
           >
             <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span>Agendar Reunião</span>
@@ -199,34 +201,29 @@ export default function ServicesSection() {
               <ChevronRight className="w-4 h-4" />
             </motion.div>
             
-            {/* Efeito de brilho */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-              animate={{ x: ['-100%', '200%'] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            />
-          </motion.button>
+          </motion.a>
           
-          {/* Botão Ver todos os serviços */}
-          <motion.button
-            whileHover={{ 
-              backgroundColor: "rgba(255, 255, 255, 0.05)",
-              borderColor: "#E83241",
-              scale: 1.05
-            }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => router.push('/servicos')}
-            className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241] transition-all duration-300 backdrop-blur-sm flex items-center gap-3"
-          >
-            <Eye className="w-5 h-5" />
-            <span>Todos os Serviços</span>
-            <motion.div
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}
+          {/* Botão Ver todos os serviços - Internal Link */}
+          <Link href="/services">
+            <motion.button
+              whileHover={{ 
+                backgroundColor: "rgba(255, 255, 255, 0.05)",
+                borderColor: "#E83241",
+                scale: 1.05
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241]/30 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-3 w-full sm:w-auto"
             >
-              <ChevronRight className="w-4 h-4" />
-            </motion.div>
-          </motion.button>
+              <Eye className="w-5 h-5" />
+              <span>Todos os Serviços</span>
+              <motion.div
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}
+              >
+                <ChevronRight className="w-4 h-4" />
+              </motion.div>
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
       

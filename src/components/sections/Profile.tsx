@@ -70,7 +70,7 @@ export default function ProfileSection() {
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
                   Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer 
                   <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span> e 
-                  <span className="text-[#E83241] font-bold"> resultados excepcionais</span> para os seus clientes.
+                  <span className="text-[#E83241] font-bold"> resultados</span> para os seus clientes.
                 </p>
                 
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
