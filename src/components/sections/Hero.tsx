@@ -102,7 +102,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <p className="text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
+              <p className="hidden md:block text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
                 Representação jurídica de excelência com mais de 10 anos de experiência. 
                 Soluções personalizadas para proteger seus direitos e interesses.
               </p>
