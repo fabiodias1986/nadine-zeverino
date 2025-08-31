@@ -78,7 +78,6 @@ export default function GoogleReviews() {
   const [isPlaying] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 
-  const averageRating = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
 
   // Auto-play functionality
   useEffect(() => {
@@ -164,7 +163,7 @@ export default function GoogleReviews() {
               {/* Review Content */}
               <div key={currentReview.id} className="text-center">
                 <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 italic max-w-3xl mx-auto">
-                  "{currentReview.comment}"
+                  &quot;{currentReview.comment}&quot;
                 </p>
                 
                 {/* Rating */}

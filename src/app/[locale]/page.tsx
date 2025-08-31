@@ -1,6 +1,5 @@
 'use client'
 
-import {useTranslations} from 'next-intl';
 import Services from '@/components/sections/Services';
 import Hero from '@/components/sections/Hero';
 import CTA from '@/components/sections/CTA';

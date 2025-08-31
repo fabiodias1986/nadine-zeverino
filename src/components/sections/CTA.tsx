@@ -10,11 +10,6 @@ export default function NadineLawCTA() {
   useEffect(() => {
     setIsVisible(true);
 
-    interface Achievement {
-      icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-      label: string;
-      sublabel: string;
-    }
 
     const handleMouseMove = (e: MouseEvent): void => {
       setMousePosition({ x: e.clientX, y: e.clientY });

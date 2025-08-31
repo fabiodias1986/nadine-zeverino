@@ -41,8 +41,12 @@ export default function ContactForm() {
       } else {
         setSubmitStatus({ type: 'error', message: result.error || 'Erro ao enviar mensagem. Tente novamente.' });
       }
-    } catch (error) {
-      setSubmitStatus({ type: 'error', message: 'Erro de conexão. Por favor, tente novamente.' });
+    } catch (error: unknown) {
+      const errorMessage =
+        typeof error === 'object' && error !== null && 'message' in error
+          ? String((error as { message?: unknown }).message)
+          : 'Erro de conexão. Por favor, tente novamente.';
+      setSubmitStatus({ type: 'error', message: errorMessage });
     } finally {
       setIsSubmitting(false);
     }
