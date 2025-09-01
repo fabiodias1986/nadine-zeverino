@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
 import { ChevronRight, Calendar, Eye } from 'lucide-react';
-import { Link, useRouter } from '@/i18n/navigation';
+import { Link} from '@/i18n/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
 
