@@ -54,7 +54,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
       </div>
       
       {/* Fixed "Saber mais" button at the bottom */}
-      <div className="mt-auto pt-4">
+      <div className="hidden mt-auto pt-4">
         <button className="text-[#E83241] text-base font-bold flex items-center gap-2 group">
           Saber mais
           <ChevronDown className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -199,7 +199,7 @@ export default function ServicesPage() {
       
       {/* Meeting CTA Section */}
       <div className="py-20">
-        <div className="container mx-auto px-6 max-w-7xl">
+        <div className="px-6 ">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -209,7 +209,7 @@ export default function ServicesPage() {
             <MeetingCTA 
               title="Pronto para Proteger os Seus Direitos?"
               subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
-              buttonText="Agendar Reunião Gratuita"
+              buttonText="Agendar Reunião"
               showPhoneOption={true}
             />
           </motion.div>
