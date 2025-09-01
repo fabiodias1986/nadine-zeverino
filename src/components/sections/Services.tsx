@@ -12,7 +12,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ service, index }: ServiceCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
   const Icon = service.icon;
   
   return (
@@ -97,7 +97,6 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
 
 export default function ServicesSection() {
   const { services } = useServices();
-  const router = useRouter();
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,

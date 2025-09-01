@@ -1,3 +1,4 @@
+'use client'
 import {
   Facebook,
   Instagram,
@@ -11,14 +12,15 @@ import {
   Briefcase,
   MessageCircle,
 } from "lucide-react"
+import { Link} from '@/i18n/navigation';
 
 export default function Footer() {
   // Navigation links array
   const navigationLinks = [
-    { icon: Home, label: "Início", href: "#" },
-    { icon: Users, label: "Sobre", href: "#" },
-    { icon: Briefcase, label: "Serviços", href: "#" },
-    { icon: MessageCircle, label: "Contacto", href: "#" },
+    { icon: Home, label: "Início", href: "/" },
+    { icon: Users, label: "Sobre", href: "/about" },
+    { icon: Briefcase, label: "Serviços", href: "/services" },
+    { icon: MessageCircle, label: "Contacto", href: "/contact" },
   ]
 
   // Social media links array
@@ -110,7 +112,8 @@ export default function Footer() {
               {navigationLinks.map((link, index) => {
                 const IconComponent = link.icon
                 return (
-                  <a
+                  <
+                  Link
                     key={index}
                     href={link.href}
                     className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide group"
@@ -119,7 +122,7 @@ export default function Footer() {
                       <IconComponent className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
                     </div>
                     <span className="text-sm sm:text-base">{link.label}</span>
-                  </a>
+                  </Link>
                 )
               })}
             </nav>
