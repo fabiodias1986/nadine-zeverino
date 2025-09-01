@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
 
           {/* Segunda Coluna - Links do Menu */}
-          <div className="md:col-span-1 lg:col-span-3 space-y-4 lg:space-y-8 text-left w-full max-w-xs mx-auto">
+          <div className="md:col-span-1 lg:col-span-3 space-y-4 lg:space-y-8 text-left w-[250px] lg:w-full max-w-xs pl-4 lg:pl-0">
             <h3 className="text-lg sm:text-xl md:text-2xl font-light tracking-wide">NAVEGAÇÃO</h3>
             <nav className="flex flex-col space-y-3 sm:space-y-4">
               {navigationLinks.map((link, index) => {
@@ -128,7 +128,7 @@ export default function Footer() {
           </div>
 
           {/* Terceira Coluna - Contactos */}
-          <div className="md:col-span-1 lg:col-span-3 space-y-4 lg:space-y-8 text-left w-full max-w-xs mx-auto">
+          <div className="md:col-span-1 lg:col-span-3 space-y-4 lg:space-y-8 text-left w-[250px] lg:w-full max-w-xs pl-4 lg:pl-0">
             <h3 className="text-lg sm:text-xl md:text-2xl font-light tracking-wide">CONTACTO</h3>
             <div className="space-y-4 sm:space-y-6">
               {contactInfo.map((contact, index) => {
