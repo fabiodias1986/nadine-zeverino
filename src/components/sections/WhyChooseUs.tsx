@@ -216,7 +216,7 @@ export default function WhyChooseUs() {
                               <h3 className="text-xl md:text-2xl font-bold text-black group-hover:text-[#E83241] transition-colors duration-300">
                                 {value.title}
                               </h3>
-                              <span className="bg-[#E83241]/10 text-[#E83241] text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+                              <span className="hidden lg:block bg-[#E83241]/10 text-[#E83241] text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
                                 {value.highlight}
                               </span>
                             </div>
@@ -227,7 +227,7 @@ export default function WhyChooseUs() {
                           </div>
                         </div>
                         {/* Description */}
-                        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+                        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6 text-justify">
                           {value.description}
                         </p>
                         {/* Bottom Action */}
