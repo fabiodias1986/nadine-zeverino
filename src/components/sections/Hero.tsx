@@ -1,8 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaBalanceScale, FaShieldVirus, FaAward, FaCalendarAlt, FaGavel, FaArrowRight, FaHome, FaStar } from 'react-icons/fa';
+import { FaBalanceScale, FaShieldVirus, FaAward, FaCalendarAlt, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
-import { Link } from '@/i18n/navigation'
+import { Link} from '@/i18n/navigation'
 
 export default function Hero() {
 
@@ -67,11 +67,11 @@ export default function Hero() {
 
             {/* Main Title - Nadine Isabel on same line */}
             <motion.div
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black leading-tight">
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black leading-tight">
                 <motion.span 
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -89,12 +89,11 @@ export default function Hero() {
                   Zeverino
                 </motion.span>
               </h1>
-              
               <motion.div
                 initial={{ width: 0 }}
-                animate={{ width: "120px" }}
-                transition={{ duration: 1, delay: 1.0 }}
-                className="h-1.5 w-20 bg-gradient-to-r from-[#E83241] via-red-500 to-transparent mt-4 mb-6 shadow-lg shadow-[#E83241]/30"
+                animate={{ width: "80px" }}
+                transition={{ duration: 1, delay: 0.9 }}
+                className="h-1 bg-gradient-to-r from-[#E83241] via-red-500 to-transparent mt-4 shadow-lg shadow-[#E83241]/30"
               />
             </motion.div>
 
@@ -102,64 +101,66 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.0 }}
-              className="space-y-4"
+              transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+              <p className="hidden md:block text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
                 Representação jurídica de excelência com mais de 10 anos de experiência. 
-                Soluções personalizadas para proteger os seus direitos e interesses.
+                Soluções personalizadas para proteger seus direitos e interesses.
               </p>
             </motion.div>
 
             {/* MOBILE: Image and Stats Section - Between text and cards */}
             <div className="lg:hidden mt-8">
               <motion.div
-                initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.1 }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl max-w-md mx-auto"
               >
                 {/* Image Container */}
                 <div className="aspect-[4/5] w-full relative overflow-hidden z-30">
                   <Image
                     src="/media/profile.jpg"
-                    alt="Dra. Nadine Isabel Zeverino - Advogada em Portimão"
+                    alt="Dra. Nadine Isabel Zeverino"
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                    className="object-cover"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 </div>
 
-                {/* Professional Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                
-                {/* Professional Info Card */}
+                {/* Professional Badge Overlay - With Stats */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.5, duration: 0.8 }}
+                  transition={{ delay: 0.3 }}
                   className="absolute bottom-0 left-0 right-0 z-30 p-4"
                 >
                   <div className="bg-black/70 backdrop-blur-xl border border-white/10 rounded-2xl p-4">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-[#E83241] rounded-lg flex items-center justify-center">
-                        <FaBalanceScale className="text-white text-sm" />
-                      </div>
+                    <div className="flex items-center justify-between mb-3">
                       <div>
-                        <h3 className="text-white font-bold text-sm">Nadine Isabel Zeverino</h3>
-                        <p className="text-white/70 text-xs">Advogada em Portimão</p>
+                        <h3 className="text-white font-bold text-lg">Nadine Isabel Zeverino</h3>
+                        <p className="text-white/70 text-sm mt-1">Advogada</p>
+                      </div>
+                      <div className="bg-[#E83241] p-2 rounded-lg">
+                        <FaAward className="text-white text-lg" />
                       </div>
                     </div>
-                    
-                    <div className="flex items-center gap-2">
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <FaStar key={i} className="text-[#E83241] text-xs" />
-                        ))}
+                    {/* Stats Section */}
+                    <div className="grid grid-cols-3 gap-3 pt-3 border-t border-white/10">
+                      <div className="text-center">
+                        <div className="text-[#E83241] font-bold text-base">10+</div>
+                        <div className="text-white/60 text-xs">Anos</div>
                       </div>
-                      <span className="text-white/80 text-xs">Excelência Reconhecida</span>
+                      <div className="text-center">
+                        <div className="text-[#E83241] font-bold text-base">100+</div>
+                        <div className="text-white/60 text-xs">Casos</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-[#E83241] font-bold text-base">98%</div>
+                        <div className="text-white/60 text-xs">Sucesso</div>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -170,46 +171,48 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
+              transition={{ duration: 0.6, delay: 1.3 }}
               className="grid grid-cols-2 sm:grid-cols-4 gap-3"
             >
               {specialties.map((specialty, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 1.7 + index * 0.1 }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1.4 + index * 0.1 }}
                   whileHover={{ 
                     scale: 1.05, 
-                    y: -3,
-                    boxShadow: "0 10px 25px rgba(232, 50, 65, 0.25)"
+                    y: -2,
+                    boxShadow: "0 5px 15px rgba(232, 50, 65, 0.25)"
                   }}
-                  className="flex items-center gap-2.5 py-2.5 px-3 bg-gray-50/5 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100/10"
+                  className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-4 cursor-pointer group hover:border-[#E83241]/50 transition-all duration-300 flex flex-col items-center justify-center text-center"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E83241]"></span>
-                  <span className="text-gray-200 text-sm">{specialty.title}</span>
+                  <div className="text-[#E83241] text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                    {specialty.icon}
+                  </div>
+                  <h3 className="text-white font-medium text-sm">{specialty.title}</h3>
                 </motion.div>
               ))}
             </motion.div>
 
-            {/* CTA Buttons - Stacked on mobile */}
+            {/* CTA Buttons - IGUAL AOS DA SEÇÃO SERVICES */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 2.0 }}
-              className="flex flex-col sm:flex-row gap-3 pt-4"
+              transition={{ duration: 0.6, delay: 1.5 }}
+              className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              {/* Agendar Reunião - External Link */}
+              {/* Botão Agendar Reunião - External Link */}
               <motion.a
                 href="https://calendly.com/nadinezeverino" // Substitua pela sua URL real
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ 
                   scale: 1.02,
-                  boxShadow: "0 10px 25px rgba(232, 50, 65, 0.4)"
+                  boxShadow: "0 10px 25px -5px rgba(232, 50, 65, 0.25)"
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative px-6 py-4 bg-[#E83241] text-white rounded-lg font-bold text-base overflow-hidden shadow-xl border border-[#E83241] flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl border border-[#E83241] flex items-center justify-center gap-3 w-full sm:w-auto"
               >
                 <FaCalendarAlt className="group-hover:scale-110 transition-transform" />
                 <span>Agendar Reunião</span>
@@ -220,22 +223,21 @@ export default function Hero() {
                   <FaArrowRight className="text-sm" />
                 </motion.div>
                 
-                {/* Animated background */}
+                {/* Efeito de brilho */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"
                 />
-                
               </motion.a>
 
-              {/* Ver Serviços - Internal Link */}
-              <Link href="/services">
+              {/* Botão Ver Serviços - Internal Link */}
+              <Link href="/servicos">
                 <motion.button
                   whileHover={{ 
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
                     borderColor: "#E83241",
                     color: "#E83241"
                   }}
-                  className="px-6 py-4 border-2 border-white/20 text-white rounded-lg font-bold text-base hover:border-[#E83241]/30 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2 w-full sm:w-auto"
+                  className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241]/30 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-3 w-full sm:w-auto"
                 >
                   <FaGavel />
                   <span>Ver Serviços</span>
@@ -256,53 +258,94 @@ export default function Hero() {
               <div className="aspect-[4/5] w-full relative overflow-hidden z-30">
                 <Image
                   src="/media/profile.jpg"
-                  alt="Dra. Nadine Isabel Zeverino - Advogada em Portimão"
+                  alt="Dra. Nadine Isabel Zeverino"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                  className="object-cover"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               </div>
 
-              {/* Professional Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              
-              {/* Professional Info Card */}
+              {/* Animated Border Frame */}
+              <motion.div
+                animate={{ 
+                  background: [
+                    'linear-gradient(0deg, #E83241, transparent, transparent, #E83241)',
+                    'linear-gradient(90deg, #E83241, transparent, transparent, #E83241)',
+                    'linear-gradient(180deg, #E83241, transparent, transparent, #E83241)',
+                    'linear-gradient(270deg, #E83241, transparent, transparent, #E83241)',
+                    'linear-gradient(360deg, #E83241, transparent, transparent, #E83241)'
+                  ]
+                }}
+                transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                className="absolute inset-0 p-1 rounded-3xl z-20 pointer-events-none"
+              >
+                <div className="w-full h-full bg-black rounded-3xl"></div>
+              </motion.div>
+
+              {/* Professional Badge Overlay - With Stats */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.5, duration: 0.8 }}
-                className="absolute bottom-0 left-0 right-0 z-30 p-6"
+                transition={{ delay: 0.5 }}
+                className="absolute bottom-0 left-0 right-0 z-30 p-4"
               >
                 <div className="bg-black/70 backdrop-blur-xl border border-white/10 rounded-2xl p-4">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-[#E83241] rounded-lg flex items-center justify-center">
-                      <FaBalanceScale className="text-white text-sm" />
-                    </div>
+                  <div className="flex items-center justify-between mb-3">
                     <div>
-                      <h3 className="text-white font-bold text-sm">Nadine Isabel Zeverino</h3>
-                      <p className="text-white/70 text-xs">Advogada em Portimão</p>
+                      <h3 className="text-white font-bold text-lg">Nadine Isabel Zeverino</h3>
+                      <p className="text-white/70 text-sm mt-1">Advogada</p>
+                    </div>
+                    <div className="bg-[#E83241] p-2 rounded-lg">
+                      <FaAward className="text-white text-lg" />
                     </div>
                   </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <div className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} className="text-[#E83241] text-xs" />
-                      ))}
+                  {/* Stats Section */}
+                  <div className="grid grid-cols-3 gap-3 pt-3 border-t border-white/10">
+                    <div className="text-center">
+                      <div className="text-[#E83241] font-bold text-base">10+</div>
+                      <div className="text-white/60 text-xs">Anos</div>
                     </div>
-                    <span className="text-white/80 text-xs">Excelência Reconhecida</span>
+                    <div className="text-center">
+                      <div className="text-[#E83241] font-bold text-base">100+</div>
+                      <div className="text-white/60 text-xs">Casos</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-[#E83241] font-bold text-base">98%</div>
+                      <div className="text-white/60 text-xs">Sucesso</div>
+                    </div>
                   </div>
                 </div>
               </motion.div>
-
-              {/* Decorative Element */}
-              <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-[#E83241]/10 rounded-xl transform rotate-6"></div>
             </motion.div>
+
+            {/* Floating Elements - Hidden on mobile */}
+            <div className="hidden md:block">
+              <motion.div
+                animate={{ 
+                  y: [0, -15, 0],
+                  rotate: [0, 8, 0]
+                }}
+                transition={{ duration: 4, repeat: Infinity }}
+                className="absolute -top-4 -right-4 w-12 h-12 bg-[#E83241]/90 rounded-full flex items-center justify-center backdrop-blur-sm border-2 border-[#E83241] shadow-lg shadow-[#E83241]/30 z-40"
+              >
+                <FaBalanceScale className="text-white text-base" />
+              </motion.div>
+              <motion.div
+                animate={{ 
+                  scale: [1, 1.2, 1],
+                  opacity: [0.7, 0.4, 0.7]
+                }}
+                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+                className="absolute -bottom-4 -left-4 w-10 h-10 bg-white/5 rounded-full flex items-center justify-center backdrop-blur border border-white/10 z-40"
+              >
+                <FaShieldVirus className="text-[#E83241] text-sm" />
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+} 

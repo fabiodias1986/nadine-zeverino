@@ -217,12 +217,12 @@ export default function GoogleReviews() {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <a
-            href="https://www.google.com/search?sca_esv=b80a8cdde4dd043f&tbm=lcl&sxsrf=AE3TifNOaXlEYH-gZLdnNzJBXaXOJOLkQA:1756200464488&q=Nadine+Isabel+Zeverino+-+Advogada/Lawyer/Advocaat+Cr%C3%ADticas&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MjSysDA2sjA2NrUwMTWyMDIy2cDI-IrR2i8xJTMvVcGzODEpNUchKrUstSgzL19BV8ExpSw_PTElUd8nsbwytUgfxE9OTCxRcC46vLYkMzmxeBErJboBqfoZuJYAAAA&rldimm=2128832833584528224&hl=pt-PT&sa=X&ved=2ahUKEwjZhtzGlKiPAxUudqQEHeQ_GC4Q9fQKegQIShAF&biw=1366&bih=641&dpr=1#lkt=LocalPoiReviews"
+            href="https://www.google.com/search?q=Nadine+Isabel+Zeverino+Advogada+reviews&tbm=lcl"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#E83241] text-white rounded-xl font-medium hover:bg-[#E83241]/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
           >
-            <span>Ver todas as avaliações no Google</span>
+            <span>Ver avaliações no Google</span>
             <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
         </div>
