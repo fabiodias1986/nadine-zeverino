@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight text-center">
               <span className="text-[#E83241]">Vantagens</span> que nos<br />Distinguem
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed text-center">
+            <p className="text-sm md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed text-center">
               <span className="font-bold text-[#E83241]">100+ casos resolvidos</span> com <span className="font-bold">98% de satisfação</span>
             </p>
           </div>

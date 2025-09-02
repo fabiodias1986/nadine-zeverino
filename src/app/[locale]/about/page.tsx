@@ -189,7 +189,7 @@ const SobreMimPage: React.FC = () => {
                     <MeetingCTA 
                         title="Pronto para Proteger os Seus Direitos?"
                         subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
-                        buttonText="Marcar Consulta Gratuita"
+                        buttonText="Agendar Reunião"
                         showPhoneOption={true}
                     />
                 </motion.div>

@@ -203,7 +203,7 @@ export default function ServicesSection() {
           </motion.a>
           
           {/* Botão Ver todos os serviços - Internal Link */}
-          <Link href="/services">
+          <Link href="/pratice-areas">
             <motion.button
               whileHover={{ 
                 backgroundColor: "rgba(255, 255, 255, 0.05)",
