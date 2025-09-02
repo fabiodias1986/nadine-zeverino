@@ -120,7 +120,7 @@ export default function Footer() {
                     <div className="w-6 h-6 sm:w-7 sm:h-7 bg-white bg-opacity-10 rounded-full flex items-center justify-center group-hover:bg-[#E83241] group-hover:text-black group-hover:scale-110 transition-all duration-300">
                       <IconComponent className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
                     </div>
-                    <span className="text-base sm:text-lg">{link.label}</span>
+                    <span className="text-lg">{link.label}</span>
                   </Link>
                 )
               })}
