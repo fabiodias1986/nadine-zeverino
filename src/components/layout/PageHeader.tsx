@@ -44,7 +44,7 @@ export default function PageHeader({
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8 font-medium">
+          <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8 font-medium">
             {subtitle}
           </p>
           
