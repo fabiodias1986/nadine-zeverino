@@ -146,7 +146,7 @@ export default function ServicesSection() {
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
               Áreas de
             </span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-[#E83241]/70 to-[#E83241]">
+            <span className="block text-[#E83241]">
               Atuação
             </span>
           </h2>

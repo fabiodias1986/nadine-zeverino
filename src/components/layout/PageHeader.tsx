@@ -17,7 +17,7 @@ export default function PageHeader({
   className = ""
 }: PageHeaderProps) {
   return (
-    <div className={`relative py-20 md:py-32 bg-black text-white overflow-hidden ${className}`}>
+    <div className={`relative pb-20 md:pb-32 pt-32 bg-black text-white overflow-hidden ${className}`}>
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black to-black/50" />
