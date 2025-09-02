@@ -18,9 +18,9 @@ export default function Footer() {
   // Navigation links array
   const navigationLinks = [
     { icon: Home, label: "Início", href: "/" },
-    { icon: Users, label: "Sobre", href: "/sobre-mim" },
-    { icon: Briefcase, label: "Serviços", href: "/servicos" },
-    { icon: MessageCircle, label: "Contacto", href: "/contacto" },
+    { icon: Users, label: "Sobre", href: "/about" },
+    { icon: Briefcase, label: "Serviços", href: "/pratice-areas" },
+    { icon: MessageCircle, label: "Contacto", href: "/contact" },
   ]
 
   // Social media links array
