@@ -73,7 +73,7 @@ export default function NadineLawCTA() {
           <div className="space-y-6 md:space-y-8">
             {/* Headings */}
             <div className="space-y-3 md:space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black xl:text-7xl font-black leading-tight">
                 <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-200 bg-clip-text text-transparent">
                   Nadine Isabel
                 </span>

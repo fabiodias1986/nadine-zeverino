@@ -142,7 +142,7 @@ export default function ServicesSection() {
           />
           
           {/* Título em PT de Portugal */}
-          <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
               Áreas de
             </span>

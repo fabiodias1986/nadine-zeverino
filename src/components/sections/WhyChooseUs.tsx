@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
                 POR que nos escolher
               </span>
             </motion.div>
-            <h2 className="text-5xl md:text-6xl font-black text-black mb-6 leading-tight text-center">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight text-center">
               <span className="text-[#E83241]">Vantagens</span> que nos<br />Distinguem
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed text-center">
