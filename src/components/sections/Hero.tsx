@@ -230,7 +230,7 @@ export default function Hero() {
               </motion.a>
 
               {/* Botão Ver Serviços - Internal Link */}
-              <Link href="/services">
+              <Link href="/pratice-areas">
                 <motion.button
                   whileHover={{ 
                     backgroundColor: "rgba(255, 255, 255, 0.05)",

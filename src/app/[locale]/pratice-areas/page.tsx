@@ -199,7 +199,7 @@ export default function ServicesPage() {
       
       {/* Meeting CTA Section */}
       <div className="py-20">
-        <div className="px-6 ">
+        <div className=" ">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
