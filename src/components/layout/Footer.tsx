@@ -37,8 +37,8 @@ export default function Footer() {
       icon: MapPin,
       content: (
         <div className="text-gray-400 font-light leading-relaxed">
-          <p className="text-sm md:text-base">Largo de Heliodoro Salgado Nº8</p>
-          <p className="text-sm md:text-base">8500-537 Portimão</p>
+          <p className="text-lg">Largo de Heliodoro Salgado Nº8</p>
+          <p className="text-lg">8500-537 Portimão</p>
         </div>
       ),
     },
@@ -47,7 +47,7 @@ export default function Footer() {
       content: (
         <a
           href="tel:+351964022222"
-          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-sm md:text-base"
+          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-lg"
         >
           +351 964 022 222
         </a>
@@ -58,7 +58,7 @@ export default function Footer() {
       content: (
         <a
           href="mailto:niz@nadinezeverino.com"
-          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-sm md:text-base"
+          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-lg"
         >
           niz@nadinezeverino.com
         </a>
@@ -161,7 +161,7 @@ export default function Footer() {
                   href={link.href}
                   className="text-gray-500 hover:text-white transition-colors duration-300 text-sm sm:text-base md:text-lg font-light tracking-wide"
                 >
-                  {link.label}
+                  <span className="text-lg">{link.label}</span>
                 </a>
               ))}
             </div>
