@@ -1,36 +1,43 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaRegLightbulb, FaRegBuilding, FaGavel, FaCheckCircle, FaArrowRight, FaStar } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 export default function WhyChooseUs() {
+  const t = useTranslations('WhyChooseUs');
+
   const values = [
     {
-      title: 'Transparência Total',
-      description: 'Comunicação 100% transparente sobre o seu caso jurídico. Será sempre informado sobre o estado do processo e os próximos passos, sem burocracias ou linguagem jurídica desnecessária.',
+      title: t('values.transparency.title'),
+      description: t('values.transparency.description'),
       icon: <FaRegLightbulb className="text-[#E83241] text-4xl" />,
-      highlight: 'Sem surpresas',
-      metric: '98% satisfação'
+      highlight: t('values.transparency.highlight'),
+      metric: t('values.transparency.metric'),
+      key: 'transparency'
     },
     {
-      title: 'Estratégia Personalizada',
-      description: 'Cada cliente recebe uma estratégia jurídica desenvolvida especificamente para a sua situação. Analisamos cuidadosamente cada caso para criar soluções eficazes e adequadas às suas necessidades.',
+      title: t('values.strategy.title'),
+      description: t('values.strategy.description'),
       icon: <FaRegBuilding className="text-[#E83241] text-4xl" />,
-      highlight: 'Soluções específicas',
-      metric: '10+ anos de experiência'
+      highlight: t('values.strategy.highlight'),
+      metric: t('values.strategy.metric'),
+      key: 'strategy'
     },
     {
-      title: 'Resultados Comprovados',
-      description: 'O nosso foco está em obter resultados concretos e duradouros para os nossos clientes. Trabalhamos não apenas para processos, mas para soluções reais que melhorem a sua situação jurídica.',
+      title: t('values.results.title'),
+      description: t('values.results.description'),
       icon: <FaGavel className="text-[#E83241] text-4xl" />,
-      highlight: 'Impacto real',
-      metric: '100+ casos resolvidos'
+      highlight: t('values.results.highlight'),
+      metric: t('values.results.metric'),
+      key: 'results'
     },
     {
-      title: 'Excelência Reconhecida',
-      description: 'Mais de uma década de experiência na resolução dos casos mais complexos do direito português. A nossa reputação foi construída através de resultados consistentes e conduta ética irrepreensível.',
+      title: t('values.excellence.title'),
+      description: t('values.excellence.description'),
       icon: <FaCheckCircle className="text-[#E83241] text-4xl" />,
-      highlight: 'Tradição em resultados',
-      metric: 'Escritório certificado'
+      highlight: t('values.excellence.highlight'),
+      metric: t('values.excellence.metric'),
+      key: 'excellence'
     },
   ];
 
@@ -64,15 +71,14 @@ export default function WhyChooseUs() {
             >
               <FaStar className="text-[#E83241] text-sm" />
               <span className="text-[#E83241] font-semibold text-sm uppercase tracking-wider">
-                
-                POR que nos escolher
+                {t('whyChooseUs')}
               </span>
             </motion.div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight text-center">
-              <span className="text-[#E83241]">Vantagens</span> que nos<br />Distinguem
+              <span className="text-[#E83241]">{t('advantages')}</span> {t('thatDistinguish')}
             </h2>
             <p className="text-sm md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed text-center">
-              <span className="font-bold text-[#E83241]">100+ casos resolvidos</span> com <span className="font-bold">98% de satisfação</span>
+              <span className="font-bold text-[#E83241]">{t('casesSolved')}</span> <span className="font-bold"> {t('satisfaction')}</span>
             </p>
           </div>
           {/* Timeline Container */}
@@ -107,7 +113,7 @@ export default function WhyChooseUs() {
             <div className="space-y-16">
               {values.map((value, index) => (
                 <motion.div 
-                  key={index}
+                  key={value.key}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}

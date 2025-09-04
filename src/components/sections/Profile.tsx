@@ -2,8 +2,18 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function ProfileSection() {
+  const t = useTranslations('ProfileSection');
+
+  const specialties = [
+    { text: t('specialties.family'), key: 'family' },
+    { text: t('specialties.commercial'), key: 'commercial' },
+    { text: t('specialties.realEstate'), key: 'realEstate' },
+    { text: t('specialties.criminal'), key: 'criminal' }
+  ];
+
   return (
     <section className="relative bg-gray-50 py-20 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -34,7 +44,7 @@ export default function ProfileSection() {
                 {/* Informação profissional - Enhanced */}
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Nadine Isabel Zeverino</h3>
-                  <p className="text-gray-200 text-base font-medium">Advogada</p>
+                  <p className="text-gray-200 text-base font-medium">{t('lawyerTitle')}</p>
                 </div>
               </div>
               
@@ -53,13 +63,13 @@ export default function ProfileSection() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E83241]/5 text-[#E83241] text-sm font-bold rounded-full border border-[#E83241]/10">
                 <span className="w-2 h-2 bg-[#E83241] rounded-full"></span>
-                <span>SOBRE MIM</span>
+                <span>{t('aboutMe')}</span>
               </div>
               
               {/* Title */}
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
-                Advogada especializada em 
-                <span className="block text-[#E83241] mt-2">Portugal</span>
+                {t('title')} 
+                <span className="block text-[#E83241] mt-2">{t('portugal')}</span>
               </h2>
               
               {/* Divider */}
@@ -68,31 +78,21 @@ export default function ProfileSection() {
               {/* Description */}
               <div className="space-y-6 text-justify">
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
-                  Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer 
-                  <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span> e 
-                  <span className="text-[#E83241] font-bold"> resultados</span> para os seus clientes.
+                  {t('description1')}
                 </p>
                 
                 <p className="text-gray-700 text-lg leading-relaxed font-medium">
-                  Minha abordagem combina 
-                  <span className="text-gray-900 font-bold"> rigor jurídico</span> com 
-                  <span className="text-gray-900 font-bold"> empatia</span>, garantindo que cada cliente receba não apenas representação legal, mas também 
-                  <span className="text-gray-900 font-bold"> orientação clara e transparente</span> em cada etapa do processo.
+                  {t('description2')}
                 </p>
               </div>
               
               {/* Áreas de especialização - Modern Grid */}
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-gray-900">Áreas de especialização</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{t('specializationAreas')}</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {[
-                    "Direito de Família e Sucessões",
-                    "Direito Comercial e das Sociedades",
-                    "Direito Imobiliário e Construção",
-                    "Direito Penal e Contraordenacional"
-                  ].map((area, index) => (
+                  {specialties.map((area, index) => (
                     <motion.div
-                      key={index}
+                      key={area.key}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
@@ -101,7 +101,7 @@ export default function ProfileSection() {
                       className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
                     >
                       <div className="w-3 h-3 bg-[#E83241] rounded-full flex-shrink-0"></div>
-                      <span className="text-gray-800 font-medium">{area}</span>
+                      <span className="text-gray-800 font-medium">{area.text}</span>
                     </motion.div>
                   ))}
                 </div>

@@ -4,6 +4,109 @@
     "home": "Home",
     "about": "About",
     "contact": "Contacts",
-    "services": "Pratice Areas"
+    "services": "Pratice Areas",
+    "book": "Book Meeting"
+  },
+
+
+   "Hero": {
+    "certifiedLawyer": "Certified Lawyer | Portugal",
+    "fullName": "Nadine Isabel Zeverino",
+    "description": "Excellent legal representation with over 10 years of experience. Personalized solutions to protect your rights and interests.",
+    "lawyerTitle": "Lawyer",
+    "stats": {
+      "years": "Years",
+      "cases": "Cases",
+      "success": "Success"
+    },
+    "specialties": {
+      "realEstate": "Real Estate Law",
+      "commercial": "Commercial Law",
+      "criminal": "Criminal Law",
+      "labor": "Labor Law"
+    },
+    "bookMeeting": "Book Meeting",
+    "viewServices": "View Services"
+  },
+
+  "ProfileSection": {
+    "aboutMe": "ABOUT ME",
+    "title": "Lawyer specialized in",
+    "portugal": "Portugal",
+    "description1": "Professional with over 10 years of experience in Portuguese law, dedicated to offering personalized legal solutions and results for clients.",
+    "description2": "My approach combines legal rigor with empathy, ensuring that each client receives not only legal representation but also clear and transparent guidance at every stage of the process.",
+    "specializationAreas": "Areas of Specialization",
+    "specialties": {
+      "family": "Family and Succession Law",
+      "commercial": "Commercial and Corporate Law",
+      "realEstate": "Real Estate and Construction Law",
+      "criminal": "Criminal and Administrative Offense Law"
+    },
+    "personalizedSolutions": "personalized legal solutions",
+    "results": "results",
+    "legalRigor": "legal rigor",
+    "empathy": "empathy",
+    "clearGuidance": "clear and transparent guidance"
+  },
+
+   "WhyChooseUs": {
+    "whyChooseUs": "WHY CHOOSE US",
+    "advantages": "Advantages",
+    "thatDistinguish": "that Distinguish Us",
+    "casesSolved": "100+ cases solved",
+    "satisfaction": "with 98% satisfaction",
+    "values": {
+      "transparency": {
+        "title": "Total Transparency",
+        "description": "100% transparent communication about your legal case. You will always be informed about the process status and next steps, without bureaucracy or unnecessary legal jargon.",
+        "highlight": "No surprises",
+        "metric": "98% satisfaction"
+      },
+      "strategy": {
+        "title": "Personalized Strategy",
+        "description": "Each client receives a legal strategy developed specifically for their situation. We carefully analyze each case to create effective solutions tailored to your needs.",
+        "highlight": "Specific solutions",
+        "metric": "10+ years of experience"
+      },
+      "results": {
+        "title": "Proven Results",
+        "description": "Our focus is on obtaining concrete and lasting results for our clients. We work not just for processes, but for real solutions that improve your legal situation.",
+        "highlight": "Real impact",
+        "metric": "100+ cases resolved"
+      },
+      "excellence": {
+        "title": "Recognized Excellence",
+        "description": "More than a decade of experience resolving the most complex cases in Portuguese law. Our reputation was built through consistent results and impeccable ethical conduct.",
+        "highlight": "Tradition in results",
+        "metric": "Certified office"
+      }
+    }
+  },
+
+  "Process": {
+    "workProcess": "WORK PROCESS",
+    "howWe": "How We",
+    "work": "Work",
+    "methodology": "Clear, transparent methodology focused on results",
+    "steps": {
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "Detailed analysis of your case in a confidential and no-obligation consultation."
+      },
+      "strategy": {
+        "title": "Legal Strategy",
+        "description": "Development of personalized strategy adapted to your needs."
+      },
+      "execution": {
+        "title": "Professional Execution",
+        "description": "Rigorous implementation with transparency and continuous communication."
+      },
+      "results": {
+        "title": "Guaranteed Result",
+        "description": "Effective conclusion focused on concrete solutions and protection of your rights."
+      }
+    }
   }
 }
+
+

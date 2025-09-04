@@ -2,15 +2,17 @@
 import { motion } from 'framer-motion';
 import { FaBalanceScale, FaShieldVirus, FaAward, FaCalendarAlt, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
-import { Link} from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
 
   const specialties = [
-    { icon: <FaHome />, title: "Direito Imobiliário" },
-    { icon: <FaBalanceScale />, title: "Direito Comercial" },
-    { icon: <FaShieldVirus />, title: "Direito Penal" },
-    { icon: <FaAward />, title: "Direito Laboral" }
+    { icon: <FaHome />, title: t('specialties.realEstate'), key: 'realEstate' },
+    { icon: <FaBalanceScale />, title: t('specialties.commercial'), key: 'commercial' },
+    { icon: <FaShieldVirus />, title: t('specialties.criminal'), key: 'criminal' },
+    { icon: <FaAward />, title: t('specialties.labor'), key: 'labor' }
   ];
 
   return (
@@ -62,7 +64,7 @@ export default function Hero() {
               className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 shadow-lg"
             >
               <FaAward className="text-[#E83241] text-base" />
-              <span className="text-white/90 font-medium text-sm">Advogada Certificada | Portugal</span>
+              <span className="text-white/90 font-medium text-sm">{t('certifiedLawyer')}</span>
             </motion.div>
 
             {/* Main Title - Nadine Isabel on same line */}
@@ -104,8 +106,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.9 }}
             >
               <p className="hidden md:block text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
-                Representação jurídica de excelência com mais de 10 anos de experiência. 
-                Soluções personalizadas para proteger seus direitos e interesses.
+                {t('description')}
               </p>
             </motion.div>
 
@@ -140,8 +141,8 @@ export default function Hero() {
                   <div className="bg-black/70 backdrop-blur-xl border border-white/10 rounded-2xl p-4">
                     <div className="flex items-center justify-between mb-3">
                       <div>
-                        <h3 className="text-white font-bold text-lg">Nadine Isabel Zeverino</h3>
-                        <p className="text-white/70 text-sm mt-1">Advogada</p>
+                        <h3 className="text-white font-bold text-lg">{t('fullName')}</h3>
+                        <p className="text-white/70 text-sm mt-1">{t('lawyerTitle')}</p>
                       </div>
                       <div className="bg-[#E83241] p-2 rounded-lg">
                         <FaAward className="text-white text-lg" />
@@ -151,15 +152,15 @@ export default function Hero() {
                     <div className="grid grid-cols-3 gap-3 pt-3 border-t border-white/10">
                       <div className="text-center">
                         <div className="text-[#E83241] font-bold text-base">10+</div>
-                        <div className="text-white/60 text-xs">Anos</div>
+                        <div className="text-white/60 text-xs">{t('stats.years')}</div>
                       </div>
                       <div className="text-center">
                         <div className="text-[#E83241] font-bold text-base">100+</div>
-                        <div className="text-white/60 text-xs">Casos</div>
+                        <div className="text-white/60 text-xs">{t('stats.cases')}</div>
                       </div>
                       <div className="text-center">
                         <div className="text-[#E83241] font-bold text-base">98%</div>
-                        <div className="text-white/60 text-xs">Sucesso</div>
+                        <div className="text-white/60 text-xs">{t('stats.success')}</div>
                       </div>
                     </div>
                   </div>
@@ -176,7 +177,7 @@ export default function Hero() {
             >
               {specialties.map((specialty, index) => (
                 <motion.div
-                  key={index}
+                  key={specialty.key}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.4 + index * 0.1 }}
@@ -204,7 +205,7 @@ export default function Hero() {
             >
               {/* Botão Agendar Reunião - External Link */}
               <motion.a
-                href="https://calendly.com/nadinezeverino" // Substitua pela sua URL real
+                href="https://calendly.com/nadinezeverino"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ 
@@ -215,7 +216,7 @@ export default function Hero() {
                 className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl border border-[#E83241] flex items-center justify-center gap-3 w-full sm:w-auto"
               >
                 <FaCalendarAlt className="group-hover:scale-110 transition-transform" />
-                <span>Agendar Reunião</span>
+                <span>{t('bookMeeting')}</span>
                 <motion.div
                   animate={{ x: [0, 4, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -240,7 +241,7 @@ export default function Hero() {
                   className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241]/30 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-3 w-full sm:w-auto"
                 >
                   <FaGavel />
-                  <span>Ver Serviços</span>
+                  <span>{t('viewServices')}</span>
                 </motion.button>
               </Link>
             </motion.div>
@@ -294,8 +295,8 @@ export default function Hero() {
                 <div className="bg-black/70 backdrop-blur-xl border border-white/10 rounded-2xl p-4">
                   <div className="flex items-center justify-between mb-3">
                     <div>
-                      <h3 className="text-white font-bold text-lg">Nadine Isabel Zeverino</h3>
-                      <p className="text-white/70 text-sm mt-1">Advogada</p>
+                      <h3 className="text-white font-bold text-lg">{t('fullName')}</h3>
+                      <p className="text-white/70 text-sm mt-1">{t('lawyerTitle')}</p>
                     </div>
                     <div className="bg-[#E83241] p-2 rounded-lg">
                       <FaAward className="text-white text-lg" />
@@ -305,15 +306,15 @@ export default function Hero() {
                   <div className="grid grid-cols-3 gap-3 pt-3 border-t border-white/10">
                     <div className="text-center">
                       <div className="text-[#E83241] font-bold text-base">10+</div>
-                      <div className="text-white/60 text-xs">Anos</div>
+                      <div className="text-white/60 text-xs">{t('stats.years')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-[#E83241] font-bold text-base">100+</div>
-                      <div className="text-white/60 text-xs">Casos</div>
+                      <div className="text-white/60 text-xs">{t('stats.cases')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-[#E83241] font-bold text-base">98%</div>
-                      <div className="text-white/60 text-xs">Sucesso</div>
+                      <div className="text-white/60 text-xs">{t('stats.success')}</div>
                     </div>
                   </div>
                 </div>
@@ -348,4 +349,4 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}

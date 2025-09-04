@@ -2,32 +2,39 @@
 
 import { motion } from 'framer-motion';
 import { FaRegLightbulb, FaRegBuilding, FaGavel, FaCheckCircle } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 export default function Process() {
+  const t = useTranslations('Process');
+
   const steps = [
     {
       number: '01',
-      title: 'Consulta Inicial',
-      description: 'Análise detalhada do seu caso em consulta confidencial e sem compromisso.',
+      title: t('steps.consultation.title'),
+      description: t('steps.consultation.description'),
       icon: <FaRegLightbulb className="text-[#E83241]" />,
+      key: 'consultation'
     },
     {
       number: '02',
-      title: 'Estratégia Jurídica',
-      description: 'Desenvolvimento de estratégia personalizada adaptada às suas necessidades.',
+      title: t('steps.strategy.title'),
+      description: t('steps.strategy.description'),
       icon: <FaRegBuilding className="text-[#E83241]" />,
+      key: 'strategy'
     },
     {
       number: '03',
-      title: 'Execução Profissional',
-      description: 'Implementação rigorosa com transparência e comunicação contínua.',
+      title: t('steps.execution.title'),
+      description: t('steps.execution.description'),
       icon: <FaGavel className="text-[#E83241]" />,
+      key: 'execution'
     },
     {
       number: '04',
-      title: 'Resultado Garantido',
-      description: 'Conclusão eficaz com foco em soluções concretas e proteção dos seus direitos.',
+      title: t('steps.results.title'),
+      description: t('steps.results.description'),
       icon: <FaCheckCircle className="text-[#E83241]" />,
+      key: 'results'
     },
   ];
 
@@ -56,18 +63,18 @@ export default function Process() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 bg-[#E83241]/10 backdrop-blur-sm border border-[#E83241]/20 rounded-full px-5 py-2.5 mb-6"
           >
-            <span className="text-[#E83241] text-sm font-bold">PROCESSO DE TRABALHO</span>
+            <span className="text-[#E83241] text-sm font-bold">{t('workProcess')}</span>
           </motion.div>
           
           {/* Título com branding consistente */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
-            <span className="block">Como</span>
-            <span className="block text-[#E83241]">Trabalhamos</span>
+            <span className="block">{t('howWe')}</span>
+            <span className="block text-[#E83241]">{t('work')}</span>
           </h2>
           
           {/* Subtítulo com branding consistente */}
           <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Metodologia clara, transparente e focada em resultados
+            {t('methodology')}
           </p>
         </motion.div>
 
@@ -75,7 +82,7 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div
-              key={step.number}
+              key={step.key}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}

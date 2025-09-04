@@ -111,7 +111,7 @@ export default function Navbar() {
                     delay: 1,
                   }}
                 />
-                <span className="relative z-10">Agendar Reunião</span>
+                <span className="relative z-10">{t('book')}</span>
               </motion.button>
             </div>
 
