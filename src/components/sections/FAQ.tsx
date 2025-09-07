@@ -3,31 +3,39 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-import { Link } from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function FAQSection() {
+  const t = useTranslations('FAQ');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   
+  // Obter perguntas do ficheiro de tradução
   const faqs = [
     {
-      question: "Como funciona a primeira consulta?",
-      answer: "Nesta reunião, ouviremos atentamente o seu caso, esclareceremos suas dúvidas e explicaremos as possíveis estratégias jurídicas. Você sairá desta consulta com uma compreensão clara de suas opções."
+      question: t('questions.0.question'),
+      answer: t('questions.0.answer'),
+      key: 'question-0'
     },
     {
-      question: "Quais são os honorários advocatícios?",
-      answer: "Os honorários são definidos de acordo com a complexidade do caso e o tipo de serviço necessário. Após a consulta inicial, apresentarei uma proposta detalhada com todos os custos envolvidos, sem surpresas. Trabalho com transparência total em todos os aspectos financeiros."
+      question: t('questions.1.question'),
+      answer: t('questions.1.answer'),
+      key: 'question-1'
     },
     {
-      question: "Posso agendar uma consulta em Portimão?",
-      answer: "Sim, atendo pessoalmente no meu escritório em Portimão, localizado no centro da cidade. Também ofereço consultas por videoconferência para clientes de toda a região do Algarve e restante de Portugal."
+      question: t('questions.2.question'),
+      answer: t('questions.2.answer'),
+      key: 'question-2'
     },
     {
-      question: "Quanto tempo demora resolver um caso?",
-      answer: "O tempo varia conforme a complexidade do caso e o tribunal envolvido. Durante a consulta inicial, poderei fornecer uma estimativa realista com base na minha experiência de mais de 10 anos no sistema jurídico português."
+      question: t('questions.3.question'),
+      answer: t('questions.3.answer'),
+      key: 'question-3'
     },
     {
-      question: "Preciso de documentos para a primeira consulta?",
-      answer: "É útil trazer qualquer documento relacionado ao seu caso, mas não é obrigatório. Mesmo sem documentos, posso avaliar sua situação e orientá-lo sobre quais documentos serão necessários para prosseguir."
+      question: t('questions.4.question'),
+      answer: t('questions.4.answer'),
+      key: 'question-4'
     }
   ];
 
@@ -63,21 +71,21 @@ export default function FAQSection() {
           >
             <span className="w-2 h-2 bg-[#E83241] rounded-full animate-pulse"></span>
             <span className="text-[#E83241] text-sm font-bold uppercase tracking-wider">
-              Perguntas Frequentes
+              {t('frequentlyAsked')}
             </span>
           </motion.div>
           
           {/* Título com branding consistente */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight">
-            <span className="block">Esclareça suas</span>
+            <span className="block">{t('clarifyYour')}</span>
             <span className="block text-[#E83241]">
-              Dúvidas
+              {t('doubts')}
             </span>
           </h2>
           
           {/* Subtítulo com branding consistente */}
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-            As perguntas mais comuns que nossos clientes em nos fazem
+            {t('subtitle')}
           </p>
         </motion.div>
         
@@ -85,7 +93,7 @@ export default function FAQSection() {
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
             <motion.div
-              key={index}
+              key={faq.key}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -153,12 +161,12 @@ export default function FAQSection() {
         >
           <div className="bg-white/50 backdrop-blur-sm rounded-xl border border-gray-200 p-6 max-w-2xl mx-auto">
             <p className="text-gray-700">
-              Não encontrou sua pergunta?{' '}
+              {t('contactDirectly')}{' '}
               <Link 
                 href="/contact/" 
                 className="text-[#E83241] font-semibold hover:text-[#E83241]/80 transition-colors duration-300 underline underline-offset-4"
               >
-                Entre em contato diretamente
+                {t('contactLink')}
               </Link>
             </p>
           </div>

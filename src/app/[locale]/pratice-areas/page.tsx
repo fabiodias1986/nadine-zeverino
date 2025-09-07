@@ -7,6 +7,7 @@ import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
 import MeetingCTA from '@/components/MeetingCTA';
 import PageHeader from '@/components/layout/PageHeader';
+import { useTranslations } from 'next-intl';
 
 interface ServiceCardProps {
   service: ServiceType;
@@ -15,6 +16,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
+  const t = useTranslations('ServicesPage');
   const Icon = service.icon;
   
   return (
@@ -44,7 +46,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
         
         {/* Features */}
         <div className={`${viewMode === 'list' ? 'grid grid-cols-2 gap-3' : 'space-y-3'} mb-6 flex-grow`}>
-          {service.features.slice(0, viewMode === 'list' ? 4 : 3).map((feature, i) => (
+          {service.features?.slice(0, viewMode === 'list' ? 4 : 3).map((feature, i) => (
             <div key={i} className="flex items-start gap-3">
               <div className="w-2 h-2 bg-[#E83241] rounded-full mt-2 flex-shrink-0" />
               <span className="text-sm text-gray-800 font-medium">{feature}</span>
@@ -56,7 +58,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
       {/* Fixed "Saber mais" button at the bottom */}
       <div className="hidden mt-auto pt-4">
         <button className="text-[#E83241] text-base font-bold flex items-center gap-2 group">
-          Saber mais
+          {t('learnMore')}
           <ChevronDown className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
@@ -65,6 +67,7 @@ const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
 };
 
 export default function ServicesPage() {
+  const t = useTranslations('ServicesPage');
   const { services } = useServices();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -81,7 +84,7 @@ export default function ServicesPage() {
     return services.filter(service => {
       const matchesSearch = service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            service.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           service.features.some(feature => 
+                           service.features.some((feature: string) => 
                              feature.toLowerCase().includes(searchTerm.toLowerCase())
                            );
       
@@ -95,29 +98,29 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Page Header - Reusable Component */}
       <PageHeader 
-        title="ÁREAS DE ATUAÇÃO"
-        subtitle="Soluções jurídicas especializadas com foco em resultados e proteção integral dos seus interesses"
+        title={t('pageTitle')}
+        subtitle={t('pageSubtitle')}
       />
       
       {/* Search and Filters Section - Light Background */}
-      <div className="container mx-auto px-6 max-w-7xl -mt-12 relative z-20">
+      <div className="container mx-auto px-0 md:px-6 max-w-7xl -mt-12 relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white rounded-2xl border-2 border-gray-300 p-8 shadow-xl"
+          className="bg-white rounded-2xl border-2 border-gray-300 p-6 md:p-8 shadow-xl mx-4 md:mx-0"
         >
-          <div className="flex flex-col lg:flex-row gap-6">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
             {/* Search Bar */}
             <div className="relative flex-grow">
               <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-500" />
               <input
                 type="text"
-                placeholder="Pesquisar áreas de atuação..."
+                placeholder={t('searchPlaceholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-14 pr-6 py-5 bg-gray-50 border-2 border-gray-300 
-                          rounded-xl text-gray-900 placeholder-gray-500 text-lg font-medium
+                className="w-full pl-14 pr-6 py-4 md:py-5 bg-gray-50 border-2 border-gray-300 
+                          rounded-xl text-gray-900 placeholder-gray-500 text-base md:text-lg font-medium
                           focus:outline-none focus:border-[#E83241] focus:ring-2 focus:ring-[#E83241]/20 
                           transition-all shadow-sm"
               />
@@ -128,14 +131,14 @@ export default function ServicesPage() {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="appearance-none w-full lg:w-56 pl-5 pr-12 py-5 bg-gray-50 border-2 border-gray-300 
-                          rounded-xl text-gray-900 text-lg font-bold focus:outline-none focus:border-[#E83241] 
+                className="appearance-none w-full lg:w-56 pl-5 pr-12 py-4 md:py-5 bg-gray-50 border-2 border-gray-300 
+                          rounded-xl text-gray-900 text-base md:text-lg font-bold focus:outline-none focus:border-[#E83241] 
                           focus:ring-2 focus:ring-[#E83241]/20 transition-all cursor-pointer shadow-sm"
               >
-                <option value="all">TODAS AS CATEGORIAS</option>
+                <option value="all">{t('allCategories')}</option>
                 {categories.filter(cat => cat !== 'all').map(category => (
                   <option key={category} value={category} className="font-bold">
-                    {category.charAt(0).toUpperCase() + category.slice(1)}
+                    {category}
                   </option>
                 ))}
               </select>
@@ -143,47 +146,52 @@ export default function ServicesPage() {
             </div>
             
             {/* View Toggle */}
-            <div className="flex border-2 border-gray-300 rounded-xl bg-gray-50 p-2">
+            <div className="flex border-2 border-gray-300 rounded-xl bg-gray-50 p-1 md:p-2">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-4 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-[#E83241] text-white border-2 border-[#E83241]' : 'text-gray-700 hover:text-gray-900 border-2 border-transparent'}`}
+                className={`p-3 md:p-4 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-[#E83241] text-white border-2 border-[#E83241]' : 'text-gray-700 hover:text-gray-900 border-2 border-transparent'}`}
+                aria-label={t('gridView')}
               >
-                <Grid className="w-6 h-6" />
+                <Grid className="w-5 md:w-6 h-5 md:h-6" />
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-4 rounded-lg transition-all ${viewMode === 'list' ? 'bg-[#E83241] text-white border-2 border-[#E83241]' : 'text-gray-700 hover:text-gray-900 border-2 border-transparent'}`}
+                className={`p-3 md:p-4 rounded-lg transition-all ${viewMode === 'list' ? 'bg-[#E83241] text-white border-2 border-[#E83241]' : 'text-gray-700 hover:text-gray-900 border-2 border-transparent'}`}
+                aria-label={t('listView')}
               >
-                <List className="w-6 h-6" />
+                <List className="w-5 md:w-6 h-5 md:h-6" />
               </button>
             </div>
           </div>
           
           {/* Results Info */}
-          <div className="mt-6 text-lg text-gray-700 font-bold">
-            Mostrando <span className="text-[#E83241]">{filteredServices.length}</span> de <span className="text-[#E83241]">{services.length}</span> áreas de atuação
+          <div className="mt-4 md:mt-6 text-base md:text-lg text-gray-700 font-bold">
+            {t('showingResults', { 
+              filtered: filteredServices.length, 
+              total: services.length 
+            })}
           </div>
         </motion.div>
       </div>
-      
+
       {/* Services Grid/List */}
-      <div className="container mx-auto px-6 max-w-7xl py-20">
+      <div className="container mx-auto px-0 md:px-6 max-w-7xl py-12 md:py-20">
         {filteredServices.length === 0 ? (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-center py-24"
+            className="text-center py-16 md:py-24"
           >
-            <div className="text-8xl mb-6">🔍</div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">NENHUMA ÁREA DE ATUAÇÃO ENCONTRADA</h3>
-            <p className="text-xl text-gray-600">Tente ajustar os filtros ou termos de pesquisa</p>
+            <div className="text-6xl md:text-8xl mb-4 md:mb-6">🔍</div>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">{t('noServicesFound')}</h3>
+            <p className="text-base md:text-xl text-gray-600">{t('tryAdjustingFilters')}</p>
           </motion.div>
         ) : (
           <motion.div
             layout
             className={`${viewMode === 'grid' 
-              ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' 
-              : 'space-y-8'}`}
+              ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-0' 
+              : 'space-y-6 md:space-y-8 px-4 md:px-0'}`}
           >
             {filteredServices.map((service, index) => (
               <ServiceCard 
@@ -198,7 +206,7 @@ export default function ServicesPage() {
       </div>
       
       {/* Meeting CTA Section */}
-      <div className="py-20">
+      <div className="py-12 md:py-20">
         <div className=" ">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -207,9 +215,6 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
           >
             <MeetingCTA 
-              title="Pronto para Proteger os Seus Direitos?"
-              subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
-              buttonText="Agendar Reunião"
               showPhoneOption={true}
             />
           </motion.div>

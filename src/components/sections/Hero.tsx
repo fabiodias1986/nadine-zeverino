@@ -78,7 +78,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-red-400 to-[#E83241]"
+                  className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-red-500 to-[#E83241]"
                 >
                   Nadine Isabel
                 </motion.span>

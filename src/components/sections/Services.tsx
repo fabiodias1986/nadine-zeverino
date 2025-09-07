@@ -2,9 +2,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
 import { ChevronRight, Calendar, Eye } from 'lucide-react';
-import { Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
+import { useTranslations } from 'next-intl';
 
 interface ServiceCardProps {
   service: ServiceType;
@@ -71,7 +72,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
           
           {/* Features - mostrando 3 features */}
           <div className="space-y-2">
-            {service.features.slice(0, 3).map((feature, i) => (
+            {service.features?.slice(0, 3).map((feature, i) => (
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, x: -10 }}
@@ -96,6 +97,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
 };
 
 export default function ServicesSection() {
+  const t = useTranslations('ServicesSection');
   const { services } = useServices();
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -144,10 +146,10 @@ export default function ServicesSection() {
           {/* Título em PT de Portugal */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
-              Áreas de
+              {t('areasOfPractice')}
             </span>
             <span className="block text-[#E83241]">
-              Atuação
+              {t('practice')}
             </span>
           </h2>
           
@@ -159,8 +161,7 @@ export default function ServicesSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Soluções jurídicas especializadas com foco em resultados excepcionais e 
-            <span className="text-[#E83241] font-bold"> proteção integral</span> dos seus interesses
+            {t('subtitle')}
           </motion.p>
         </motion.div>
         
@@ -181,7 +182,7 @@ export default function ServicesSection() {
         >
           {/* Botão Agendar Reunião - External Link */}
           <motion.a
-            href="https://calendly.com/nadinezeverino" // Substitua pela sua URL real
+            href="https://calendly.com/nadinezeverino"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ 
@@ -192,14 +193,13 @@ export default function ServicesSection() {
             className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl flex items-center justify-center gap-3 w-full sm:w-auto"
           >
             <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            <span>Agendar Reunião</span>
+            <span>{t('scheduleMeeting')}</span>
             <motion.div
               animate={{ x: [0, 5, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
               <ChevronRight className="w-4 h-4" />
             </motion.div>
-            
           </motion.a>
           
           {/* Botão Ver todos os serviços - Internal Link */}
@@ -214,7 +214,7 @@ export default function ServicesSection() {
               className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:border-[#E83241]/30 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-3 w-full sm:w-auto"
             >
               <Eye className="w-5 h-5" />
-              <span>Todos os Serviços</span>
+              <span>{t('allServices')}</span>
               <motion.div
                 animate={{ x: [0, 5, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}

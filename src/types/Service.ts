@@ -12,13 +12,21 @@ export type ServiceCategory =
 
 export interface ServiceType {
   id: string;
-  title: string;
-  description: string;
-  category: ServiceCategory;
-  keywords: string[];
-  icon: IconType | string;
-  ctaText: string;
-  features: string[]; // Resumo das áreas principais da categoria
-  application: string; // Aplicação geral do serviço
+  titleKey: string;
+  descriptionKey: string;
+  categoryKey: string;
+  keywordsKey: string;
+  icon: any;
+  ctaTextKey: string;
+  featuresKey: string;
+  applicationKey: string;
   createdAt: Date;
+  // Propriedades adicionadas após tradução
+  title?: string;
+  description?: string;
+  category?: string;
+  keywords?: string[];
+  ctaText?: string;
+  features?: string[];
+  application?: string;
 }

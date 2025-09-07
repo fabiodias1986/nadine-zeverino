@@ -38,15 +38,31 @@ export default function Navbar() {
       
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo with Image + Full Name */}
           <motion.div 
-            className="font-bold text-xl tracking-tight z-20"
+            className="font-bold text-xl tracking-tight z-20 flex items-center"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
-              Nadine <span className="text-[#E83241]">Zeverino</span>
+            <Link href="/" className="flex items-center space-x-2">
+              {/* Logo Image - adjust src as needed */}
+              <img 
+                src="/media/logo.png" 
+                alt="Nadine Isabel Zeverino" 
+                className="h-8 w-auto object-contain"
+                onError={(e) => {
+                  // Fallback to text if image fails
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = 'none';
+                  const nextSibling = img.nextElementSibling as HTMLElement | null;
+                  if (nextSibling) nextSibling.textContent = 'Nadine Isabel Zeverino';
+                }}
+              />
+              {/* Text Fallback / Enhancement */}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white text-lg font-semibold">
+                Nadine Isabel Zeverino
+              </span>
             </Link>
           </motion.div>
 

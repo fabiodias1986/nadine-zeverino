@@ -5,30 +5,37 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import MeetingCTA from '@/components/MeetingCTA';
 import PageHeader from '@/components/layout/PageHeader';
+import { useTranslations } from 'next-intl';
+import { Scale, Users, Building, Home, Gavel, Shield } from 'lucide-react';
 
 const SobreMimPage: React.FC = () => {
+    const t = useTranslations('AboutPage');
+    
     const specialties = [
-       "Direito de Família e Sucessões",
-        "Direito Comercial e das Sociedades",
-        "Direito Imobiliário e Construção",
-        "Direito Penal e Contraordenacional"
+        { name: t('specialties.family'), icon: Scale },
+        { name: t('specialties.commercial'), icon: Building },
+        { name: t('specialties.realEstate'), icon: Home },
+        { name: t('specialties.criminal'), icon: Gavel }
     ];
 
     const values = [
         { 
-            title: "Ética", 
-            description: "Compromisso com a integridade e a transparência em cada atuação jurídica.",
-            icon: "⚖️"
+            title: t('values.ethics.title'), 
+            description: t('values.ethics.description'),
+            icon: Shield,
+            color: "text-blue-500"
         },
         { 
-            title: "Excelência", 
-            description: "Busca constante por qualidade e precisão em cada serviço prestado.",
-            icon: "⭐"
+            title: t('values.excellence.title'), 
+            description: t('values.excellence.description'),
+            icon: "⭐",
+            color: "text-yellow-500"
         },
         { 
-            title: "Proximidade", 
-            description: "Relacionamento direto e humano com cada cliente e caso específico.",
-            icon: "🤝"
+            title: t('values.proximity.title'), 
+            description: t('values.proximity.description'),
+            icon: Users,
+            color: "text-green-500"
         }
     ];
 
@@ -36,9 +43,8 @@ const SobreMimPage: React.FC = () => {
         <div className="min-h-screen bg-gray-50">
             {/* Page Header - Reusable Component */}
             <PageHeader 
-                title="NADINE ISABEL ZEVERINO"
-                subtitle="Advogada especializada em Portugal com mais de 10 anos de experiência"
-               
+                title={t('pageTitle')}
+                subtitle={t('pageSubtitle')}
             />
 
             {/* Main Content */}
@@ -55,7 +61,7 @@ const SobreMimPage: React.FC = () => {
                             <div className="aspect-[3/4] relative">
                                 <Image 
                                     src="/media/profile.jpg"
-                                    alt="Nadine Isabel Zeverino - Advogada em Portimão, Portugal"
+                                    alt={t('profileImageAlt')}
                                     fill
                                     className="object-cover object-top"
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -65,8 +71,8 @@ const SobreMimPage: React.FC = () => {
                             
                             {/* Info Overlay */}
                             <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
-                                <h3 className="text-2xl font-bold text-white mb-2">Nadine Isabel Zeverino</h3>
-                                <p className="text-gray-200 text-lg font-medium">Advogada em Portugal</p>
+                                <h3 className="text-2xl font-bold text-white mb-2">{t('fullName')}</h3>
+                                <p className="text-gray-200 text-lg font-medium">{t('lawyerTitle')}</p>
                             </div>
                         </div>
                     </motion.div>
@@ -79,28 +85,22 @@ const SobreMimPage: React.FC = () => {
                         className="bg-white rounded-2xl border-2 border-gray-300 p-8 shadow-2xl"
                     >
                         <div className="inline-block px-5 py-2 bg-[#E83241]/10 text-[#E83241] text-lg font-bold rounded-full mb-6">
-                            SOBRE MIM
+                            {t('aboutMeBadge')}
                         </div>
                         
                         <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-6 leading-tight">
-                            Especialista em <span className="text-[#E83241]">Direito Português</span>
+                            {t('specialistTitle')} <span className="text-[#E83241]">{t('specialistArea')}</span>
                         </h2>
                         
                         <div className="h-1.5 w-20 bg-[#E83241] mb-8"></div>
                         
                         <div className="space-y-6">
                             <p className="text-gray-700 text-lg leading-relaxed font-medium">
-                                Com mais de 10 anos de experiência no exercício da advocacia em Portugal, ofereço 
-                                <span className="text-[#E83241] font-bold"> soluções jurídicas personalizadas</span>, 
-                                <span className="text-[#E83241] font-bold"> éticas</span> e 
-                                <span className="text-[#E83241] font-bold"> eficazes</span> para particulares e empresas em Portimão e região Algarvia.
+                                {t('description1')}
                             </p>
                             
                             <p className="text-gray-700 text-lg leading-relaxed font-medium">
-                                A minha prática jurídica assenta em dois pilares fundamentais: 
-                                <span className="text-gray-900 font-bold"> conhecimento técnico sólido</span> e 
-                                <span className="text-gray-900 font-bold"> relacionamento humano próximo</span>. 
-                                Acredito que cada caso merece atenção individualizada e transparência em todos os momentos.
+                                {t('description2')}
                             </p>
                         </div>
                     </motion.div>
@@ -116,31 +116,36 @@ const SobreMimPage: React.FC = () => {
                 >
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                            ÁREAS DE <span className="text-[#E83241]">ATUAÇÃO</span>
+                            {t('practiceAreasTitle')} <span className="text-[#E83241]">{t('practiceAreasHighlight')}</span>
                         </h2>
                         <div className="h-1.5 w-24 bg-[#E83241] mx-auto"></div>
                         <p className="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
-                            Soluções jurídicas especializadas com foco em resultados excepcionais
+                            {t('practiceAreasSubtitle')}
                         </p>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {specialties.map((area, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.4, delay: index * 0.1 }}
-                                whileHover={{ y: -8 }}
-                                className="bg-white rounded-2xl border-2 border-gray-300 p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                            >
-                                <div className="flex items-center gap-4">
-                                    <div className="w-3 h-3 bg-[#E83241] rounded-full flex-shrink-0"></div>
-                                    <h3 className="text-xl font-bold text-gray-900">{area}</h3>
-                                </div>
-                            </motion.div>
-                        ))}
+                        {specialties.map((area, index) => {
+                            const IconComponent = area.icon;
+                            return (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                    whileHover={{ y: -8 }}
+                                    className="bg-white rounded-2xl border-2 border-gray-300 p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                                >
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-[#E83241]/10 rounded-lg flex items-center justify-center">
+                                            <IconComponent className="w-5 h-5 text-[#E83241]" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-gray-900">{area.name}</h3>
+                                    </div>
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 </motion.div>
 
@@ -154,44 +159,50 @@ const SobreMimPage: React.FC = () => {
                 >
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                            OS MEUS <span className="text-[#E83241]">VALORES</span>
+                            {t('valuesTitle')} <span className="text-[#E83241]">{t('valuesHighlight')}</span>
                         </h2>
                         <div className="h-1.5 w-24 bg-[#E83241] mx-auto"></div>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {values.map((value, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                whileHover={{ y: -8 }}
-                                className="bg-white rounded-2xl border-2 border-gray-300 p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                            >
-                                <div className="text-4xl mb-6">{value.icon}</div>
-                                <h3 className="text-2xl font-black text-[#E83241] mb-4">{value.title}</h3>
-                                <p className="text-gray-700 text-lg leading-relaxed">{value.description}</p>
-                            </motion.div>
-                        ))}
+                        {values.map((value, index) => {
+                            const IconComponent = typeof value.icon === 'string' ? null : value.icon;
+                            return (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    whileHover={{ y: -8 }}
+                                    className="bg-white rounded-2xl border-2 border-gray-300 p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                                >
+                                    {typeof value.icon === 'string' ? (
+                                        <div className="text-4xl mb-6">{value.icon}</div>
+                                    ) : IconComponent ? (
+                                        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                            <IconComponent className={`w-8 h-8 ${value.color}`} />
+                                        </div>
+                                    ) : null}
+                                    <h3 className="text-2xl font-black text-[#E83241] mb-4">{value.title}</h3>
+                                    <p className="text-gray-700 text-lg leading-relaxed">{value.description}</p>
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 </motion.div>
+            </div>
 
-                {/* Meeting CTA Section */}
+            {/* Meeting CTA Section - Full Width */}
+            <div className="w-full mt-24 mb-0">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="mt-24 mb-20"
+                    className="w-full"
                 >
-                    <MeetingCTA 
-                        title="Pronto para Proteger os Seus Direitos?"
-                        subtitle="Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso."
-                        buttonText="Agendar Reunião"
-                        showPhoneOption={true}
-                    />
+                    <MeetingCTA showPhoneOption={true} />
                 </motion.div>
             </div>
         </div>

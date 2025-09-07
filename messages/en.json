@@ -1,4 +1,71 @@
 {
+  "services": {
+    "realEstate": {
+      "title": "Real Estate and Construction Law",
+      "description": "Complete legal advisory in real estate transactions, rental contracts, licensing and sector company advisory.",
+      "category": "Real Estate Law",
+      "keywords": "buy and sell|rental|licensing|contracts",
+      "ctaText": "Schedule Consultation",
+      "features": "Real estate purchase and sale monitoring|Rental contract preparation|Urban licensing and regularization|Real estate company advisory",
+      "application": "For investors, individuals and companies seeking legal security in real estate matters."
+    },
+    "foreignLegalization": {
+      "title": "Foreign Legalization",
+      "description": "Complete guidance in obtaining visas, residence and tax benefits for foreigners in Portugal.",
+      "category": "Foreign Legalization",
+      "keywords": "visa|residence|Golden Visa|NRH",
+      "ctaText": "Start Process",
+      "features": "Obtaining residence visas|Investment Residence Authorization (Golden Visa)|Family reunification|Non-Habitual Resident Tax Regime (NRH)",
+      "application": "For foreigners who wish to regularize their situation in Portugal through residence, investment or tax benefits."
+    },
+    "portugueseNationality": {
+      "title": "Portuguese Nationality",
+      "description": "Complete support in the process of obtaining Portuguese citizenship and judicial recognition of family relationships.",
+      "category": "Portuguese Nationality",
+      "keywords": "nationality|citizenship|de facto union",
+      "ctaText": "Start Process",
+      "features": "Acquisition of nationality by descent or marriage|Transcription of marriages and births|Judicial recognition of de facto union",
+      "application": "For foreigners eligible for Portuguese nationality or legal recognition of family relationships."
+    },
+    "commercialLaw": {
+      "title": "Commercial and Corporate Law",
+      "description": "Legal structuring for companies, mergers, dissolutions and corporate litigation.",
+      "category": "Commercial and Corporate Law",
+      "keywords": "company|merger|dissolution|litigation",
+      "ctaText": "Create Company",
+      "features": "Company incorporation|Mergers, divisions and transformations|Dissolution and liquidation of companies|Corporate litigation",
+      "application": "For entrepreneurs and companies seeking legal structuring or corporate reorganization."
+    },
+    "criminalLaw": {
+      "title": "Criminal and Administrative Offense Law",
+      "description": "Criminal defense and administrative offense challenges focused on protecting client rights.",
+      "category": "Criminal and Administrative Offense Law",
+      "keywords": "criminal defense|appeals|fines",
+      "ctaText": "Urgent Consultancy",
+      "features": "Defense in criminal proceedings|Administrative offense challenges|Administrative and judicial appeals",
+      "application": "For clients involved in investigations, criminal proceedings or administrative fines."
+    },
+    "familyLaw": {
+      "title": "Family and Succession Law",
+      "description": "Judicial or extrajudicial resolution of family matters, successions and parental regulation.",
+      "category": "Family and Succession Law",
+      "keywords": "inventory|custody|division|inheritance",
+      "ctaText": "Start Process",
+      "features": "Inventory and asset division|Parental responsibility regulation|Custody and alimony proceedings|Succession litigation",
+      "application": "For families seeking to resolve legal disputes over inheritances, divorces or parental responsibilities."
+    },
+    "registriesNotary": {
+      "title": "Registries and Notary",
+      "description": "Document authentication, public records and general notarial acts.",
+      "category": "Registries and Notary",
+      "keywords": "registry|authentication|trademark|notary",
+      "ctaText": "Register Asset",
+      "features": "Signature and translation authentication|Real estate, commercial and civil records|Preparation of authenticated private documents|Heir qualification",
+      "application": "For individuals and companies who need legal validation of documents or public records."
+    }
+  },
+
+
  
   "Navbar": {
     "home": "Home",
@@ -29,9 +96,11 @@
     "viewServices": "View Services"
   },
 
+
+
   "ProfileSection": {
     "aboutMe": "ABOUT ME",
-    "title": "Lawyer specialized in",
+    "title": "Lawyer in",
     "portugal": "Portugal",
     "description1": "Professional with over 10 years of experience in Portuguese law, dedicated to offering personalized legal solutions and results for clients.",
     "description2": "My approach combines legal rigor with empathy, ensuring that each client receives not only legal representation but also clear and transparent guidance at every stage of the process.",
@@ -48,6 +117,15 @@
     "empathy": "empathy",
     "clearGuidance": "clear and transparent guidance"
   },
+
+  "ServicesSection": {
+    "areasOfPractice": "Practice",
+    "practice": "Areas",
+    "subtitle": "Specialized legal solutions focused on exceptional results and comprehensive protection of your interests",
+    "scheduleMeeting": "Book Meeting",
+    "allServices": "All Services"
+  },
+
 
    "WhyChooseUs": {
     "whyChooseUs": "WHY CHOOSE US",
@@ -106,7 +184,185 @@
         "description": "Effective conclusion focused on concrete solutions and protection of your rights."
       }
     }
+  },
+
+
+
+  "FAQ": {
+    "frequentlyAsked": "FREQUENTLY ASKED",
+    "clarifyYour": "Clarify Your",
+    "doubts": "Questions",
+    "subtitle": "The most common questions our clients ask us",
+    "contactDirectly": "Didn't find your question?",
+    "contactLink": "Contact us directly",
+    "questions": [
+      {
+        "question": "How does the first consultation work?",
+        "answer": "In this meeting, we will listen carefully to your case, clarify your doubts, and explain the possible legal strategies. You will leave this consultation with a clear understanding of your options."
+      },
+      {
+        "question": "What are the legal fees?",
+        "answer": "Fees are defined according to the complexity of the case and the type of service required. After the initial consultation, I will present a detailed proposal with all involved costs, without surprises. I work with total transparency in all financial aspects."
+      },
+      {
+        "question": "Can I schedule a consultation in Portimão?",
+        "answer": "Yes, I personally attend at my office in Portimão, located in the city center. I also offer videoconference consultations for clients throughout the Algarve region and the rest of World."
+      },
+      {
+        "question": "How long does it take to resolve a case?",
+        "answer": "The time varies according to the complexity of the case and the court involved. During the initial consultation, I can provide a realistic estimate based on my experience of more than 10 years in the Portuguese legal system."
+      },
+      {
+        "question": "Do I need documents for the first consultation?",
+        "answer": "It's useful to bring any documents related to your case, but it's not mandatory. Even without documents, I can assess your situation and guide you on which documents will be needed to proceed."
+      }
+    ]
+  },
+
+
+
+  "GoogleReviews": {
+    "googleReviews": "Google Reviews",
+    "whatOurClients": "What Our",
+    "clientsSay": "Clients Say",
+    "viewGoogleReviews": "View reviews on Google"
+  },
+
+
+  "NadineLawCTA": {
+    "fullName": "Nadine Isabel Zeverino",
+    "lawyerTitle": "Lawyer · Portugal",
+    "protection": "Complete legal protection with",
+    "provenResults": "proven results",
+    "achievements": {
+      "rating": {
+        "label": "5.0",
+        "sublabel": "Rating"
+      },
+      "clients": {
+        "label": "100+",
+        "sublabel": "Clients"
+      },
+      "response": {
+        "label": "24h",
+        "sublabel": "Response"
+      },
+      "secure": {
+        "label": "100%",
+        "sublabel": "Secure"
+      }
+    },
+    "callNow": "Call Now",
+    "scheduleMeeting": "Book Meeting",
+    "contacts": "Contacts",
+    "phone": "Phone",
+    "phoneNumber": "+351 964 022 222",
+    "email": "Email",
+    "emailAddress": "niz@nadinezeverino.com",
+    "confidentialService": "Confidential Service"
+  },
+
+  "Footer": {
+    "fullName": "Nadine Isabel Zeverino",
+    "description": "Nadine Isabel Zeverino is registered and regulated by the Quality Commission of Law",
+    "navigation": "Navigation",
+    "contact": "Contacts",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "address": {
+      "line1": "Largo de Heliodoro Salgado Nº8",
+      "line2": "8500-537 Portimão"
+    },
+    "rights": "All rights reserved."
+  },
+
+  "MeetingCTA": {
+    "title": "Ready to Protect Your Rights?",
+    "subtitle": "Schedule an initial meeting and discover how we can help solve your case.",
+    "buttonText": "Schedule Meeting",
+    "badgeText": "+100 CASES RESOLVED",
+    "touchTo": "Touch to",
+    "callNow": "Call now",
+    "directContact": "Direct Contact",
+    "features": {
+      "cases": {
+        "title": "+100",
+        "value": "Cases Solved"
+      },
+      "success": {
+        "title": "98%",
+        "value": "Success"
+      },
+      "response": {
+        "title": "24h",
+        "value": "Response"
+      }
+      }
+  },
+
+
+  "ServicesPage": {
+    "pageTitle": "PRACTICE AREAS",
+    "pageSubtitle": "Specialized legal solutions focused on results and comprehensive protection of your interests",
+    "searchPlaceholder": "Search areas of practice...",
+    "allCategories": "All Categories",
+    "gridView": "Grid view",
+    "listView": "List view",
+    "showingResults": "Showing {filtered} of {total} areas of practice",
+    "noServicesFound": "NO AREAS OF PRACTICE FOUND",
+    "tryAdjustingFilters": "Try adjusting filters or search terms",
+    "learnMore": "Learn more",
+    "ctaTitle": "Ready to Protect Your Rights?",
+    "ctaSubtitle": "Book an initial meeting and discover how we can help solve your case.",
+    "scheduleMeeting": "Book Meeting"
+  },
+
+
+  "AboutPage": {
+    "pageTitle": "NADINE ISABEL ZEVERINO",
+    "pageSubtitle": "Lawyer specialized in Portugal with over 10 years of experience",
+    "profileImageAlt": "Nadine Isabel Zeverino - Lawyer in Portimão, Portugal",
+    "fullName": "Nadine Isabel Zeverino",
+    "lawyerTitle": "Lawyer in Portugal",
+    "aboutMeBadge": "ABOUT ME",
+    "specialistTitle": "Lawyer in",
+    "specialistArea": "Portugal",
+    "description1": "With more than 10 years of experience practicing law in Portugal, I offer personalized, ethical and effective legal solutions for individuals and companies in Portimão and the Algarve region.",
+    "description2": "My legal practice is based on two fundamental pillars: solid technical knowledge and close human relationship. I believe that each case deserves individualized attention and transparency at all times.",
+    "specialties": {
+      "family": "Family and Succession Law",
+      "commercial": "Commercial and Corporate Law",
+      "realEstate": "Real Estate and Construction Law",
+      "criminal": "Criminal and Administrative Offense Law"
+    },
+    "practiceAreasTitle": "Practice",
+    "practiceAreasHighlight": "Areas",
+    "practiceAreasSubtitle": "Specialized legal solutions focused on exceptional results",
+    "valuesTitle": "MY",
+    "valuesHighlight": "VALUES",
+    "values": {
+      "ethics": {
+        "title": "Ethics",
+        "description": "Commitment to integrity and transparency in each legal action."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Constant pursuit of quality and precision in each service provided."
+      },
+      "proximity": {
+        "title": "Proximity",
+        "description": "Direct and human relationship with each client and specific case."
+      }
+    },
+    "ctaTitle": "Ready to Protect Your Rights?",
+    "ctaSubtitle": "Book an initial meeting and discover how we can help solve your case.",
+    "scheduleMeeting": "Book Meeting"
   }
 }
+
 
 

@@ -1,4 +1,3 @@
-// src/data/services.data.ts
 import { ServiceType } from '@/types/Service';
 import { 
   FaRegBuilding, 
@@ -14,131 +13,98 @@ export const SERVICES: ServiceType[] = [
   // Direito Imobiliário e Construção
   {
     id: 'REAL_ESTATE',
-    title: 'Direito Imobiliário e Construção',
-    description: 'Assessoria jurídica completa em transações imobiliárias, contratos de arrendamento, licenciamentos e assessoria a empresas do setor.',
-    category: 'Direito Imobiliário',
-    keywords: ['compra e venda', 'arrendamento', 'licenciamento', 'contratos'],
+    titleKey: 'services.realEstate.title',
+    descriptionKey: 'services.realEstate.description',
+    categoryKey: 'services.realEstate.category',
+    keywordsKey: 'services.realEstate.keywords',
     icon: FaHome,
-    ctaText: 'Agendar Consulta',
-    features: [
-      'Acompanhamento de compra e venda de imóveis',
-      'Elaboração de contratos de arrendamento',
-      'Licenciamento urbano e regularização',
-      'Assessoria a empresas imobiliárias'
-    ],
-    application: 'Para investidores, particulares e empresas que buscam segurança jurídica em questões imobiliárias.',
+    ctaTextKey: 'services.realEstate.ctaText',
+    featuresKey: 'services.realEstate.features',
+    applicationKey: 'services.realEstate.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Legalização de Estrangeiros
   {
     id: 'FOREIGN_LEGALIZATION',
-    title: 'Legalização de Estrangeiros',
-    description: 'Orientação completa na obtenção de vistos, residência e benefícios fiscais para estrangeiros em Portugal.',
-    category: 'Legalização de Estrangeiros',
-    keywords: ['visto', 'residência', 'Golden Visa', 'RNH'],
+    titleKey: 'services.foreignLegalization.title',
+    descriptionKey: 'services.foreignLegalization.description',
+    categoryKey: 'services.foreignLegalization.category',
+    keywordsKey: 'services.foreignLegalization.keywords',
     icon: FaGlobe,
-    ctaText: 'Iniciar Processo',
-    features: [
-      'Obtenção de vistos de residência',
-      'Autorização de Residência para Investimento (Golden Visa)',
-      'Reagrupamento familiar',
-      'Regime Fiscal de Residente Não Habitual (RNH)'
-    ],
-    application: 'Para estrangeiros que desejam regularizar sua situação em Portugal via residência, investimento ou benefícios fiscais.',
+    ctaTextKey: 'services.foreignLegalization.ctaText',
+    featuresKey: 'services.foreignLegalization.features',
+    applicationKey: 'services.foreignLegalization.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Nacionalidade Portuguesa
   {
     id: 'PORTUGUESE_NATIONALITY',
-    title: 'Nacionalidade Portuguesa',
-    description: 'Acompanhamento completo no processo de obtenção de cidadania portuguesa e reconhecimento judicial de relações familiares.',
-    category: 'Nacionalidade Portuguesa',
-    keywords: ['nacionalidade', 'cidadania', 'união de facto'],
+    titleKey: 'services.portugueseNationality.title',
+    descriptionKey: 'services.portugueseNationality.description',
+    categoryKey: 'services.portugueseNationality.category',
+    keywordsKey: 'services.portugueseNationality.keywords',
     icon: FaHandshake,
-    ctaText: 'Começar Processo',
-    features: [
-      'Aquisição de nacionalidade por descendência ou casamento',
-      'Transcrição de casamentos e nascimentos',
-      'Reconhecimento judicial de união de facto'
-    ],
-    application: 'Para estrangeiros elegíveis à nacionalidade portuguesa ou reconhecimento legal de relações familiares.',
+    ctaTextKey: 'services.portugueseNationality.ctaText',
+    featuresKey: 'services.portugueseNationality.features',
+    applicationKey: 'services.portugueseNationality.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Direito Comercial e das Sociedades
   {
     id: 'COMMERCIAL_LAW',
-    title: 'Direito Comercial e das Sociedades',
-    description: 'Estruturação jurídica para empresas, fusões, dissoluções e contencioso societário.',
-    category: 'Direito Comercial e das Sociedades',
-    keywords: ['sociedade', 'fusão', 'dissolução', 'contencioso'],
+    titleKey: 'services.commercialLaw.title',
+    descriptionKey: 'services.commercialLaw.description',
+    categoryKey: 'services.commercialLaw.category',
+    keywordsKey: 'services.commercialLaw.keywords',
     icon: FaRegBuilding,
-    ctaText: 'Criar Empresa',
-    features: [
-      'Constituição de sociedades',
-      'Fusões, cisões e transformações',
-      'Dissolução e liquidação de sociedades',
-      'Contencioso societário'
-    ],
-    application: 'Para empreendedores e empresas que buscam estruturação jurídica ou reorganização societária.',
+    ctaTextKey: 'services.commercialLaw.ctaText',
+    featuresKey: 'services.commercialLaw.features',
+    applicationKey: 'services.commercialLaw.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Direito Penal e Contraordenacional
   {
     id: 'CRIMINAL_LAW',
-    title: 'Direito Penal e Contraordenacional',
-    description: 'Defesa criminal e impugnação de contraordenações com foco na proteção dos direitos do cliente.',
-    category: 'Direito Penal e Contraordenacional',
-    keywords: ['defesa criminal', 'recursos', 'multas'],
+    titleKey: 'services.criminalLaw.title',
+    descriptionKey: 'services.criminalLaw.description',
+    categoryKey: 'services.criminalLaw.category',
+    keywordsKey: 'services.criminalLaw.keywords',
     icon: FaShieldAlt,
-    ctaText: 'Consultoria Urgente',
-    features: [
-      'Defesa em processos penais',
-      'Impugnação de contraordenações',
-      'Recursos administrativos e judiciais'
-    ],
-    application: 'Para clientes envolvidos em investigações, processos penais ou multas administrativas.',
+    ctaTextKey: 'services.criminalLaw.ctaText',
+    featuresKey: 'services.criminalLaw.features',
+    applicationKey: 'services.criminalLaw.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Direito de Família e Sucessões
   {
     id: 'FAMILY_LAW',
-    title: 'Direito de Família e Sucessões',
-    description: 'Resolução judicial ou extrajudicial de questões familiares, sucessões e regulação parental.',
-    category: 'Direito de Família e Sucessões',
-    keywords: ['inventário', 'guarda', 'partilha', 'herança'],
+    titleKey: 'services.familyLaw.title',
+    descriptionKey: 'services.familyLaw.description',
+    categoryKey: 'services.familyLaw.category',
+    keywordsKey: 'services.familyLaw.keywords',
     icon: FaChild,
-    ctaText: 'Iniciar Processo',
-    features: [
-      'Inventário e partilha de bens',
-      'Regulação de responsabilidades parentais',
-      'Processos de guarda e alimentos',
-      'Contencioso sucessório'
-    ],
-    application: 'Para famílias que buscam resolver disputas legais de heranças, divórcios ou responsabilidades parentais.',
+    ctaTextKey: 'services.familyLaw.ctaText',
+    featuresKey: 'services.familyLaw.features',
+    applicationKey: 'services.familyLaw.application',
     createdAt: new Date('2025-06-28')
   },
 
   // Registros e Notariado
   {
     id: 'REGISTRIES_NOTARY',
-    title: 'Registros e Notariado',
-    description: 'Autenticação de documentos, registos públicos e atos notariais gerais.',
-    category: 'Registros e Notariado',
-    keywords: ['registo', 'autenticação', 'marca', 'notariado'],
+    titleKey: 'services.registriesNotary.title',
+    descriptionKey: 'services.registriesNotary.description',
+    categoryKey: 'services.registriesNotary.category',
+    keywordsKey: 'services.registriesNotary.keywords',
     icon: FaFileSignature,
-    ctaText: 'Registrar Ativo',
-    features: [
-      'Autenticação de assinaturas e traduções',
-      'Registos imobiliário, comercial e civil',
-      'Elaboração de documentos particulares autenticados',
-      'Habilitação de herdeiros'
-    ],
-    application: 'Para indivíduos e empresas que necessitam de validação legal de documentos ou registros públicos.',
+    ctaTextKey: 'services.registriesNotary.ctaText',
+    featuresKey: 'services.registriesNotary.features',
+    applicationKey: 'services.registriesNotary.application',
     createdAt: new Date('2025-06-28')
   }
 ];

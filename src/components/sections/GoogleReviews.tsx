@@ -2,12 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface Review {
   id: number;
   name: string;
   rating: number;
   comment: string;
+  language: 'pt' | 'en' | 'sv' | 'fr'; // Idioma do comentário
 }
 
 const reviews: Review[] = [
@@ -15,69 +17,79 @@ const reviews: Review[] = [
     id: 1,
     name: "T",
     rating: 5,
-    comment: "A very professional lawyer. She speaks English very well. Nadine guided us through a horrible buying process of our property. We are forever grateful of her perseverance."
+    comment: "A very professional lawyer. She speaks English very well. Nadine guided us through a horrible buying process of our property. We are forever grateful of her perseverance.",
+    language: 'en'
   },
   {
     id: 2,
     name: "Tonica Rebeca",
     rating: 5,
-    comment: "Uma profissional que transmite confiança desde o primeiro contacto! Sempre disponível para qualquer dúvida!Recomendo plenamente os seus serviços!"
+    comment: "Uma profissional que transmite confiança desde o primeiro contacto! Sempre disponível para qualquer dúvida!Recomendo plenamente os seus serviços!",
+    language: 'pt'
   },
   {
     id: 3,
     name: "graciete arsenio",
     rating: 5,
-    comment: "Sempre desponivel quando preciso. Gosto muito da dra Nadine uma boa profissional e boa conselheira quando preciso de algum conselho. Beijinhos"
+    comment: "Sempre desponivel quando preciso. Gosto muito da dra Nadine uma boa profissional e boa conselheira quando preciso de algum conselho. Beijinhos",
+    language: 'pt'
   },
   {
     id: 4,
     name: "Nuno Rosado",
     rating: 5,
-    comment: "Recomendo 🙂👌👌 Excelente receção no atendimento. Sempre máxima atenção e empenho para assunto no qual nós colocamos. Profissionalismo acima⬆ de tudo ⭐⭐⭐⭐⭐. "
+    comment: "Recomendo 🙂👌👌 Excelente receção no atendimento. Sempre máxima atenção e empenho para assunto no qual nós colocamos. Profissionalismo acima⬆ de tudo ⭐⭐⭐⭐⭐. ",
+    language: 'pt'
   },
   {
     id: 5,
     name: "Annika Karppinen",
     rating: 5,
-    comment: "En duktig och pålitlig advokat. Bra på engelska. Anlitade henne i samband med vårt lägenhetsköp i portugal. Allt gick väldigt smidigt!"
+    comment: "En duktig och pålitlig advokat. Bra på engelska. Anlitade henne i samband med vårt lägenhetsköp i portugal. Allt gick väldigt smidigt!",
+    language: 'sv'
   },
   {
     id: 6,
     name: "Bruna Monteiro",
     rating: 5,
-    comment: "Simpática, boa profissional, recomendo vivamente, obrigada pela sua disponibilidade"
+    comment: "Simpática, boa profissional, recomendo vivamente, obrigada pela sua disponibilidade",
+    language: 'pt'
   },
   {
     id: 7,
     name: "Erik Hollander",
     rating: 5,
-    comment: "Nadine is the best, communicates fast and is very reliable. I would recommend her to anyone"
+    comment: "Nadine is the best, communicates fast and is very reliable. I would recommend her to anyone",
+    language: 'en'
   },
   {
     id: 8,
     name: "Carina Paixão",
     rating: 5,
-    comment: "Simpática,boa profissional e sempre disponível para responder a qualquer dúvida. ⭐⭐⭐⭐⭐"
+    comment: "Simpática,boa profissional e sempre disponível para responder a qualquer dúvida. ⭐⭐⭐⭐⭐",
+    language: 'pt'
   },
   {
     id: 9,
     name: "Rodrigo Costa",
     rating: 5,
-    comment: "Disponível, rápida, eficiente, simpática. 5 estrelas fáceis!"
+    comment: "Disponível, rápida, eficiente, simpática. 5 estrelas fáceis!",
+    language: 'pt'
   },
   {
     id: 10,
     name: "John Brock",
     rating: 5,
-    comment: "Very helpful with our Portuguese residency."
+    comment: "Very helpful with our Portuguese residency.",
+    language: 'en'
   }
 ];
 
 export default function GoogleReviews() {
+  const t = useTranslations('GoogleReviews');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
-
 
   // Auto-play functionality
   useEffect(() => {
@@ -87,7 +99,7 @@ export default function GoogleReviews() {
       }, 4000);
       return () => clearInterval(interval);
     }
-  }, [isPlaying, isHovered]);
+  }, [isPlaying, isHovered, reviews.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
@@ -102,6 +114,17 @@ export default function GoogleReviews() {
   };
 
   const currentReview = reviews[currentIndex];
+
+  // Função para obter a bandeira do país com base no idioma
+  const getFlagEmoji = (language: string) => {
+    const flags: Record<string, string> = {
+      'pt': '🇵🇹',
+      'en': '🇬🇧',
+      'sv': '🇸🇪',
+      'fr': '🇫🇷'
+    };
+    return flags[language] || '🌍';
+  };
 
   return (
     <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 overflow-hidden">
@@ -125,20 +148,17 @@ export default function GoogleReviews() {
           >
             <Star className="text-[#E83241] text-sm" />
             <span className="text-[#E83241] font-semibold text-sm uppercase tracking-wider">
-              Avaliações Google
+              {t('googleReviews')}
             </span>
           </motion.div>
           
           {/* TÍTULO com branding consistente */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight">
-            <span className="block">O que dizem os</span>
+            <span className="block">{t('whatOurClients')}</span>
             <span className="block text-[#E83241]">
-              Nossos Clientes
+              {t('clientsSay')}
             </span>
           </h2>
-          
-          
-          
         </div>
 
         {/* Main Slideshow */}
@@ -176,8 +196,9 @@ export default function GoogleReviews() {
                   ))}
                 </div>
                 
-                {/* Author */}
-                <div className="text-center">
+                {/* Author with flag */}
+                <div className="text-center flex items-center justify-center gap-2">
+                  <span className="text-2xl">{getFlagEmoji(currentReview.language)}</span>
                   <h4 className="font-semibold text-gray-900 text-lg">{currentReview.name}</h4>
                 </div>
               </div>
@@ -188,6 +209,7 @@ export default function GoogleReviews() {
           <button
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:bg-[#E83241] hover:text-white"
+            aria-label="Previous review"
           >
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
@@ -195,6 +217,7 @@ export default function GoogleReviews() {
           <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:bg-[#E83241] hover:text-white"
+            aria-label="Next review"
           >
             <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
@@ -222,7 +245,7 @@ export default function GoogleReviews() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#E83241] text-white rounded-xl font-medium hover:bg-[#E83241]/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
           >
-            <span>Ver avaliações no Google</span>
+            <span>{t('viewGoogleReviews')}</span>
             <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
         </div>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaArrowRight, FaPhone, FaStar, FaShieldAlt } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 interface MeetingCTAProps {
   title?: string;
@@ -14,14 +15,21 @@ interface MeetingCTAProps {
 }
 
 export default function MeetingCTA({
-  title = "Pronto para Proteger os Seus Direitos?",
-  subtitle = "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
-  buttonText = "Agendar Reunião",
+  title,
+  subtitle,
+  buttonText,
   buttonLink = "/contact",
   phoneLink = "tel:+351964022222",
   showPhoneOption = true,
   className = ""
 }: MeetingCTAProps) {
+  const t = useTranslations('MeetingCTA');
+  
+  // Usar valores padrão das traduções se não forem fornecidos
+  const displayTitle = title || t('title');
+  const displaySubtitle = subtitle || t('subtitle');
+  const displayButtonText = buttonText || t('buttonText');
+
   return (
     <div className={`w-full ${className}`}>
       <motion.div
@@ -73,15 +81,15 @@ export default function MeetingCTA({
                 className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#E83241]/20 to-[#B83232]/20 rounded-full border border-[#E83241]/30 mb-4"
               >
                 <div className="w-1.5 h-1.5 bg-[#E83241] rounded-full animate-pulse"></div>
-                <span className="text-[#E83241] font-bold text-xs uppercase tracking-wider">+100 CASOS RESOLVIDOS</span>
+                <span className="text-[#E83241] font-bold text-xs uppercase tracking-wider">{t('badgeText')}</span>
                 <div className="w-1.5 h-1.5 bg-[#E83241] rounded-full animate-pulse"></div>
               </motion.div>
               
               <h3 className="text-2xl md:text-3xl font-black text-white mb-3 leading-tight">
-                {title}
+                {displayTitle}
               </h3>
               <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                {subtitle}
+                {displaySubtitle}
               </p>
             </motion.div>
 
@@ -114,8 +122,8 @@ export default function MeetingCTA({
                     <FaCalendarAlt className="text-xl" />
                   </div>
                   <div className="text-left">
-                    <div className="text-sm font-normal text-white/80">Toque para</div>
-                    <div className="text-lg md:text-xl font-bold">{buttonText}</div>
+                    <div className="text-sm font-normal text-white/80">{t('touchTo')}</div>
+                    <div className="text-lg md:text-xl font-bold">{displayButtonText}</div>
                   </div>
                   <motion.div
                     animate={{ x: [0, 5, 0] }}
@@ -142,8 +150,8 @@ export default function MeetingCTA({
                     <FaPhone className="text-xl text-[#E83241]" />
                   </div>
                   <div className="text-left">
-                    <div className="text-sm font-normal text-white/70">Ligue agora</div>
-                    <div className="text-lg md:text-xl font-bold">Contacto Direto</div>
+                    <div className="text-sm font-normal text-white/70">{t('callNow')}</div>
+                    <div className="text-lg md:text-xl font-bold">{t('directContact')}</div>
                   </div>
                 </motion.button>
               )}
@@ -158,9 +166,21 @@ export default function MeetingCTA({
               className="grid grid-cols-1 md:grid-cols-3 gap-3"
             >
               {[
-                { icon: <FaStar />, title: "+100", desc: "Casos Resolvidos" },
-                { icon: <FaShieldAlt />, title: "98%", desc: "Sucesso" },
-                { icon: <FaCalendarAlt />, title: "24h", desc: "Resposta" }
+                { 
+                  icon: <FaStar />, 
+                  title: t('features.cases.title'), 
+                  desc: t('features.cases.value') 
+                },
+                { 
+                  icon: <FaShieldAlt />, 
+                  title: t('features.success.title'), 
+                  desc: t('features.success.value') 
+                },
+                { 
+                  icon: <FaCalendarAlt />, 
+                  title: t('features.response.title'), 
+                  desc: t('features.response.value') 
+                }
               ].map((feature, index) => (
                 <motion.div
                   key={index}

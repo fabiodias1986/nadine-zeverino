@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 import {
   Scale, Phone, Mail, Calendar, Shield, Star, ChevronRight, Clock, Users
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function NadineLawCTA() {
+  const t = useTranslations('NadineLawCTA');
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: -9999, y: -9999 });
 
@@ -21,10 +23,10 @@ export default function NadineLawCTA() {
   }, []);
 
   const achievements = [
-    { icon: Star, label: "5.0", sublabel: "Avaliação" },
-    { icon: Users, label: "100+", sublabel: "Clientes" },
-    { icon: Clock, label: "24h", sublabel: "Resposta" },
-    { icon: Shield, label: "100%", sublabel: "Seguro" }
+    { icon: Star, label: t('achievements.rating.label'), sublabel: t('achievements.rating.sublabel'), key: 'rating' },
+    { icon: Users, label: t('achievements.clients.label'), sublabel: t('achievements.clients.sublabel'), key: 'clients' },
+    { icon: Clock, label: t('achievements.response.label'), sublabel: t('achievements.response.sublabel'), key: 'response' },
+    { icon: Shield, label: t('achievements.secure.label'), sublabel: t('achievements.secure.sublabel'), key: 'secure' }
   ];
 
   return (
@@ -81,12 +83,12 @@ export default function NadineLawCTA() {
                   Zeverino
                 </span>
                 <span className="block text-white/80 text-base sm:text-lg md:text-2xl font-light mt-1 md:mt-2">
-                  Advogada · Portugal
+                  {t('lawyerTitle')}
                 </span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed max-w-lg">
-                Proteção jurídica completa com <span className="font-semibold text-[#E83241]">resultados comprovados.</span>
+                {t('protection')} <span className="font-semibold text-[#E83241]">{t('provenResults')}</span>
               </p>
             </div>
 
@@ -94,7 +96,7 @@ export default function NadineLawCTA() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               {achievements.map((item, index) => (
                 <div
-                  key={index}
+                  key={item.key}
                   className="group relative p-3 md:p-4 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-xl border border-white/20 hover:border-[#E83241]/50 transition-all duration-300 hover:scale-105 shadow-lg text-center"
                 >
                   <item.icon className="w-5 h-5 md:w-6 md:h-6 mx-auto mb-1 md:mb-2 group-hover:scale-110 transition-transform text-[#E83241]" />
@@ -110,7 +112,7 @@ export default function NadineLawCTA() {
                 <button className="group relative px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#E83241] to-[#E83241]/90 rounded-xl font-bold text-base md:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#E83241]/30 w-full h-full">
                   <span className="relative z-10 flex items-center justify-center gap-2 md:gap-3 text-white">
                     <Phone className="w-4 h-4 md:w-5 md:h-5" />
-                    Ligar Agora
+                    {t('callNow')}
                   </span>
                 </button>
               </a>
@@ -119,7 +121,7 @@ export default function NadineLawCTA() {
                 <button className="group relative px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white/30 rounded-xl font-bold text-base md:text-lg transition-all duration-300 hover:scale-105 hover:border-[#E83241] hover:bg-[#E83241]/10 w-full h-full">
                   <span className="flex items-center justify-center gap-2 md:gap-3 text-white">
                     <Calendar className="w-4 h-4 md:w-5 md:h-5" />
-                    Agendar Reunião
+                    {t('scheduleMeeting')}
                   </span>
                 </button>
               </a>
@@ -134,8 +136,8 @@ export default function NadineLawCTA() {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#E83241] to-[#E83241]/80 rounded-xl md:rounded-2xl mx-auto mb-3 md:mb-4 flex items-center justify-center shadow-2xl">
                   <Scale className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">Contactos</h3>
-                <p className="text-sm md:text-base text-white/60">Nadine Isabel Zeverino</p>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">{t('contacts')}</h3>
+                <p className="text-sm md:text-base text-white/60">{t('fullName')}</p>
               </div>
 
               {/* Contact Options */}
@@ -148,8 +150,8 @@ export default function NadineLawCTA() {
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div className="text-left flex-1">
-                    <div className="font-semibold text-white text-sm md:text-base">Telefone</div>
-                    <div className="text-xs md:text-sm text-white/60">+351 964 022 222</div>
+                    <div className="font-semibold text-white text-sm md:text-base">{t('phone')}</div>
+                    <div className="text-xs md:text-sm text-white/60">{t('phoneNumber')}</div>
                   </div>
                   <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white/40 group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -162,8 +164,8 @@ export default function NadineLawCTA() {
                     <Mail className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div className="text-left flex-1">
-                    <div className="font-semibold text-white text-sm md:text-base">Email</div>
-                    <div className="text-xs md:text-sm text-white/60">niz@nadinezeverino.com</div>
+                    <div className="font-semibold text-white text-sm md:text-base">{t('email')}</div>
+                    <div className="text-xs md:text-sm text-white/60">{t('emailAddress')}</div>
                   </div>
                   <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white/40 group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -173,7 +175,7 @@ export default function NadineLawCTA() {
               <div className="text-center p-3 md:p-4 bg-gradient-to-r from-[#E83241]/20 to-[#E83241]/10 backdrop-blur-lg rounded-xl border border-[#E83241]/30">
                 <div className="flex items-center justify-center gap-2 text-white font-semibold text-sm md:text-base">
                   <Shield className="w-4 h-4 md:w-5 md:h-5 text-[#E83241]" />
-                  <span>Atendimento Confidencial</span>
+                  <span>{t('confidentialService')}</span>
                 </div>
               </div>
             </div>
