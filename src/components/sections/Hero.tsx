@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaBalanceScale, FaShieldVirus, FaAward, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
+import { FaBalanceScale, FaShieldVirus, FaAward, FaGavel, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
