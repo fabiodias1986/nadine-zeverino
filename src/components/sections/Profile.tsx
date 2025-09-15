@@ -16,6 +16,7 @@ export default function ProfileSection() {
 
   return (
     <section className="relative bg-gray-50 py-20 overflow-hidden">
+      
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -44,7 +45,6 @@ export default function ProfileSection() {
                 {/* Informação profissional - Enhanced */}
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Nadine Isabel Zeverino</h3>
-                  <p className="text-gray-200 text-base font-medium">{t('lawyerTitle')}</p>
                 </div>
               </div>
               

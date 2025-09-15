@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import {
-  Scale, Phone, Mail, Calendar, Shield, Star, ChevronRight, Clock, Users
+  Scale, Phone, Mail, Shield, Star, ChevronRight, Clock, Users
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import BookMeetingButton from '@/components/BookMeetingButton';
 
 export default function NadineLawCTA() {
   const t = useTranslations('NadineLawCTA');
@@ -109,7 +110,7 @@ export default function NadineLawCTA() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <a href="tel:+351964022222" className="flex-1">
-                <button className="group relative px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#E83241] to-[#E83241]/90 rounded-xl font-bold text-base md:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#E83241]/30 w-full h-full">
+                <button className="group relative px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white/30 rounded-xl font-bold text-base md:text-lg transition-all duration-300 hover:scale-105 hover:border-[#E83241] hover:bg-[#E83241]/10 w-full h-full">
                   <span className="relative z-10 flex items-center justify-center gap-2 md:gap-3 text-white">
                     <Phone className="w-4 h-4 md:w-5 md:h-5" />
                     {t('callNow')}
@@ -117,14 +118,11 @@ export default function NadineLawCTA() {
                 </button>
               </a>
 
-              <a href="https://calendly.com/nadinezeverino" target="_blank" rel="noopener noreferrer" className="flex-1">
-                <button className="group relative px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white/30 rounded-xl font-bold text-base md:text-lg transition-all duration-300 hover:scale-105 hover:border-[#E83241] hover:bg-[#E83241]/10 w-full h-full">
-                  <span className="flex items-center justify-center gap-2 md:gap-3 text-white">
-                    <Calendar className="w-4 h-4 md:w-5 md:h-5" />
-                    {t('scheduleMeeting')}
-                  </span>
-                </button>
-              </a>
+              {/* Botão Agendar Reunião - Reusable Component */}
+              <BookMeetingButton 
+                size="md" 
+                className="flex-1 w-full"
+              />
             </div>
           </div>
 

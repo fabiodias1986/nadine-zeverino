@@ -1,9 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaBalanceScale, FaShieldVirus, FaAward, FaCalendarAlt, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
+import { FaBalanceScale, FaShieldVirus, FaAward, FaGavel, FaArrowRight, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import BookMeetingButton from '@/components/BookMeetingButton';
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -203,32 +204,11 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.5 }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              {/* Botão Agendar Reunião - External Link */}
-              <motion.a
-                href="https://calendly.com/nadinezeverino"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ 
-                  scale: 1.02,
-                  boxShadow: "0 10px 25px -5px rgba(232, 50, 65, 0.25)"
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl border border-[#E83241] flex items-center justify-center gap-3 w-full sm:w-auto"
-              >
-                <FaCalendarAlt className="group-hover:scale-110 transition-transform" />
-                <span>{t('bookMeeting')}</span>
-                <motion.div
-                  animate={{ x: [0, 4, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                >
-                  <FaArrowRight className="text-sm" />
-                </motion.div>
-                
-                {/* Efeito de brilho */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"
-                />
-              </motion.a>
+              {/* Botão Agendar Reunião - Reusable Component */}
+              <BookMeetingButton 
+                size="md" 
+                className="w-full sm:w-auto"
+              />
 
               {/* Botão Ver Serviços - Internal Link */}
               <Link href="/pratice-areas">

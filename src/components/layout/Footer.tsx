@@ -1,9 +1,5 @@
 'use client'
 import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
   Mail,
   Phone,
   MapPin,
@@ -12,6 +8,8 @@ import {
   Briefcase,
   MessageCircle,
 } from "lucide-react"
+import {FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 
@@ -28,10 +26,9 @@ export default function Footer() {
 
   // Social media links array
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: FaFacebook, href: "https://www.facebook.com/nadineisabelzeverino.adv", label: "Facebook" },
+    { icon: FaInstagram, href: "https://www.instagram.com/nadinezeverino_advogada", label: "Instagram" },
+    { icon: FaLinkedin, href: "https://pt.linkedin.com/in/nizaadvogada", label: "LinkedIn" },
   ]
 
   // Contact information array
@@ -40,8 +37,8 @@ export default function Footer() {
       icon: MapPin,
       content: (
         <div className="text-gray-400 font-light leading-relaxed">
-          <p className="text-xs xs:text-sm sm:text-base md:text-lg">{t('address.line1')}</p>
-          <p className="text-xs xs:text-sm sm:text-base md:text-lg">{t('address.line2')}</p>
+          <p className="text-sm">{t('address.line1')}</p>
+          <p className="text-sm">{t('address.line2')}</p>
         </div>
       ),
     },
@@ -50,7 +47,7 @@ export default function Footer() {
       content: (
         <a
           href="tel:+351964022222"
-          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-xs xs:text-sm sm:text-base md:text-lg"
+          className="text-gray-400 hover:text-white transition-colors duration-300 font-light text-sm"
         >
           +351 964 022 222
         </a>
@@ -61,7 +58,7 @@ export default function Footer() {
       content: (
         <a
           href="mailto:niz@nadinezeverino.com"
-          className="text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide text-xs xs:text-sm sm:text-base md:text-lg"
+          className="text-gray-400 hover:text-white transition-colors duration-300 font-light text-sm"
         >
           niz@nadinezeverino.com
         </a>
@@ -78,25 +75,27 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-white">
-      <div className="max-w-8xl mx-auto px-4 xs:px-6 sm:px-8 md:px-10 lg:px-12 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         {/* Layout responsivo: 1 coluna em mobile, 2 em tablet, 3 em desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16 justify-items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 justify-items-center">
           {/* Primeira Coluna - Logo, Descrição e Redes Sociais */}
-          <div className="md:col-span-2 lg:col-span-6 space-y-5 xs:space-y-6 sm:space-y-7 md:space-y-8 lg:space-y-9 text-center md:text-center lg:text-left w-full max-w-md">
+          <div className="md:col-span-2 lg:col-span-6 space-y-6 text-center md:text-center lg:text-left w-full">
             <div>
-              <div className="flex flex items-center lg:items-center  mb-3 xs:mb-4 sm:mb-5">
-                <div className="h-8 xs:h-10 sm:h-12 md:h-14 lg:h-16 w-auto mb-2 flex justify-center lg:justify-start">
-                  <img src="/media/logo.png" alt="Logo da Empresa" className="h-full w-auto object-contain" />
+              <div className="flex flex-col items-center lg:items-start mb-4">
+                <div className="flex items-center justify-center lg:justify-start mb-4">
+                  <div className="h-12 w-auto">
+                    <img src="/media/logo.png" alt="Logo da Empresa" className="h-12 w-auto object-contain" />
+                  </div>
+                  <h2 className="text-xl font-bold text-white ml-3">
+                    {t('fullName')}
+                  </h2>
                 </div>
-                <h2 className="text-lg xs:text-xl sm:text-2xl font-bold text-white ml-2">
-                  {t('fullName')}
-                </h2>
               </div>
-              <p className="text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed font-light">
+              <p className="text-gray-400 text-sm leading-relaxed font-light max-w-md mx-auto lg:mx-0">
                 {t('description')}
               </p>
             </div>
-            <div className="flex space-x-3 xs:space-x-4 sm:space-x-5 md:space-x-6 justify-center lg:justify-start">
+            <div className="flex space-x-4 justify-center lg:justify-start">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon
                 return (
@@ -104,9 +103,9 @@ export default function Footer() {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-[#E83241] hover:text-black hover:scale-110 transition-all duration-300 group"
+                    className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-[#E83241] hover:text-black hover:scale-110 transition-all duration-300 group"
                   >
-                    <IconComponent className="h-3 w-3 xs:h-3.5 xs:w-3.5 sm:h-4 sm:w-4 md:h-4.5 md:w-4.5 lg:h-5 lg:w-5" />
+                    <IconComponent className="h-5 w-5" />
                   </a>
                 )
               })}
@@ -114,21 +113,21 @@ export default function Footer() {
           </div>
 
           {/* Segunda Coluna - Links do Menu */}
-          <div className="md:col-span-1 lg:col-span-3 space-y-4 xs:space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-left w-full max-w-xs">
-            <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl  font-light tracking-wide">{t('navigation')}</h3>
-            <nav className="flex flex-col space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6">
+          <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
+            <h3 className="text-lg font-semibold tracking-wide text-white">{t('navigation')}</h3>
+            <nav className="flex flex-col space-y-4">
               {navigationLinks.map((link, index) => {
                 const IconComponent = link.icon
                 return (
                   <Link
                     key={index}
                     href={link.href}
-                    className="flex items-center space-x-2 xs:space-x-3 sm:space-x-4 md:space-x-5 text-gray-400 hover:text-white transition-colors duration-300 font-light tracking-wide group"
+                    className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 group"
                   >
-                    <div className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 bg-white bg-opacity-10 rounded-full flex items-center justify-center group-hover:bg-[#E83241] group-hover:text-black group-hover:scale-110 transition-all duration-300">
-                      <IconComponent className="h-2.5 w-2.5 xs:h-3 xs:w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 lg:h-4.5 lg:w-4.5" />
+                    <div className="w-8 h-8 bg-white bg-opacity-10 rounded-full flex items-center justify-center group-hover:bg-[#E83241] group-hover:text-black group-hover:scale-110 transition-all duration-300">
+                      <IconComponent className="h-4 w-4" />
                     </div>
-                    <span className="text-xs xs:text-sm sm:text-base md:text-lg">{link.label}</span>
+                    <span className="text-sm font-medium">{link.label}</span>
                   </Link>
                 )
               })}
@@ -136,16 +135,16 @@ export default function Footer() {
           </div>
 
           {/* Terceira Coluna - Contactos */}
-          <div className="md:col-span-1 lg:col-span-3 space-y-4 xs:space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-left w-full max-w-xs">
-            <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl font-light tracking-wide">{t('contact')}</h3>
-            <div className="space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6">
+          <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
+            <h3 className="text-lg font-semibold tracking-wide text-white">{t('contact')}</h3>
+            <div className="space-y-5">
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon
                 return (
                   <div key={index} className="group">
-                    <div className="flex items-start justify-start space-x-2 xs:space-x-3 sm:space-x-4 md:space-x-5">
-                      <div className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 bg-white bg-opacity-10 rounded-full flex items-center justify-center mt-0.5 xs:mt-1 sm:mt-1.5 md:mt-2 group-hover:bg-[#E83241] group-hover:text-black group-hover:scale-110 transition-all duration-300 flex-shrink-0">
-                        <IconComponent className="h-2.5 w-2.5 xs:h-3 xs:w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 lg:h-4.5 lg:w-4.5" />
+                    <div className="flex items-start space-x-3">
+                      <div className="w-8 h-8 bg-white bg-opacity-10 rounded-full flex items-center justify-center mt-0.5 group-hover:bg-[#E83241] group-hover:text-black group-hover:scale-110 transition-all duration-300 flex-shrink-0">
+                        <IconComponent className="h-4 w-4" />
                       </div>
                       {contact.content}
                     </div>
@@ -157,19 +156,19 @@ export default function Footer() {
         </div>
 
         {/* Linha de separação e copyright */}
-        <div className="border-t border-white border-opacity-10 mt-8 xs:mt-10 sm:mt-12 md:mt-14 lg:mt-16 pt-4 xs:pt-5 sm:pt-6 md:pt-7 lg:pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 xs:space-y-4 sm:space-y-0 text-center sm:text-left">
-            <p className="text-[0.65rem] xs:text-xs sm:text-sm md:text-base lg:text-lg font-light tracking-wide">
+        <div className="border-t border-white border-opacity-10 mt-12 pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p className="text-gray-500 text-sm">
               © 2025 {t('fullName')}. {t('rights')}
             </p>
-            <div className="flex flex-wrap justify-center sm:justify-end space-x-3 xs:space-x-4 sm:space-x-5 md:space-x-6 lg:space-x-8">
+            <div className="flex flex-wrap justify-center sm:justify-end space-x-6">
               {footerLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="text-[0.65rem] xs:text-xs sm:text-sm md:text-base lg:text-lg text-gray-500 hover:text-white transition-colors duration-300 font-light tracking-wide"
+                  className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium"
                 >
-                  <span>{link.label}</span>
+                  {link.label}
                 </a>
               ))}
             </div>

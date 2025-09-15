@@ -1,11 +1,12 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
-import { ChevronRight, Calendar, Eye } from 'lucide-react';
+import { ChevronRight, Eye } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { useServices } from '@/hooks/useServices';
 import { ServiceType } from '@/types/Service';
 import { useTranslations } from 'next-intl';
+import BookMeetingButton from '@/components/BookMeetingButton';
 
 interface ServiceCardProps {
   service: ServiceType;
@@ -15,6 +16,11 @@ interface ServiceCardProps {
 const ServiceCard = ({ service, index }: ServiceCardProps) => {
   const [, setIsHovered] = useState(false);
   const Icon = service.icon;
+  
+  // Verificar se Icon é válido antes de renderizar
+  if (!Icon) {
+    return null;
+  }
   
   return (
     <motion.div
@@ -56,7 +62,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
           {/* Header */}
           <div className="flex items-start justify-between mb-5">
             <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-sm border border-white/10 group-hover:border-[#E83241]/10 transition-colors duration-300">
-              {service.icon}
+              <Icon className="w-10 h-10 text-white" />
             </div>
           </div>
           
@@ -180,27 +186,11 @@ export default function ServicesSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mt-16"
         >
-          {/* Botão Agendar Reunião - External Link */}
-          <motion.a
-            href="https://calendly.com/nadinezeverino"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ 
-              scale: 1.05,
-              boxShadow: "0 20px 40px -10px rgba(232, 50, 65, 0.3)"
-            }}
-            whileTap={{ scale: 0.95 }}
-            className="group relative px-8 py-4 bg-gradient-to-r from-[#E83241] to-[#B83232] text-white font-bold rounded-xl overflow-hidden shadow-xl flex items-center justify-center gap-3 w-full sm:w-auto"
-          >
-            <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            <span>{t('scheduleMeeting')}</span>
-            <motion.div
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            >
-              <ChevronRight className="w-4 h-4" />
-            </motion.div>
-          </motion.a>
+          {/* Botão Agendar Reunião - Reusable Component */}
+          <BookMeetingButton 
+            size="md" 
+            className="w-full sm:w-auto"
+          />
           
           {/* Botão Ver todos os serviços - Internal Link */}
           <Link href="/pratice-areas">

@@ -1,13 +1,4 @@
-// src/types/service.ts
-
-export type ServiceCategory = 
-  | 'Direito Imobiliário'
-  | 'Legalização de Estrangeiros'
-  | 'Nacionalidade Portuguesa'
-  | 'Direito Comercial e das Sociedades'
-  | 'Direito Penal e Contraordenacional'
-  | 'Direito de Família e Sucessões'
-  | 'Registros e Notariado';
+import { ElementType } from 'react';
 
 export interface ServiceType {
   id: string;
@@ -15,7 +6,7 @@ export interface ServiceType {
   descriptionKey: string;
   categoryKey: string;
   keywordsKey: string;
-  icon: React.ReactNode;
+  icon: ElementType;
   ctaTextKey: string;
   featuresKey: string;
   applicationKey: string;

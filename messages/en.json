@@ -283,7 +283,7 @@
   "MeetingCTA": {
     "title": "Ready to Protect Your Rights?",
     "subtitle": "Schedule an initial meeting and discover how we can help solve your case.",
-    "buttonText": "Schedule Meeting",
+    "buttonText": "Book Meeting",
     "badgeText": "+100 CASES RESOLVED",
     "touchTo": "Touch to",
     "callNow": "Call now",
@@ -361,6 +361,47 @@
     "ctaTitle": "Ready to Protect Your Rights?",
     "ctaSubtitle": "Book an initial meeting and discover how we can help solve your case.",
     "scheduleMeeting": "Book Meeting"
+  },
+
+
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Oops! The page you're looking for seems to have disappeared or never existed.",
+    "goBack": "Go Back",
+    "homePage": "Home Page"
+  },
+
+
+
+
+   "ContactPage": {
+    "pageTitle": "GET IN TOUCH",
+    "pageSubtitle": "We are here to help. Contact us and our team will get back to you as soon as possible.",
+    "contactInfoTitle": "Contact Information",
+    "address": {
+      "title": "Address",
+      "content": "Largo de Heliodoro Salgado Nº8, 8500-537 Portimão, Portugal"
+    },
+    "phone": {
+      "title": "Phone",
+      "content": "+351 964 022 222"
+    },
+    "email": {
+      "title": "Email",
+      "content": "niz@nadinezeverino.com"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "content": "Monday to Friday: 9am - 6pm"
+    },
+    "followUs": "Follow us on Social Media",
+    "locationTitle": "Location",
+    "mapTitle": "Office Location"
+  },
+
+   "Common": {
+    "scheduleMeeting": "Book Meeting",
+    "callNow": "Call Now"
   }
 }
 

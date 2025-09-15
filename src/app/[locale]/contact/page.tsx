@@ -4,53 +4,56 @@ import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import ContactForm from '@/components/forms/ContactForm';
 import PageHeader from '@/components/layout/PageHeader';
+import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
+  const t = useTranslations('ContactPage');
+  
   const contactInfo = [
     {
       icon: <FaMapMarkerAlt className="text-[#E83241] text-xl" />,
-      title: "Morada",
-      content: "Largo de Heliodoro Salgado Nº8, 8500-537 Portimão, Portugal",
+      title: t('address.title'),
+      content: t('address.content'),
       action: () => {
         window.open('https://www.google.com/maps/search/?api=1&query=Largo+de+Heliodoro+Salgado+Nº8,+8500-537+Portimão,+Portugal', '_blank');
       }
     },
     {
       icon: <FaPhone className="text-[#E83241] text-xl" />,
-      title: "Telefone",
-      content: "+351 964 022 222",
+      title: t('phone.title'),
+      content: t('phone.content'),
       action: () => {
         window.location.href = 'tel:+351964022222';
       }
     },
     {
       icon: <FaEnvelope className="text-[#E83241] text-xl" />,
-      title: "Email",
-      content: "niz@nadinezeverino.com",
+      title: t('email.title'),
+      content: t('email.content'),
       action: () => {
         window.location.href = 'mailto:niz@nadinezeverino.com';
       }
     },
     {
       icon: <FaClock className="text-[#E83241] text-xl" />,
-      title: "Horário",
-      content: "Segunda a Sexta: 9h - 18h",
+      title: t('hours.title'),
+      content: t('hours.content'),
       action: null
     }
   ];
 
   const socialLinks = [
-    { icon: <FaFacebook />, url: "https://facebook.com", label: "Facebook" },
-    { icon: <FaInstagram />, url: "https://instagram.com", label: "Instagram" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com", label: "LinkedIn" }
+    { icon: <FaFacebook />, url: "https://www.facebook.com/nadineisabelzeverino.adv", label: "Facebook" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/nadinezeverino_advogada", label: "Instagram" },
+    { icon: <FaLinkedin />, url: "https://pt.linkedin.com/in/nizaadvogada", label: "LinkedIn" }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Page Header - Reusable Component */}
       <PageHeader 
-        title="ENTRE EM CONTACTO"
-        subtitle="Estamos aqui para ajudar. Entre em contacto e nossa equipa entrará em contato o mais breve possível."
+        title={t('pageTitle')}
+        subtitle={t('pageSubtitle')}
       />
 
       {/* Main Content */}
@@ -64,7 +67,7 @@ export default function ContactPage() {
             className="space-y-8"
           >
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Informações de Contacto</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('contactInfoTitle')}</h2>
               <div className="h-1 w-20 bg-[#E83241] mb-8"></div>
               
               <div className="space-y-6">
@@ -89,7 +92,7 @@ export default function ContactPage() {
 
             {/* Social Media */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Siga-nos nas Redes Sociais</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('followUs')}</h3>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -126,7 +129,7 @@ export default function ContactPage() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-20"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Localização</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('locationTitle')}</h2>
           <div className="h-1 w-20 bg-[#E83241] mb-8"></div>
           
           <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
@@ -139,7 +142,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização do Escritório"
+              title={t('mapTitle')}
               className="w-full"
             ></iframe>
           </div>
