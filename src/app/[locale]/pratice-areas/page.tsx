@@ -17,7 +17,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ service, index, viewMode }: ServiceCardProps) => {
   const t = useTranslations('ServicesPage');
-  const Icon = service.icon;
+  const Icon = service.icon as React.ElementType;
   
   return (
     <motion.div
@@ -82,11 +82,11 @@ export default function ServicesPage() {
   // Filter services
   const filteredServices = useMemo(() => {
     return services.filter(service => {
-      const matchesSearch = service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           service.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           service.features.some((feature: string) => 
-                             feature.toLowerCase().includes(searchTerm.toLowerCase())
-                           );
+      const matchesSearch = ((service.title ?? '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           (service.description ?? '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           (service.features?.some((feature: string) => 
+                             (feature ?? '').toLowerCase().includes(searchTerm.toLowerCase())
+                           ) ?? false));
       
       const matchesCategory = selectedCategory === 'all' || service.category === selectedCategory;
       
