@@ -94,7 +94,7 @@ export default function NadineLawCTA() {
 
             {/* Achievements */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-              {achievements.map((item, index) => (
+              {achievements.map((item) => (
                 <div
                   key={item.key}
                   className="group relative p-3 md:p-4 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-xl border border-white/20 hover:border-[#E83241]/50 transition-all duration-300 hover:scale-105 shadow-lg text-center"

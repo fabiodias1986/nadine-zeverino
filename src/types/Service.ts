@@ -1,5 +1,4 @@
 // src/types/service.ts
-import { IconType } from 'react-icons'; 
 
 export type ServiceCategory = 
   | 'Direito Imobiliário'
@@ -16,7 +15,7 @@ export interface ServiceType {
   descriptionKey: string;
   categoryKey: string;
   keywordsKey: string;
-  icon: any;
+  icon: React.ReactNode;
   ctaTextKey: string;
   featuresKey: string;
   applicationKey: string;

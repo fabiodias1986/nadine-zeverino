@@ -23,7 +23,7 @@ export const useServices = () => {
 
   // Agrupa serviços por categoria, pegando apenas o primeiro de cada
   const categorizedServices = useMemo(() => {
-    const grouped: Record<string, any> = {};
+    const grouped: Record<string, ServiceType> = {};
     translatedServices.forEach(service => {
       if (!grouped[service.category]) {
         grouped[service.category] = service;

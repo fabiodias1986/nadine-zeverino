@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import LanguageSwitcher from '@/components/LanguageSwticher'
 import 'flag-icons/css/flag-icons.min.css'
+import Image from 'next/image'
 
 export default function Navbar() {
   const t = useTranslations('Navbar')
@@ -46,10 +47,11 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center space-x-2">
-              {/* Logo Image - adjust src as needed */}
-              <img 
-                src="/media/logo.png" 
-                alt="Nadine Isabel Zeverino" 
+              <Image
+                src="/media/logo.png"
+                alt="Nadine Isabel Zeverino"
+                width={32}
+                height={32}
                 className="h-8 w-auto object-contain"
                 onError={(e) => {
                   // Fallback to text if image fails
@@ -59,6 +61,7 @@ export default function Navbar() {
                   if (nextSibling) nextSibling.textContent = 'Nadine Isabel Zeverino';
                 }}
               />
+                
               {/* Text Fallback / Enhancement */}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white text-lg font-semibold">
                 Nadine Isabel Zeverino
