@@ -56,7 +56,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
           {/* Header */}
           <div className="flex items-start justify-between mb-5">
             <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-sm border border-white/10 group-hover:border-[#E83241]/10 transition-colors duration-300">
-              <Icon className="w-8 h-8 text-[#E83241]" />
+              {service.icon}
             </div>
           </div>
           
