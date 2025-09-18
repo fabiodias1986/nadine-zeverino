@@ -402,7 +402,248 @@
    "Common": {
     "scheduleMeeting": "Book Meeting",
     "callNow": "Call Now"
+  },
+
+  "Privacy": {
+    "pageTitle": "Privacy Policy",
+    "pageSubtitle": "Learn how we collect, use, and protect your personal information",
+    "header": {
+      "title": "Privacy Policy",
+      "effectiveDate": "Effective Date: January 1, 2025"
+    },
+    "sections": {
+      "informationCollection": {
+        "title": "Information We Collect",
+        "content": "We collect various types of information to provide and improve our legal services to you. This includes both information you provide directly and information collected automatically.",
+        "subsections": {
+          "personalData": {
+            "title": "Personal Data You Provide",
+            "points": {
+              "identification": "Identification information such as your name, date of birth, nationality, and government-issued identification numbers",
+              "contact": "Contact details including postal address, telephone number, email address, and preferred method of communication",
+              "professional": "Professional information including employment details, company affiliations, and industry sector",
+              "communications": "Content of communications with us, including emails, letters, phone calls, and meeting notes"
+            }
+          },
+          "usageData": {
+            "title": "Usage Data Automatically Collected",
+            "points": {
+              "device": "Device information such as IP address, browser type, operating system, and mobile device identifiers",
+              "browsing": "Browsing activity including pages visited, time spent on pages, navigation paths, and click patterns",
+              "interactions": "Interaction data with our website features, forms, and online services"
+            }
+          }
+        }
+      },
+      "howWeUse": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect for specific purposes related to our legal practice and client service obligations.",
+        "subsections": {
+          "provision": {
+            "title": "Service Provision and Client Care",
+            "points": {
+              "services": "Providing legal advice, representation, and professional services tailored to your specific needs",
+              "support": "Offering ongoing client support, case updates, and responsive communication throughout the legal process",
+              "communication": "Maintaining accurate client records and facilitating effective communication channels"
+            }
+          },
+          "improvement": {
+            "title": "Service Improvement and Optimization",
+            "points": {
+              "analysis": "Analyzing usage patterns and feedback to enhance our legal expertise and service delivery",
+              "personalization": "Customizing website content and service recommendations based on your preferences and requirements",
+              "optimization": "Optimizing website performance, security measures, and user experience continuously"
+            }
+          }
+        }
+      },
+      "dataProtection": {
+        "title": "Data Protection and Security",
+        "content": "We implement robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.",
+        "subsections": {
+          "security": {
+            "title": "Security Measures Implemented",
+            "points": {
+              "encryption": "Advanced encryption technology for data transmission and secure storage of sensitive client information",
+              "accessControl": "Strict access controls limiting data access to authorized personnel only with role-based permissions",
+              "regularAudits": "Regular security audits and vulnerability assessments to maintain highest protection standards"
+            }
+          },
+          "retention": {
+            "title": "Data Retention Policies",
+            "points": {
+              "duration": "Retention of personal data for legally required periods as mandated by Portuguese law and professional regulations",
+              "deletion": "Secure deletion of data beyond retention periods unless longer storage is required by law",
+              "requirements": "Compliance with professional obligations and legal requirements for record keeping"
+            }
+          }
+        }
+      },
+      "sharing": {
+        "title": "Information Sharing and Disclosure",
+        "content": "We respect your privacy and only share your information under specific circumstances in accordance with legal and professional obligations.",
+        "subsections": {
+          "thirdParties": {
+            "title": "Third-Party Sharing",
+            "points": {
+              "serviceProviders": "Sharing with trusted third-party service providers who assist in our operations and are contractually bound to confidentiality",
+              "legalRequirements": "Disclosure when required by law, court order, or regulatory authority within legal compliance frameworks",
+              "businessTransfers": "Transfer in connection with a merger, acquisition, or sale of assets, with appropriate protections maintained"
+            }
+          },
+          "prohibited": {
+            "title": "Prohibited Disclosures",
+            "points": {
+              "selling": "We do not sell, trade, or rent your personal information to third parties for marketing purposes",
+              "marketing": "We do not use your information for unsolicited commercial communications or promotional activities",
+              "unauthorized": "We do not disclose your information without proper authorization or legal requirement"
+            }
+          }
+        }
+      },
+      "yourRights": {
+        "title": "Your Rights and Choices",
+        "content": "You have specific rights regarding your personal information under Portuguese data protection laws and GDPR regulations.",
+        "subsections": {
+          "access": {
+            "title": "Access and Control Rights",
+            "points": {
+              "information": "Right to request information about what personal data we hold about you and how it is processed",
+              "correction": "Right to request correction of inaccurate or incomplete personal information we hold about you",
+              "deletion": "Right to request deletion of your personal data when it is no longer necessary for specified purposes"
+            }
+          },
+          "contact": {
+            "title": "Contacting Us About Privacy",
+            "points": {
+              "email": "You may contact us at privacy@nadinezeverino.com for privacy-related inquiries",
+              "responseTime": "We aim to respond to privacy requests within 30 days of receipt",
+              "assistance": "Our Data Protection Officer is available to assist with privacy concerns and exercise of rights"
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Questions About Your Privacy?",
+      "content": "If you have questions about this privacy policy or concerns about how your personal information is handled, please don't hesitate to contact us.",
+      "email": "privacy@nadinezeverino.com",
+      "form": "Contact Form"
+    },
+    "lastUpdated": "Last Updated: December 2024"
+  },
+
+
+  "Cookies": {
+    "pageTitle": "Cookie Policy",
+    "pageSubtitle": "Learn how we use cookies to enhance your browsing experience",
+    "header": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last Updated: December 2024"
+    },
+    "introduction": {
+      "title": "Introduction",
+      "content1": "This Cookie Policy explains how Nadine Isabel Zeverino Advogada ('we', 'us', or 'our') uses cookies and similar technologies when you visit our website. By continuing to browse our website, you consent to the use of cookies as described in this policy.",
+      "content2": "We reserve the right to update this Cookie Policy at any time. Any changes will be posted on this page with an updated revision date."
+    },
+    "whatAreCookies": {
+      "title": "What Are Cookies?",
+      "content": "Cookies are small text files that are stored on your computer or mobile device when you visit a website. They enable websites to store information or functionality and help improve your browsing experience.",
+      "howTheyWork": {
+        "title": "How Cookies Work",
+        "storage": "Stored in your browser's temporary memory or permanently on your device",
+        "retrieval": "Automatically sent back to the originating website on subsequent visits",
+        "session": "Session cookies expire when you close your browser",
+        "persistence": "Persistent cookies remain until they expire or are manually deleted"
+      }
+    },
+    "types": {
+      "title": "Types of Cookies We Use",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are strictly necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas.",
+        "purpose": "Purpose:",
+        "examples": {
+          "session": "Session management for logged-in users",
+          "security": "Security features and fraud prevention",
+          "preferences": "Remembering your cookie consent preferences"
+        }
+      },
+      "performance": {
+        "title": "Performance Cookies",
+        "description": "These cookies collect information about how visitors use our website, such as which pages are visited most often and if they receive error messages.",
+        "purpose": "Purpose:",
+        "examples": {
+          "analytics": "Website analytics and usage statistics",
+          "load": "Load time measurement and optimization",
+          "traffic": "Traffic pattern analysis for improvements"
+        }
+      },
+      "functionality": {
+        "title": "Functionality Cookies",
+        "description": "These cookies allow the website to remember choices you make and provide enhanced, personalized features during your visit.",
+        "purpose": "Purpose:",
+        "examples": {
+          "video": "Video player functionality and preferences",
+          "social": "Social media sharing features",
+          "chat": "Live chat and customer support tools"
+        }
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "description": "These cookies are used to deliver advertisements more relevant to you and your interests. They also limit the number of times you see an advertisement.",
+        "purpose": "Purpose:",
+        "examples": {
+          "personalized": "Personalized advertising based on your profile",
+          "interest": "Interest-based advertising targeting",
+          "frequency": "Frequency capping for ad impressions"
+        }
+      }
+    },
+    "howWeUse": {
+      "title": "How We Use Cookies",
+      "content": "We use cookies to enhance your experience on our website, analyze site performance, and provide personalized content. Here are the main purposes:",
+      "purposes": {
+        "functionality": "Website functionality",
+        "performance": "Performance analysis",
+        "security": "Security enhancement",
+        "analytics": "Traffic analytics",
+        "personalization": "Content personalization",
+        "advertising": "Targeted advertising"
+      }
+    },
+    "manage": {
+      "title": "Managing Your Cookie Preferences",
+      "browser": {
+        "title": "Browser Settings",
+        "description": "Most web browsers allow you to control cookies through their settings. You can block or delete cookies, though this may affect website functionality.",
+        "steps": {
+          "settings": "Access your browser's settings or preferences menu",
+          "cookies": "Find the privacy or cookies section",
+          "preferences": "Adjust your cookie preferences and settings",
+          "save": "Save your changes and restart your browser"
+        }
+      },
+      "consent": {
+        "title": "Cookie Consent Manager",
+        "description": "We provide a cookie consent banner on our website where you can manage your cookie preferences at any time.",
+        "steps": {
+          "banner": "Look for the cookie consent banner on our website",
+          "preferences": "Click on 'Manage Preferences' or similar option",
+          "selection": "Select which types of cookies you accept",
+          "confirm": "Confirm your selections and continue browsing"
+        }
+      }
+    },
+    "rights": {
+      "title": "Your Cookie Rights",
+      "content": "You have the right to know about our use of cookies and to manage your preferences. If you have questions about this Cookie Policy or wish to exercise your rights, please contact us.",
+      "email": "niz@nadinezeverino.com",
+      "form": "Contact Us"
+    },
+    "lastUpdated": "Last Updated: September 2025"
   }
+
 }
 
 

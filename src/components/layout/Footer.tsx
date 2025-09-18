@@ -7,8 +7,9 @@ import {
   Users,
   Briefcase,
   MessageCircle,
+  BookOpen,
 } from "lucide-react"
-import {FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -66,11 +67,11 @@ export default function Footer() {
     },
   ]
 
-  // Footer links array
+  // Footer links array (removido terms, adicionado livro de reclamações)
   const footerLinks = [
-    { label: t('privacy'), href: "#" },
-    { label: t('terms'), href: "#" },
-    { label: t('cookies'), href: "#" },
+    { label: t('privacy'), href: "/privacy" },
+    { label: t('cookies'), href: "/cookies" },
+    { label: t('complaints'), href: "https://www.livroreclamacoes.pt/", external: true },
   ]
 
   return (
@@ -102,6 +103,8 @@ export default function Footer() {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.label}
                     className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-[#E83241] hover:text-black hover:scale-110 transition-all duration-300 group"
                   >
@@ -163,13 +166,26 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center sm:justify-end space-x-6">
               {footerLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium"
-                >
-                  {link.label}
-                </a>
+                link.external ? (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium flex items-center gap-1"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium flex items-center gap-1"
+                  >
+                    {link.label}
+                  </Link>
+                )
               ))}
             </div>
           </div>
