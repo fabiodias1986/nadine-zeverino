@@ -18,7 +18,7 @@ export default function MeetingCTA({
   title,
   subtitle,
   buttonText,
-  buttonLink = "/contact",
+  buttonLink = "https://calendar.app.google/gBr7b8fKmrMc976o9",
   phoneLink = "tel:+351964022222",
   showPhoneOption = true,
   className = ""
@@ -102,14 +102,16 @@ export default function MeetingCTA({
               className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
             >
               {/* Primary CTA - Fonte Maior */}
-              <motion.button
-                onClick={() => window.location.href = buttonLink}
+              <motion.a
+                href={buttonLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ 
                   scale: 1.02,
                   boxShadow: "0 15px 30px -10px rgba(232, 50, 65, 0.3)"
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative w-full px-6 py-5 bg-gradient-to-r from-[#E83241] via-red-600 to-[#B83232] text-white font-bold rounded-xl text-lg md:text-xl overflow-hidden shadow-lg border border-[#E83241]"
+                className="group relative w-full px-6 py-5 bg-gradient-to-r from-[#E83241] via-red-600 to-[#B83232] text-white font-bold rounded-xl text-lg md:text-xl overflow-hidden shadow-lg border border-[#E83241] flex items-center justify-center"
               >
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
@@ -132,12 +134,12 @@ export default function MeetingCTA({
                     <FaArrowRight className="text-lg" />
                   </motion.div>
                 </span>
-              </motion.button>
+              </motion.a>
 
               {/* Secondary CTA - Fonte Maior */}
               {showPhoneOption && (
-                <motion.button
-                  onClick={() => window.location.href = phoneLink}
+                <motion.a
+                  href={phoneLink}
                   whileHover={{ 
                     backgroundColor: "rgba(255, 255, 255, 0.1)",
                     borderColor: "#E83241",
@@ -153,7 +155,7 @@ export default function MeetingCTA({
                     <div className="text-sm font-normal text-white/70">{t('callNow')}</div>
                     <div className="text-lg md:text-xl font-bold">{t('directContact')}</div>
                   </div>
-                </motion.button>
+                </motion.a>
               )}
             </motion.div>
 

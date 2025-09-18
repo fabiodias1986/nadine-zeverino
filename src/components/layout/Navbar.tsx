@@ -99,8 +99,10 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             {/* CTA Button com animação suave infinita e efeito de brilho */}
             <div className="relative">
-              <motion.button
-                onClick={() => window.location.href = '/contacto'}
+              <motion.a
+                href="https://calendar.app.google/gBr7b8fKmrMc976o9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative bg-gradient-to-r from-[#E83241] to-[#B83232] px-6 py-2.5 rounded-xl text-sm font-medium text-white shadow-lg overflow-hidden"
                 whileHover={{ 
                   scale: 1.05,
@@ -131,7 +133,7 @@ export default function Navbar() {
                   }}
                 />
                 <span className="relative z-10">{t('book')}</span>
-              </motion.button>
+              </motion.a>
             </div>
 
             {/* Language Switcher Component */}
@@ -247,9 +249,12 @@ export default function Navbar() {
                   </Link>
                 ))}
                 
-                {/* Botão de contato mobile */}
-                <motion.button
-                  className="w-full mt-8 bg-gradient-to-r from-[#E83241] to-[#B83232] px-6 py-4 rounded-xl text-lg font-medium text-white"
+                {/* Botão de agendamento mobile com link externo */}
+                <motion.a
+                  href="https://calendar.app.google/gBr7b8fKmrMc976o9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-8 bg-gradient-to-r from-[#E83241] to-[#B83232] px-6 py-4 rounded-xl text-lg font-medium text-white text-center block"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6, duration: 0.4 }}
@@ -258,13 +263,10 @@ export default function Navbar() {
                     boxShadow: "0 10px 25px -5px rgba(232, 50, 65, 0.25)"
                   }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    window.location.href = '/contact';
-                  }}
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  Marcar Reunião
-                </motion.button>
+                  {t('book')}
+                </motion.a>
 
                 {/* Language Selector Mobile */}
                 <motion.div 

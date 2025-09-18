@@ -31,7 +31,7 @@ export default function BookMeetingButton({
 
   return (
     <motion.a
-      href="https://calendly.com/nadinezeverino"
+      href="https://calendar.app.google/gBr7b8fKmrMc976o9"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ 
