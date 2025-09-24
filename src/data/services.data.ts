@@ -10,6 +10,21 @@ import {
 } from 'react-icons/fa';
 
 export const SERVICES: ServiceType[] = [
+
+    // Direito de Família e Sucessões
+  {
+    id: 'FAMILY_LAW',
+    titleKey: 'services.familyLaw.title',
+    descriptionKey: 'services.familyLaw.description',
+    categoryKey: 'services.familyLaw.category',
+    keywordsKey: 'services.familyLaw.keywords',
+    icon: FaChild,
+    ctaTextKey: 'services.familyLaw.ctaText',
+    featuresKey: 'services.familyLaw.features',
+    applicationKey: 'services.familyLaw.application',
+    createdAt: new Date('2025-06-28')
+  },
+
   // Direito Imobiliário e Construção
   {
     id: 'REAL_ESTATE',
@@ -80,19 +95,6 @@ export const SERVICES: ServiceType[] = [
     createdAt: new Date('2025-06-28')
   },
 
-  // Direito de Família e Sucessões
-  {
-    id: 'FAMILY_LAW',
-    titleKey: 'services.familyLaw.title',
-    descriptionKey: 'services.familyLaw.description',
-    categoryKey: 'services.familyLaw.category',
-    keywordsKey: 'services.familyLaw.keywords',
-    icon: FaChild,
-    ctaTextKey: 'services.familyLaw.ctaText',
-    featuresKey: 'services.familyLaw.features',
-    applicationKey: 'services.familyLaw.application',
-    createdAt: new Date('2025-06-28')
-  },
 
   // Registros e Notariado
   {

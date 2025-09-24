@@ -177,23 +177,28 @@ export default function Hero() {
               className="grid grid-cols-2 sm:grid-cols-4 gap-3"
             >
               {specialties.map((specialty, index) => (
-                <motion.div
+                <Link 
                   key={specialty.key}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.4 + index * 0.1 }}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    y: -2,
-                    boxShadow: "0 5px 15px rgba(232, 50, 65, 0.25)"
-                  }}
-                  className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-4 cursor-pointer group hover:border-[#E83241]/50 transition-all duration-300 flex flex-col items-center justify-center text-center"
+                  href="/pratice-areas"
+                  className="block"
                 >
-                  <div className="text-[#E83241] text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {specialty.icon}
-                  </div>
-                  <h3 className="text-white font-medium text-sm">{specialty.title}</h3>
-                </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 1.4 + index * 0.1 }}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      y: -2,
+                      boxShadow: "0 5px 15px rgba(232, 50, 65, 0.25)"
+                    }}
+                    className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-4 cursor-pointer group hover:border-[#E83241]/50 transition-all duration-300 flex flex-col items-center justify-center text-center"
+                  >
+                    <div className="text-[#E83241] text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                      {specialty.icon}
+                    </div>
+                    <h3 className="text-white font-medium text-sm">{specialty.title}</h3>
+                  </motion.div>
+                </Link>
               ))}
             </motion.div>
 

@@ -38,7 +38,7 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <motion.button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="group flex items-center gap-2 px-3 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#E83241]/30 rounded-xl text-white transition-all duration-300 backdrop-blur-sm min-w-[100px]"
+        className="min-h-12 group flex items-center gap-2 px-3 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#E83241]/30 rounded-xl text-white transition-all duration-300 backdrop-blur-sm min-w-[100px]"
         aria-label="Change language"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}

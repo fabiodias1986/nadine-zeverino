@@ -642,9 +642,54 @@
       "form": "Contact Us"
     },
     "lastUpdated": "Last Updated: September 2025"
-  }
+  },
 
+  "ContactForm": {
+    "title": "Send a Message",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+351 912 345 678",
+    "subjectLabel": "Subject",
+    "selectSubject": "Select a subject",
+    "civilLaw": "Civil Law",
+    "commercialLaw": "Family and Succession Law",
+    "realEstateLaw": "Real Estate Law",
+    "contractsBusiness": "Foreign Legalization",
+    "other": "Other",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Briefly describe your situation...",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully! We will contact you soon.",
+    "errorMessage": "Error sending message. Please try again.",
+    "connectionError": "Connection error. Please try again."
+  },
+
+
+  "Api": {
+    "contact": {
+      "missingFields": "All required fields must be filled",
+      "success": "Message sent successfully!",
+      "serverError": "Internal server error"
+    }
+  },
+  "Email": {
+    "contactSubject": "Website Contact - {{subject}}",
+    "contactTitle": "New contact message",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "notProvided": "Not provided"
+    }
+  }
 }
+
 
 
 

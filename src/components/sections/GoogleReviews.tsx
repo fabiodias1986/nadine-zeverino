@@ -9,7 +9,7 @@ interface Review {
   name: string;
   rating: number;
   comment: string;
-  language: 'pt' | 'en' | 'sv' | 'fr'; // Idioma do comentário
+  language: 'pt' | 'en' | 'sv' | 'fr'; 
 }
 
 const reviews: Review[] = [
