@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
-import { readdirSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
 
 // Função para carregar mensagens de um locale específico
