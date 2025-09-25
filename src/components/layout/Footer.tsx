@@ -10,6 +10,7 @@ import {
   BookOpen,
 } from "lucide-react"
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import  Image  from 'next/image';
 
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -85,7 +86,9 @@ export default function Footer() {
               <div className="flex flex-col items-center lg:items-start mb-4">
                 <div className="flex items-center justify-center lg:justify-start mb-4">
                   <div className="h-12 w-auto">
-                    <img src="/media/logo.png" alt="Logo da Empresa" className="h-12 w-auto object-contain" />
+                    <Image 
+                    width={250} height={250}
+                    src="/media/logo.png" alt="Logo Nadine Isabel Zeverino" className="h-12 w-auto object-contain" />
                   </div>
                   <h2 className="text-xl font-bold text-white ml-3">
                     {t('fullName')}
