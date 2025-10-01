@@ -1,9 +1,672 @@
 {
- 
+  "services": {
+    "realEstate": {
+      "title": "Direito Imobiliário e da Construção",
+      "description": "Aconselhamento jurídico completo em transações imobiliárias, contratos de arrendamento, licenciamentos e assessoria a empresas do setor.",
+      "category": "Direito Imobiliário",
+      "keywords": "compra e venda|arrendamento|licenciamentos|contratos",
+      "ctaText": "Agendar Consulta",
+      "features": "Acompanhamento de compra e venda imobiliária|Elaboração de contratos de arrendamento|Licenciamentos urbanísticos e regularização|Assessoria jurídica a empresas imobiliárias",
+      "application": "Para investidores, particulares e empresas que procuram segurança jurídica em matérias imobiliárias."
+    },
+    "foreignLegalization": {
+      "title": "Regularização de Estrangeiros",
+      "description": "Apoio completo na obtenção de vistos, autorizações de residência e benefícios fiscais para estrangeiros em Portugal.",
+      "category": "Regularização de Estrangeiros",
+      "keywords": "visto|residência|Visto Gold|RNH",
+      "ctaText": "Iniciar Processo",
+      "features": "Obtenção de vistos de residência|Autorização de Residência para Investimento (Visto Gold)|Reagrupamento familiar|Regime Fiscal dos Residentes Não Habituais (RNH)",
+      "application": "Para estrangeiros que pretendam regularizar a sua situação em Portugal através de residência, investimento ou benefícios fiscais."
+    },
+    "portugueseNationality": {
+      "title": "Nacionalidade Portuguesa",
+      "description": "Apoio integral no processo de obtenção da cidadania portuguesa e reconhecimento judicial de relações familiares.",
+      "category": "Nacionalidade Portuguesa",
+      "keywords": "nacionalidade|cidadania|união de facto",
+      "ctaText": "Iniciar Processo",
+      "features": "Aquisição de nacionalidade por descendência ou casamento|Transcrição de casamentos e nascimentos|Reconhecimento judicial de união de facto",
+      "application": "Para estrangeiros elegíveis para a nacionalidade portuguesa ou reconhecimento legal de relações familiares."
+    },
+    "commercialLaw": {
+      "title": "Direito Comercial e Societário",
+      "description": "Estruturação jurídica de empresas, fusões, dissoluções e litígios societários.",
+      "category": "Direito Comercial e Societário",
+      "keywords": "empresa|fusão|dissolução|litígios",
+      "ctaText": "Criar Empresa",
+      "features": "Constituição de empresas|Fusões, cisões e transformações|Dissolução e liquidação de sociedades|Litígios societários",
+      "application": "Para empreendedores e empresas que necessitam de estruturação jurídica ou reorganização societária."
+    },
+    "criminalLaw": {
+      "title": "Direito Penal e Contraordenações",
+      "description": "Defesa penal e impugnação de contraordenações, com foco na proteção dos direitos do cliente.",
+      "category": "Direito Penal e Contraordenações",
+      "keywords": "defesa penal|recursos|multas",
+      "ctaText": "Consulta Urgente",
+      "features": "Defesa em processos penais|Impugnação de contraordenações|Recursos administrativos e judiciais",
+      "application": "Para clientes envolvidos em inquéritos, processos penais ou multas administrativas."
+    },
+    "familyLaw": {
+      "title": "Direito da Família e das Sucessões",
+      "description": "Resolução judicial ou extrajudicial de questões familiares, sucessões e regulação parental.",
+      "category": "Direito da Família e das Sucessões",
+      "keywords": "inventário|guarda|partilha|herança",
+      "ctaText": "Iniciar Processo",
+      "features": "Inventário e partilha de bens|Regulação da responsabilidade parental|Processos de guarda e alimentos|Litígios sucessórios",
+      "application": "Para famílias que pretendem resolver litígios legais sobre heranças, divórcios ou responsabilidades parentais."
+    },
+    "registriesNotary": {
+      "title": "Registos e Notariado",
+      "description": "Autenticação de documentos, registo público e atos notariais diversos.",
+      "category": "Registos e Notariado",
+      "keywords": "registo|autenticação|marca|notariado",
+      "ctaText": "Registar Bem",
+      "features": "Autenticação de assinaturas e traduções|Registos prediais, comerciais e civis|Elaboração de documentos privados autenticados|Habilitação de herdeiros",
+      "application": "Para particulares e empresas que necessitam de validação jurídica de documentos ou registo público."
+    }
+  },
+
   "Navbar": {
-    "home": "Inicio",
-    "about": "Sobre Mim",
+    "home": "Início",
+    "about": "Sobre",
     "contact": "Contactos",
-    "services": "Serviços"  
+    "services": "Áreas de Atuação",
+    "book": "Marcar Reunião"
+  },
+
+  "Hero": {
+    "certifiedLawyer": "Advogada Certificada | Portugal",
+    "fullName": "Nadine Isabel Zeverino",
+    "description": "Representação jurídica de excelência com mais de 10 anos de experiência. Soluções personalizadas para proteger os seus direitos e interesses.",
+    "lawyerTitle": "Advogada",
+    "stats": {
+      "years": "Anos",
+      "cases": "Casos",
+      "success": "Sucesso"
+    },
+    "specialties": {
+      "realEstate": "Direito Imobiliário",
+      "commercial": "Direito Comercial",
+      "criminal": "Direito Penal",
+      "labor": "Direito do Trabalho"
+    },
+    "bookMeeting": "Marcar Reunião",
+    "viewServices": "Ver Serviços"
+  },
+
+  "ProfileSection": {
+    "aboutMe": "SOBRE MIM",
+    "title": "Advogada em",
+    "portugal": "Portugal",
+    "description1": "Profissional com mais de 10 anos de experiência no direito português, dedicada a oferecer soluções jurídicas personalizadas e resultados concretos aos clientes.",
+    "description2": "A minha abordagem combina rigor jurídico com empatia, garantindo que cada cliente receba não só representação legal, mas também orientação clara e transparente em todas as fases do processo.",
+    "specializationAreas": "Áreas de Especialização",
+    "specialties": {
+      "family": "Direito da Família e das Sucessões",
+      "commercial": "Direito Comercial e Societário",
+      "realEstate": "Direito Imobiliário e da Construção",
+      "criminal": "Direito Penal e Contraordenações"
+    },
+    "personalizedSolutions": "soluções jurídicas personalizadas",
+    "results": "resultados",
+    "legalRigor": "rigor jurídico",
+    "empathy": "empatia",
+    "clearGuidance": "orientação clara e transparente"
+  },
+
+  "ServicesSection": {
+    "areasOfPractice": "Áreas",
+    "practice": "de Atuação",
+    "subtitle": "Soluções jurídicas especializadas focadas em resultados excecionais e proteção integral dos seus interesses",
+    "scheduleMeeting": "Marcar Reunião",
+    "allServices": "Todos os Serviços"
+  },
+
+  "WhyChooseUs": {
+    "whyChooseUs": "PORQUE ESCOLHER-NOS",
+    "advantages": "Vantagens",
+    "thatDistinguish": "que nos Distinguem",
+    "casesSolved": "Mais de 100 casos resolvidos",
+    "satisfaction": "com 98% de satisfação",
+    "values": {
+      "transparency": {
+        "title": "Transparência Total",
+        "description": "Comunicação 100% transparente sobre o seu processo jurídico. Será sempre informado sobre o estado do processo e os próximos passos, sem burocracias ou jargão jurídico desnecessário.",
+        "highlight": "Sem surpresas",
+        "metric": "98% de satisfação"
+      },
+      "strategy": {
+        "title": "Estratégia Personalizada",
+        "description": "Cada cliente recebe uma estratégia jurídica desenvolvida especificamente para a sua situação. Analisamos cuidadosamente cada caso para criar soluções eficazes adaptadas às suas necessidades.",
+        "highlight": "Soluções específicas",
+        "metric": "Mais de 10 anos de experiência"
+      },
+      "results": {
+        "title": "Resultados Comprovados",
+        "description": "O nosso foco está em obter resultados concretos e duradouros para os nossos clientes. Trabalhamos não apenas pelos processos, mas por soluções reais que melhorem a sua situação jurídica.",
+        "highlight": "Impacto real",
+        "metric": "Mais de 100 casos resolvidos"
+      },
+      "excellence": {
+        "title": "Excelência Reconhecida",
+        "description": "Mais de uma década de experiência na resolução dos casos mais complexos no direito português. A nossa reputação foi construída com base em resultados consistentes e conduta ética irrepreensível.",
+        "highlight": "Tradição em resultados",
+        "metric": "Escritório certificado"
+      }
+    }
+  },
+
+  "Process": {
+    "workProcess": "PROCESSO DE TRABALHO",
+    "howWe": "Como",
+    "work": "Trabalhamos",
+    "methodology": "Metodologia clara e transparente, focada em resultados",
+    "steps": {
+      "consultation": {
+        "title": "Consulta Inicial",
+        "description": "Análise detalhada do seu caso numa consulta confidencial e sem compromisso."
+      },
+      "strategy": {
+        "title": "Estratégia Jurídica",
+        "description": "Desenvolvimento de uma estratégia personalizada adaptada às suas necessidades."
+      },
+      "execution": {
+        "title": "Execução Profissional",
+        "description": "Implementação rigorosa com transparência e comunicação contínua."
+      },
+      "results": {
+        "title": "Resultado Garantido",
+        "description": "Conclusão eficaz focada em soluções concretas e proteção dos seus direitos."
+      }
+    }
+  },
+
+  "FAQ": {
+    "frequentlyAsked": "PERGUNTAS",
+    "clarifyYour": "Esclareça as",
+    "doubts": "suas Dúvidas",
+    "subtitle": "As perguntas mais frequentes dos nossos clientes",
+    "contactDirectly": "Não encontrou a sua pergunta?",
+    "contactLink": "Contacte-nos diretamente",
+    "questions": [
+      {
+        "question": "Como funciona a primeira consulta?",
+        "answer": "Nesta reunião, ouviremos atentamente o seu caso, esclareceremos as suas dúvidas e explicaremos as possíveis estratégias jurídicas. Sairá desta consulta com uma compreensão clara das suas opções."
+      },
+      {
+        "question": "Quais são os honorários?",
+        "answer": "Os honorários são definidos de acordo com a complexidade do caso e o tipo de serviço necessário. Após a consulta inicial, apresentarei uma proposta detalhada com todos os custos envolvidos, sem surpresas. Trabalho com total transparência em todos os aspetos financeiros."
+      },
+      {
+        "question": "Posso marcar uma consulta em Portimão?",
+        "answer": "Sim, atendo pessoalmente no meu escritório em Portimão, localizado no centro da cidade. Ofereço também consultas por videoconferência para clientes em toda a região do Algarve e no resto do mundo."
+      },
+      {
+        "question": "Quanto tempo demora a resolver um caso?",
+        "answer": "O tempo varia consoante a complexidade do caso e o tribunal envolvido. Na consulta inicial, poderei fornecer uma estimativa realista com base na minha experiência de mais de 10 anos no sistema jurídico português."
+      },
+      {
+        "question": "Preciso de levar documentos para a primeira consulta?",
+        "answer": "É útil trazer quaisquer documentos relacionados com o seu caso, mas não é obrigatório. Mesmo sem documentos, posso avaliar a sua situação e orientá-lo sobre quais os documentos necessários para avançar."
+      }
+    ]
+  },
+
+  "GoogleReviews": {
+    "googleReviews": "Avaliações Google",
+    "whatOurClients": "O que os",
+    "clientsSay": "Nossos Clientes Dizem",
+    "viewGoogleReviews": "Ver avaliações no Google"
+  },
+
+  "NadineLawCTA": {
+    "fullName": "Nadine Isabel Zeverino",
+    "lawyerTitle": "Advogada · Portugal",
+    "protection": "Proteção jurídica completa com",
+    "provenResults": "resultados comprovados",
+    "achievements": {
+      "rating": {
+        "label": "5,0",
+        "sublabel": "Avaliação"
+      },
+      "clients": {
+        "label": "100+",
+        "sublabel": "Clientes"
+      },
+      "response": {
+        "label": "24h",
+        "sublabel": "Resposta"
+      },
+      "secure": {
+        "label": "100%",
+        "sublabel": "Seguro"
+      }
+    },
+    "callNow": "Ligar Agora",
+    "scheduleMeeting": "Marcar Reunião",
+    "contacts": "Contactos",
+    "phone": "Telefone",
+    "phoneNumber": "+351 964 022 222",
+    "email": "Email",
+    "emailAddress": "niz@nadinezeverino.com",
+    "confidentialService": "Serviço Confidencial"
+  },
+
+  "Footer": {
+    "fullName": "Nadine Isabel Zeverino",
+    "description": "Nadine Isabel Zeverino encontra-se inscrita e regulada pela Comissão de Qualidade da Ordem dos Advogados",
+    "navigation": "Navegação",
+    "contact": "Contactos",
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "privacy": "Privacidade",
+    "complaints": "Livro de Reclamações",
+    "cookies": "Cookies",
+    "address": {
+      "line1": "Largo de Heliodoro Salgado Nº8",
+      "line2": "8500-537 Portimão"
+    },
+    "rights": "Todos os direitos reservados."
+  },
+
+  "MeetingCTA": {
+    "title": "Pronto para Proteger os Seus Direitos?",
+    "subtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
+    "buttonText": "Marcar Reunião",
+    "badgeText": "+100 CASOS RESOLVIDOS",
+    "touchTo": "Toque para",
+    "callNow": "Ligar agora",
+    "directContact": "Contacto Direto",
+    "features": {
+      "cases": {
+        "title": "+100",
+        "value": "Casos Resolvidos"
+      },
+      "success": {
+        "title": "98%",
+        "value": "Sucesso"
+      },
+      "response": {
+        "title": "24h",
+        "value": "Resposta"
+      }
+    }
+  },
+
+  "ServicesPage": {
+    "pageTitle": "ÁREAS DE ATUAÇÃO",
+    "pageSubtitle": "Soluções jurídicas especializadas focadas em resultados e proteção integral dos seus interesses",
+    "searchPlaceholder": "Pesquisar áreas de atuação...",
+    "allCategories": "Todas as Categorias",
+    "gridView": "Vista em grelha",
+    "listView": "Vista em lista",
+    "showingResults": "A mostrar {filtered} de {total} áreas de atuação",
+    "noServicesFound": "NENHUMA ÁREA DE ATUAÇÃO ENCONTRADA",
+    "tryAdjustingFilters": "Tente ajustar os filtros ou termos de pesquisa",
+    "learnMore": "Saber mais",
+    "ctaTitle": "Pronto para Proteger os Seus Direitos?",
+    "ctaSubtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
+    "scheduleMeeting": "Marcar Reunião"
+  },
+
+  "AboutPage": {
+    "pageTitle": "NADINE ISABEL ZEVERINO",
+    "pageSubtitle": "Advogada especializada em Portugal com mais de 10 anos de experiência",
+    "profileImageAlt": "Nadine Isabel Zeverino - Advogada em Portimão, Portugal",
+    "fullName": "Nadine Isabel Zeverino",
+    "lawyerTitle": "Advogada em Portugal",
+    "aboutMeBadge": "SOBRE MIM",
+    "specialistTitle": "Advogada em",
+    "specialistArea": "Portugal",
+    "description1": "Com mais de 10 anos de experiência na prática do direito em Portugal, ofereço soluções jurídicas personalizadas, éticas e eficazes para particulares e empresas em Portimão e na região do Algarve.",
+    "description2": "A minha prática jurídica assenta em dois pilares fundamentais: sólidos conhecimentos técnicos e relação humana próxima. Acredito que cada caso merece atenção individualizada e transparência em todas as fases.",
+    "specialties": {
+      "family": "Direito da Família e das Sucessões",
+      "commercial": "Direito Comercial e Societário",
+      "realEstate": "Direito Imobiliário e da Construção",
+      "criminal": "Direito Penal e Contraordenações"
+    },
+    "practiceAreasTitle": "Áreas",
+    "practiceAreasHighlight": "de Atuação",
+    "practiceAreasSubtitle": "Soluções jurídicas especializadas focadas em resultados excecionais",
+    "valuesTitle": "OS MEUS",
+    "valuesHighlight": "VALORES",
+    "values": {
+      "ethics": {
+        "title": "Ética",
+        "description": "Compromisso com a integridade e transparência em cada ato jurídico."
+      },
+      "excellence": {
+        "title": "Excelência",
+        "description": "Busca constante da qualidade e precisão em cada serviço prestado."
+      },
+      "proximity": {
+        "title": "Proximidade",
+        "description": "Relação direta e humana com cada cliente e caso específico."
+      }
+    },
+    "ctaTitle": "Pronto para Proteger os Seus Direitos?",
+    "ctaSubtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
+    "scheduleMeeting": "Marcar Reunião"
+  },
+
+  "NotFound": {
+    "title": "Página Não Encontrada",
+    "description": "Oops! A página que procura parece ter desaparecido ou nunca ter existido.",
+    "goBack": "Voltar",
+    "homePage": "Página Inicial"
+  },
+
+  "ContactPage": {
+    "pageTitle": "ENTRE EM CONTACTO",
+    "pageSubtitle": "Estamos aqui para ajudar. Contacte-nos e a nossa equipa responder-lhe-á o mais rapidamente possível.",
+    "contactInfoTitle": "Informação de Contacto",
+    "address": {
+      "title": "Morada",
+      "content": "Largo de Heliodoro Salgado Nº8, 8500-537 Portimão, Portugal"
+    },
+    "phone": {
+      "title": "Telefone",
+      "content": "+351 964 022 222"
+    },
+    "email": {
+      "title": "Email",
+      "content": "niz@nadinezeverino.com"
+    },
+    "hours": {
+      "title": "Horário de Funcionamento",
+      "content": "Segunda a Sexta: 9h - 18h"
+    },
+    "followUs": "Siga-nos nas Redes Sociais",
+    "locationTitle": "Localização",
+    "mapTitle": "Localização do Escritório"
+  },
+
+  "Common": {
+    "scheduleMeeting": "Marcar Reunião",
+    "callNow": "Ligar Agora"
+  },
+
+  "Privacy": {
+    "pageTitle": "Política de Privacidade",
+    "pageSubtitle": "Saiba como recolhemos, utilizamos e protegemos os seus dados pessoais",
+    "header": {
+      "title": "Política de Privacidade",
+      "effectiveDate": "Data de Entrada em Vigor: 1 de janeiro de 2025"
+    },
+    "sections": {
+      "informationCollection": {
+        "title": "Informação que Recolhemos",
+        "content": "Recolhemos diversos tipos de informação para prestar e melhorar os nossos serviços jurídicos. Isto inclui tanto informação fornecida diretamente por si como informação recolhida automaticamente.",
+        "subsections": {
+          "personalData": {
+            "title": "Dados Pessoais que Nos Fornece",
+            "points": {
+              "identification": "Informação de identificação, como nome, data de nascimento, nacionalidade e números de identificação emitidos pelo Estado",
+              "contact": "Dados de contacto, incluindo morada, número de telefone, endereço de email e método preferido de comunicação",
+              "professional": "Informação profissional, incluindo dados laborais, afiliações empresariais e setor de atividade",
+              "communications": "Conteúdo das comunicações connosco, incluindo emails, cartas, chamadas telefónicas e apontamentos de reuniões"
+            }
+          },
+          "usageData": {
+            "title": "Dados de Utilização Recolhidos Automaticamente",
+            "points": {
+              "device": "Informação do dispositivo, como endereço IP, tipo de navegador, sistema operativo e identificadores de dispositivos móveis",
+              "browsing": "Atividade de navegação, incluindo páginas visitadas, tempo gasto em páginas, percursos de navegação e padrões de cliques",
+              "interactions": "Dados de interação com funcionalidades do site, formulários e serviços online"
+            }
+          }
+        }
+      },
+      "howWeUse": {
+        "title": "Como Utilizamos a Sua Informação",
+        "content": "Utilizamos a informação recolhida para fins específicos relacionados com a nossa prática jurídica e obrigações de serviço ao cliente.",
+        "subsections": {
+          "provision": {
+            "title": "Prestação de Serviços e Atendimento ao Cliente",
+            "points": {
+              "services": "Prestar aconselhamento jurídico, representação e serviços profissionais adaptados às suas necessidades específicas",
+              "support": "Oferecer apoio contínuo, atualizações sobre o processo e comunicação ágil durante todo o percurso jurídico",
+              "communication": "Manter registos atualizados e facilitar canais de comunicação eficazes"
+            }
+          },
+          "improvement": {
+            "title": "Melhoria e Otimização de Serviços",
+            "points": {
+              "analysis": "Analisar padrões de utilização e feedback para aprimorar a nossa especialização jurídica e prestação de serviços",
+              "personalization": "Personalizar conteúdos do site e recomendações de serviços com base nas suas preferências",
+              "optimization": "Otimizar o desempenho do site, medidas de segurança e experiência do utilizador"
+            }
+          }
+        }
+      },
+      "dataProtection": {
+        "title": "Proteção e Segurança de Dados",
+        "content": "Implementamos medidas robustas de segurança para proteger os seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.",
+        "subsections": {
+          "security": {
+            "title": "Medidas de Segurança Implementadas",
+            "points": {
+              "encryption": "Tecnologia avançada de encriptação para transmissão de dados e armazenamento seguro de informação sensível",
+              "accessControl": "Controlos rigorosos de acesso, limitando a visualização de dados apenas a pessoal autorizado com permissões por funções",
+              "regularAudits": "Auditorias regulares de segurança e avaliações de vulnerabilidades para manter os mais altos padrões de proteção"
+            }
+          },
+          "retention": {
+            "title": "Políticas de Retenção de Dados",
+            "points": {
+              "duration": "Retenção de dados pessoais durante os períodos legalmente exigidos pela legislação portuguesa e regulamentos profissionais",
+              "deletion": "Eliminação segura de dados após os períodos de retenção, salvo quando exigido por lei",
+              "requirements": "Cumprimento de obrigações profissionais e requisitos legais de conservação de registos"
+            }
+          }
+        }
+      },
+      "sharing": {
+        "title": "Partilha e Divulgação de Informação",
+        "content": "Respeitamos a sua privacidade e apenas partilhamos a sua informação em circunstâncias específicas, em conformidade com obrigações legais e profissionais.",
+        "subsections": {
+          "thirdParties": {
+            "title": "Partilha com Terceiros",
+            "points": {
+              "serviceProviders": "Partilha com prestadores de serviços terceiros de confiança que nos apoiam nas operações e estão vinculados contratualmente à confidencialidade",
+              "legalRequirements": "Divulgação quando exigido por lei, ordem judicial ou autoridade reguladora, no âmbito da conformidade legal",
+              "businessTransfers": "Transferência em caso de fusão, aquisição ou venda de ativos, mantendo proteções adequadas"
+            }
+          },
+          "prohibited": {
+            "title": "Divulgações Proibidas",
+            "points": {
+              "selling": "Não vendemos, trocamos ou alugamos os seus dados pessoais a terceiros para fins de marketing",
+              "marketing": "Não utilizamos os seus dados para comunicações comerciais não solicitadas ou atividades promocionais",
+              "unauthorized": "Não divulgamos a sua informação sem autorização adequada ou exigência legal"
+            }
+          }
+        }
+      },
+      "yourRights": {
+        "title": "Os Seus Direitos e Opções",
+        "content": "Tem direitos específicos relativamente aos seus dados pessoais ao abrigo da legislação portuguesa de proteção de dados e do RGPD.",
+        "subsections": {
+          "access": {
+            "title": "Direitos de Acesso e Controlo",
+            "points": {
+              "information": "Direito a solicitar informação sobre que dados pessoais detemos sobre si e como são tratados",
+              "correction": "Direito a solicitar a correção de dados pessoais inexatos ou incompletos",
+              "deletion": "Direito a solicitar a eliminação dos seus dados quando já não forem necessários para os fins especificados"
+            }
+          },
+          "contact": {
+            "title": "Contactar-nos sobre Privacidade",
+            "points": {
+              "email": "Pode contactar-nos através do email privacy@nadinezeverino.com para questões relacionadas com privacidade",
+              "responseTime": "Comprometemo-nos a responder a pedidos de privacidade no prazo de 30 dias após receção",
+              "assistance": "O nosso Encarregado de Proteção de Dados está disponível para ajudar com questões de privacidade e exercício de direitos"
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Dúvidas sobre a Sua Privacidade?",
+      "content": "Se tiver dúvidas sobre esta política de privacidade ou preocupações sobre o tratamento dos seus dados pessoais, não hesite em contactar-nos.",
+      "email": "privacy@nadinezeverino.com",
+      "form": "Formulário de Contacto"
+    },
+    "lastUpdated": "Última Atualização: Dezembro de 2024"
+  },
+
+  "Cookies": {
+    "pageTitle": "Política de Cookies",
+    "pageSubtitle": "Saiba como utilizamos cookies para melhorar a sua experiência de navegação",
+    "header": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última Atualização: Dezembro de 2024"
+    },
+    "introduction": {
+      "title": "Introdução",
+      "content1": "Esta Política de Cookies explica como Nadine Isabel Zeverino Advogada ('nós', 'nos' ou 'nosso') utiliza cookies e tecnologias semelhantes quando visita o nosso site. Ao continuar a navegar no nosso site, consente a utilização de cookies conforme descrito nesta política.",
+      "content2": "Reservamo-nos o direito de atualizar esta Política de Cookies a qualquer momento. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada."
+    },
+    "whatAreCookies": {
+      "title": "O que são Cookies?",
+      "content": "Cookies são pequenos ficheiros de texto armazenados no seu computador ou dispositivo móvel quando visita um site. Permitem que os sites armazenem informação ou funcionalidades e ajudam a melhorar a sua experiência de navegação.",
+      "howTheyWork": {
+        "title": "Como Funcionam os Cookies",
+        "storage": "Armazenados na memória temporária do seu navegador ou permanentemente no seu dispositivo",
+        "retrieval": "Enviados automaticamente de volta ao site de origem em visitas subsequentes",
+        "session": "Cookies de sessão expiram quando fecha o navegador",
+        "persistence": "Cookies persistentes permanecem até expirarem ou serem eliminados manualmente"
+      }
+    },
+    "types": {
+      "title": "Tipos de Cookies que Utilizamos",
+      "essential": {
+        "title": "Cookies Essenciais",
+        "description": "Estes cookies são estritamente necessários para o funcionamento correto do site. Permitem funções básicas como navegação entre páginas e acesso a áreas seguras.",
+        "purpose": "Finalidade:",
+        "examples": {
+          "session": "Gestão de sessão para utilizadores autenticados",
+          "security": "Funcionalidades de segurança e prevenção de fraudes",
+          "preferences": "Memorização das suas preferências de consentimento de cookies"
+        }
+      },
+      "performance": {
+        "title": "Cookies de Desempenho",
+        "description": "Estes cookies recolhem informação sobre a forma como os visitantes utilizam o nosso site, como por exemplo quais as páginas mais visitadas e se recebem mensagens de erro.",
+        "purpose": "Finalidade:",
+        "examples": {
+          "analytics": "Análise de tráfego e estatísticas de utilização",
+          "load": "Medição de tempos de carregamento e otimização",
+          "traffic": "Análise de padrões de tráfego para melhorias"
+        }
+      },
+      "functionality": {
+        "title": "Cookies de Funcionalidade",
+        "description": "Estes cookies permitem que o site memorize as suas escolhas e forneça funcionalidades personalizadas durante a sua visita.",
+        "purpose": "Finalidade:",
+        "examples": {
+          "video": "Funcionalidades e preferências do leitor de vídeo",
+          "social": "Funcionalidades de partilha em redes sociais",
+          "chat": "Ferramentas de chat em direto e apoio ao cliente"
+        }
+      },
+      "advertising": {
+        "title": "Cookies de Publicidade",
+        "description": "Estes cookies são utilizados para apresentar anúncios mais relevantes para si e para os seus interesses. Também limitam o número de vezes que vê um anúncio.",
+        "purpose": "Finalidade:",
+        "examples": {
+          "personalized": "Publicidade personalizada com base no seu perfil",
+          "interest": "Segmentação publicitária baseada em interesses",
+          "frequency": "Limitação da frequência de exibição de anúncios"
+        }
+      }
+    },
+    "howWeUse": {
+      "title": "Como Utilizamos os Cookies",
+      "content": "Utilizamos cookies para melhorar a sua experiência no site, analisar o desempenho e fornecer conteúdos personalizados. Estes são os principais objetivos:",
+      "purposes": {
+        "functionality": "Funcionalidade do site",
+        "performance": "Análise de desempenho",
+        "security": "Refuerço da segurança",
+        "analytics": "Análise de tráfego",
+        "personalization": "Personalização de conteúdos",
+        "advertising": "Publicidade segmentada"
+      }
+    },
+    "manage": {
+      "title": "Gestão das Suas Preferências de Cookies",
+      "browser": {
+        "title": "Definições do Navegador",
+        "description": "A maioria dos navegadores permite controlar os cookies através das respetivas definições. Pode bloquear ou eliminar cookies, embora isso possa afetar a funcionalidade do site.",
+        "steps": {
+          "settings": "Aceda ao menu de definições ou preferências do seu navegador",
+          "cookies": "Procure a secção de privacidade ou cookies",
+          "preferences": "Ajuste as suas preferências e definições de cookies",
+          "save": "Guarde as alterações e reinicie o navegador"
+        }
+      },
+      "consent": {
+        "title": "Gestor de Consentimento de Cookies",
+        "description": "Disponibilizamos um banner de consentimento de cookies no nosso site onde pode gerir as suas preferências a qualquer momento.",
+        "steps": {
+          "banner": "Procure o banner de consentimento de cookies no nosso site",
+          "preferences": "Clique em 'Gerir Preferências' ou opção semelhante",
+          "selection": "Selecione os tipos de cookies que aceita",
+          "confirm": "Confirme as suas seleções e continue a navegar"
+        }
+      }
+    },
+    "rights": {
+      "title": "Os Seus Direitos Relativos a Cookies",
+      "content": "Tem o direito de saber como utilizamos cookies e de gerir as suas preferências. Se tiver dúvidas sobre esta Política de Cookies ou desejar exercer os seus direitos, contacte-nos.",
+      "email": "niz@nadinezeverino.com",
+      "form": "Contacte-nos"
+    },
+    "lastUpdated": "Última Atualização: Setembro de 2025"
+  },
+
+  "ContactForm": {
+    "title": "Enviar Mensagem",
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "O seu nome",
+    "emailLabel": "Email",
+    "emailPlaceholder": "seu@email.com",
+    "phoneLabel": "Telefone",
+    "phonePlaceholder": "+351 912 345 678",
+    "subjectLabel": "Assunto",
+    "selectSubject": "Selecione um assunto",
+    "civilLaw": "Direito Civil",
+    "commercialLaw": "Direito da Família e das Sucessões",
+    "realEstateLaw": "Direito Imobiliário",
+    "contractsBusiness": "Regularização de Estrangeiros",
+    "other": "Outro",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Descreva brevemente a sua situação...",
+    "sendMessage": "Enviar Mensagem",
+    "sending": "A enviar...",
+    "successMessage": "Mensagem enviada com sucesso! Entraremos em contacto em breve.",
+    "errorMessage": "Erro ao enviar a mensagem. Por favor, tente novamente.",
+    "connectionError": "Erro de ligação. Por favor, tente novamente."
+  },
+
+  "Api": {
+    "contact": {
+      "missingFields": "Todos os campos obrigatórios devem ser preenchidos",
+      "success": "Mensagem enviada com sucesso!",
+      "serverError": "Erro interno do servidor"
+    }
+  },
+  "Email": {
+    "contactSubject": "Contacto do Site - {{subject}}",
+    "contactTitle": "Nova mensagem de contacto",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "notProvided": "Não fornecido"
+    }
   }
 }

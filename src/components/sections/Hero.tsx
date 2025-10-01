@@ -79,7 +79,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="block bg-clip-text text-transparent bg-gradient-to-r from-[#E83241] via-red-500 to-[#E83241]"
+                  className="block bg-clip-text text-transparent bg-gradient-to-r from-white to-white"
                 >
                   Nadine Isabel
                 </motion.span>
@@ -87,7 +87,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
-                  className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-white"
+                  className="block bg-clip-text text-transparent bg-gradient-to-r from-white to-white"
                 >
                   Zeverino
                 </motion.span>
@@ -106,7 +106,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <p className="hidden md:block text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
+              <p className="hidden md:block text-base md:text-lg text-white/ max-w-2xl leading-relaxed">
                 {t('description')}
               </p>
             </motion.div>
