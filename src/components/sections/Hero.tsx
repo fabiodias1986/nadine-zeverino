@@ -17,7 +17,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-black text-white overflow-hidden pt-16 lg:pt-16">
+    <section className="relative min-h-screen bg-black text-white overflow-hidden pt-0">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -53,7 +53,7 @@ export default function Hero() {
       </div>
 
       {/* Main Hero Content */}
-      <div className="container mx-auto px-4 py-8 relative z-10 min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-6rem)] flex items-center">
+      <div className="container mx-auto px-4 py-8 relative z-10 min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-90px)] xl:min-h-[calc(100vh-100px)] flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center w-full">
           {/* Left Content - 7 columns */}
           <div className="lg:col-span-7 space-y-6">
@@ -106,7 +106,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <p className="hidden md:block text-base md:text-lg text-white/ max-w-2xl leading-relaxed">
+              <p className="hidden md:block text-base md:text-lg text-white/90 max-w-2xl leading-relaxed">
                 {t('description')}
               </p>
             </motion.div>
@@ -122,7 +122,7 @@ export default function Hero() {
                 {/* Image Container */}
                 <div className="aspect-[4/5] w-full relative overflow-hidden z-30">
                   <Image
-                    src="/media/profile.jpg"
+                    src="/media/hero.jpg"
                     alt="Dra. Nadine Isabel Zeverino"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -202,20 +202,18 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            {/* CTA Buttons - IGUAL AOS DA SEÇÃO SERVICES */}
+            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.5 }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              {/* Botão Agendar Reunião - Reusable Component */}
               <BookMeetingButton 
                 size="md" 
                 className="w-full sm:w-auto"
               />
 
-              {/* Botão Ver Serviços - Internal Link */}
               <Link href="/pratice-areas">
                 <motion.button
                   whileHover={{ 
@@ -243,7 +241,7 @@ export default function Hero() {
               {/* Image Container */}
               <div className="aspect-[4/5] w-full relative overflow-hidden z-30">
                 <Image
-                  src="/media/profile.jpg"
+                  src="/media/hero.jpg"
                   alt="Dra. Nadine Isabel Zeverino"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"

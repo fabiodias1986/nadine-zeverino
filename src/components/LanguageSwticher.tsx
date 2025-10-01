@@ -10,18 +10,16 @@ export default function LanguageSwitcher() {
   const pathname = usePathname()
   
   // Extrair o locale do pathname
-  const currentLocale = pathname.split('/')[1]
+  const currentLocale = pathname.split('/')[1] || 'pt' // fallback para 'pt' se não houver locale
   
-  // Idiomas disponíveis com códigos de bandeira
+  // Idiomas disponíveis: apenas PT, EN e NL
   const languages = [
     { code: 'pt', name: 'Português', flagCode: 'pt' },
     { code: 'en', name: 'English', flagCode: 'gb' },
-    { code: 'fr', name: 'Français', flagCode: 'fr' },
-    { code: 'es', name: 'Español', flagCode: 'es' },
-    { code: 'de', name: 'Deutsch', flagCode: 'de' },
+    { code: 'nl', name: 'Dutch', flagCode: 'nl' },
   ]
   
-  // Obter o idioma atual
+  // Obter o idioma atual (com fallback seguro)
   const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0]
   
   // Função para mudar o idioma
@@ -30,7 +28,7 @@ export default function LanguageSwitcher() {
     const pathWithoutLocale = pathname.replace(/^\/[^\/]+/, '') || '/'
     // Construir o novo caminho
     const newPath = `/${newLocale}${pathWithoutLocale}`
-    // Redirecionar
+    // Redirecionar (hard navigation para garantir i18n routing do Next.js)
     window.location.href = newPath
   }
 
@@ -61,7 +59,7 @@ export default function LanguageSwitcher() {
       <AnimatePresence>
         {isDropdownOpen && (
           <>
-            {/* Backdrop para fechar o dropdown */}
+            {/* Backdrop para fechar o dropdown ao clicar fora */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
