@@ -217,7 +217,7 @@ export default function Navbar() {
 
                 {/* Language Switcher (Mobile) */}
                 <motion.div
-                  className="pt-8"
+                  className="pt-8 w-full flex justify-center align-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.4 }}
@@ -240,9 +240,7 @@ function LanguageSwitcherMobile() {
   const languages = [
     { code: 'pt', name: 'Português', flagCode: 'pt' },
     { code: 'en', name: 'English', flagCode: 'gb' },
-    { code: 'fr', name: 'Français', flagCode: 'fr' },
-    { code: 'es', name: 'Español', flagCode: 'es' },
-    { code: 'de', name: 'Deutsch', flagCode: 'de' },
+    { code: 'nl', name: 'Dutch', flagCode: 'nl' },
   ]
 
   const changeLanguage = (newLocale: string) => {
@@ -252,12 +250,12 @@ function LanguageSwitcherMobile() {
   }
 
   return (
-    <div className="grid grid-cols-5 gap-2">
+    <div className="grid grid-cols-3 gap-4">
       {languages.map((language) => (
         <button
           key={language.code}
           onClick={() => changeLanguage(language.code)}
-          className={`p-3 rounded-lg text-center transition-all flex flex-col items-center justify-center h-14 ${
+          className={`p-3 w-16 h-16 rounded-lg text-center transition-all flex flex-col items-center justify-center h-14 ${
             currentLocale === language.code
               ? 'bg-[#E83241]/30 border border-[#E83241]/50 text-white'
               : 'bg-white/5 hover:bg-white/10 text-white/70'
