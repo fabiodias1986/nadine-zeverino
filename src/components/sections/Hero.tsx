@@ -62,7 +62,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: -20, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 shadow-lg"
+              className="hidden inline-flex items-center gap-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 shadow-lg"
             >
               <FaAward className="text-[#E83241] text-base" />
               <span className="text-white/90 font-medium text-sm">{t('certifiedLawyer')}</span>
@@ -106,7 +106,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <p className="hidden md:block text-base md:text-lg text-white/90 max-w-2xl leading-relaxed">
+              <p className="hidden md:block text-base md:text-normal  text-white/90 max-w-2xl leading-relaxed">
                 {t('description')}
               </p>
             </motion.div>

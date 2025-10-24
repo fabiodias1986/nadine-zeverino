@@ -1,0 +1,675 @@
+{
+"services": {
+"realEstate": {
+"title": "Vastgoed- en Bouwrecht",
+"description": "Volledig juridisch advies bij vastgoedtransacties, huurovereenkomsten, vergunningen en juridische ondersteuning voor bedrijven in de sector.",
+"category": "Vastgoedrecht",
+"keywords": "koop en verkoop|huur|vergunningen|contracten",
+"ctaText": "Afspraak Maken",
+"features": "Begeleiding bij koop en verkoop van onroerend goed|Opstellen van huurovereenkomsten|Stedelijke vergunningen en regularisatie|Juridisch advies voor vastgoedbedrijven",
+"application": "Voor investeerders, particulieren en bedrijven die juridische zekerheid zoeken op het gebied van vastgoed."
+},
+"foreignLegalization": {
+"title": "Regularisatie van Buitenlanders",
+"description": "Volledige ondersteuning bij het verkrijgen van visa, verblijfsvergunningen en fiscale voordelen voor buitenlanders in Portugal.",
+"category": "Regularisatie van Buitenlanders",
+"keywords": "visum|verblijf|Gouden Visum|RNH",
+"ctaText": "Procedure Starten",
+"features": "Verkrijgen van verblijfsvisa|Investeerdersvergunning (Gouden Visum)|Gezinshereniging|Fiscaal Regime voor Niet-Gewoon Inwonenden (RNH)",
+"application": "Voor buitenlanders die hun situatie in Portugal willen regulariseren via verblijf, investering of fiscale voordelen."
+},
+"portugueseNationality": {
+"title": "Portugese Nationaliteit",
+"description": "Volledige ondersteuning bij het verkrijgen van het Portugese staatsburgerschap en juridische erkenning van familierelaties.",
+"category": "Portugese Nationaliteit",
+"keywords": "nationaliteit|staatsburgerschap|wettelijke samenwoning",
+"ctaText": "Procedure Starten",
+"features": "Verkrijgen van nationaliteit via afstamming of huwelijk|Inschrijving van huwelijken en geboorten|Juridische erkenning van wettelijke samenwoning",
+"application": "Voor buitenlanders die in aanmerking komen voor de Portugese nationaliteit of juridische erkenning van familierelaties."
+},
+"commercialLaw": {
+"title": "Handels- en Ondernemingsrecht",
+"description": "Juridische structurering van bedrijven, fusies, ontbindingen en vennootschapsconflicten.",
+"category": "Handels- en Ondernemingsrecht",
+"keywords": "bedrijf|fusie|ontbinding|geschillen",
+"ctaText": "Bedrijf Oprichten",
+"features": "Oprichting van bedrijven|Fusies, splitsingen en omzettingen|Ontbinding en liquidatie van vennootschappen|Vennootschapsconflicten",
+"application": "Voor ondernemers en bedrijven die juridische structurering of herstructurering nodig hebben."
+},
+"criminalLaw": {
+"title": "Straf- en Boeterecht",
+"description": "Strafverdediging en bezwaar tegen boetes, met focus op de bescherming van de rechten van de cliënt.",
+"category": "Straf- en Boeterecht",
+"keywords": "strafverdediging|beroep|boetes",
+"ctaText": "Spoedconsult",
+"features": "Verdediging in strafzaken|Bezwaar tegen administratieve boetes|Administratieve en gerechtelijke beroepen",
+"application": "Voor cliënten betrokken bij onderzoeken, strafzaken of administratieve boetes."
+},
+"familyLaw": {
+"title": "Familie- en Erfrecht",
+"description": "Juridische of buitengerechtelijke oplossing van familieaangelegenheden, erfenissen en ouderlijke verantwoordelijkheid.",
+"category": "Familie- en Erfrecht",
+"keywords": "erfenis|voogdij|verdeling|erfgood",
+"ctaText": "Procedure Starten",
+"features": "Erfopvolging en verdeling van goederen|Regeling van ouderlijke verantwoordelijkheid|Voogdij- en alimentatiezaken|Erfconflicten",
+"application": "Voor gezinnen die juridische geschillen over erfenissen, scheidingen of ouderlijke verantwoordelijkheden willen oplossen."
+},
+"registriesNotary": {
+"title": "Registers en Notariaat",
+"description": "Legalisatie van documenten, openbare registratie en diverse notariële akten.",
+"category": "Registers en Notariaat",
+"keywords": "registratie|legalisatie|merk|notariaat",
+"ctaText": "Goed Registreren",
+"features": "Legaliseren van handtekeningen en vertalingen|Registratie van onroerend goed, handels- en burgerlijke registraties|Opstellen van gelegaliseerde privédocumenten|Erfgerechtigden erkennen",
+"application": "Voor particulieren en bedrijven die juridische validatie van documenten of openbare registratie nodig hebben."
+}
+},
+
+"Navbar": {
+"home": "Home",
+"about": "Over",
+"contact": "Contact",
+"services": "Dienstverlening",
+"book": "Afspraak Maken"
+},
+
+"Hero": {
+"certifiedLawyer": "Gecertificeerd Advocaat | Portugal",
+"fullName": "Nadine Isabel Zeverino",
+"description": "Uitstekende juridische vertegenwoordiging met meer dan 10 jaar ervaring. Op maat gemaakte oplossingen om uw rechten en belangen te beschermen.",
+"lawyerTitle": "Advocaat",
+"stats": {
+"years": "Jaren",
+"cases": "Zaken",
+"success": "Succes"
+},
+"specialties": {
+"realEstate": "Vastgoedrecht",
+"commercial": "Handelsrecht",
+"criminal": "Strafrecht",
+"labor": "Arbeidsrecht"
+},
+"bookMeeting": "Afspraak Maken",
+"viewServices": "Diensten Bekijken"
+},
+
+"ProfileSection": {
+"aboutMe": "OVER MIJ",
+"title": "Advocaat in",
+"portugal": "Portugal",
+"description1": "Professional met meer dan 10 jaar ervaring in het Portugese recht, toegewijd aan het bieden van op maat gemaakte juridische oplossingen en concrete resultaten voor cliënten.",
+"description2": "Mijn aanpak combineert juridische precisie met empathie, zodat elke cliënt niet alleen juridische vertegenwoordiging ontvangt, maar ook duidelijke en transparante begeleiding gedurende het hele proces.",
+"specializationAreas": "Specialisatiegebieden",
+"specialties": {
+"family": "Familie- en Erfrecht",
+"commercial": "Handels- en Ondernemingsrecht",
+"realEstate": "Vastgoed- en Bouwrecht",
+"criminal": "Straf- en Boeterecht"
+},
+"personalizedSolutions": "op maat gemaakte juridische oplossingen",
+"results": "resultaten",
+"legalRigor": "juridische precisie",
+"empathy": "empathie",
+"clearGuidance": "duidelijke en transparante begeleiding"
+},
+
+"ServicesSection": {
+"areasOfPractice": "Dienstverlening",
+"practice": "",
+"subtitle": "Gespecialiseerde juridische oplossingen gericht op uitzonderlijke resultaten en volledige bescherming van uw belangen",
+"scheduleMeeting": "Afspraak Maken",
+"allServices": "Alle Diensten"
+},
+
+"WhyChooseUs": {
+"whyChooseUs": "WAAROM ONS KIEZEN",
+"advantages": "Voordelen",
+"thatDistinguish": "die ons Onderscheiden",
+"casesSolved": "Meer dan 100 opgeloste zaken",
+"satisfaction": "met 98% tevredenheid",
+"values": {
+"transparency": {
+"title": "Volledige Transparantie",
+"description": "100% transparante communicatie over uw juridische zaak. U wordt altijd op de hoogte gehouden van de status en de volgende stappen, zonder bureaucratische rompslomp of onnodig juridisch jargon.",
+"highlight": "Geen verrassingen",
+"metric": "98% tevredenheid"
+},
+"strategy": {
+"title": "Op Maat Gemaakte Strategie",
+"description": "Elke cliënt ontvangt een strategie die specifiek is ontwikkeld voor zijn of haar situatie. We analyseren elk geval zorgvuldig om doeltreffende, op maat gemaakte oplossingen te creëren.",
+"highlight": "Specifieke oplossingen",
+"metric": "Meer dan 10 jaar ervaring"
+},
+"results": {
+"title": "Aantoonbare Resultaten",
+"description": "Onze focus ligt op het behalen van concrete en duurzame resultaten voor onze cliënten. We werken niet alleen aan procedures, maar aan echte oplossingen die uw juridische positie verbeteren.",
+"highlight": "Echte impact",
+"metric": "Meer dan 100 opgeloste zaken"
+},
+"excellence": {
+"title": "Erkende Excellentie",
+"description": "Meer dan tien jaar ervaring in het oplossen van de meest complexe zaken binnen het Portugese recht. Onze reputatie is opgebouwd op consistente resultaten en onberispelijk ethisch gedrag.",
+"highlight": "Traditie in resultaten",
+"metric": "Gecertificeerd kantoor"
+}
+}
+},
+
+"Process": {
+"workProcess": "WERKWIJZE",
+"howWe": "Hoe",
+"work": "Wij Werken",
+"methodology": "Duidelijke en transparante methodiek, gericht op resultaten",
+"steps": {
+"consultation": {
+"title": "Eerste Consult",
+"description": "Gedetailleerde analyse van uw zaak in een vertrouwelijk en vrijblijvend consult."
+},
+"strategy": {
+"title": "Juridische Strategie",
+"description": "Ontwikkeling van een op maat gemaakte strategie afgestemd op uw behoeften."
+},
+"execution": {
+"title": "Professionele Uitvoering",
+"description": "Nauwgezette uitvoering met transparantie en continue communicatie."
+},
+"results": {
+"title": "Gegarandeerd Resultaat",
+"description": "Doeltreffende afronding gericht op concrete oplossingen en bescherming van uw rechten."
+}
+}
+},
+
+"FAQ": {
+"frequentlyAsked": "VEELGESTELDE",
+"clarifyYour": "Verduidelijk uw",
+"doubts": "Vragen",
+"subtitle": "De meest gestelde vragen van onze cliënten",
+"contactDirectly": "Vindt u uw vraag niet terug?",
+"contactLink": "Neem direct contact met ons op",
+"questions": [
+{
+"question": "Hoe werkt het eerste consult?",
+"answer": "Tijdens deze bijeenkomst luisteren we aandachtig naar uw zaak, beantwoorden we uw vragen en leggen we de mogelijke juridische strategieën uit. U verlaat dit consult met een duidelijk beeld van uw opties."
+},
+{
+"question": "Wat zijn de honoraria?",
+"answer": "De honoraria worden bepaald op basis van de complexiteit van de zaak en het type benodigde dienstverlening. Na het eerste consult ontvangt u een gedetailleerd voorstel met alle betrokken kosten, zonder verrassingen. Ik werk volledig transparant op financieel gebied."
+},
+{
+"question": "Kan ik een afspraak maken in Portimão?",
+"answer": "Ja, ik ontvang persoonlijk in mijn kantoor in Portimão, gelegen in het centrum van de stad. Ik bied ook videoconsults aan voor cliënten in de Algarve-regio en elders ter wereld."
+},
+{
+"question": "Hoe lang duurt het om een zaak op te lossen?",
+"answer": "De duur varieert afhankelijk van de complexiteit van de zaak en het betrokken gerecht. Tijdens het eerste consult kan ik een realistische schatting geven op basis van mijn meer dan 10 jaar ervaring in het Portugese rechtssysteem."
+},
+{
+"question": "Moet ik documenten meenemen naar het eerste consult?",
+"answer": "Het is handig om alle documenten met betrekking tot uw zaak mee te nemen, maar niet verplicht. Zelfs zonder documenten kan ik uw situatie beoordelen en u adviseren over de benodigde documenten om verder te gaan."
+}
+]
+},
+
+"GoogleReviews": {
+"googleReviews": "Google Beoordelingen",
+"whatOurClients": "Wat Onze",
+"clientsSay": "Cliënten Zeggen",
+"viewGoogleReviews": "Bekijk beoordelingen op Google"
+},
+
+"NadineLawCTA": {
+"fullName": "Nadine Isabel Zeverino",
+"lawyerTitle": "Advocaat · Portugal",
+"protection": "Volledige juridische bescherming met",
+"provenResults": "aantoonbare resultaten",
+"achievements": {
+"rating": {
+"label": "5,0",
+"sublabel": "Beoordeling"
+},
+"clients": {
+"label": "100+",
+"sublabel": "Cliënten"
+},
+"response": {
+"label": "24u",
+"sublabel": "Reactie"
+},
+"secure": {
+"label": "100%",
+"sublabel": "Veilig"
+}
+},
+"callNow": "Bel Nu",
+"scheduleMeeting": "Afspraak Maken",
+"contacts": "Contact",
+"phone": "Telefoon",
+"phoneNumber": "+351 964 022 222",
+"email": "E-mail",
+"emailAddress": "niz@nadinezeverino.com ",
+"confidentialService": "Vertrouwelijke Dienstverlening"
+},
+
+"Footer": {
+"fullName": "Nadine Isabel Zeverino",
+"description": "Nadine Isabel Zeverino is ingeschreven en gereguleerd door de Kwaliteitscommissie van de Orde van Advocaten",
+"navigation": "Navigatie",
+"contact": "Contact",
+"home": "Home",
+"about": "Over",
+"services": "Diensten",
+"privacy": "Privacy",
+"mobileCallNote": "(Gesprek naar nationaal mobiel netwerk)",
+"complaints": "Klachtenboek",
+"cookies": "Cookies",
+"address": {
+"line1": "Largo de Heliodoro Salgado Nº8",
+"line2": "8500-537 Portimão"
+},
+"rights": "Alle rechten voorbehouden."
+},
+
+"MeetingCTA": {
+"title": "Klaar om Uw Rechten te Beschermen?",
+"subtitle": "Plan een eerste bijeenkomst en ontdek hoe wij u kunnen helpen uw zaak op te lossen.",
+"buttonText": "Afspraak Maken",
+"badgeText": "+100 OPGELOSTE ZAKEN",
+"touchTo": "Tik om",
+"callNow": "Nu te bellen",
+"directContact": "Direct Contact",
+"features": {
+"cases": {
+"title": "+100",
+"value": "Opgeloste Zaken"
+},
+"success": {
+"title": "98%",
+"value": "Succes"
+},
+"response": {
+"title": "24u",
+"value": "Reactie"
+}
+}
+},
+
+"ServicesPage": {
+"pageTitle": "DIENSTVERLENING",
+"pageSubtitle": "Gespecialiseerde juridische oplossingen gericht op resultaten en volledige bescherming van uw belangen",
+"searchPlaceholder": "Zoek in dienstverlening...",
+"allCategories": "Alle Categorieën",
+"gridView": "Rasterweergave",
+"listView": "Lijstweergave",
+"showingResults": "{filtered} van {total} dienstgebieden getoond",
+"noServicesFound": "GEEN DIENSTGEBIEDEN GEVONDEN",
+"tryAdjustingFilters": "Pas de filters of zoektermen aan",
+"learnMore": "Meer informatie",
+"ctaTitle": "Klaar om Uw Rechten te Beschermen?",
+"ctaSubtitle": "Plan een eerste bijeenkomst en ontdek hoe wij u kunnen helpen uw zaak op te lossen.",
+"scheduleMeeting": "Afspraak Maken"
+},
+
+"AboutPage": {
+"pageTitle": "NADINE ISABEL ZEVERINO",
+"pageSubtitle": "Gespecialiseerd advocaat in Portugal met meer dan 10 jaar ervaring",
+"profileImageAlt": "Nadine Isabel Zeverino - Advocaat in Portimão, Portugal",
+"fullName": "Nadine Isabel Zeverino",
+"lawyerTitle": "Advocaat in Portugal",
+"aboutMeBadge": "OVER MIJ",
+"specialistTitle": "Advocaat in",
+"specialistArea": "Portugal",
+"description1": "Met meer dan 10 jaar ervaring in de praktijk van het Portugese recht, bied ik op maat gemaakte, ethische en doeltreffende juridische oplossingen voor particulieren en bedrijven in Portimão en de Algarve-regio.",
+"description2": "Mijn juridische praktijk is gebaseerd op twee fundamentele pijlers: solide technische kennis en een persoonlijke relatie. Ik geloof dat elk geval individuele aandacht en transparantie verdient in elke fase.",
+"specialties": {
+"family": "Familie- en Erfrecht",
+"commercial": "Handels- en Ondernemingsrecht",
+"realEstate": "Vastgoed- en Bouwrecht",
+"criminal": "Straf- en Boeterecht"
+},
+"practiceAreasTitle": "Dienstverlening",
+"practiceAreasHighlight": "",
+"practiceAreasSubtitle": "Gespecialiseerde juridische oplossingen gericht op uitzonderlijke resultaten",
+"valuesTitle": "MIJN",
+"valuesHighlight": "WAARDEN",
+"values": {
+"ethics": {
+"title": "Ethiek",
+"description": "Inzet voor integriteit en transparantie bij elke juridische handeling."
+},
+"excellence": {
+"title": "Excellentie",
+"description": "Voortdurende streven naar kwaliteit en nauwkeurigheid bij elke verleende dienst."
+},
+"proximity": {
+"title": "Nabijheid",
+"description": "Direct en menselijk contact met elke cliënt en elk specifiek geval."
+}
+},
+"ctaTitle": "Klaar om Uw Rechten te Beschermen?",
+"ctaSubtitle": "Plan een eerste bijeenkomst en ontdek hoe wij u kunnen helpen uw zaak op te lossen.",
+"scheduleMeeting": "Afspraak Maken"
+},
+
+"NotFound": {
+"title": "Pagina Niet Gevonden",
+"description": "Oeps! De pagina die u zoekt lijkt te zijn verdwenen of heeft nooit bestaan.",
+"goBack": "Terug",
+"homePage": "Startpagina"
+},
+
+"ContactPage": {
+"mobileCallNote": "(gesprek naar nationaal mobiel netwerk)",
+"pageTitle": "NEEM CONTACT OP",
+"pageSubtitle": "Wij zijn er om te helpen. Neem contact met ons op en ons team zal u zo snel mogelijk antwoorden.",
+"contactInfoTitle": "Contactgegevens",
+"address": {
+"title": "Adres",
+"content": "Largo de Heliodoro Salgado Nº8, 8500-537 Portimão, Portugal"
+},
+"phone": {
+"title": "Telefoon",
+"content": "+351 964 022 222"
+},
+"email": {
+"title": "E-mail",
+"content": "niz@nadinezeverino.com "
+},
+"hours": {
+"title": "Openingstijden",
+"content": "Maandag t/m Vrijdag: 9u - 18u"
+},
+"followUs": "Volg ons op Sociale Media",
+"locationTitle": "Locatie",
+"mapTitle": "Locatie van het Kantoor"
+},
+
+"Common": {
+"scheduleMeeting": "Afspraak Maken",
+"callNow": "Bel Nu"
+},
+
+"Privacy": {
+"pageTitle": "Privacybeleid",
+"pageSubtitle": "Lees hoe wij uw persoonsgegevens verzamelen, gebruiken en beschermen",
+"header": {
+"title": "Privacybeleid",
+"effectiveDate": "Inwerkingtreding: 1 januari 2025"
+},
+"sections": {
+"informationCollection": {
+"title": "Verzamelde Informatie",
+"content": "Wij verzamelen verschillende soorten informatie om onze juridische diensten te verlenen en te verbeteren. Dit omvat zowel informatie die u ons rechtstreeks verstrekt als automatisch verzamelde informatie.",
+"subsections": {
+"personalData": {
+"title": "Persoonsgegevens die U Ons Verstrekt",
+"points": {
+"identification": "Identificatiegegevens zoals naam, geboortedatum, nationaliteit en door de overheid verstrekte identificatienummers",
+"contact": "Contactgegevens, waaronder adres, telefoonnummer, e-mailadres en voorkeurscommunicatiemethode",
+"professional": "Professionele informatie, inclusief werkgegevens, zakelijke affiliaties en sector van activiteit",
+"communications": "Inhoud van communicatie met ons, inclusief e-mails, brieven, telefoongesprekken en notities van vergaderingen"
+}
+},
+"usageData": {
+"title": "Automatisch Verzamelde Gebruiksgegevens",
+"points": {
+"device": "Apparaatinformatie zoals IP-adres, browsertype, besturingssysteem en mobiele apparaat-ID's",
+"browsing": "Browsingactiviteit, inclusief bezochte pagina's, tijd op pagina's, navigatiepaden en klikpatronen",
+"interactions": "Interactiegegevens met websitefunctionaliteiten, formulieren en online diensten"
+}
+}
+}
+},
+"howWeUse": {
+"title": "Hoe Wij Uw Informatie Gebruiken",
+"content": "Wij gebruiken de verzamelde informatie voor specifieke doeleinden gerelateerd aan onze juridische praktijk en klantenserviceverplichtingen.",
+"subsections": {
+"provision": {
+"title": "Verlening van Diensten en Klantenservice",
+"points": {
+"services": "Verlenen van juridisch advies, vertegenwoordiging en professionele diensten afgestemd op uw specifieke behoeften",
+"support": "Continue ondersteuning, updates over de voortgang en efficiënte communicatie gedurende het hele juridische traject",
+"communication": "Bijhouden van actuele dossiers en faciliteren van effectieve communicatiekanalen"
+}
+},
+"improvement": {
+"title": "Verbetering en Optimalisatie van Diensten",
+"points": {
+"analysis": "Analyseren van gebruikerspatronen en feedback om onze juridische expertise en dienstverlening te verbeteren",
+"personalization": "Personaliseren van website-inhoud en dienstaanbevelingen op basis van uw voorkeuren",
+"optimization": "Optimaliseren van websiteprestaties, beveiligingsmaatregelen en gebruikerservaring"
+}
+}
+}
+},
+"dataProtection": {
+"title": "Gegevensbescherming en Beveiliging",
+"content": "Wij implementeren robuuste beveiligingsmaatregelen om uw persoonsgegevens te beschermen tegen onbevoegde toegang, wijziging, openbaarmaking of vernietiging.",
+"subsections": {
+"security": {
+"title": "Geïmplementeerde Beveiligingsmaatregelen",
+"points": {
+"encryption": "Geavanceerde encryptietechnologie voor gegevensoverdracht en veilige opslag van gevoelige informatie",
+"accessControl": "Strikte toegangscontroles, beperking van gegevenstoegang tot alleen geautoriseerd personeel met rolgebaseerde rechten",
+"regularAudits": "Regelmatige beveiligingsaudits en kwetsbaarheidsbeoordelingen om de hoogste beschermingsnormen te handhaven"
+}
+},
+"retention": {
+"title": "Gegevensbewaarbeleid",
+"points": {
+"duration": "Bewaring van persoonsgegevens gedurende de wettelijk vereiste periodes volgens de Portugese wetgeving en professionele regelgeving",
+"deletion": "Veilige verwijdering van gegevens na de bewaartermijnen, tenzij wettelijk vereist",
+"requirements": "Nakoming van professionele verplichtingen en wettelijke vereisten voor het bewaren van dossiers"
+}
+}
+}
+},
+"sharing": {
+"title": "Delen en Openbaarmaking van Informatie",
+"content": "Wij respecteren uw privacy en delen uw informatie alleen onder specifieke omstandigheden, in overeenstemming met wettelijke en professionele verplichtingen.",
+"subsections": {
+"thirdParties": {
+"title": "Delen met Derden",
+"points": {
+"serviceProviders": "Delen met betrouwbare externe dienstverleners die ons ondersteunen bij onze activiteiten en contractueel gebonden zijn aan vertrouwelijkheid",
+"legalRequirements": "Openbaarmaking wanneer wettelijk vereist, op gerechtelijk bevel of door een toezichthoudende autoriteit, in het kader van wettelijke naleving",
+"businessTransfers": "Overdracht bij fusie, overname of verkoop van activa, met behoud van adequate bescherming"
+}
+},
+"prohibited": {
+"title": "Verboden Openbaarmakingen",
+"points": {
+"selling": "Wij verkopen, ruilen of verhuren uw persoonsgegevens niet aan derden voor marketingdoeleinden",
+"marketing": "Wij gebruiken uw gegevens niet voor ongevraagde commerciële communicatie of promotionele activiteiten",
+"unauthorized": "Wij maken uw informatie niet openbaar zonder adequate toestemming of wettelijke verplichting"
+}
+}
+}
+},
+"yourRights": {
+"title": "Uw Rechten en Opties",
+"content": "U heeft specifieke rechten met betrekking tot uw persoonsgegevens krachtens de Portugese gegevensbeschermingswetgeving en de AVG.",
+"subsections": {
+"access": {
+"title": "Rechten op Toegang en Controle",
+"points": {
+"information": "Recht om informatie op te vragen over welke persoonsgegevens wij over u bewaren en hoe deze worden verwerkt",
+"correction": "Recht om correctie van onjuiste of onvolledige persoonsgegevens te vragen",
+"deletion": "Recht om verwijdering van uw gegevens te vragen wanneer deze niet langer nodig zijn voor de gespecificeerde doeleinden"
+}
+},
+"contact": {
+"title": "Contact met Ons Opnemen over Privacy",
+"points": {
+"email": "U kunt contact met ons opnemen via privacy@nadinezeverino.com voor vragen over privacy",
+"responseTime": "Wij verbinden ons ertoe privacyverzoeken te beantwoorden binnen 30 dagen na ontvangst",
+"assistance": "Onze Functionaris voor Gegevensbescherming staat klaar om u te helpen met privacyvragen en het uitoefenen van uw rechten"
+}
+}
+}
+}
+},
+"contact": {
+"title": "Vragen over Uw Privacy?",
+"content": "Als u vragen heeft over dit privacybeleid of zorgen hebt over de verwerking van uw persoonsgegevens, aarzel dan niet om contact met ons op te nemen.",
+"email": "privacy@nadinezeverino.com ",
+"form": "Contactformulier"
+},
+"lastUpdated": "Laatst Bijgewerkt: december 2024"
+},
+
+"Cookies": {
+"pageTitle": "Cookiebeleid",
+"pageSubtitle": "Lees hoe wij cookies gebruiken om uw browse-ervaring te verbeteren",
+"header": {
+"title": "Cookiebeleid",
+"lastUpdated": "Laatst Bijgewerkt: december 2024"
+},
+"introduction": {
+"title": "Inleiding",
+"content1": "Dit Cookiebeleid legt uit hoe Nadine Isabel Zeverino Advocaat ('wij', 'ons' of 'onze') cookies en soortgelijke technologieën gebruikt wanneer u onze website bezoekt. Door verder te browsen op onze website, stemt u in met het gebruik van cookies zoals beschreven in dit beleid.",
+"content2": "Wij behouden ons het recht voor dit Cookiebeleid op elk moment bij te werken. Eventuele wijzigingen zullen op deze pagina worden gepubliceerd met een bijgewerkte revisiedatum."
+},
+"whatAreCookies": {
+"title": "Wat zijn Cookies?",
+"content": "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden opgeslagen wanneer u een website bezoekt. Ze stellen websites in staat om informatie of functionaliteiten op te slaan en helpen uw browse-ervaring te verbeteren.",
+"howTheyWork": {
+"title": "Hoe Werken Cookies",
+"storage": "Opgeslagen in het tijdelijke geheugen van uw browser of permanent op uw apparaat",
+"retrieval": "Automatisch teruggestuurd naar de oorspronkelijke website bij latere bezoeken",
+"session": "Sessiecookies verlopen wanneer u de browser sluit",
+"persistence": "Persistente cookies blijven tot ze verlopen of handmatig worden verwijderd"
+}
+},
+"types": {
+"title": "Soorten Cookies die Wij Gebruiken",
+"essential": {
+"title": "Essentiële Cookies",
+"description": "Deze cookies zijn strikt noodzakelijk voor de correcte werking van de website. Ze maken basisfuncties mogelijk zoals navigatie tussen pagina's en toegang tot beveiligde gebieden.",
+"purpose": "Doel:",
+"examples": {
+"session": "Sessiebeheer voor geauthenticeerde gebruikers",
+"security": "Beveiligingsfuncties en fraudepreventie",
+"preferences": "Onthouden van uw cookievoorkeuren"
+}
+},
+"performance": {
+"title": "Prestatiecookies",
+"description": "Deze cookies verzamelen informatie over hoe bezoekers onze website gebruiken, zoals welke pagina's het meest worden bezocht en of ze foutmeldingen ontvangen.",
+"purpose": "Doel:",
+"examples": {
+"analytics": "Verkeersanalyse en gebruikstatistieken",
+"load": "Meting van laadtijden en optimalisatie",
+"traffic": "Analyse van verkeerspatronen voor verbeteringen"
+}
+},
+"functionality": {
+"title": "Functionaliteitscookies",
+"description": "Deze cookies stellen de website in staat uw keuzes te onthouden en gepersonaliseerde functionaliteiten te bieden tijdens uw bezoek.",
+"purpose": "Doel:",
+"examples": {
+"video": "Videospelerfunctionaliteiten en voorkeuren",
+"social": "Sociale media deelfuncties",
+"chat": "Livechat- en klantenservicefuncties"
+}
+},
+"advertising": {
+"title": "Advertentiecookies",
+"description": "Deze cookies worden gebruikt om advertenties relevanter voor u en uw interesses te maken. Ze beperken ook het aantal keren dat u een advertentie ziet.",
+"purpose": "Doel:",
+"examples": {
+"personalized": "Gepersonaliseerde advertenties op basis van uw profiel",
+"interest": "Advertentiesegmentatie op basis van interesses",
+"frequency": "Beperking van de weergavefrequentie van advertenties"
+}
+}
+},
+"howWeUse": {
+"title": "Hoe Wij Cookies Gebruiken",
+"content": "Wij gebruiken cookies om uw website-ervaring te verbeteren, prestaties te analyseren en gepersonaliseerde inhoud te leveren. Dit zijn de belangrijkste doelstellingen:",
+"purposes": {
+"functionality": "Websitefunctionaliteit",
+"performance": "Prestatieanalyse",
+"security": "Versterking van beveiliging",
+"analytics": "Verkeersanalyse",
+"personalization": "Personalisatie van inhoud",
+"advertising": "Gerichte reclame"
+}
+},
+"manage": {
+"title": "Beheer van Uw Cookievoorkeuren",
+"browser": {
+"title": "Browserinstellingen",
+"description": "De meeste browsers staan u toe cookies te beheren via de respectievelijke instellingen. U kunt cookies blokkeren of verwijderen, hoewel dit de functionaliteit van de website kan beïnvloeden.",
+"steps": {
+"settings": "Ga naar het instellingen- of voorkeurenmenu van uw browser",
+"cookies": "Zoek naar de privacy- of cookie-sectie",
+"preferences": "Pas uw cookievoorkeuren en instellingen aan",
+"save": "Sla de wijzigingen op en herstart de browser"
+}
+},
+"consent": {
+"title": "Cookie-toestemmingsbeheerder",
+"description": "Wij bieden een cookie-toestemmingsbanner op onze website waar u uw voorkeuren op elk moment kunt beheren.",
+"steps": {
+"banner": "Zoek naar de cookie-toestemmingsbanner op onze website",
+"preferences": "Klik op 'Voorkeuren Beheren' of een vergelijkbare optie",
+"selection": "Selecteer de soorten cookies die u accepteert",
+"confirm": "Bevestig uw selecties en ga verder met browsen"
+}
+}
+},
+"rights": {
+"title": "Uw Rechten met Betrekking tot Cookies",
+"content": "U heeft het recht om te weten hoe wij cookies gebruiken en uw voorkeuren te beheren. Als u vragen heeft over dit Cookiebeleid of uw rechten wilt uitoefenen, neem dan contact met ons op.",
+"email": "niz@nadinezeverino.com ",
+"form": "Neem contact met ons op"
+},
+"lastUpdated": "Laatst Bijgewerkt: september 2025"
+},
+
+"ContactForm": {
+"title": "Bericht Verzenden",
+"nameLabel": "Volledige Naam",
+"namePlaceholder": "Uw naam",
+"emailLabel": "E-mail",
+"emailPlaceholder": "uw@email.nl ",
+"phoneLabel": "Telefoon",
+"phonePlaceholder": "+351 912 345 678",
+"subjectLabel": "Onderwerp",
+"selectSubject": "Selecteer een onderwerp",
+"civilLaw": "Burgerlijk Recht",
+"commercialLaw": "Familie- en Erfrecht",
+"realEstateLaw": "Vastgoedrecht",
+"contractsBusiness": "Regularisatie van Buitenlanders",
+"other": "Overig",
+"messageLabel": "Bericht",
+"messagePlaceholder": "Beschrijf kort uw situatie...",
+"sendMessage": "Bericht Verzenden",
+"sending": "Bezig met verzenden...",
+"successMessage": "Bericht succesvol verzonden! Wij nemen spoedig contact met u op.",
+"errorMessage": "Fout bij verzenden van het bericht. Probeer het opnieuw.",
+"connectionError": "Verbindingsfout. Probeer het opnieuw."
+},
+
+"Api": {
+"contact": {
+"missingFields": "Alle verplichte velden moeten worden ingevuld",
+"success": "Bericht succesvol verzonden!",
+"serverError": "Interne serverfout"
+}
+},
+"Email": {
+"contactSubject": "Website Contact - {{subject}}",
+"contactTitle": "Nieuw contactbericht",
+"fields": {
+"name": "Naam",
+"email": "E-mail",
+"phone": "Telefoon",
+"subject": "Onderwerp",
+"message": "Bericht",
+"notProvided": "Niet verstrekt"
+}
+}
+}
+

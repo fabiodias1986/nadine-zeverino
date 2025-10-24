@@ -1,4 +1,5 @@
 'use client'
+
 import {
   Mail,
   Phone,
@@ -8,29 +9,40 @@ import {
   Briefcase,
   MessageCircle,
   BookOpen,
-} from "lucide-react"
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import  Image  from 'next/image';
-
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
+} from 'lucide-react'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import Image from 'next/image'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
-  const t = useTranslations('Footer');
+  const t = useTranslations('Footer')
 
   // Navigation links array
   const navigationLinks = [
-    { icon: Home, label: t('home'), href: "/" },
-    { icon: Users, label: t('about'), href: "/about" },
-    { icon: Briefcase, label: t('services'), href: "/pratice-areas" },
-    { icon: MessageCircle, label: t('contact'), href: "/contact" },
+    { icon: Home, label: t('home'), href: '/' },
+    { icon: Users, label: t('about'), href: '/about' },
+    { icon: Briefcase, label: t('services'), href: '/pratice-areas' },
+    { icon: MessageCircle, label: t('contact'), href: '/contact' },
   ]
 
   // Social media links array
   const socialLinks = [
-    { icon: FaFacebook, href: "https://www.facebook.com/nadineisabelzeverino.adv", label: "Facebook" },
-    { icon: FaInstagram, href: "https://www.instagram.com/nadinezeverino_advogada", label: "Instagram" },
-    { icon: FaLinkedin, href: "https://pt.linkedin.com/in/nizaadvogada", label: "LinkedIn" },
+    {
+      icon: FaFacebook,
+      href: 'https://www.facebook.com/nadineisabelzeverino.adv',
+      label: 'Facebook',
+    },
+    {
+      icon: FaInstagram,
+      href: 'https://www.instagram.com/nadinezeverino_advogada',
+      label: 'Instagram',
+    },
+    {
+      icon: FaLinkedin,
+      href: 'https://pt.linkedin.com/in/nizaadvogada',
+      label: 'LinkedIn',
+    },
   ]
 
   // Contact information array
@@ -47,12 +59,17 @@ export default function Footer() {
     {
       icon: Phone,
       content: (
-        <a
-          href="tel:+351964022222"
-          className="text-gray-400 hover:text-white transition-colors duration-300 font-light text-sm"
-        >
-          +351 964 022 222
-        </a>
+        <div className="flex flex-col">
+          <a
+            href="tel:+351964022222"
+            className="text-gray-400 hover:text-white transition-colors duration-300 font-light text-sm"
+          >
+            +351 964 022 222
+          </a>
+          <span className="text-gray-500 text-xs mt-1 font-light">
+            {t('mobileCallNote')}
+          </span>
+        </div>
       ),
     },
     {
@@ -68,11 +85,15 @@ export default function Footer() {
     },
   ]
 
-  // Footer links array (removido terms, adicionado livro de reclamações)
+  // Footer links array (removed terms, added livro de reclamações)
   const footerLinks = [
-    { label: t('privacy'), href: "/privacy" },
-    { label: t('cookies'), href: "/cookies" },
-    { label: t('complaints'), href: "https://www.livroreclamacoes.pt/", external: true },
+    { label: t('privacy'), href: '/privacy' },
+    { label: t('cookies'), href: '/cookies' },
+    {
+      label: t('complaints'),
+      href: 'https://www.livroreclamacoes.pt/',
+      external: true,
+    },
   ]
 
   return (
@@ -86,9 +107,13 @@ export default function Footer() {
               <div className="flex flex-col items-center lg:items-start mb-4">
                 <div className="flex items-center justify-center lg:justify-start mb-4">
                   <div className="h-12 w-auto">
-                    <Image 
-                    width={250} height={250}
-                    src="/media/logo.png" alt="Logo Nadine Isabel Zeverino" className="h-12 w-auto object-contain" />
+                    <Image
+                      width={250}
+                      height={250}
+                      src="/media/logo.png"
+                      alt="Logo Nadine Isabel Zeverino"
+                      className="h-12 w-auto object-contain"
+                    />
                   </div>
                   <h2 className="text-xl font-bold text-white ml-3">
                     {t('fullName')}
@@ -120,7 +145,9 @@ export default function Footer() {
 
           {/* Segunda Coluna - Links do Menu */}
           <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
-            <h3 className="text-lg font-semibold tracking-wide text-white">{t('navigation')}</h3>
+            <h3 className="text-lg font-semibold tracking-wide text-white">
+              {t('navigation')}
+            </h3>
             <nav className="flex flex-col space-y-4">
               {navigationLinks.map((link, index) => {
                 const IconComponent = link.icon
@@ -142,7 +169,9 @@ export default function Footer() {
 
           {/* Terceira Coluna - Contactos */}
           <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
-            <h3 className="text-lg font-semibold tracking-wide text-white">{t('contact')}</h3>
+            <h3 className="text-lg font-semibold tracking-wide text-white">
+              {t('contact')}
+            </h3>
             <div className="space-y-5">
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon
@@ -184,7 +213,7 @@ export default function Footer() {
                   <Link
                     key={index}
                     href={link.href}
-                    className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium flex items-center gap-1"
+                    className="text-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium"
                   >
                     {link.label}
                   </Link>

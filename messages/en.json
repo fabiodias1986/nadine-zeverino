@@ -272,6 +272,7 @@
     "services": "Services",
     "privacy": "Privacy",
     "complaints": "Complain Book",
+    "mobileCallNote": "(National mobile network call)",
     "cookies": "Cookies",
     "address": {
       "line1": "Largo de Heliodoro Salgado Nº8",
@@ -375,6 +376,7 @@
 
 
    "ContactPage": {
+    "mobileCallNote": "(national mobile network call)",
     "pageTitle": "GET IN TOUCH",
     "pageSubtitle": "We are here to help. Contact us and our team will get back to you as soon as possible.",
     "contactInfoTitle": "Contact Information",

@@ -260,6 +260,7 @@
     "about": "Sobre",
     "services": "Serviços",
     "privacy": "Privacidade",
+    "mobileCallNote": "(Chamada para rede móvel nacional)",
     "complaints": "Livro de Reclamações",
     "cookies": "Cookies",
     "address": {
@@ -358,6 +359,8 @@
   },
 
   "ContactPage": {
+
+    "mobileCallNote": "(chamada para rede móvel nacional)",
     "pageTitle": "ENTRE EM CONTACTO",
     "pageSubtitle": "Estamos aqui para ajudar. Contacte-nos e a nossa equipa responder-lhe-á o mais rapidamente possível.",
     "contactInfoTitle": "Informação de Contacto",

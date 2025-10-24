@@ -4,7 +4,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { notFound } from 'next/navigation';
 
@@ -21,7 +21,7 @@ export async function generateMetadata({
   // Títulos e descrições por idioma
   const metadataByLocale = {
     pt: {
-      title: "Nadine Isabel Zeverino - Advogada em Portimão | Direito Português",
+      title: "Nadine Isabel Zeverino - Advogada em Portimão ",
       description: "Advogada especializada em Portimão com mais de 10 anos de experiência. Soluções jurídicas personalizadas em Direito Civil, Comercial, Imobiliário e Laboral. Proteção integral dos seus direitos.",
       keywords: "advogada Portimão, direito português, consultoria jurídica, direito civil, direito comercial, direito imobiliário, direito laboral, advocacia Portimão, Nadine Zeverino",
     },
@@ -30,20 +30,10 @@ export async function generateMetadata({
       description: "Specialized lawyer in Portimão with over 10 years of experience. Personalized legal solutions in Civil, Commercial, Real Estate and Labor Law. Comprehensive protection of your rights.",
       keywords: "lawyer Portimão, Portuguese law, legal consulting, civil law, commercial law, real estate law, labor law, advocacy Portimão, Nadine Zeverino",
     },
-    es: {
-      title: "Nadine Isabel Zeverino - Abogada en Portimão | Derecho Portugués",
-      description: "Abogada especializada en Portimão con más de 10 años de experiencia. Soluciones jurídicas personalizadas en Derecho Civil, Comercial, Inmobiliario y Laboral. Protección integral de sus derechos.",
-      keywords: "abogada Portimão, derecho portugués, consultoría jurídica, derecho civil, derecho comercial, derecho inmobiliario, derecho laboral, abogacía Portimão, Nadine Zeverino",
-    },
-    fr: {
-      title: "Nadine Isabel Zeverino - Avocate à Portimão | Droit Portugais",
-      description: "Avocate spécialisée à Portimão avec plus de 10 ans d'expérience. Solutions juridiques personnalisées en Droit Civil, Commercial, Immobilier et du Travail. Protection complète de vos droits.",
-      keywords: "avocate Portimão, droit portugais, conseil juridique, droit civil, droit commercial, droit immobilier, droit du travail, avocature Portimão, Nadine Zeverino",
-    },
-    de: {
-      title: "Nadine Isabel Zeverino - Rechtsanwältin in Portimão | Portugiesisches Recht",
-      description: "Spezialisierte Rechtsanwältin in Portimão mit über 10 Jahren Erfahrung. Personalisierte Rechtslösungen im Zivil-, Handels-, Immobilien- und Arbeitsrecht. Umfassender Schutz Ihrer Rechte.",
-      keywords: "Rechtsanwältin Portimão, portugiesisches Recht, Rechtsberatung, Zivilrecht, Handelsrecht, Immobilienrecht, Arbeitsrecht, Anwaltschaft Portimão, Nadine Zeverino",
+    nl: {
+      title: "Nadine Isabel Zeverino - Advocaat in Portimão | Portugees Recht",
+      description: "Gespecialiseerde advocaat in Portimão met meer dan 10 jaar ervaring. Gepersonaliseerde juridische oplossingen in Burgerlijk, Handels-, Vastgoed- en Arbeidsrecht. Uitgebreide bescherming van uw rechten.",
+      keywords: "advocaat Portimão, Portugees recht, juridische consultatie, burgerlijk recht, handelsrecht, vastgoedrecht, arbeidsrecht, advocatuur Portimão, Nadine Zeverino",
     }
   };
 
@@ -72,9 +62,7 @@ export async function generateMetadata({
       languages: {
         'pt': 'https://www.nadinezeverino.com/pt',
         'en': 'https://www.nadinezeverino.com/en',
-        'es': 'https://www.nadinezeverino.com/es',
-        'fr': 'https://www.nadinezeverino.com/fr',
-        'de': 'https://www.nadinezeverino.com/de',
+        'nl': 'https://www.nadinezeverino.com/nl',
       }
     },
     openGraph: {
@@ -101,7 +89,7 @@ export async function generateMetadata({
       creator: "@nadinezeverino"
     },
     verification: {
-      google: "google-site-verification-code", // Substitua pelo seu código real
+      google: "google-site-verification-code", 
     }
   };
 }

@@ -21,7 +21,12 @@ export default function ContactPage() {
     {
       icon: <FaPhone className="text-[#E83241] text-xl" />,
       title: t('phone.title'),
-      content: t('phone.content'),
+      content: (
+        <div className="flex flex-col">
+          <span>{t('phone.content')}</span>
+          <span className="text-sm text-gray-500 mt-1">{t('mobileCallNote')}</span>
+        </div>
+      ),
       action: () => {
         window.location.href = 'tel:+351964022222';
       }
@@ -83,7 +88,7 @@ export default function ContactPage() {
                     <div className="mt-1">{info.icon}</div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">{info.title}</h3>
-                      <p className="text-gray-600 mt-1">{info.content}</p>
+                      <div className="text-gray-600 mt-1">{info.content}</div>
                     </div>
                   </motion.div>
                 ))}
@@ -133,7 +138,6 @@ export default function ContactPage() {
           <div className="h-1 w-20 bg-[#E83241] mb-8"></div>
           
           <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-            {/* Google Maps Iframe - Updated with correct address */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.2994094000004!2d-8.5385!3d37.1375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1bbf4a3c6b4c6d%3A0x5a0d5a5a5a5a5a5a!2sLargo%20de%20Heliodoro%20Salgado%208%2C%208500-537%20Portim%C3%A3o!5e0!3m2!1sen!2spt!4v1650000000000!5m2!1sen!2spt"
               width="100%"
