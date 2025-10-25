@@ -26,7 +26,7 @@ async function loadMessages(locale: string) {
 function getLocaleFromHeaders(request: NextRequest): string {
   const acceptLanguage = request.headers.get('accept-language');
   if (acceptLanguage) {
-    const locales = ['pt', 'en', 'fr', 'es', 'de'];
+    const locales = ['pt', 'en', 'fr', 'es', 'nl'];
     for (const locale of locales) {
       if (acceptLanguage.includes(locale)) {
         return locale;
@@ -59,9 +59,9 @@ export async function POST(request: NextRequest) {
     
     // Criar transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
+      host: process.env.SMTP_HOST || '185.118.115.31',
       port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: false, // true para 465, false para outras portas
+      secure: false, 
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
