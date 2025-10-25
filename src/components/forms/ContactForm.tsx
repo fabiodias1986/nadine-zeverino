@@ -101,7 +101,7 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
+              className="w-full px-4 py-3 border border-gray-300  text-gray-700 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
               placeholder={t('namePlaceholder')}
             />
           </div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
+              className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
               placeholder={t('emailPlaceholder')}
             />
           </div>
@@ -129,7 +129,7 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
+              className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
               placeholder={t('phonePlaceholder')}
             />
           </div>
@@ -141,7 +141,7 @@ export default function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors appearance-none bg-white outline-none"
+              className="w-full px-4 py-3 border border-gray-300 text-gray-700rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors appearance-none bg-white outline-none"
             >
               {subjectOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -161,7 +161,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
+            className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors outline-none"
             placeholder={t('messagePlaceholder')}
           ></textarea>
         </div>
