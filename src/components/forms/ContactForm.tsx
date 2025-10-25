@@ -141,7 +141,7 @@ export default function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 text-gray-700rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors appearance-none bg-white outline-none"
+              className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-xl focus:ring-2 focus:ring-[#E83241] focus:border-[#E83241] transition-colors appearance-none bg-white outline-none"
             >
               {subjectOptions.map((option) => (
                 <option key={option.value} value={option.value}>
