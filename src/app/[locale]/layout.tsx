@@ -8,6 +8,8 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import CookieBanner from '@/components/CookieBanner';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -130,6 +132,7 @@ export default async function LocaleLayout({
             GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} 
           />
         )}
+        <CookieBanner />
           <Footer />
         </NextIntlClientProvider>
       </body>

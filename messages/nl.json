@@ -699,6 +699,14 @@
 "message": "Bericht",
 "notProvided": "Niet verstrekt"
 }
-}
+},
+
+"CookieBanner": {
+    "message": "We use cookies to enhance your experience. By continuing, you agree to our use of cookies.",
+    "accept": "Accept",
+    "reject": "Reject"
+  }
+
+
 }
 

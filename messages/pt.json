@@ -700,5 +700,11 @@
       "message": "Mensagem",
       "notProvided": "Não fornecido"
     }
+  },
+
+   "CookieBanner": {
+    "message": "Utilizamos cookies para melhorar a sua experiência. Ao continuar, aceita a nossa utilização de cookies.",
+    "accept": "Aceitar",
+    "reject": "Recusar"
   }
 }
