@@ -85,7 +85,7 @@ export default function Footer() {
     },
   ]
 
-  // Footer links array (removed terms, added livro de reclamações)
+  // Footer links array
   const footerLinks = [
     { label: t('privacy'), href: '/privacy' },
     { label: t('cookies'), href: '/cookies' },
@@ -99,9 +99,9 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        {/* Layout responsivo: 1 coluna em mobile, 2 em tablet, 3 em desktop */}
+        {/* Layout responsivo */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 justify-items-center">
-          {/* Primeira Coluna - Logo, Descrição e Redes Sociais */}
+          {/* Logo, Descrição e Redes Sociais */}
           <div className="md:col-span-2 lg:col-span-6 space-y-6 text-center md:text-center lg:text-left w-full">
             <div>
               <div className="flex flex-col items-center lg:items-start mb-4">
@@ -143,7 +143,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Segunda Coluna - Links do Menu */}
+          {/* Links do Menu */}
           <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
             <h3 className="text-lg font-semibold tracking-wide text-white">
               {t('navigation')}
@@ -167,7 +167,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Terceira Coluna - Contactos */}
+          {/* Contactos */}
           <div className="md:col-span-1 lg:col-span-3 space-y-6 text-left w-full">
             <h3 className="text-lg font-semibold tracking-wide text-white">
               {t('contact')}
@@ -190,13 +190,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Linha de separação e copyright */}
+        {/* Linha de separação e conteúdo inferior */}
         <div className="border-t border-white border-opacity-10 mt-12 pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-gray-500 text-sm">
-              © 2025 {t('fullName')}. {t('rights')}
-            </p>
-            <div className="flex flex-wrap justify-center sm:justify-end space-x-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between items-center gap-4">
+            {/* Policy links — appears FIRST on mobile */}
+            <div className="order-1 sm:order-2 flex flex-wrap justify-center sm:justify-end space-x-6">
               {footerLinks.map((link, index) => (
                 link.external ? (
                   <a
@@ -219,6 +217,24 @@ export default function Footer() {
                   </Link>
                 )
               ))}
+            </div>
+
+            {/* Copyright + Website by — appears LAST on mobile */}
+            <div className="order-2 sm:order-1 flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 text-center sm:text-left">
+              <p className="text-gray-500 text-sm">
+                © 2025 {t('fullName')}. {t('rights')}
+              </p>
+              <p className="text-gray-500 text-sm">
+                {t('websiteBy')}{' '}
+                <a
+                  href="https://pixelcreatives.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#E83241] hover:text-white transition-colors duration-300"
+                >
+                  Pixel Creatives
+                </a>
+              </p>
             </div>
           </div>
         </div>
