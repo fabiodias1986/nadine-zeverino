@@ -2,7 +2,10 @@ interface Window {
   gtag: (
     command: 'config' | 'event',
     targetId: string,
-    config?: Record<string, any>
+    config?: Record<string, unknown>
   ) => void
-  dataLayer: any[]
+  dataLayer: Array<{
+    event?: string
+    [key: string]: unknown
+  }>
 }
