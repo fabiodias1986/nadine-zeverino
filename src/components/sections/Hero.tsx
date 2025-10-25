@@ -17,7 +17,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-black text-white overflow-hidden pt-[60px]">
+    <section className="relative min-h-screen bg-black text-white overflow-hidden pt-[50px]">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
