@@ -295,7 +295,22 @@
 }
 },
 
+"HomePage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Advocaat in Portimão, Portugal",
+      "description": "Ervaren advocaat in Portimão, Portugal, met meer dan 10 jaar ervaring. Gespecialiseerd in familierecht, erfrecht, vastgoedrecht, immigratie, Portugese nationaliteit, handelsrecht en strafrecht in de Algarve.",
+      "keywords": "advocaat Portimão Portugal, familierecht Algarve, erfrecht en verdeling, immigratieadvocaat Portugal, Portugese nationaliteit, vastgoedadvocaat, strafrecht, handelsrecht, Nadine Zeverino",
+      "ogImageAlt": "Nadine Zeverino – Advocaat in Portimão, Portugal, gespecialiseerd in familierecht, vastgoed en immigratie"
+    }
+},
+
 "ServicesPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Praktijkgebieden",
+      "description": "Ontdek de juridische praktijkgebieden van Nadine Zeverino in Portimão: familierecht, vastgoedrecht, handelsrecht, arbeidsrecht en strafrecht in de Algarve.",
+      "keywords": "advocaat praktijkgebieden Portimão, familierecht, vastgoedrecht, handelsrecht, strafrecht, Nadine Zeverino",
+      "ogImageAlt": "Juridische praktijkgebieden van Nadine Zeverino in Portimão"
+    },
 "pageTitle": "DIENSTVERLENING",
 "pageSubtitle": "Gespecialiseerde juridische oplossingen gericht op resultaten en volledige bescherming van uw belangen",
 "searchPlaceholder": "Zoek in dienstverlening...",
@@ -312,6 +327,13 @@
 },
 
 "AboutPage": {
+     "meta": {
+      "title": "Nadine Isabel Zeverino | Over Mij",
+      "description": "Maak kennis met Nadine Zeverino, advocaat met meer dan 10 jaar ervaring in Portimão. Gespecialiseerd in familierecht, vastgoedrecht, handelsrecht en strafrecht in de Algarve.",
+      "keywords": "over advocaat Portimão, Nadine Zeverino, Algarve advocaat, juridische ervaring, recht in Portimão",
+      "ogImageAlt": "Foto van Nadine Zeverino, advocaat in Portimão"
+    },
+
 "pageTitle": "NADINE ISABEL ZEVERINO",
 "pageSubtitle": "Gespecialiseerd advocaat in Portugal met meer dan 10 jaar ervaring",
 "profileImageAlt": "Nadine Isabel Zeverino - Advocaat in Portimão, Portugal",
@@ -360,6 +382,12 @@
 },
 
 "ContactPage": {
+     "meta": {
+      "title": "Nadine Isabel Zeverino | Contacts",
+      "description": "Neem contact op met het kantoor van advocate Nadine Zeverino in Portimão. Consulten op locatie en telefonisch beschikbaar. Centraal gelegen in de Algarve.",
+      "keywords": "contact advocaat Portimão, advocatenkantoor Portimão, Nadine Zeverino contactgegevens, juridisch advies boeken",
+      "ogImageAlt": "Kantoor van Nadine Zeverino in Portimão, Algarve"
+    },
 "mobileCallNote": "(gesprek naar nationaal mobiel netwerk)",
 "pageTitle": "NEEM CONTACT OP",
 "pageSubtitle": "Wij zijn er om te helpen. Neem contact met ons op en ons team zal u zo snel mogelijk antwoorden.",

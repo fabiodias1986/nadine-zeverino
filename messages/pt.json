@@ -259,7 +259,7 @@
     "contact": "Contactos",
     "home": "Início",
     "about": "Sobre",
-    "services": "Serviços",
+    "services": "Áreas de Atuação",
     "privacy": "Privacidade",
     "mobileCallNote": "(Chamada para rede móvel nacional)",
     "complaints": "Livro de Reclamações",
@@ -295,7 +295,22 @@
     }
   },
 
+  "HomePage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Advogada em Portimão",
+      "description": "Advogada em Portimão, Portugal, com mais de 10 anos de experiência. Especializada em direito da família, sucessões, imobiliário, regularização de estrangeiros, nacionalidade portuguesa, direito comercial e penal no Algarve.",
+      "keywords": "advogada Portimão, direito da família Portimão, inventário e partilha, regularização de estrangeiros Portugal, nacionalidade portuguesa, direito imobiliário Algarve, direito penal, direito comercial, Nadine Zeverino",
+      "ogImageAlt": "Nadine Zeverino – Advogada em Portimão, especializada em direito familiar, imobiliário e apoio a estrangeiros"
+    }
+  },
+
   "ServicesPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Áreas de Atuação Advogada",
+      "description": "Conheça as áreas de atuação da advogada Nadine Zeverino em Portimão: direito familiar, imobiliário, comercial, laboral e criminal no Algarve.",
+      "keywords": "áreas de atuação advogada Portimão, direito familiar, direito imobiliário, direito comercial, direito criminal, Nadine Zeverino",
+      "ogImageAlt": "Áreas de atuação jurídica de Nadine Zeverino em Portimão"
+    },
     "pageTitle": "ÁREAS DE ATUAÇÃO",
     "pageSubtitle": "Soluções jurídicas especializadas focadas em resultados e proteção integral dos seus interesses",
     "searchPlaceholder": "Pesquisar áreas de atuação...",
@@ -312,6 +327,13 @@
   },
 
   "AboutPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Sobre Mim",
+      "description": "Conheça Nadine Zeverino, advogada com mais de 10 anos de experiência em Portimão. Especializada em direito familiar, imobiliário, comercial e criminal no Algarve.",
+      "keywords": "sobre advogada Portimão, Nadine Zeverino, advogada Algarve, experiência jurídica, direito em Portimão",
+      "ogImageAlt": "Foto de Nadine Zeverino, advogada em Portimão"
+    },
+
     "pageTitle": "NADINE ISABEL ZEVERINO",
     "pageSubtitle": "Advogada especializada em Portugal com mais de 10 anos de experiência",
     "profileImageAlt": "Nadine Isabel Zeverino - Advogada em Portimão, Portugal",
@@ -361,6 +383,12 @@
 
   "ContactPage": {
 
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Contactos",
+      "description": "Entre em contacto com o escritório da advogada Nadine Zeverino em Portimão. Atendimento presencial e por telefone. Localização central no Algarve.",
+      "keywords": "contactar advogada Portimão, escritório jurídico Portimão, Nadine Zeverino contactos, marcação consulta advogada",
+      "ogImageAlt": "Escritório de Nadine Zeverino em Portimão, Algarve"
+    },
     "mobileCallNote": "(chamada para rede móvel nacional)",
     "pageTitle": "ENTRE EM CONTACTO",
     "pageSubtitle": "Estamos aqui para ajudar. Contacte-nos e a nossa equipa responder-lhe-á o mais rapidamente possível.",

@@ -306,8 +306,22 @@
       }
   },
 
+   "HomePage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Lawyer in Portimão, Portugal",
+      "description": "Experienced lawyer in Portimão, Portugal, with over 10 years of practice. Specialized in family & inheritance law, real estate, immigration, Portuguese citizenship, commercial law, and criminal defense in the Algarve.",
+      "keywords": "lawyer Portimão Portugal, family law Algarve, inheritance and estate division, immigration lawyer Portugal, Portuguese citizenship, real estate lawyer, criminal defense, commercial law, Nadine Zeverino",
+      "ogImageAlt": "Nadine Zeverino – Lawyer in Portimão, Portugal, specializing in family, real estate, and immigration law"
+    }
+  },
 
   "ServicesPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Pratice Areas",
+      "description": "Discover the legal practice areas of Nadine Zeverino in Portimão: family, real estate, commercial, labor, and criminal law in the Algarve.",
+      "keywords": "lawyer practice areas Portimão, family law, real estate law, commercial law, criminal law, Nadine Zeverino",
+      "ogImageAlt": "Legal practice areas of Nadine Zeverino in Portimão"
+    },
     "pageTitle": "PRACTICE AREAS",
     "pageSubtitle": "Specialized legal solutions focused on results and comprehensive protection of your interests",
     "searchPlaceholder": "Search areas of practice...",
@@ -325,6 +339,12 @@
 
 
   "AboutPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | About Me",
+      "description": "Meet Nadine Zeverino, a lawyer with over 10 years of experience in Portimão. Specialized in family, real estate, commercial, and criminal law in the Algarve.",
+      "keywords": "about lawyer Portimão, Nadine Zeverino, Algarve lawyer, legal experience, law in Portimão",
+      "ogImageAlt": "Photo of Nadine Zeverino, lawyer in Portimão"
+    },
     "pageTitle": "NADINE ISABEL ZEVERINO",
     "pageSubtitle": "Lawyer specialized in Portugal with over 10 years of experience",
     "profileImageAlt": "Nadine Isabel Zeverino - Lawyer in Portimão, Portugal",
@@ -377,6 +397,12 @@
 
 
    "ContactPage": {
+    "meta": {
+      "title": "Nadine Isabel Zeverino | Contacts",
+      "description": "Contact the law office of Nadine Zeverino in Portimão. In-person and phone consultations available. Centrally located in the Algarve.",
+      "keywords": "contact lawyer Portimão, law office Portimão, Nadine Zeverino contacts, book legal consultation",
+      "ogImageAlt": "Law office of Nadine Zeverino in Portimão, Algarve"
+    },
     "mobileCallNote": "(national mobile network call)",
     "pageTitle": "GET IN TOUCH",
     "pageSubtitle": "We are here to help. Contact us and our team will get back to you as soon as possible.",

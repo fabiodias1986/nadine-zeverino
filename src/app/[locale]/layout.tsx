@@ -7,6 +7,7 @@ import Navbar from "@/components/layout/Navbar";
 import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { notFound } from 'next/navigation';
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -89,7 +90,7 @@ export async function generateMetadata({
       creator: "@nadinezeverino"
     },
     verification: {
-      google: "google-site-verification-code", 
+      google: "WT2TGT7aQDWuFjmPrNjUcLvRjBQMtjG70jVSRibvaps", 
     }
   };
 }
@@ -117,10 +118,18 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+    <head>
+      <meta name="google-site-verification" content="WT2TGT7aQDWuFjmPrNjUcLvRjBQMtjG70jVSRibvaps" />
+    </head>
       <body className={`${inter.className} bg-white`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics 
+            GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} 
+          />
+        )}
           <Footer />
         </NextIntlClientProvider>
       </body>

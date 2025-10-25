@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from 'react';
 import {
   Scale, Phone, Mail, Shield, Star, ChevronRight, Clock, Users
