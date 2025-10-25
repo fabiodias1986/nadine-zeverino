@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function LoadingPage() {
   return (
@@ -20,9 +21,10 @@ export default function LoadingPage() {
           {/* Glass morphism container */}
           <div className="absolute inset-0  rounded-2xl"></div>
           <div className="relative rounded-2xl p-6 ">
-            <img 
+            <Image
               src="/media/logo.png" 
               alt="Loading" 
+              fill
               className="w-16 h-16  lg:w-24 lg:h-24 object-contain"
             />
           </div>
