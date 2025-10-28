@@ -1,7 +1,16 @@
 // app/[locale]/contactos/ContactPageClient.tsx
 'use client';
 
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaClock,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp
+} from 'react-icons/fa';
 import ContactForm from '@/components/forms/ContactForm';
 import PageHeader from '@/components/layout/PageHeader';
 import { useTranslations } from 'next-intl';
@@ -29,6 +38,18 @@ export default function ContactPageClient() {
       ),
       action: () => {
         window.location.href = 'tel:+351964022222';
+      }
+    },
+    {
+      icon: <FaWhatsapp className="text-[#E83241] text-xl" />,
+      title: "WhatsApp",
+      content: (
+        <div className="flex flex-col">
+          <span>+351 964 022 222</span>
+        </div>
+      ),
+      action: () => {
+        window.open('https://wa.me/351964022222', '_blank');
       }
     },
     {
@@ -72,7 +93,7 @@ export default function ContactPageClient() {
                   <div
                     key={index}
                     onClick={info.action ? () => info.action() : undefined}
-                    className={`flex items-start gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer ${info.action ? 'hover:border-[#E83241]' : ''}`}
+                    className={`flex items-start gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer ${info.action ? 'hover:border-[#E83241]' : 'cursor-default'}`}
                   >
                     <div className="mt-1">{info.icon}</div>
                     <div>
@@ -90,7 +111,7 @@ export default function ContactPageClient() {
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
-                    href={social.url}
+                    href={social.url.trim()}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center text-xl hover:bg-[#E83241] transition-all duration-300 shadow-md hover:shadow-lg"

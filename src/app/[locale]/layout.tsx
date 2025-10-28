@@ -9,7 +9,7 @@ import Footer from "@/components/layout/Footer";
 import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieBanner from '@/components/CookieBanner';
-
+import WhatsappButton from '@/components/WhatsappButton';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -133,6 +133,7 @@ export default async function LocaleLayout({
           />
         )}
         <CookieBanner />
+        <WhatsappButton />
           <Footer />
         </NextIntlClientProvider>
       </body>
