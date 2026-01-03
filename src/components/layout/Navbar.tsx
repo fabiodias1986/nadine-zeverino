@@ -56,11 +56,6 @@ export default function Navbar() {
     </motion.a>
   )
 
-  // Hide Navbar on Legal Point sales page (it has its own custom navbar)
-  if (pathname.includes('/legal-point')) {
-    return null;
-  }
-
   return (
     <nav className="fixed w-full z-50">
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/90 backdrop-blur-xl border-b border-white/10"></div>
@@ -101,8 +96,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`px-5 py-2.5 mx-1 rounded-xl text-sm font-medium transition-all duration-300 ${isActive(link.href)
-                    ? 'bg-gradient-to-r from-[#E83241]/20 to-[#B83232]/20 text-white border border-[#E83241]/30'
-                    : 'text-white/70 hover:text-white hover:bg-white/5'
+                  ? 'bg-gradient-to-r from-[#E83241]/20 to-[#B83232]/20 text-white border border-[#E83241]/30'
+                  : 'text-white/70 hover:text-white hover:bg-white/5'
                   }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -197,8 +192,8 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     className={`block px-6 py-4 rounded-xl text-lg font-medium text-center transition-all duration-300 ${isActive(link.href)
-                        ? 'bg-gradient-to-r from-[#E83241]/20 to-[#B83232]/20 text-white border border-[#E83241]/30'
-                        : 'text-white/60 hover:text-white hover:bg-white/5'
+                      ? 'bg-gradient-to-r from-[#E83241]/20 to-[#B83232]/20 text-white border border-[#E83241]/30'
+                      : 'text-white/60 hover:text-white hover:bg-white/5'
                       }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -259,8 +254,8 @@ function LanguageSwitcherMobile() {
           key={language.code}
           onClick={() => changeLanguage(language.code)}
           className={`p-3 w-16 h-16 rounded-lg text-center transition-all flex flex-col items-center justify-center h-14 ${currentLocale === language.code
-              ? 'bg-[#E83241]/30 border border-[#E83241]/50 text-white'
-              : 'bg-white/5 hover:bg-white/10 text-white/70'
+            ? 'bg-[#E83241]/30 border border-[#E83241]/50 text-white'
+            : 'bg-white/5 hover:bg-white/10 text-white/70'
             }`}
         >
           <div className={`fi fi-${language.flagCode} fis rounded-sm mx-auto mb-1`}></div>

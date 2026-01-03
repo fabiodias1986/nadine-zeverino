@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function LegalPointPage() {
   return (
-    <main className="bg-black min-h-screen text-white selection:bg-[#C5A065] selection:text-black">
+    <div className="bg-black min-h-screen text-white selection:bg-[#C5A065] selection:text-black">
       <LegalNavbar />
       <div id="hero"><LegalHero /></div>
       <div id="services"><ServiceGridLuxury /></div>
@@ -24,6 +24,6 @@ export default function LegalPointPage() {
       <div id="why-portugal"><WhyChoosePortugal /></div>
       <div id="about"><LegalAbout /></div>
       <div id="contact"><FinalCTA /></div>
-    </main>
+    </div>
   );
 }

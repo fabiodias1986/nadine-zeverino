@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Link, usePathname } from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import LanguageSwitcher from '@/components/LanguageSwticher'
@@ -75,7 +75,9 @@ export default function LegalNavbar() {
                     <div className="flex items-center gap-4">
                         {/* 1. CTA Button (Left) */}
                         <motion.a
-                            href="#contact"
+                            href="https://calendar.app.google/gBr7b8fKmrMc976o9"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="h-10 flex items-center justify-center px-6 bg-[#C5A065] text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors rounded-full"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
