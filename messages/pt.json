@@ -727,6 +727,22 @@
         "point4": "Estruturação Societária para Investidores Internacionais"
       }
     },
+    "Bio": {
+      "metaTitle": "Nadine Zeverino | Cartão de Visita Virtual",
+      "metaDescription": "Contactos diretos de Nadine Zeverino, Advogada em Portugal. WhatsApp, Telefone e Marcação de Consultas.",
+      "name": "Nadine Isabel Zeverino",
+      "role": "Lawyer | Advogada",
+      "buttons": {
+        "whatsapp": "WhatsApp",
+        "call": "Ligar",
+        "website": "Website Principal",
+        "legalPoint": "Legal Point",
+        "bookMeeting": "Marcar Reunião",
+        "email": "Enviar Email",
+        "saveContact": "Guardar Contacto"
+      },
+      "footer": "© {year} Nadine Isabel Zeverino"
+    },
     "WhyPortugal": {
       "tag": "A Porta de Entrada para a Europa",
       "mainTitle": "Porquê Escolher",
@@ -751,8 +767,7 @@
     },
     "Metadata": {
       "title": "Legal Point por Nadine Zeverino | Advocacia de Luxo Portugal",
-      "description": "Representação jurídica premium para investidores internacionais em Portugal. Especialistas em Imobiliário, Vistos Gold e Direito Sucessório.",
-      "keywords": "serviços jurídicos portugal, advogada luxo algarve, visto gold, direito imobiliário, nadine zeverino"
+      "description": "Representação jurídica premium para investidores internacionais em Portugal. Especialistas em Imobiliário, Vistos Gold e Direito Sucessório."
     },
     "Process": {
       "tag": "Como Trabalhamos",

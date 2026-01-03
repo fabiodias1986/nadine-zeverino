@@ -6,9 +6,9 @@ import Navbar from "./Navbar";
 
 export default function MainLayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  
- 
-  const isSalesPage = pathname.includes('/legal-point');
+
+
+  const isSalesPage = pathname.includes('/legal-point') || pathname.includes('/bio');
 
   return (
     <>

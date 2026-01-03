@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
-import LanguageSwitcher from '@/components/LanguageSwticher'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 import 'flag-icons/css/flag-icons.min.css'
 import Image from 'next/image'
 

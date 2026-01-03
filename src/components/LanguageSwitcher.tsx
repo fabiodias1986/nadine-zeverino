@@ -5,7 +5,12 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import 'flag-icons/css/flag-icons.min.css'
 
-export default function LanguageSwitcher() {
+
+interface LanguageSwitcherProps {
+  alwaysDropdown?: boolean;
+}
+
+export default function LanguageSwitcher({ alwaysDropdown = false }: LanguageSwitcherProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const pathname = usePathname()
 
@@ -35,20 +40,19 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative">
 
-      {/* DESKTOP: Dropdown (Hidden on mobile) */}
-      <div className="hidden md:block relative">
+      {/* DESKTOP (or ALWAYS): Dropdown */}
+      <div className={`${alwaysDropdown ? 'block' : 'hidden md:block'} relative`}>
         <motion.button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="min-h-12 group flex items-center gap-2 px-3 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#E83241]/30 rounded-xl text-white transition-all duration-300 backdrop-blur-sm min-w-[100px]"
+          className="min-h-10 md:min-h-12 group flex items-center gap-2 px-2 md:px-3 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#E83241]/30 rounded-xl text-white transition-all duration-300 backdrop-blur-sm w-auto md:min-w-[100px]"
           aria-label="Change language"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
           <span className={`fi fi-${currentLanguage.flagCode} rounded-sm w-5 h-4`}></span>
-          <span className="text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
-
+          <span className="text-sm font-medium uppercase">{currentLanguage.code}</span>
           <motion.svg
-            className="w-3.5 h-3.5 text-white/60 group-hover:text-white/80 ml-auto"
+            className="w-3.5 h-3.5 text-white/60 group-hover:text-white/80 ml-1 hidden md:block"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -113,22 +117,24 @@ export default function LanguageSwitcher() {
       </div>
 
 
-      {/* MOBILE: Row (Visible only on mobile) */}
-      <div className="flex md:hidden items-center gap-6">
-        {languages.map((language) => (
-          <motion.button
-            key={language.code}
-            onClick={() => changeLanguage(language.code)}
-            whileTap={{ scale: 0.9 }}
-            className={`flex flex-col items-center gap-2 opacity-80 transition-opacity ${currentLocale === language.code ? 'opacity-100 scale-110' : 'hover:opacity-100'}`}
-          >
-            <span className={`fi fi-${language.flagCode} rounded-sm w-8 h-6 shadow-md block ${currentLocale === language.code ? 'ring-2 ring-[#C5A065] ring-offset-2 ring-offset-black' : ''}`}></span>
-            <span className={`text-xs font-bold uppercase tracking-widest ${currentLocale === language.code ? 'text-[#C5A065]' : 'text-gray-400'}`}>
-              {language.code}
-            </span>
-          </motion.button>
-        ))}
-      </div>
+      {/* MOBILE: Row (Visible only on mobile AND if not alwaysDropdown) */}
+      {!alwaysDropdown && (
+        <div className="flex md:hidden items-center gap-6">
+          {languages.map((language) => (
+            <motion.button
+              key={language.code}
+              onClick={() => changeLanguage(language.code)}
+              whileTap={{ scale: 0.9 }}
+              className={`flex flex-col items-center gap-2 opacity-80 transition-opacity ${currentLocale === language.code ? 'opacity-100 scale-110' : 'hover:opacity-100'}`}
+            >
+              <span className={`fi fi-${language.flagCode} rounded-sm w-8 h-6 shadow-md block ${currentLocale === language.code ? 'ring-2 ring-[#C5A065] ring-offset-2 ring-offset-black' : ''}`}></span>
+              <span className={`text-xs font-bold uppercase tracking-widest ${currentLocale === language.code ? 'text-[#C5A065]' : 'text-gray-400'}`}>
+                {language.code}
+              </span>
+            </motion.button>
+          ))}
+        </div>
+      )}
 
     </div>
   )

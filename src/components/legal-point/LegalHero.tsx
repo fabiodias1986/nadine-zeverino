@@ -70,8 +70,8 @@ export default function LegalHero() {
                     >
                         <BookMeetingButton
                             onClick={() => {
-                                if (typeof window !== 'undefined' && (window as any).gtag) {
-                                    (window as any).gtag('event', 'click', {
+                                if (typeof window !== 'undefined' && (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag) {
+                                    (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag('event', 'click', {
                                         event_category: 'CTA',
                                         event_label: 'Hero - Book Meeting'
                                     });
@@ -86,8 +86,8 @@ export default function LegalHero() {
                         href="https://wa.me/351964022222"
                         target="_blank"
                         onClick={() => {
-                            if (typeof window !== 'undefined' && (window as any).gtag) {
-                                (window as any).gtag('event', 'click', {
+                            if (typeof window !== 'undefined' && (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag) {
+                                (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag('event', 'click', {
                                     event_category: 'Contact',
                                     event_label: 'Hero - WhatsApp'
                                 });

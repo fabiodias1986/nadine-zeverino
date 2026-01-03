@@ -9,7 +9,7 @@ interface Review {
   name: string;
   rating: number;
   comment: string;
-  language: 'pt' | 'en' | 'sv' | 'fr'; 
+  language: 'pt' | 'en' | 'sv' | 'fr';
 }
 
 const reviews: Review[] = [
@@ -99,7 +99,7 @@ export default function GoogleReviews() {
       }, 4000);
       return () => clearInterval(interval);
     }
-  }, [isPlaying, isHovered, reviews.length]);
+  }, [isPlaying, isHovered]);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
@@ -151,7 +151,7 @@ export default function GoogleReviews() {
               {t('googleReviews')}
             </span>
           </motion.div>
-          
+
           {/* TÍTULO com branding consistente */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight">
             <span className="block">{t('whatOurClients')}</span>
@@ -162,7 +162,7 @@ export default function GoogleReviews() {
         </div>
 
         {/* Main Slideshow */}
-        <div 
+        <div
           className="relative max-w-4xl mx-auto"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -171,7 +171,7 @@ export default function GoogleReviews() {
           <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
             {/* Decorative top border */}
             <div className="h-1 bg-gradient-to-r from-[#E83241] via-[#E83241]/80 to-[#E83241]"></div>
-            
+
             <div className="p-8 md:p-12 lg:p-16">
               {/* Quote Icon */}
               <div className="flex justify-center mb-8">
@@ -179,23 +179,23 @@ export default function GoogleReviews() {
                   <Quote className="w-8 h-8 text-[#E83241]" />
                 </div>
               </div>
-              
+
               {/* Review Content */}
               <div key={currentReview.id} className="text-center">
                 <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 italic max-w-3xl mx-auto">
                   &quot;{currentReview.comment}&quot;
                 </p>
-                
+
                 {/* Rating */}
                 <div className="flex items-center justify-center gap-1 mb-6">
                   {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
-                      className={`w-5 h-5 ${i < currentReview.rating ? 'text-[#E83241] fill-current' : 'text-gray-300'}`} 
+                    <Star
+                      key={i}
+                      className={`w-5 h-5 ${i < currentReview.rating ? 'text-[#E83241] fill-current' : 'text-gray-300'}`}
                     />
                   ))}
                 </div>
-                
+
                 {/* Author with flag */}
                 <div className="text-center flex items-center justify-center gap-2">
                   <span className="text-2xl">{getFlagEmoji(currentReview.language)}</span>
@@ -213,7 +213,7 @@ export default function GoogleReviews() {
           >
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:bg-[#E83241] hover:text-white"
@@ -229,9 +229,8 @@ export default function GoogleReviews() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex ? 'bg-[#E83241] w-8' : 'bg-gray-300'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-[#E83241] w-8' : 'bg-gray-300'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

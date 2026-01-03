@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
-import LanguageSwitcher from '@/components/LanguageSwticher'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 import 'flag-icons/css/flag-icons.min.css'
 import Image from 'next/image'
 
@@ -79,8 +79,8 @@ export default function LegalNavbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
-                                if (typeof window !== 'undefined' && (window as any).gtag) {
-                                    (window as any).gtag('event', 'click', {
+                                if (typeof window !== 'undefined' && (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag) {
+                                    (window as unknown as { gtag: (c: string, a: string, p: Record<string, string>) => void }).gtag('event', 'click', {
                                         event_category: 'CTA',
                                         event_label: 'Navbar - Book Meeting'
                                     });

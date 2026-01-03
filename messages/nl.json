@@ -727,6 +727,22 @@
         "point4": "Vennootschapsstructurering voor Internationale Investeerders"
       }
     },
+    "Bio": {
+      "metaTitle": "Nadine Zeverino | Virtueel Visitekaartje",
+      "metaDescription": "Directe contactgegevens van Nadine Zeverino, Advocaat in Portugal. WhatsApp, Telefoon en Consultatie Boeken.",
+      "name": "Nadine Isabel Zeverino",
+      "role": "Advocaat | Lawyer",
+      "buttons": {
+        "whatsapp": "WhatsApp",
+        "call": "Bellen",
+        "website": "Hoofdwebsite",
+        "legalPoint": "Legal Point",
+        "bookMeeting": "Afspraak Maken",
+        "email": "E-mail Sturen",
+        "saveContact": "Contact Opslaan"
+      },
+      "footer": "© {year} Nadine Isabel Zeverino"
+    },
     "WhyPortugal": {
       "tag": "De Toegangspoort tot Europa",
       "mainTitle": "Waarom Kiezen voor",
@@ -751,8 +767,7 @@
     },
     "Metadata": {
       "title": "Legal Point door Nadine Zeverino | Luxe Juridische Diensten Portugal",
-      "description": "Premium juridische vertegenwoordiging voor internationale investeerders in Portugal. Gespecialiseerd in Vastgoed, Gouden Visum en Erfrecht.",
-      "keywords": "juridische diensten portugal, luxe advocaat algarve, gouden visum, vastgoedrecht, nadine zeverino"
+      "description": "Premium juridische vertegenwoordiging voor internationale investeerders in Portugal. Gespecialiseerd in Vastgoed, Gouden Visum en Erfrecht."
     },
     "Process": {
       "tag": "Hoe Wij Werken",

@@ -7,7 +7,6 @@ import { Inter } from "next/font/google";
 import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieBanner from '@/components/CookieBanner';
-import WhatsappButton from '@/components/WhatsappButton';
 import MainLayoutWrapper from '@/components/layout/MainWrapper';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 
@@ -117,7 +116,6 @@ export default async function LocaleLayout({
               />
             )}
             <CookieBanner />
-            <WhatsappButton />
           </MainLayoutWrapper>
         </NextIntlClientProvider>
       </body>
