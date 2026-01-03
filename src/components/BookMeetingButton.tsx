@@ -8,12 +8,14 @@ interface BookMeetingButtonProps {
   size?: 'sm' | 'md' | 'lg';
   className?: string;
   fullWidth?: boolean;
+  onClick?: () => void;
 }
 
 export default function BookMeetingButton({
   size = 'md',
   className = '',
-  fullWidth = false
+  fullWidth = false,
+  onClick
 }: BookMeetingButtonProps) {
   const t = useTranslations('Common');
 
@@ -34,7 +36,8 @@ export default function BookMeetingButton({
       href="https://calendar.app.google/gBr7b8fKmrMc976o9"
       target="_blank"
       rel="noopener noreferrer"
-      whileHover={{ 
+      onClick={onClick}
+      whileHover={{
         scale: 1.02,
         boxShadow: "0 10px 25px -5px rgba(232, 50, 65, 0.25)"
       }}
@@ -53,7 +56,7 @@ export default function BookMeetingButton({
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"
       />
-      
+
       <Calendar className="group-hover:scale-110 transition-transform" />
       <span>{t('scheduleMeeting')}</span>
       <motion.div

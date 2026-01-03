@@ -78,6 +78,14 @@ export default function LegalNavbar() {
                             href="https://calendar.app.google/gBr7b8fKmrMc976o9"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'CTA',
+                                        event_label: 'Navbar - Book Meeting'
+                                    });
+                                }
+                            }}
                             className="h-10 flex items-center justify-center px-6 bg-[#C5A065] text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors rounded-full"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

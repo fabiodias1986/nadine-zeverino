@@ -69,6 +69,14 @@ export default function LegalHero() {
                         style={{ borderRadius: '9999px' }}
                     >
                         <BookMeetingButton
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'CTA',
+                                        event_label: 'Hero - Book Meeting'
+                                    });
+                                }
+                            }}
                             className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-10 !py-5 text-lg font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 min-w-[200px] !rounded-full"
                         />
                     </motion.div>
@@ -77,6 +85,14 @@ export default function LegalHero() {
                     <motion.a
                         href="https://wa.me/351964022222"
                         target="_blank"
+                        onClick={() => {
+                            if (typeof window !== 'undefined' && (window as any).gtag) {
+                                (window as any).gtag('event', 'click', {
+                                    event_category: 'Contact',
+                                    event_label: 'Hero - WhatsApp'
+                                });
+                            }
+                        }}
                         className="group relative flex items-center justify-center gap-3 px-10 py-5 text-lg font-medium text-white border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 min-w-[200px] cursor-pointer rounded-full"
                         animate={{
                             borderColor: ['rgba(255,255,255,0.2)', 'rgba(255,255,255,0.6)', 'rgba(255,255,255,0.2)']

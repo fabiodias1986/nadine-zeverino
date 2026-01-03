@@ -49,6 +49,14 @@ export default function FinalCTA() {
                         style={{ borderRadius: '9999px' }}
                     >
                         <BookMeetingButton
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'CTA',
+                                        event_label: 'Footer - Book Meeting'
+                                    });
+                                }
+                            }}
                             className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-14 !py-7 !text-xl font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 min-w-[250px] !rounded-full"
                         />
                     </motion.div>
@@ -66,6 +74,14 @@ export default function FinalCTA() {
                         href="https://www.google.com/maps/search/?api=1&query=Largo+de+Heliodoro+Salgado+N%C2%BA8+8500-537+Portim%C3%A3o+Portugal"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => {
+                            if (typeof window !== 'undefined' && (window as any).gtag) {
+                                (window as any).gtag('event', 'click', {
+                                    event_category: 'Contact',
+                                    event_label: 'Footer - Open Maps'
+                                });
+                            }
+                        }}
                         className="text-center group hover:-translate-y-1 transition-transform duration-300 block cursor-pointer"
                     >
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">{t('officeTitle')}</h4>
@@ -74,7 +90,18 @@ export default function FinalCTA() {
                     </a>
                     <div className="text-center group hover:-translate-y-1 transition-transform duration-300">
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">{t('phoneLabel')}</h4>
-                        <a href="tel:+351964022222" className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors">
+                        <a
+                            href="tel:+351964022222"
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'Contact',
+                                        event_label: 'Footer - Phone Call'
+                                    });
+                                }
+                            }}
+                            className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors"
+                        >
                             +351 964 022 222
                         </a>
                         <p className="text-gray-500 text-sm">{t('phoneDesc')}</p>
@@ -84,14 +111,37 @@ export default function FinalCTA() {
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2 flex items-center justify-center gap-2">
                             <FaWhatsapp /> WhatsApp
                         </h4>
-                        <a href="https://wa.me/351964022222" target="_blank" className="text-lg md:text-xl text-white font-light hover:text-[#25D366] transition-colors">
+                        <a
+                            href="https://wa.me/351964022222"
+                            target="_blank"
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'Contact',
+                                        event_label: 'Footer - WhatsApp'
+                                    });
+                                }
+                            }}
+                            className="text-lg md:text-xl text-white font-light hover:text-[#25D366] transition-colors"
+                        >
                             +351 964 022 222
                         </a>
                         <p className="text-gray-500 text-sm">{t('whatsappDesc')}</p>
                     </div>
                     <div className="text-center group hover:-translate-y-1 transition-transform duration-300">
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">Email</h4>
-                        <a href="mailto:niz@nadinezeverino.com" className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors">
+                        <a
+                            href="mailto:niz@nadinezeverino.com"
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'click', {
+                                        event_category: 'Contact',
+                                        event_label: 'Footer - Email'
+                                    });
+                                }
+                            }}
+                            className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors"
+                        >
                             niz@nadinezeverino.com
                         </a>
                         <p className="text-gray-500 text-sm">{t('emailDesc')}</p>
