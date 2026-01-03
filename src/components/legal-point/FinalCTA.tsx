@@ -17,7 +17,7 @@ export default function FinalCTA() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-serif text-white mb-6"
+                    className="text-3xl md:text-6xl font-serif text-white mb-6"
                 >
                     {t('titlePart1')} <span className="text-[#C5A065] italic">{t('titlePart2')}</span>
                 </motion.h2>
@@ -27,7 +27,7 @@ export default function FinalCTA() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="text-xl text-gray-400 max-w-2xl mx-auto mb-12"
+                    className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12"
                 >
                     {t('subtitle')}
                 </motion.p>
@@ -62,14 +62,21 @@ export default function FinalCTA() {
                     transition={{ delay: 0.4 }}
                     className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto border-t border-white/10 pt-12"
                 >
-                    <div className="text-center group hover:-translate-y-1 transition-transform duration-300">
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Largo+de+Heliodoro+Salgado+N%C2%BA8+8500-537+Portim%C3%A3o+Portugal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-center group hover:-translate-y-1 transition-transform duration-300 block cursor-pointer"
+                    >
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">{t('officeTitle')}</h4>
-                        <p className="text-gray-400">Largo de Heliodoro Salgado Nº8</p>
-                        <p className="text-gray-500 text-sm">8500-537 Portimão, Portugal</p>
-                    </div>
+                        <p className="text-gray-400 group-hover:text-white transition-colors">Largo de Heliodoro Salgado Nº8</p>
+                        <p className="text-gray-500 text-sm group-hover:text-gray-300 transition-colors">8500-537 Portimão, Portugal</p>
+                    </a>
                     <div className="text-center group hover:-translate-y-1 transition-transform duration-300">
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">{t('phoneLabel')}</h4>
-                        <p className="text-white text-xl font-light">+351 964 022 222</p>
+                        <a href="tel:+351964022222" className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors">
+                            +351 964 022 222
+                        </a>
                         <p className="text-gray-500 text-sm">{t('phoneDesc')}</p>
                     </div>
                     {/* NEW WHATSAPP BLOCK */}
@@ -77,14 +84,14 @@ export default function FinalCTA() {
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2 flex items-center justify-center gap-2">
                             <FaWhatsapp /> WhatsApp
                         </h4>
-                        <a href="https://wa.me/351964022222" target="_blank" className="text-white text-xl font-light hover:text-[#25D366] transition-colors">
+                        <a href="https://wa.me/351964022222" target="_blank" className="text-lg md:text-xl text-white font-light hover:text-[#25D366] transition-colors">
                             +351 964 022 222
                         </a>
                         <p className="text-gray-500 text-sm">{t('whatsappDesc')}</p>
                     </div>
                     <div className="text-center group hover:-translate-y-1 transition-transform duration-300">
                         <h4 className="text-[#C5A065] font-serif text-lg mb-2">Email</h4>
-                        <a href="mailto:niz@nadinezeverino.com" className="text-white text-xl font-light hover:text-[#C5A065] transition-colors">
+                        <a href="mailto:niz@nadinezeverino.com" className="text-lg md:text-xl text-white font-light hover:text-[#C5A065] transition-colors">
                             niz@nadinezeverino.com
                         </a>
                         <p className="text-gray-500 text-sm">{t('emailDesc')}</p>

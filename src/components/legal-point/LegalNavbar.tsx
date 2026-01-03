@@ -110,7 +110,7 @@ export default function LegalNavbar() {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="absolute top-full left-0 w-full bg-black/95 border-b border-[#C5A065]/20 backdrop-blur-xl md:hidden flex flex-col items-center py-8 gap-6 shadow-2xl"
+                            className="absolute top-full left-0 w-full h-[calc(100dvh-5rem)] bg-black/95 border-b border-[#C5A065]/20 backdrop-blur-xl md:hidden flex flex-col items-center justify-center py-8 gap-8 shadow-2xl"
                         >
                             {navLinks.map((link) => (
                                 <a

@@ -30,7 +30,7 @@ export default function LegalHero() {
                     transition={{ duration: 0.8 }}
                     className="inline-block mb-6 px-4 py-2 border border-[#C5A065]/30 rounded-full bg-black/40 backdrop-blur-md"
                 >
-                    <span className="text-[#C5A065] text-sm font-medium tracking-widest uppercase">
+                    <span className="text-[#C5A065] text-xs md:text-sm font-medium tracking-widest uppercase">
                         {t('tag')}
                     </span>
                 </motion.div>
@@ -48,7 +48,7 @@ export default function LegalHero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed"
+                    className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed"
                 >
                     {t('subtitle')}
                 </motion.p>
