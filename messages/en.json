@@ -1,4 +1,9 @@
 {
+  "Metadata": {
+    "title": "Nadine Zeverino - Lawyer in Portimão | Family Law, Real Estate & Citizenship",
+    "description": "Experienced lawyer in Portimão, Algarve. Specialized in Family Law, Divorce, Inheritance, Real Estate, and Portuguese Citizenship. Book your consultation.",
+    "keywords": "Lawyer Portimão, Portugal Law, Family Law Algarve, Inheritance Portugal, Golden Visa, Portuguese Citizenship"
+  },
   "services": {
     "realEstate": {
       "title": "Real Estate and Construction Law",
@@ -64,9 +69,6 @@
       "application": "For individuals and companies who need legal validation of documents or public records."
     }
   },
-
-
- 
   "Navbar": {
     "home": "Home",
     "about": "About",
@@ -74,12 +76,10 @@
     "services": "Pratice Areas",
     "book": "Book Meeting"
   },
-
-
-   "Hero": {
-    "certifiedLawyer": "Certified Lawyer | Portugal",
+  "Hero": {
+    "certifiedLawyer": "Lawyer in Portimão | Portugal",
     "fullName": "Nadine Isabel Zeverino",
-    "description": "Excellent legal representation with over 10 years of experience. Personalized solutions to protect your rights and interests.",
+    "description": "Specialized lawyer in Portimão with over 10 years of experience. Excellent legal representation to protect your rights and interests.",
     "lawyerTitle": "Lawyer",
     "stats": {
       "years": "Years",
@@ -95,9 +95,6 @@
     "bookMeeting": "Book Meeting",
     "viewServices": "View Services"
   },
-
-
-
   "ProfileSection": {
     "aboutMe": "ABOUT ME",
     "title": "Lawyer in",
@@ -117,7 +114,6 @@
     "empathy": "empathy",
     "clearGuidance": "clear and transparent guidance"
   },
-
   "ServicesSection": {
     "areasOfPractice": "Practice",
     "practice": "Areas",
@@ -125,9 +121,7 @@
     "scheduleMeeting": "Book Meeting",
     "allServices": "All Services"
   },
-
-
-   "WhyChooseUs": {
+  "WhyChooseUs": {
     "whyChooseUs": "WHY CHOOSE US",
     "advantages": "Advantages",
     "thatDistinguish": "that Distinguish Us",
@@ -160,7 +154,6 @@
       }
     }
   },
-
   "Process": {
     "workProcess": "WORK PROCESS",
     "howWe": "How We",
@@ -185,9 +178,6 @@
       }
     }
   },
-
-
-
   "FAQ": {
     "frequentlyAsked": "FREQUENTLY ASKED",
     "clarifyYour": "Clarify Your",
@@ -218,17 +208,12 @@
       }
     ]
   },
-
-
-
   "GoogleReviews": {
     "googleReviews": "Google Reviews",
     "whatOurClients": "What Our",
     "clientsSay": "Clients Say",
     "viewGoogleReviews": "View reviews on Google"
   },
-
-
   "NadineLawCTA": {
     "fullName": "Nadine Isabel Zeverino",
     "lawyerTitle": "Lawyer · Portugal",
@@ -261,7 +246,6 @@
     "emailAddress": "niz@nadinezeverino.com",
     "confidentialService": "Confidential Service"
   },
-
   "Footer": {
     "websiteBy": "Website by:",
     "fullName": "Nadine Isabel Zeverino",
@@ -281,7 +265,6 @@
     },
     "rights": "All rights reserved."
   },
-
   "MeetingCTA": {
     "title": "Ready to Protect Your Rights?",
     "subtitle": "Schedule an initial meeting and discover how we can help solve your case.",
@@ -303,10 +286,9 @@
         "title": "24h",
         "value": "Response"
       }
-      }
+    }
   },
-
-   "HomePage": {
+  "HomePage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Lawyer in Portimão, Portugal",
       "description": "Experienced lawyer in Portimão, Portugal, with over 10 years of practice. Specialized in family & inheritance law, real estate, immigration, Portuguese citizenship, commercial law, and criminal defense in the Algarve.",
@@ -314,7 +296,6 @@
       "ogImageAlt": "Nadine Zeverino – Lawyer in Portimão, Portugal, specializing in family, real estate, and immigration law"
     }
   },
-
   "ServicesPage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Pratice Areas",
@@ -336,8 +317,6 @@
     "ctaSubtitle": "Book an initial meeting and discover how we can help solve your case.",
     "scheduleMeeting": "Book Meeting"
   },
-
-
   "AboutPage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | About Me",
@@ -384,19 +363,13 @@
     "ctaSubtitle": "Book an initial meeting and discover how we can help solve your case.",
     "scheduleMeeting": "Book Meeting"
   },
-
-
   "NotFound": {
     "title": "Page Not Found",
     "description": "Oops! The page you're looking for seems to have disappeared or never existed.",
     "goBack": "Go Back",
     "homePage": "Home Page"
   },
-
-
-
-
-   "ContactPage": {
+  "ContactPage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Contacts",
       "description": "Contact the law office of Nadine Zeverino in Portimão. In-person and phone consultations available. Centrally located in the Algarve.",
@@ -427,12 +400,10 @@
     "locationTitle": "Location",
     "mapTitle": "Office Location"
   },
-
-   "Common": {
+  "Common": {
     "scheduleMeeting": "Book Meeting",
     "callNow": "Call Now"
   },
-
   "Privacy": {
     "pageTitle": "Privacy Policy",
     "pageSubtitle": "Learn how we collect, use, and protect your personal information",
@@ -561,8 +532,6 @@
     },
     "lastUpdated": "Last Updated: December 2024"
   },
-
-
   "Cookies": {
     "pageTitle": "Cookie Policy",
     "pageSubtitle": "Learn how we use cookies to enhance your browsing experience",
@@ -672,7 +641,6 @@
     },
     "lastUpdated": "Last Updated: September 2025"
   },
-
   "ContactForm": {
     "title": "Send a Message",
     "nameLabel": "Full Name",
@@ -696,8 +664,6 @@
     "errorMessage": "Error sending message. Please try again.",
     "connectionError": "Connection error. Please try again."
   },
-
-
   "Api": {
     "contact": {
       "missingFields": "All required fields must be filled",
@@ -717,14 +683,140 @@
       "notProvided": "Not provided"
     }
   },
-
   "CookieBanner": {
     "message": "We use cookies to enhance your experience. By continuing, you agree to our use of cookies.",
     "accept": "Accept",
     "reject": "Reject"
+  },
+  "LegalPoint": {
+    "ContactBar": {
+      "bookMeetingBtn": "Book a Consultation"
+    },
+    "Trust": {
+      "years": "Years of Experience",
+      "cases": "Successful Cases",
+      "success": "Success Rate",
+      "nations": "Nations Represented"
+    },
+    "ServiceDetails": {
+      "realEstate": {
+        "tag": "Property Protection",
+        "title": "Secure Real Estate Acquisitions",
+        "description": "Investing in a foreign country requires more than a simple contract. We ensure your capital is protected through rigorous auditing of the property and its stakeholders.",
+        "point1": "Full Real Estate Due Diligence (Liens, Encumbrances, and Debt)",
+        "point2": "Drafting and Revision of Promissory Purchase & Sale Agreements",
+        "point3": "Representation in Deeds via Power of Attorney (No travel required)",
+        "point4": "Golden Visa Property Compliance and Legal Validation"
+      },
+      "successions": {
+        "tag": "Asset Continuity",
+        "title": "Cross-Border Inheritance Management",
+        "description": "Managing assets across different jurisdictions can be complex. We simplify the transition of your family legacy with fiscal intelligence and legal rigor.",
+        "point1": "International Probate and Estate Settlement in Portugal",
+        "point2": "Inventory of Assets and Legal Partition of Properties",
+        "point3": "Cross-border Inheritance Tax Optimization",
+        "point4": "Drafting of Wills and Asset Protection Strategies"
+      },
+      "legal": {
+        "tag": "Global Mobility",
+        "title": "Residency and Nationality",
+        "description": "Portugal is your gateway to Europe. We manage your residency process from start to finish, ensuring compliance with the latest SEF/AIMA regulations.",
+        "point1": "D7, D8 (Digital Nomad), and Golden Visa Applications",
+        "point2": "Portuguese Nationality Processes (By Descent or Marriage)",
+        "point3": "Fiscal Representation and NIF Application for Foreigners",
+        "point4": "Corporate Structuring for International Investors"
+      }
+    },
+    "WhyPortugal": {
+      "tag": "The Gateway to Europe",
+      "mainTitle": "Why Choose",
+      "mainTitleAccent": "Portugal?",
+      "description": "A stable nation offering world-class safety, strategic tax benefits, and a high-growth real estate market.",
+      "safety": {
+        "title": "Global Safety",
+        "desc": "Consistently ranked as one of the safest countries in the world, offering unparalleled peace of mind for you and your family."
+      },
+      "investment": {
+        "title": "Market Stability",
+        "desc": "A robust real estate market with consistent appreciation, ideal for high-yield long-term investments."
+      },
+      "lifestyle": {
+        "title": "Quality of Life",
+        "desc": "Over 300 days of sunshine per year, exceptional healthcare, and a unique Mediterranean lifestyle."
+      },
+      "tax": {
+        "title": "Strategic Tax Hub",
+        "desc": "Competitive tax regimes and wealth management frameworks designed for international residents."
+      }
+    },
+    "Process": {
+      "tag": "How We Work",
+      "title": "A Seamless Path to",
+      "titleAccent": "Success",
+      "subtitle": "We handle the complexities. You enjoy the results. From the first call to the final signature.",
+      "step1": {
+        "title": "Strategic Consultation",
+        "desc": "We align on your goals via video call or in-person meeting."
+      },
+      "step2": {
+        "title": "Remote Representation",
+        "desc": "Power of Attorney allows us to act on your behalf without you travelling."
+      },
+      "step3": {
+        "title": "Rigorous Due Diligence",
+        "desc": "We verify every legal detail, protecting your capital and interests."
+      },
+      "step4": {
+        "title": "Deal Completion",
+        "desc": "We execute the transaction and hand over the keys and documents."
+      }
+    },
+    "CTA": {
+      "titlePart1": "Secure your future",
+      "titlePart2": "in Portugal",
+      "subtitle": "Direct communication and legal rigor. We are ready to handle your case with the priority it deserves.",
+      "officeTitle": "Main Office",
+      "phoneLabel": "Phone",
+      "whatsappDesc": "Fast response for urgent inquiries.",
+      "emailDesc": "Send us your case details.",
+      "phoneDesc": "Direct line for consultations."
+    },
+    "Hero": {
+      "tag": "Legal Point by Nadine Zeverino",
+      "title": "Legal Excellence in Portugal",
+      "subtitle": "Tailored legal solutions for global investors and families. Expertise in Real Estate, Successions, and Residency managed with precision, regardless of your location.",
+      "ctaBtn": "Request Strategic Analysis"
+    },
+    "Services": {
+      "mainTitle": "Strategic Solutions",
+      "learnMoreBtn": "Learn More",
+      "imobiliario": {
+        "title": "Real Estate Law",
+        "desc": "Secure your investment in Portugal. We provide full due diligence, contract analysis, and legal representation for property acquisitions without the need for travel."
+      },
+      "sucessoes": {
+        "title": "International Successions",
+        "desc": "Expert management of cross-border estates and probate. We navigate complex legalities to protect and transfer your family assets with tax efficiency."
+      },
+      "legalizacoes": {
+        "title": "Visas & Nationality",
+        "desc": "Your gateway to Europe. Comprehensive assistance for Residency Visas (D7, Golden Visa, Digital Nomad) and Portuguese Citizenship processes."
+      }
+    },
+    "About": {
+      "paragraph1": "With over a decade of experience in the Portuguese legal system, Dr. Nadine Zeverino has built a career focused on protecting the assets and rights of global citizens on Portuguese soil.",
+      "quote": "Technology has removed distances; my role is to ensure that the law is never an obstacle to your goals.",
+      "paragraph2": "Specializing in the complexities of Real Estate and Inheritance Law, she offers a 100% digital, transparent, and high-standard service for those who demand excellence.",
+      "stats": {
+        "years": "Years of Expertise",
+        "digital": "Digital Workflow"
+      }
+    },
+    "FloatingBtn": {
+      "tooltip": "Speak with Dr. Nadine"
+    },
+    "Footer": {
+      "rights": "All rights reserved. Professional License No. [Teu Numero]"
+    }
   }
 }
-
-
-
-

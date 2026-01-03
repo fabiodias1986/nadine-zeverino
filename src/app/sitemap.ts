@@ -1,14 +1,14 @@
 import { MetadataRoute } from 'next'
 
-const locales = ['en', 'pt', 'nl'] 
-const baseUrl = 'https:nadinezeverino.com'
+const locales = ['en', 'pt', 'nl']
+const baseUrl = 'https://www.nadinezeverino.com'
 
 // Suas páginas estáticas
 const pages = [
   '',
   '/about',
   '/contact',
-  '/pratice-areas',
+  '/practice-areas',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

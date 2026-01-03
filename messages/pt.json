@@ -1,4 +1,9 @@
 {
+  "Metadata": {
+    "title": "Nadine Zeverino - Advogada em Portimão | Divórcios, Partilhas & Nacionalidade",
+    "description": "Advogada experiente em Portimão. Especialista em Direito da Família, Divórcios, Heranças, Imobiliário e Nacionalidade Portuguesa. Marque a sua consulta.",
+    "keywords": "Advogada Portimão, Divórcios Algarve, Heranças, Nacionalidade Portuguesa, Direito Imobiliário"
+  },
   "services": {
     "realEstate": {
       "title": "Direito Imobiliário e da Construção",
@@ -64,7 +69,6 @@
       "application": "Para particulares e empresas que necessitam de validação jurídica de documentos ou registo público."
     }
   },
-
   "Navbar": {
     "home": "Início",
     "about": "Sobre",
@@ -72,11 +76,10 @@
     "services": "Áreas de Atuação",
     "book": "Marcar Reunião"
   },
-
   "Hero": {
-    "certifiedLawyer": "Advogada Certificada | Portugal",
+    "certifiedLawyer": "Advogada em Portimão | Portugal",
     "fullName": "Nadine Isabel Zeverino",
-    "description": "Representação jurídica de excelência com mais de 10 anos de experiência. Soluções personalizadas para proteger os seus direitos e interesses.",
+    "description": "Advogada especializada em Portimão com mais de 10 anos de experiência. Soluções jurídicas e representação de excelência para proteger os seus direitos.",
     "lawyerTitle": "Advogada",
     "stats": {
       "years": "Anos",
@@ -92,7 +95,6 @@
     "bookMeeting": "Marcar Reunião",
     "viewServices": "Ver Serviços"
   },
-
   "ProfileSection": {
     "aboutMe": "SOBRE MIM",
     "title": "Advogada em",
@@ -112,7 +114,6 @@
     "empathy": "empatia",
     "clearGuidance": "orientação clara e transparente"
   },
-
   "ServicesSection": {
     "areasOfPractice": "Áreas",
     "practice": "de Atuação",
@@ -120,7 +121,6 @@
     "scheduleMeeting": "Marcar Reunião",
     "allServices": "Todos os Serviços"
   },
-
   "WhyChooseUs": {
     "whyChooseUs": "PORQUE ESCOLHER-NOS",
     "advantages": "Vantagens",
@@ -154,7 +154,6 @@
       }
     }
   },
-
   "Process": {
     "workProcess": "PROCESSO DE TRABALHO",
     "howWe": "Como",
@@ -179,7 +178,6 @@
       }
     }
   },
-
   "FAQ": {
     "frequentlyAsked": "PERGUNTAS",
     "clarifyYour": "Esclareça as",
@@ -210,14 +208,12 @@
       }
     ]
   },
-
   "GoogleReviews": {
     "googleReviews": "Avaliações Google",
     "whatOurClients": "O que os",
     "clientsSay": "Nossos Clientes Dizem",
     "viewGoogleReviews": "Ver avaliações no Google"
   },
-
   "NadineLawCTA": {
     "fullName": "Nadine Isabel Zeverino",
     "lawyerTitle": "Advogada · Portugal",
@@ -250,7 +246,6 @@
     "emailAddress": "niz@nadinezeverino.com",
     "confidentialService": "Serviço Confidencial"
   },
-
   "Footer": {
     "websiteBy": "Website por:",
     "fullName": "Nadine Isabel Zeverino",
@@ -270,7 +265,6 @@
     },
     "rights": "Todos os direitos reservados."
   },
-
   "MeetingCTA": {
     "title": "Pronto para Proteger os Seus Direitos?",
     "subtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
@@ -294,7 +288,6 @@
       }
     }
   },
-
   "HomePage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Advogada em Portimão",
@@ -303,7 +296,6 @@
       "ogImageAlt": "Nadine Zeverino – Advogada em Portimão, especializada em direito familiar, imobiliário e apoio a estrangeiros"
     }
   },
-
   "ServicesPage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Áreas de Atuação Advogada",
@@ -325,7 +317,6 @@
     "ctaSubtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
     "scheduleMeeting": "Marcar Reunião"
   },
-
   "AboutPage": {
     "meta": {
       "title": "Nadine Isabel Zeverino | Sobre Mim",
@@ -333,7 +324,6 @@
       "keywords": "sobre advogada Portimão, Nadine Zeverino, advogada Algarve, experiência jurídica, direito em Portimão",
       "ogImageAlt": "Foto de Nadine Zeverino, advogada em Portimão"
     },
-
     "pageTitle": "NADINE ISABEL ZEVERINO",
     "pageSubtitle": "Advogada especializada em Portugal com mais de 10 anos de experiência",
     "profileImageAlt": "Nadine Isabel Zeverino - Advogada em Portimão, Portugal",
@@ -373,16 +363,13 @@
     "ctaSubtitle": "Agende uma reunião inicial e descubra como podemos ajudar a resolver o seu caso.",
     "scheduleMeeting": "Marcar Reunião"
   },
-
   "NotFound": {
     "title": "Página Não Encontrada",
     "description": "Oops! A página que procura parece ter desaparecido ou nunca ter existido.",
     "goBack": "Voltar",
     "homePage": "Página Inicial"
   },
-
   "ContactPage": {
-
     "meta": {
       "title": "Nadine Isabel Zeverino | Contactos",
       "description": "Entre em contacto com o escritório da advogada Nadine Zeverino em Portimão. Atendimento presencial e por telefone. Localização central no Algarve.",
@@ -413,12 +400,10 @@
     "locationTitle": "Localização",
     "mapTitle": "Localização do Escritório"
   },
-
   "Common": {
     "scheduleMeeting": "Marcar Reunião",
     "callNow": "Ligar Agora"
   },
-
   "Privacy": {
     "pageTitle": "Política de Privacidade",
     "pageSubtitle": "Saiba como recolhemos, utilizamos e protegemos os seus dados pessoais",
@@ -547,7 +532,6 @@
     },
     "lastUpdated": "Última Atualização: Dezembro de 2024"
   },
-
   "Cookies": {
     "pageTitle": "Política de Cookies",
     "pageSubtitle": "Saiba como utilizamos cookies para melhorar a sua experiência de navegação",
@@ -657,7 +641,6 @@
     },
     "lastUpdated": "Última Atualização: Setembro de 2025"
   },
-
   "ContactForm": {
     "title": "Enviar Mensagem",
     "nameLabel": "Nome Completo",
@@ -681,7 +664,6 @@
     "errorMessage": "Erro ao enviar a mensagem. Por favor, tente novamente.",
     "connectionError": "Erro de ligação. Por favor, tente novamente."
   },
-
   "Api": {
     "contact": {
       "missingFields": "Todos os campos obrigatórios devem ser preenchidos",
@@ -701,10 +683,140 @@
       "notProvided": "Não fornecido"
     }
   },
-
-   "CookieBanner": {
+  "CookieBanner": {
     "message": "Utilizamos cookies para melhorar a sua experiência. Ao continuar, aceita a nossa utilização de cookies.",
     "accept": "Aceitar",
     "reject": "Recusar"
+  },
+  "LegalPoint": {
+    "ContactBar": {
+      "bookMeetingBtn": "Marcar Consulta"
+    },
+    "Trust": {
+      "years": "Anos de Experiência",
+      "cases": "Casos de Sucesso",
+      "success": "Taxa de Sucesso",
+      "nations": "Nações Representadas"
+    },
+    "ServiceDetails": {
+      "realEstate": {
+        "tag": "Proteção Patrimonial",
+        "title": "Aquisições Imobiliárias Seguras",
+        "description": "Investir num país estrangeiro exige mais do que um simples contrato. Garantimos que o seu capital está protegido através de uma auditoria rigorosa ao imóvel e aos intervenientes.",
+        "point1": "Due Diligence Imobiliária Completa (Ónus, Encargos e Dívidas)",
+        "point2": "Elaboração e Revisão de Contratos Promessa de Compra e Venda",
+        "point3": "Representação em Escrituras via Procuração (Sem necessidade de viajar)",
+        "point4": "Conformidade do Imóvel para Visto Gold e Validação Legal"
+      },
+      "successions": {
+        "tag": "Continuidade Patrimonial",
+        "title": "Gestão de Heranças Transfronteiriças",
+        "description": "Gerir ativos em diferentes jurisdições pode ser complexo. Simplificamos a transição do seu legado familiar com inteligência fiscal e rigor jurídico.",
+        "point1": "Habilitação de Herdeiros e Processos de Inventário em Portugal",
+        "point2": "Inventário de Bens e Partilha Legal de Propriedades",
+        "point3": "Otimização Fiscal de Heranças Transfronteiriças",
+        "point4": "Elaboração de Testamentos e Estratégias de Proteção de Ativos"
+      },
+      "legal": {
+        "tag": "Mobilidade Global",
+        "title": "Residência e Nacionalidade",
+        "description": "Portugal é a sua porta de entrada para a Europa. Gerimos o seu processo de residência do início ao fim, garantindo conformidade com os regulamentos mais recentes do SEF/AIMA.",
+        "point1": "Candidaturas D7, D8 (Nómada Digital) e Visto Gold",
+        "point2": "Processos de Nacionalidade Portuguesa (Por Descendência ou Casamento)",
+        "point3": "Representação Fiscal e Pedido de NIF para Estrangeiros",
+        "point4": "Estruturação Societária para Investidores Internacionais"
+      }
+    },
+    "WhyPortugal": {
+      "tag": "A Porta de Entrada para a Europa",
+      "mainTitle": "Porquê Escolher",
+      "mainTitleAccent": "Portugal?",
+      "description": "Uma nação estável que oferece segurança de classe mundial, benefícios fiscais estratégicos e um mercado imobiliário em alto crescimento.",
+      "safety": {
+        "title": "Segurança Global",
+        "desc": "Consistentemente classificado como um dos países mais seguros do mundo, oferecendo tranquilidade inigualável para si e para a sua família."
+      },
+      "investment": {
+        "title": "Estabilidade de Mercado",
+        "desc": "Um mercado imobiliário robusto com valorização consistente, ideal para investimentos de longo prazo com alto rendimento."
+      },
+      "lifestyle": {
+        "title": "Qualidade de Vida",
+        "desc": "Mais de 300 dias de sol por ano, cuidados de saúde excecionais e um estilo de vida mediterrânico único."
+      },
+      "tax": {
+        "title": "Hub Fiscal Estratégico",
+        "desc": "Regimes fiscais competitivos e estruturas de gestão de património desenhadas para residentes internacionais."
+      }
+    },
+    "Process": {
+      "tag": "Como Trabalhamos",
+      "title": "Um Caminho Simples para o",
+      "titleAccent": "Sucesso",
+      "subtitle": "Nós tratamos da complexidade. Você aproveita os resultados. Do primeiro contacto à assinatura final.",
+      "step1": {
+        "title": "Consultoria Estratégica",
+        "desc": "Alinhamos os seus objetivos via vídeo chamada ou reunião presencial."
+      },
+      "step2": {
+        "title": "Representação Remota",
+        "desc": "Procuração para agirmos em seu nome, sem necessidade da sua deslocação."
+      },
+      "step3": {
+        "title": "Due Diligence Rigorosa",
+        "desc": "Verificamos cada detalhe legal, protegendo o seu capital e interesses."
+      },
+      "step4": {
+        "title": "Conclusão do Negócio",
+        "desc": "Executamos a transação e entregamos as chaves e documentos."
+      }
+    },
+    "CTA": {
+      "titlePart1": "Garanta o seu futuro",
+      "titlePart2": "em Portugal",
+      "subtitle": "Comunicação direta e rigor jurídico. Estamos prontos para tratar do seu caso com a prioridade que ele merece.",
+      "officeTitle": "Escritório Principal",
+      "phoneLabel": "Telefone",
+      "whatsappDesc": "Resposta rápida para questões urgentes.",
+      "emailDesc": "Envie-nos os detalhes do seu caso.",
+      "phoneDesc": "Linha direta para consultas."
+    },
+    "Hero": {
+      "tag": "Legal Point por Nadine Zeverino",
+      "title": "Excelência Jurídica em Portugal",
+      "subtitle": "Soluções jurídicas à medida para investidores globais e famílias. Especialização em Imobiliário, Sucessões e Residência gerida com precisão, independentemente da sua localização.",
+      "ctaBtn": "Solicitar Análise Estratégica"
+    },
+    "Services": {
+      "mainTitle": "Soluções Estratégicas",
+      "learnMoreBtn": "Saber Mais",
+      "imobiliario": {
+        "title": "Direito Imobiliário",
+        "desc": "Proteja o seu investimento em Portugal. Fornecemos due diligence completa, análise de contratos e representação legal para aquisições de imóveis sem necessidade de viajar."
+      },
+      "sucessoes": {
+        "title": "Sucessões Internacionais",
+        "desc": "Gestão especializada de heranças e inventários transfronteiriços. Navegamos pelas complexidades legais para proteger e transferir os seus ativos familiares com eficiência fiscal."
+      },
+      "legalizacoes": {
+        "title": "Vistos e Nacionalidade",
+        "desc": "A sua porta de entrada para a Europa. Assistência abrangente para Vistos de Residência (D7, Visto Gold, Nómada Digital) e processos de Cidadania Portuguesa."
+      }
+    },
+    "About": {
+      "paragraph1": "Com mais de uma década de experiência no sistema jurídico português, a Dra. Nadine Zeverino construiu uma carreira focada na proteção dos ativos e direitos de cidadãos globais em solo português.",
+      "quote": "A tecnologia eliminou as distâncias; o meu papel é garantir que a lei nunca seja um obstáculo aos seus objetivos.",
+      "paragraph2": "Especializada nas complexidades do Direito Imobiliário e Sucessório, oferece um serviço 100% digital, transparente e de alto padrão para quem exige excelência.",
+      "stats": {
+        "years": "Anos de Expertise",
+        "digital": "Fluxo de Trabalho Digital"
+      }
+    },
+    "FloatingBtn": {
+      "tooltip": "Falar com a Dra. Nadine"
+    },
+    "Footer": {
+      "rights": "Todos os direitos reservados. Cédula Profissional Nº [Teu Numero]"
+    }
   }
 }

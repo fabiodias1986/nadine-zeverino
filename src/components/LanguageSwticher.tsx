@@ -8,20 +8,20 @@ import 'flag-icons/css/flag-icons.min.css'
 export default function LanguageSwitcher() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const pathname = usePathname()
-  
+
   // Extrair o locale do pathname
   const currentLocale = pathname.split('/')[1] || 'pt' // fallback para 'pt' se não houver locale
-  
+
   // Idiomas disponíveis: apenas PT, EN e NL
   const languages = [
     { code: 'pt', name: 'Português', flagCode: 'pt' },
     { code: 'en', name: 'English', flagCode: 'gb' },
     { code: 'nl', name: 'Dutch', flagCode: 'nl' },
   ]
-  
+
   // Obter o idioma atual (com fallback seguro)
   const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0]
-  
+
   // Função para mudar o idioma
   const changeLanguage = (newLocale: string) => {
     // Obter o caminho atual sem o locale
@@ -42,12 +42,12 @@ export default function LanguageSwitcher() {
         whileTap={{ scale: 0.98 }}
       >
         <span className={`fi fi-${currentLanguage.flagCode} rounded-sm w-5 h-4`}></span>
-        <span className="text-sm font-medium hidden sm:block">{currentLanguage.code.toUpperCase()}</span>
-        
-        <motion.svg 
+        <span className="text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
+
+        <motion.svg
           className="w-3.5 h-3.5 text-white/60 group-hover:text-white/80 ml-auto"
-          fill="none" 
-          stroke="currentColor" 
+          fill="none"
+          stroke="currentColor"
           viewBox="0 0 24 24"
           animate={{ rotate: isDropdownOpen ? 180 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -67,7 +67,7 @@ export default function LanguageSwitcher() {
               className="fixed inset-0 z-40"
               onClick={() => setIsDropdownOpen(false)}
             />
-            
+
             <motion.div
               initial={{ opacity: 0, y: -10, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -88,14 +88,13 @@ export default function LanguageSwitcher() {
                       changeLanguage(language.code)
                       setIsDropdownOpen(false)
                     }}
-                    className={`w-full px-3 py-2.5 text-left flex items-center gap-3 rounded-lg transition-all duration-200 ${
-                      currentLocale === language.code
+                    className={`w-full px-3 py-2.5 text-left flex items-center gap-3 rounded-lg transition-all duration-200 ${currentLocale === language.code
                         ? 'text-[#E83241] bg-[#E83241]/10 border border-[#E83241]/20'
                         : 'text-white/90 hover:bg-white/10 hover:text-white'
-                    }`}
+                      }`}
                     initial={{ opacity: 0, x: -20 }}
-                    animate={{ 
-                      opacity: 1, 
+                    animate={{
+                      opacity: 1,
                       x: 0,
                       transition: { delay: index * 0.05 }
                     }}
@@ -104,7 +103,7 @@ export default function LanguageSwitcher() {
                   >
                     <span className={`fi fi-${language.flagCode} rounded-sm w-5 h-4 flex-shrink-0`}></span>
                     <span className="text-sm font-medium">{language.name}</span>
-                    
+
                     {currentLocale === language.code && (
                       <motion.div
                         layoutId="activeIndicator"
