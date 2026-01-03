@@ -6,12 +6,31 @@ import ProcessTimeline from '@/components/legal-point/ProcessTimeline';
 import FinalCTA from '@/components/legal-point/FinalCTA';
 import LegalAbout from '@/components/legal-point/LegalAbout';
 import LegalNavbar from '@/components/legal-point/LegalNavbar';
-import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Legal Point | Luxury Legal Services Portugal',
-  description: 'Exclusive legal representation for international investors in Portugal. Real Estate, Golden Visa, and Asset Protection.',
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'LegalPoint.Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: 'website',
+      locale: locale,
+      images: [
+        {
+          url: '/media/hero.jpg', // Using the Legal Point Hero image
+          width: 1200,
+          height: 630,
+          alt: t('title'),
+        },
+      ],
+    },
+  };
+}
 
 export default function LegalPointPage() {
   return (
