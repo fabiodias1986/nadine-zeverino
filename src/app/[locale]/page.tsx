@@ -57,7 +57,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-100 text-gray-900">
       <Hero />
       <Profile />
-      <Services /> 
+      <Services />
       <WhyChooseUs />
       <Process />
       <GoogleReviews />

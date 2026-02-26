@@ -14,6 +14,13 @@ interface Review {
 
 const reviews: Review[] = [
   {
+    id: 100,
+    name: "Jeroen Burcksen",
+    rating: 5,
+    comment: "We are currently working with Nadine Isabel Zeverino as our lawyer and real estate advisor during the purchase of our plot and the ongoing construction of our home in Portugal, and we feel very lucky to have found her. She consistently goes the extra mile, communicates quickly and clearly, and makes what can be a complex international process feel manageable and reassuring. Her English is excellent, and her local knowledge — with her office based in Portimão — is extremely valuable. Beyond her professionalism, Nadine is also simply a warm, kind, and trustworthy person who genuinely cares about her clients. We highly recommend her.",
+    language: 'en'
+  },
+  {
     id: 1,
     name: "T",
     rating: 5,
