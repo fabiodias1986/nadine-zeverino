@@ -13,7 +13,7 @@ export async function generateMetadata({
   const siteUrl = 'https://www.nadinezeverino.com';
   const locale = params.locale;
   const canonicalUrl = `${siteUrl}/${locale}/contactos`;
-  const ogImage = `${siteUrl}/media/og-nadine.png`;
+  const ogImage = `${siteUrl}/media/og-nadine.jpg`;
 
   return {
     metadataBase: new URL('https://www.nadinezeverino.com'),

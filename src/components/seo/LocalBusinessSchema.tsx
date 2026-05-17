@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
         "@context": "https://schema.org",
         "@type": "LegalService",
         "name": "Nadine Isabel Zeverino - Advogada",
-        "image": "https://www.nadinezeverino.com/media/og-nadine.png",
+        "image": "https://www.nadinezeverino.com/media/og-nadine.jpg",
         "url": "https://www.nadinezeverino.com",
         "telephone": "+351 964 022 222",
         "address": {

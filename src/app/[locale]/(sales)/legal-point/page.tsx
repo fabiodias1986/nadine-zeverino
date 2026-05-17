@@ -26,7 +26,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       locale: locale,
       images: [
         {
-          url: 'https://www.nadinezeverino.com/media/og-legal.png',
+          url: 'https://www.nadinezeverino.com/media/og-legal.jpg',
           width: 1200,
           height: 630,
           alt: t('title'),
