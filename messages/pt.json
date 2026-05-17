@@ -954,7 +954,8 @@
       "emailRequired": "Email Obrigatório",
       "phoneRequired": "Telefone Obrigatório",
       "emailError": "Email Inválido",
-      "phoneError": "Telefone Inválido"
+      "phoneError": "Telefone Inválido",
+      "goToDownloadBtn": "Descarregar Ebook Gratuito"
     },
     "Footer": {
       "rights": "Todos os direitos reservados. Cédula Profissional Nº [Teu Numero]"

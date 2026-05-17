@@ -954,7 +954,8 @@
       "emailRequired": "Email Required",
       "phoneRequired": "Phone Required",
       "emailError": "Invalid Email",
-      "phoneError": "Invalid Phone"
+      "phoneError": "Invalid Phone",
+      "goToDownloadBtn": "Download Free Ebook"
     },
     "Footer": {
       "rights": "All rights reserved. Professional License No. [Teu Numero]"

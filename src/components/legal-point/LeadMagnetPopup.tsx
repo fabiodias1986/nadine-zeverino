@@ -211,11 +211,25 @@ export default function LeadMagnetPopup() {
                       </motion.li>
                     ))}
                   </ul>
+
+                  {/* Mobile-only CTA button to direct to the Ebook page */}
+                  <div className="mt-8 block md:hidden">
+                    <a
+                      href={`/${locale}/legal-point/ebook`}
+                      onClick={() => {
+                        localStorage.setItem('legalPointLeadMagnet', 'submitted');
+                      }}
+                      className="group flex w-full items-center justify-center gap-2 rounded-lg bg-[#C5A065] px-6 py-3.5 font-medium text-black transition-all hover:bg-[#D4AF74]"
+                    >
+                      <span>{t('goToDownloadBtn')}</span>
+                      <Download className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
               {/* Right Column - Form */}
-              <div className="relative flex flex-col justify-center p-8 md:p-12 bg-[#050505]">
+              <div className="hidden md:flex relative flex-col justify-center p-8 md:p-12 bg-[#050505]">
                 {!hasSubmitted ? (
                   <div className="relative z-10">
                     <h3 className="mb-2 text-2xl font-semibold text-white">

@@ -954,7 +954,8 @@
       "emailRequired": "E-mail Verplicht",
       "phoneRequired": "Telefoonnummer Verplicht",
       "emailError": "Ongeldige e-mail",
-      "phoneError": "Ongeldig Telefoonnummer"
+      "phoneError": "Ongeldig Telefoonnummer",
+      "goToDownloadBtn": "Gratis E-book Downloaden"
     },
     "Footer": {
       "rights": "Alle rechten voorbehouden. Beroepslicentie Nr. [Teu Numero]"
