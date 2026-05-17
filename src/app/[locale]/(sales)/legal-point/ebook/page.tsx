@@ -10,6 +10,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const t = await getTranslations({ locale, namespace: 'LegalPoint.Ebook.Metadata' });
 
   return {
+    metadataBase: new URL('https://www.nadinezeverino.com'),
     title: t('title'),
     description: t('description'),
     icons: {
@@ -23,7 +24,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       locale: locale,
       images: [
         {
-          url: '/media/og-legal.png',
+          url: 'https://www.nadinezeverino.com/media/og-legal.png',
           width: 1200,
           height: 630,
           alt: t('title'),

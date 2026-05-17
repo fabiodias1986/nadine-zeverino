@@ -25,6 +25,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
+    metadataBase: new URL('https://www.nadinezeverino.com'),
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
