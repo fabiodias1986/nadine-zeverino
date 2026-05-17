@@ -1,7 +1,7 @@
 import { Playfair_Display, Inter } from 'next/font/google';
 import '../../globals.css';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap',
@@ -13,10 +13,20 @@ const inter = Inter({
   display: 'swap',
 });
 
-export default function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {
+export const metadata = {
+  icons: {
+    icon: [
+      { url: '/media/legal-point-logo.png?v=2', sizes: 'any' },
+      { url: '/media/legal-point-logo.png?v=2', type: 'image/png' },
+    ],
+    apple: '/media/legal-point-logo.png?v=2',
+  },
+};
+
+export default function LegalPointLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
-      <body className="font-sans bg-white text-dark antialiased">{children}</body>
-    </html>
+    <div className={`${playfair.variable} ${inter.variable} font-sans bg-black text-white antialiased min-h-screen w-full`}>
+      {children}
+    </div>
   );
 }

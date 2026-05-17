@@ -74,7 +74,9 @@
     "about": "Over",
     "contact": "Contact",
     "services": "Dienstverlening",
-    "book": "Afspraak Maken"
+    "book": "Afspraak Maken",
+    "overview": "Overzicht",
+    "whyPortugal": "Waarom Portugal"
   },
   "Hero": {
     "certifiedLawyer": "Advocaat in Portimão | Portugal",
@@ -766,8 +768,9 @@
       }
     },
     "Metadata": {
-      "title": "Legal Point door Nadine Zeverino | Luxe Juridische Diensten Portugal",
-      "description": "Premium juridische vertegenwoordiging voor internationale investeerders in Portugal. Gespecialiseerd in Vastgoed, Gouden Visum en Erfrecht."
+      "title": "Legal Point door Nadine Zeverino | Luxe Juridische Dienstverlening Portugal",
+      "description": "Premium juridische vertegenwoordiging voor internationale investeerders in Portugal. Gespecialiseerde diensten in Vastgoed, Golden Visa en Erfrecht.",
+      "keywords": "Advocaat Portugal, Vastgoed Algarve, Golden Visa, Erfenis Portugal, Juridische Vertegenwoordiging"
     },
     "Process": {
       "tag": "Hoe Wij Werken",
@@ -834,6 +837,119 @@
     },
     "FloatingBtn": {
       "tooltip": "Spreek met Dr. Nadine"
+    },
+    "LegalIntroduction": {
+      "tag": "Over Legal Point",
+      "title": "Juridische zekerheid voor investeerders op afstand.",
+      "subtitle": "Wij opereren in de voorhoede van juridische zekerheid en elimineren de bureaucratische drempels die internationale investeringen vaak bemoeilijken. Onze missie is om ervoor te zorgen dat elke vastgoedtransactie op Portugese bodem wordt uitgevoerd met nauwkeurigheid, transparantie en volledige bescherming van uw vermogen.",
+      "feature1": "Volledige Vertegenwoordiging op Afstand",
+      "feature1Desc": "U hoeft niet te reizen. Wij regelen alles in uw naam op een veilige manier.",
+      "feature2": "Vastgoedaudit",
+      "feature2Desc": "Wij controleren elk document om ervoor te zorgen dat uw investering veilig is.",
+      "feature3": "Licentiebeheer",
+      "feature3Desc": "Wij zorgen ervoor dat alle stedenbouwkundige en fiscale aspecten in overeenstemming zijn.",
+      "badgeValue": "100%",
+      "badgeLabel": "Veilige Digitale Vertegenwoordiging",
+      "cta": "Vraag strategische analyse aan"
+    },
+    "Ebook": {
+      "Hero": {
+        "badge": "Gratis Gids 2026",
+        "title": "Vastgoed Verwerving in Portugal",
+        "subtitle": "Vermijd kostbare fouten en bescherm uw activa. Onze uitgebreide gids beschrijft elke stap van het juridische proces voor internationale investeerders.",
+        "formTitle": "Download Gids Nu",
+        "formSubtitle": "Vul uw gegevens in om de PDF onmiddellijk te ontvangen.",
+        "nameLabel": "Volledige Naam",
+        "namePlaceholder": "Uw naam",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "uw@email.com",
+        "phoneLabel": "Telefoon",
+        "phonePlaceholder": "912 345 678",
+        "submitBtn": "Download Ebook PDF",
+        "loading": "Verwerken...",
+        "privacy": "Uw gegevens zijn veilig en we sturen geen spam.",
+        "successTitle": "Download Gestart!",
+        "successSubtitle": "Bedankt! Als de download niet automatisch start, klik dan op de onderstaande knop.",
+        "downloadManual": "Klik om te Downloaden",
+        "nameRequired": "Naam Verplicht",
+        "emailRequired": "E-mail Verplicht",
+        "phoneRequired": "Telefoonnummer Verplicht",
+        "emailError": "Ongeldige e-mail",
+        "phoneError": "Ongeldig Telefoonnummer"
+      },
+      "EbookPromo": {
+        "badge": "Gratis Bron",
+        "title": "Praktische Gids: Hoe koop je vastgoed in Portugal",
+        "subtitle": "Vermijd verrassingen en zorg ervoor dat uw investering veilig is. Download ons complete ebook met alle juridische stappen.",
+        "cta": "Nu Downloaden",
+        "stat1": "Pagina's vol Waarde",
+        "stat2": "Juridische Zekerheid"
+      },
+      "Header": {
+        "tag": "Exclusieve Bron",
+        "title": "Investeringsgids voor Portugal",
+        "subtitle": "Alles wat u moet weten om uw eigendom te kopen met juridische and fiscale zekerheid."
+      },
+      "Introduction": {
+        "tag": "Over de Gids",
+        "title": "Waarom is dit Ebook geschreven?",
+        "quote": "De wet moet uw grootste bondgenoot zijn, niet uw grootste obstakel.",
+        "content1": "Het kopen van een huis in een vreemd land is een van de grootste investeringen van uw leven. Een gebrek aan kennis over de lokale wetgeving kan een droom echter veranderen in een bureaucratische nachtmerrie.",
+        "content2": "Deze gids is geschreven met als doel alle onduidelijkheden over de legaliteit en de fundamentele stappen voor het kopen van een huis in Portugal weg te nemen. Van de eerste woningcontrole tot de definitieve akte, we hebben decennia aan juridische ervaring gebundeld om u volledige zekerheid te bieden."
+      },
+      "Features": {
+        "title": "Wat u zult leren",
+        "subtitle": "Vereenvoudigde technische informatie voor veilige beslissingen.",
+        "item1": {
+          "title": "Due Diligence",
+          "desc": "Hoe u kunt controleren of een woning schulden, pandrechten of licentieproblemen heeft."
+        },
+        "item2": {
+          "title": "Contracten (CPCV)",
+          "desc": "Cruciale punten die u moet eisen in uw Voorlopige Koopovereenkomst."
+        },
+        "item3": {
+          "title": "Belastingen en Kosten",
+          "desc": "Praktische gids voor IMT, Zegelrecht en notariskosten in 2026."
+        },
+        "item4": {
+          "title": "Visa en Verblijf",
+          "desc": "Hoe de aankoop van onroerend goed samenhangt met het Gouden Visum and andere verblijfsrechten."
+        }
+      },
+      "Metadata": {
+        "title": "Ebook: Vastgoed Gids Portugal | Legal Point",
+        "description": "Download de gratis gids over hoe u veilig een huis kunt kopen in Portugal met volledige juridische zekerheid. Door Nadine Zeverino."
+      }
+    },
+    "LeadMagnetPopup": {
+      "freeGuide": "Gratis Gids",
+      "titlePart1": "Huis kopen in ",
+      "titleAccent": "Portugal?",
+      "subtitle": "Vermijd juridische en bureaucratische valkuilen met onze exclusieve stapsgewijze gids voor investeerders en nieuwe inwoners.",
+      "point1": "Due diligence-proces",
+      "point2": "Belastingen (IMT, IS, IMI)",
+      "point3": "Voorlopig Koopcontract (CPCV)",
+      "point4": "Golden Visa & Verblijfsvergunningen",
+      "formTitle": "Krijg nu toegang tot de gids",
+      "formSubtitle": "Vul uw gegevens in voor een directe download van de pdf.",
+      "nameLabel": "Volledige naam",
+      "namePlaceholder": "Jan Jansen",
+      "phoneLabel": "Telefoonnummer (met landcode)",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "jan@email.com",
+      "submitBtn": "Gids in pdf downloaden",
+      "loading": "Verwerken...",
+      "privacy": "Uw gegevens zijn 100% veilig. Wij sturen geen spam.",
+      "successTitle": "Alles is klaar!",
+      "successSubtitle": "Bedankt voor uw interesse. De download van uw gids start over enkele ogenblikken. We hebben ook een kopie naar uw e-mail gestuurd.",
+      "downloadBtn": "Pdf-gids downloaden",
+      "backBtn": "Terug naar de website",
+      "nameRequired": "Naam Verplicht",
+      "emailRequired": "E-mail Verplicht",
+      "phoneRequired": "Telefoonnummer Verplicht",
+      "emailError": "Ongeldige e-mail",
+      "phoneError": "Ongeldig Telefoonnummer"
     },
     "Footer": {
       "rights": "Alle rechten voorbehouden. Beroepslicentie Nr. [Teu Numero]"

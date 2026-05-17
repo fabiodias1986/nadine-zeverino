@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import 'flag-icons/css/flag-icons.min.css'
@@ -12,7 +12,12 @@ interface LanguageSwitcherProps {
 
 export default function LanguageSwitcher({ alwaysDropdown = false }: LanguageSwitcherProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const pathname = usePathname()
+  const [mounted, setMounted] = useState(false)
+  const pathname = usePathname() || '/'
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Extrair o locale do pathname
   const currentLocale = pathname.split('/')[1] || 'pt' // fallback para 'pt' se não houver locale
@@ -36,6 +41,8 @@ export default function LanguageSwitcher({ alwaysDropdown = false }: LanguageSwi
     // Redirecionar (hard navigation para garantir i18n routing do Next.js)
     window.location.href = newPath
   }
+
+  if (!mounted) return null
 
   return (
     <div className="relative">
@@ -67,6 +74,7 @@ export default function LanguageSwitcher({ alwaysDropdown = false }: LanguageSwi
           {isDropdownOpen && (
             <>
               <motion.div
+                key="language-dropdown-overlay"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -75,6 +83,7 @@ export default function LanguageSwitcher({ alwaysDropdown = false }: LanguageSwi
               />
 
               <motion.div
+                key="language-dropdown-content"
                 initial={{ opacity: 0, y: -10, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.95 }}

@@ -73,8 +73,10 @@
     "home": "Home",
     "about": "About",
     "contact": "Contacts",
-    "services": "Pratice Areas",
-    "book": "Book Meeting"
+    "services": "Practice Areas",
+    "book": "Book Meeting",
+    "overview": "Overview",
+    "whyPortugal": "Why Portugal"
   },
   "Hero": {
     "certifiedLawyer": "Lawyer in Portimão | Portugal",
@@ -767,7 +769,8 @@
     },
     "Metadata": {
       "title": "Legal Point by Nadine Zeverino | Luxury Legal Services Portugal",
-      "description": "Premium legal representation for international investors in Portugal. Real Estate, Golden Visa, and Inheritance Law specialized services."
+      "description": "Premium legal representation for international investors in Portugal. Real Estate, Golden Visa, and Inheritance Law specialized services.",
+      "keywords": "Lawyer Portugal, Real Estate Algarve, Golden Visa, Inheritance Portugal, Legal Representation"
     },
     "Process": {
       "tag": "How We Work",
@@ -834,6 +837,119 @@
     },
     "FloatingBtn": {
       "tooltip": "Speak with Dr. Nadine"
+    },
+    "LegalIntroduction": {
+      "tag": "About Legal Point",
+      "title": "Legal security for distance investors.",
+      "subtitle": "We operate at the forefront of legal security, eliminating the bureaucratic barriers that often compromise international investments. Our mission is to ensure that every real estate transaction on Portuguese soil is executed with rigor, transparency, and total asset protection.",
+      "feature1": "Total Remote Representation",
+      "feature1Desc": "No need to travel. We handle everything in your name securely.",
+      "feature2": "Real Estate Audit",
+      "feature2Desc": "We verify every document to ensure your investment is safe.",
+      "feature3": "Licensing Management",
+      "feature3Desc": "We ensure all urban planning and tax aspects are in compliance.",
+      "badgeValue": "100%",
+      "badgeLabel": "Secure Digital Representation",
+      "cta": "Request strategic analysis"
+    },
+    "Ebook": {
+      "Hero": {
+        "badge": "Free Guide 2026",
+        "title": "Property Acquisition in Portugal",
+        "subtitle": "Avoid costly mistakes and protect your assets. Our comprehensive guide details every step of the legal process for international investors.",
+        "formTitle": "Download Guide Now",
+        "formSubtitle": "Enter your details to receive the PDF immediately.",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Your name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "your@email.com",
+        "phoneLabel": "Phone",
+        "phonePlaceholder": "912 345 678",
+        "submitBtn": "Download Ebook PDF",
+        "loading": "Processing...",
+        "privacy": "Your data is secure and we do not send spam.",
+        "successTitle": "Download Started!",
+        "successSubtitle": "Thank you! If the download doesn't start automatically, click the button below.",
+        "downloadManual": "Click to Download",
+        "nameRequired": "Name Required",
+        "emailRequired": "Email Required",
+        "phoneRequired": "Phone Required",
+        "emailError": "Invalid Email",
+        "phoneError": "Invalid Phone"
+      },
+      "EbookPromo": {
+        "badge": "Free Resource",
+        "title": "Practical Guide: How to buy property in Portugal",
+        "subtitle": "Avoid surprises and ensure your investment is safe. Download our complete ebook with all the legal steps.",
+        "cta": "Download Now",
+        "stat1": "Value Pages",
+        "stat2": "Legal Security"
+      },
+      "Header": {
+        "tag": "Exclusive Resource",
+        "title": "Investment Guide to Portugal",
+        "subtitle": "Everything you need to know to buy your property with legal and tax security."
+      },
+      "Introduction": {
+        "tag": "About the Guide",
+        "title": "Why was this Ebook written?",
+        "quote": "The law should be your greatest ally, not your greatest obstacle.",
+        "content1": "Buying a house in a foreign country is one of the biggest investments of your life. However, lack of knowledge about local laws can turn a dream into a bureaucratic nightmare.",
+        "content2": "This guide was written with the aim of clearing up all doubts about the legalities and fundamental steps of how to buy a house in Portugal. From initial property verification to the final deed, we have compiled decades of legal experience to give you total security."
+      },
+      "Features": {
+        "title": "What you will learn",
+        "subtitle": "Simplified technical information for secure decisions.",
+        "item1": {
+          "title": "Due Diligence",
+          "desc": "How to verify if a property has debts, liens, or licensing issues."
+        },
+        "item2": {
+          "title": "Contracts (CPCV)",
+          "desc": "Critical points you should demand in your Promissory Purchase & Sale Agreement."
+        },
+        "item3": {
+          "title": "Taxes and Costs",
+          "desc": "Practical guide to IMT, Stamp Duty, and notary expenses in 2026."
+        },
+        "item4": {
+          "title": "Visas and Residency",
+          "desc": "How property purchase interlinks with Golden Visa and other residency rights."
+        }
+      },
+      "Metadata": {
+        "title": "Ebook: Property Acquisition Guide in Portugal | Legal Point",
+        "description": "Download the free guide on how to buy a house in Portugal with total legal security. By Nadine Zeverino."
+      }
+    },
+    "LeadMagnetPopup": {
+      "freeGuide": "Free Guide",
+      "titlePart1": "Buying a house in ",
+      "titleAccent": "Portugal?",
+      "subtitle": "Avoid legal and bureaucratic pitfalls with our exclusive step-by-step guide for investors and new residents.",
+      "point1": "Due Diligence Process",
+      "point2": "Taxes (IMT, IS, IMI)",
+      "point3": "Promissory Buy & Sell Agreement (CPCV)",
+      "point4": "Golden Visa & Residence Visas",
+      "formTitle": "Access the Guide Now",
+      "formSubtitle": "Enter your details to receive the PDF immediately.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "John Doe",
+      "phoneLabel": "Phone (with country code)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "john@email.com",
+      "submitBtn": "Download Guide PDF",
+      "loading": "Processing...",
+      "privacy": "Your data is 100% secure. We do not send spam.",
+      "successTitle": "All Done!",
+      "successSubtitle": "Thank you for your interest. Your guide download will begin shortly. We have also sent a copy to your email.",
+      "downloadBtn": "Download PDF Guide",
+      "backBtn": "Back to website",
+      "nameRequired": "Name Required",
+      "emailRequired": "Email Required",
+      "phoneRequired": "Phone Required",
+      "emailError": "Invalid Email",
+      "phoneError": "Invalid Phone"
     },
     "Footer": {
       "rights": "All rights reserved. Professional License No. [Teu Numero]"

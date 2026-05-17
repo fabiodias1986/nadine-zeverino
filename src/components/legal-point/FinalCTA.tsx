@@ -54,9 +54,9 @@ export default function FinalCTA() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="relative inline-block"
+                    className="flex flex-col sm:flex-row items-center justify-center gap-6"
                 >
-                    {/* Primary: Professional Gold Gradient + Infinite Pulse (MATCHING HERO STYLE) */}
+                    {/* Primary: Professional Gold Gradient */}
                     <motion.div
                         className="relative"
                         animate={{
@@ -67,9 +67,26 @@ export default function FinalCTA() {
                     >
                         <BookMeetingButton
                             onClick={() => handleGtag('CTA', 'Footer - Book Meeting')}
-                            className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-14 !py-7 !text-xl font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 min-w-[250px] !rounded-full"
+                            className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-10 !py-6 !text-lg font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 min-w-[240px] !rounded-full"
                         />
                     </motion.div>
+
+                    {/* Secondary: WhatsApp Button (Premium Style) */}
+                    <motion.a
+                        href="https://wa.me/351964022222"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => handleGtag('CTA', 'Footer - WhatsApp Button')}
+                        className="flex items-center justify-center gap-3 bg-white/[0.03] backdrop-blur-md border border-white/10 text-white px-10 py-6 rounded-full text-lg font-medium hover:border-[#25D366]/50 hover:bg-[#25D366]/5 transition-all duration-500 min-w-[240px] group relative overflow-hidden"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        {/* Internal Glow Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-tr from-[#25D366]/0 via-[#25D366]/5 to-[#25D366]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                        
+                        <FaWhatsapp className="text-2xl text-[#25D366] group-hover:scale-110 transition-transform duration-500" />
+                        <span className="relative z-10 tracking-wide">WhatsApp</span>
+                    </motion.a>
                 </motion.div>
 
                 {/* Contact Details with WhatsApp */}

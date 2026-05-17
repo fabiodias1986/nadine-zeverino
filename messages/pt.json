@@ -74,7 +74,9 @@
     "about": "Sobre",
     "contact": "Contactos",
     "services": "Áreas de Atuação",
-    "book": "Marcar Reunião"
+    "book": "Marcar Reunião",
+    "overview": "Visão Geral",
+    "whyPortugal": "Porquê Portugal"
   },
   "Hero": {
     "certifiedLawyer": "Advogada em Portimão | Portugal",
@@ -766,8 +768,9 @@
       }
     },
     "Metadata": {
-      "title": "Legal Point por Nadine Zeverino | Advocacia de Luxo Portugal",
-      "description": "Representação jurídica premium para investidores internacionais em Portugal. Especialistas em Imobiliário, Vistos Gold e Direito Sucessório."
+      "title": "Legal Point por Nadine Zeverino | Serviços Jurídicos de Luxo em Portugal",
+      "description": "Representação jurídica premium para investidores internacionais em Portugal. Serviços especializados em Direito Imobiliário, Visto Gold e Sucessões.",
+      "keywords": "Advogada Portugal, Imobiliário Algarve, Visto Gold, Heranças Portugal, Representação Legal"
     },
     "Process": {
       "tag": "Como Trabalhamos",
@@ -834,6 +837,119 @@
     },
     "FloatingBtn": {
       "tooltip": "Falar com a Dra. Nadine"
+    },
+    "LegalIntroduction": {
+      "tag": "Sobre a Legal Point",
+      "title": "Segurança jurídica para quem investe à distância.",
+      "subtitle": "Atuamos na vanguarda da segurança jurídica, eliminando as barreiras burocráticas que frequentemente comprometem investimentos internacionais. A nossa missão é garantir que cada transação imobiliária em solo português seja executada com rigor, transparência e proteção total de ativos.",
+      "feature1": "Representação Remota Total",
+      "feature1Desc": "Não precisa de viajar. Tratamos de tudo em seu nome com segurança.",
+      "feature2": "Auditoria Imobiliária",
+      "feature2Desc": "Verificamos cada documento para garantir que o seu investimento é seguro.",
+      "feature3": "Gestão de Licenciamentos",
+      "feature3Desc": "Garantimos que toda a parte urbanística e fiscal está em conformidade.",
+      "badgeValue": "100%",
+      "badgeLabel": "Representação Digital & Segura",
+      "cta": "Solicitar análise estratégica"
+    },
+    "Ebook": {
+      "Hero": {
+        "badge": "Guia Gratuito 2026",
+        "title": "Aquisição de Imóveis em Portugal",
+        "subtitle": "Evite erros dispendiosos e proteja o seu património. O nosso guia completo detalha cada passo do processo legal para investidores internacionais.",
+        "formTitle": "Descarregar Guia Agora",
+        "formSubtitle": "Insira os seus dados para receber o PDF imediatamente.",
+        "nameLabel": "Nome Completo",
+        "namePlaceholder": "Seu nome",
+        "emailLabel": "Email",
+        "emailPlaceholder": "seu@email.com",
+        "phoneLabel": "Telefone",
+        "phonePlaceholder": "912 345 678",
+        "submitBtn": "Baixar Ebook PDF",
+        "loading": "A processar...",
+        "privacy": "Os seus dados estão seguros e não enviamos spam.",
+        "successTitle": "Download Iniciado!",
+        "successSubtitle": "Obrigado! Se o download não começar automaticamente, clique no botão abaixo.",
+        "downloadManual": "Clique para Baixar",
+        "nameRequired": "Nome Obrigatório",
+        "emailRequired": "Email Obrigatório",
+        "phoneRequired": "Telefone Obrigatório",
+        "emailError": "Email Inválido",
+        "phoneError": "Telefone Inválido"
+      },
+      "EbookPromo": {
+        "badge": "Recurso Gratuito",
+        "title": "Guia Prático: Como comprar imóvel em Portugal",
+        "subtitle": "Evite surpresas e garanta que o seu investimento é seguro. Descarregue o nosso ebook completo com todos os passos legais.",
+        "cta": "Descarregar Agora",
+        "stat1": "Páginas de Valor",
+        "stat2": "Segurança Jurídica"
+      },
+      "Header": {
+        "tag": "Recurso Exclusivo",
+        "title": "Guia de Investimento em Portugal",
+        "subtitle": "Tudo o que precisa de saber para comprar o seu imóvel com segurança jurídica e fiscal."
+      },
+      "Introduction": {
+        "tag": "Sobre o Guia",
+        "title": "Porquê este Ebook foi escrito?",
+        "quote": "A lei deve ser a sua maior aliada, não o seu maior obstáculo.",
+        "content1": "Comprar uma casa num país estrangeiro é um dos maiores investimentos da sua vida. No entanto, a falta de conhecimento sobre as leis locais pode transformar um sonho num pesadelo burocrático.",
+        "content2": "Este guia foi escrito com o intuito de tirar todas as dúvidas sobre as legalidades e os passos fundamentais de como comprar casa em Portugal. Desde a verificação inicial do imóvel até à escritura final, compilamos décadas de experiência jurídica para lhe dar total segurança."
+      },
+      "Features": {
+        "title": "O que vai aprender",
+        "subtitle": "Informação técnica simplificada para decisões seguras.",
+        "item1": {
+          "title": "Due Diligence",
+          "desc": "Como verificar se um imóvel tem dívidas, penhoras ou problemas de licenciamento."
+        },
+        "item2": {
+          "title": "Contratos (CPCV)",
+          "desc": "Os pontos críticos que deve exigir no seu Contrato Promessa Compra e Venda."
+        },
+        "item3": {
+          "title": "Impostos e Custos",
+          "desc": "O guia prático do IMT, Imposto de Selo e despesas notariais em 2026."
+        },
+        "item4": {
+          "title": "Vistos e Residência",
+          "desc": "Como a compra de imóvel se interliga com o Visto Gold e outros direitos de residência."
+        }
+      },
+      "Metadata": {
+        "title": "Ebook: Guia de Aquisição de Imóveis em Portugal | Legal Point",
+        "description": "Descarregue o guia gratuito sobre como comprar casa em Portugal com segurança jurídica total. Por Nadine Zeverino."
+      }
+    },
+    "LeadMagnetPopup": {
+      "freeGuide": "Guia Gratuito",
+      "titlePart1": "Vai comprar casa em ",
+      "titleAccent": "Portugal?",
+      "subtitle": "Evite armadilhas legais e burocráticas com o nosso guia passo a passo exclusivo para investidores e novos residentes.",
+      "point1": "Processo de Due Diligence",
+      "point2": "Impostos (IMT, IS, IMI)",
+      "point3": "Contrato Promessa Compra e Venda",
+      "point4": "Golden Visa & Vistos de Residência",
+      "formTitle": "Aceda ao Guia Agora",
+      "formSubtitle": "Insira os seus dados para fazer o download imediato do PDF.",
+      "nameLabel": "Nome Completo",
+      "namePlaceholder": "João Silva",
+      "phoneLabel": "Telefone (com indicativo)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "joao@email.com",
+      "submitBtn": "Baixar Guia PDF",
+      "loading": "A processar...",
+      "privacy": "Os seus dados estão 100% seguros. Não enviamos spam.",
+      "successTitle": "Tudo Pronto!",
+      "successSubtitle": "Obrigado pelo seu interesse. O download do seu guia deve iniciar em instantes. Enviámos também uma cópia para o seu email.",
+      "downloadBtn": "Descarregar Guia PDF",
+      "backBtn": "Voltar ao website",
+      "nameRequired": "Nome Obrigatório",
+      "emailRequired": "Email Obrigatório",
+      "phoneRequired": "Telefone Obrigatório",
+      "emailError": "Email Inválido",
+      "phoneError": "Telefone Inválido"
     },
     "Footer": {
       "rights": "Todos os direitos reservados. Cédula Profissional Nº [Teu Numero]"

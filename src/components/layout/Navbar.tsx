@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -11,7 +11,13 @@ import Image from 'next/image'
 export default function Navbar() {
   const t = useTranslations('Navbar')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [logoError, setLogoError] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const navLinks = [
     { name: t('home'), href: '/' },
@@ -56,6 +62,8 @@ export default function Navbar() {
     </motion.a>
   )
 
+  if (!mounted) return null
+
   return (
     <nav className="fixed w-full z-50">
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/90 backdrop-blur-xl border-b border-white/10"></div>
@@ -70,19 +78,16 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/media/logo.png"
-                alt="Nadine Isabel Zeverino"
-                width={32}
-                height={32}
-                className="h-8 w-auto object-contain"
-                onError={(e) => {
-                  const img = e.target as HTMLImageElement
-                  img.style.display = 'none'
-                  const nextSibling = img.nextElementSibling as HTMLElement | null
-                  if (nextSibling) nextSibling.textContent = 'Nadine Isabel Zeverino'
-                }}
-              />
+              {!logoError ? (
+                <Image
+                  src="/media/logo.png"
+                  alt="Nadine Isabel Zeverino"
+                  width={32}
+                  height={32}
+                  className="h-8 w-auto object-contain"
+                  onError={() => setLogoError(true)}
+                />
+              ) : null}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white text-lg font-semibold">
                 Nadine Isabel Zeverino
               </span>
@@ -220,7 +225,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.4 }}
                 >
-                  <LanguageSwitcherMobile />
+                  <LanguageSwitcherMobile mounted={mounted} />
                 </motion.div>
               </div>
             </motion.div>
@@ -231,9 +236,9 @@ export default function Navbar() {
   )
 }
 
-function LanguageSwitcherMobile() {
-  const pathname = usePathname()
-  const currentLocale = pathname.split('/')[1]
+function LanguageSwitcherMobile({ mounted }: { mounted: boolean }) {
+  const pathname = usePathname() || '/'
+  const currentLocale = pathname.split('/')[1] || 'pt'
 
   const languages = [
     { code: 'pt', name: 'Português', flagCode: 'pt' },
@@ -246,6 +251,8 @@ function LanguageSwitcherMobile() {
     const newPath = `/${newLocale}${pathWithoutLocale}`
     window.location.href = newPath
   }
+
+  if (!mounted) return null
 
   return (
     <div className="grid grid-cols-3 gap-4">
