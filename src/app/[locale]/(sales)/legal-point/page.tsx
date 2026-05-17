@@ -25,7 +25,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       locale: locale,
       images: [
         {
-          url: '/media/hero.jpg', // Using the Legal Point Hero image
+          url: '/media/og-legal.png',
           width: 1200,
           height: 630,
           alt: t('title'),

@@ -57,7 +57,7 @@ export async function generateMetadata({
       siteName: "Nadine Isabel Zeverino - Advogada",
       images: [
         {
-          url: "https://www.nadinezeverino.com/images/og-image.jpg",
+          url: "https://www.nadinezeverino.com/media/og-nadine.png",
           width: 1200,
           height: 630,
           alt: "Nadine Isabel Zeverino - Advogada em Portimão"
@@ -70,7 +70,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t('title'),
       description: t('description'),
-      images: ["https://www.nadinezeverino.com/images/og-image.jpg"],
+      images: ["https://www.nadinezeverino.com/media/og-nadine.png"],
       creator: "@nadinezeverino"
     },
     verification: {
