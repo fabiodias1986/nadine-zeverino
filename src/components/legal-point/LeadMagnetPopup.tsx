@@ -54,12 +54,14 @@ export default function LeadMagnetPopup() {
 
     // Trigger 1: Time on page (15 seconds)
     const timer = setTimeout(() => {
+      if (localStorage.getItem('legalPointLeadMagnet')) return;
       setIsOpen(true);
     }, 15000);
 
     // Trigger 2: Exit Intent
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) {
+        if (localStorage.getItem('legalPointLeadMagnet')) return;
         setIsOpen(true);
       }
     };
