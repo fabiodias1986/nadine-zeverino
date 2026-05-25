@@ -14,13 +14,6 @@ const inter = Inter({
 });
 
 export const metadata = {
-  icons: {
-    icon: [
-      { url: '/media/legal-point-logo.png?v=2', sizes: 'any' },
-      { url: '/media/legal-point-logo.png?v=2', type: 'image/png' },
-    ],
-    apple: '/media/legal-point-logo.png?v=2',
-  },
 };
 
 export default function LegalPointLayout({ children }: { children: React.ReactNode }) {

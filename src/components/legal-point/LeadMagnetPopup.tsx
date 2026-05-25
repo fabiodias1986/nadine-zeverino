@@ -123,6 +123,17 @@ export default function LeadMagnetPopup() {
           locale: locale,
         }),
       });
+      
+      // Fire Google Analytics generate_lead event
+      if (typeof window !== 'undefined') {
+        const w = window as unknown as { gtag?: (event: string, action: string, params: Record<string, string | number>) => void };
+        if (w.gtag) {
+          w.gtag('event', 'generate_lead', {
+            event_category: 'Lead',
+            event_label: 'Ebook Download'
+          });
+        }
+      }
     } catch (err) {
       console.error('Failed to register lead with E-goi:', err);
     }
