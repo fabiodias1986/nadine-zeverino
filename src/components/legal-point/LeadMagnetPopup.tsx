@@ -8,6 +8,7 @@ import 'react-international-phone/style.css';
 import { useTranslations } from 'next-intl';
 import { z } from 'zod';
 import { useParams } from 'next/navigation';
+import GoogleConversionPageLoad from '@/components/GoogleConversionPageLoad';
 
 export default function LeadMagnetPopup() {
   const t = useTranslations('LegalPoint.LeadMagnetPopup');
@@ -126,12 +127,18 @@ export default function LeadMagnetPopup() {
       
       // Fire Google Analytics generate_lead event
       if (typeof window !== 'undefined') {
-        const w = window as unknown as { gtag?: (event: string, action: string, params: Record<string, string | number>) => void };
+        const w = window as unknown as { 
+          gtag?: (event: string, action: string, params: Record<string, string | number>) => void;
+          gtag_report_conversion?: (url?: string) => boolean;
+        };
         if (w.gtag) {
           w.gtag('event', 'generate_lead', {
             event_category: 'Lead',
             event_label: 'Ebook Download'
           });
+        }
+        if (typeof w.gtag_report_conversion === 'function') {
+          w.gtag_report_conversion();
         }
       }
     } catch (err) {
@@ -360,6 +367,7 @@ export default function LeadMagnetPopup() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex flex-col items-center justify-center text-center"
                   >
+                    <GoogleConversionPageLoad />
                     <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#C5A065]/20">
                       <CheckCircle2 className="h-10 w-10 text-[#C5A065]" />
                     </div>

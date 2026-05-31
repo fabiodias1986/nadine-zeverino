@@ -44,6 +44,12 @@ export default function ContactForm() {
           isVisible: true 
         });
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        if (typeof window !== 'undefined') {
+          const w = window as unknown as { gtag_report_conversion?: (url?: string) => boolean };
+          if (typeof w.gtag_report_conversion === 'function') {
+            w.gtag_report_conversion();
+          }
+        }
       } else {
         setToast({ 
           type: 'error', 

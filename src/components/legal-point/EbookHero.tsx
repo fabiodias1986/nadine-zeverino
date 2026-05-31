@@ -9,6 +9,7 @@ import 'react-international-phone/style.css';
 import { useTranslations } from 'next-intl';
 import { z } from 'zod';
 import { useParams } from 'next/navigation';
+import GoogleConversionPageLoad from '@/components/GoogleConversionPageLoad';
 
 export default function EbookHero() {
   const t = useTranslations('LegalPoint.Ebook.Hero');
@@ -84,6 +85,12 @@ export default function EbookHero() {
           locale: locale,
         }),
       });
+      if (typeof window !== 'undefined') {
+        const w = window as unknown as { gtag_report_conversion?: (url?: string) => boolean };
+        if (typeof w.gtag_report_conversion === 'function') {
+          w.gtag_report_conversion();
+        }
+      }
     } catch (err) {
       console.error('Failed to register lead with E-goi:', err);
     }
@@ -261,6 +268,7 @@ export default function EbookHero() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex flex-col items-center text-center py-8"
                   >
+                    <GoogleConversionPageLoad />
                     <div className="w-20 h-20 rounded-full bg-[#C5A065]/20 flex items-center justify-center mb-6">
                       <CheckCircle2 className="w-10 h-10 text-[#C5A065]" />
                     </div>
