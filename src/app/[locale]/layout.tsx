@@ -6,6 +6,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import GoogleTag from '@/components/GoogleTag';
 import CookieBanner from '@/components/CookieBanner';
 import MainLayoutWrapper from '@/components/layout/MainWrapper';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
@@ -116,6 +117,7 @@ export default async function LocaleLayout({
                 GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
               />
             )}
+            <GoogleTag />
             <CookieBanner />
           </MainLayoutWrapper>
         </NextIntlClientProvider>
