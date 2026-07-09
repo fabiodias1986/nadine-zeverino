@@ -548,7 +548,7 @@
     },
     "whatAreCookies": {
       "title": "Wat zijn Cookies?",
-      "content": "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden opgeslagen wanneer u een website bezoekt. Ze stellen websites in staat om informatie of functionaliteiten op te slaan en helpen uw browse-ervaring te verbeteren.",
+      "content": "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparat worden opgeslagen wanneer u een website bezoekt. Ze stellen websites in staat om informatie of functionaliteiten op te slaan en helpen uw browse-ervaring te verbeteren.",
       "howTheyWork": {
         "title": "Hoe Werken Cookies",
         "storage": "Opgeslagen in het tijdelijke geheugen van uw browser of permanent op uw apparaat",
@@ -791,7 +791,7 @@
       },
       "step4": {
         "title": "Afronding van de Deal",
-        "desc": "We voeren de transactie uit en overhandigen de sleutels en documenten."
+        "desc": "We voeren de transactie veilig uit via Volmacht en regelen de juridische overdracht van uw activa, zonder dat u hoeft te reizen."
       }
     },
     "CTA": {
@@ -806,9 +806,15 @@
     },
     "Hero": {
       "tag": "Legal Point door Nadine Zeverino",
-      "title": "Juridische Excellentie in Portugal",
+      "title": "Veilige Vastgoedinvestering & Juridische Vertegenwoordiging in Portugal",
       "subtitle": "Juridische oplossingen op maat voor wereldwijde investeerders en gezinnen. Expertise in Vastgoed, Erfenissen en Verblijf met precisie beheerd, ongeacht uw locatie.",
-      "ctaBtn": "Strategische Analyse Aanvragen"
+      "ctaBtn": "Strategische Analyse Aanvragen",
+      "slide1Title": "Vastgoedinvestering in Portugal",
+      "slide1TitleGold": "Vastgoedinvestering",
+      "slide1Subtitle": "Veilige eigendomsverwerving voor wereldwijde investeerders en gezinnen",
+      "slide2Title": "Vertrouwde Juridische Vertegenwoordiging",
+      "slide2TitleGold": "Vertegenwoordiging",
+      "slide2Subtitle": "Vastgoed, Erfenissen & Verblijf, met precisie behandeld"
     },
     "Services": {
       "mainTitle": "Strategische Oplossingen",
@@ -951,6 +957,51 @@
       "emailError": "Ongeldige e-mail",
       "phoneError": "Ongeldig Telefoonnummer",
       "goToDownloadBtn": "Gratis E-book Downloaden"
+    },
+    "ContactForm": {
+      "title": "Vraag Uw Strategische Analyse Aan",
+      "subtitle": "Vul het formulier hieronder in en wij nemen binnen 24 uur contact met u op om uw zaak te bespreken.",
+      "nameLabel": "Volledige Naam",
+      "namePlaceholder": "Uw volledige naam",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "uw@email.com",
+      "phoneLabel": "Telefoon / WhatsApp",
+      "phonePlaceholder": "+351 912 345 678",
+      "countryLabel": "Land van Verblijf",
+      "countryPlaceholder": "Selecteer of typ uw land",
+      "messageLabel": "Bericht / Casusdetails",
+      "messagePlaceholder": "Beschrijf kort uw vastgoedinvesterings- of juridische doelen in Portugal...",
+      "submitBtn": "Evaluatieverzoek Indienen",
+      "sending": "Bezig met verzenden...",
+      "successMessage": "Dank u! Uw verzoek is succesvol ingediend. Wij nemen binnen 24 uur contact met u op.",
+      "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw."
+    },
+    "Testimonials": {
+      "tag": "Aanbevolen door Internationale Klanten",
+      "title": "Wat Onze Klanten Zeggen",
+      "quote1": "\"Dr. Nadine beheerde onze vastgoedacquisitie in de Algarve volledig via Volmacht. Grondige due diligence en totale gemoedsrust.\"",
+      "quote1Author": "James R.",
+      "quote1Location": "Verenigd Koninkrijk",
+      "quote2": "\"De overgang van het grensoverschrijdende vermogen van onze familie werd met uiterste professionaliteit en strategisch fiscaal advies behandeld.\"",
+      "quote2Author": "M. van der Meer",
+      "quote2Location": "Nederland"
+    },
+    "EbookModal": {
+      "title": "Ontvang Uw Gratis Gids",
+      "subtitle": "Download onze complete gids voor het kopen van onroerend goed in Portugal met volledige juridische zekerheid.",
+      "nameLabel": "Volledige Naam",
+      "namePlaceholder": "Uw naam",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "uw@email.com",
+      "submitBtn": "Ontvang Mijn Gratis Gids",
+      "loading": "Bezig met verwerken...",
+      "privacy": "Uw gegevens zijn 100% veilig. Wij sturen geen spam.",
+      "successTitle": "Download Gestart!",
+      "successSubtitle": "Bedankt! Als de download niet automatisch start, klik dan op de onderstaande knop.",
+      "downloadBtn": "Klik om te Downloaden",
+      "nameRequired": "Naam Verplicht",
+      "emailRequired": "E-mail Verplicht",
+      "emailError": "Ongeldige E-mail"
     },
     "Footer": {
       "rights": "Alle rechten voorbehouden. Beroepslicentie Nr. [Teu Numero]"

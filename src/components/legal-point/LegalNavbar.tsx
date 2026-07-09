@@ -57,6 +57,8 @@ export default function LegalNavbar() {
                             src="/media/legal-point-logo.png"
                             alt="Legal Point"
                             fill
+                            sizes="40px"
+                            priority
                             className="object-contain"
                         />
                     </div>

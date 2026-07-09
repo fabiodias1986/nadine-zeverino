@@ -58,7 +58,7 @@ export default function FinalCTA() {
                 >
                     {/* Primary: Professional Gold Gradient */}
                     <motion.div
-                        className="relative"
+                        className="relative w-full md:w-auto"
                         animate={{
                             boxShadow: ['0 0 0px rgba(197,160,101,0)', '0 0 20px rgba(197,160,101,0.3)', '0 0 0px rgba(197,160,101,0)']
                         }}
@@ -67,7 +67,7 @@ export default function FinalCTA() {
                     >
                         <BookMeetingButton
                             onClick={() => handleGtag('CTA', 'Footer - Book Meeting')}
-                            className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-10 !py-6 !text-lg font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 min-w-[240px] !rounded-full"
+                            className="relative !bg-gradient-to-r !from-[#C5A065] !to-[#AA8A55] !text-black !border-none !px-6 !py-3 md:!px-10 md:!py-6 !text-sm md:!text-lg font-medium tracking-wide shadow-lg hover:!scale-105 transition-all duration-300 !w-full md:!w-auto !min-w-0 md:!min-w-[240px] !rounded-full"
                         />
                     </motion.div>
 
@@ -77,14 +77,14 @@ export default function FinalCTA() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => handleGtag('CTA', 'Footer - WhatsApp Button')}
-                        className="flex items-center justify-center gap-3 bg-white/[0.03] backdrop-blur-md border border-white/10 text-white px-10 py-6 rounded-full text-lg font-medium hover:border-[#25D366]/50 hover:bg-[#25D366]/5 transition-all duration-500 min-w-[240px] group relative overflow-hidden"
+                        className="flex items-center justify-center gap-3 bg-white/[0.03] backdrop-blur-md border border-white/10 text-white px-6 py-3 md:px-10 md:py-6 rounded-full text-sm md:text-lg font-medium hover:border-[#25D366]/50 hover:bg-[#25D366]/5 transition-all duration-500 min-w-0 md:min-w-[240px] w-full md:w-auto group relative overflow-hidden"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
                         {/* Internal Glow Effect */}
                         <div className="absolute inset-0 bg-gradient-to-tr from-[#25D366]/0 via-[#25D366]/5 to-[#25D366]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                         
-                        <FaWhatsapp className="text-2xl text-[#25D366] group-hover:scale-110 transition-transform duration-500" />
+                        <FaWhatsapp className="text-lg md:text-2xl text-[#25D366] group-hover:scale-110 transition-transform duration-500" />
                         <span className="relative z-10 tracking-wide">WhatsApp</span>
                     </motion.a>
                 </motion.div>

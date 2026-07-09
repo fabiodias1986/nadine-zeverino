@@ -9,6 +9,9 @@ import LegalNavbar from '@/components/legal-point/LegalNavbar';
 import LeadMagnetPopup from '@/components/legal-point/LeadMagnetPopup';
 import EbookPromoSection from '@/components/legal-point/EbookPromoSection';
 import LegalIntroduction from '@/components/legal-point/LegalIntroduction';
+import ContactForm from '@/components/legal-point/ContactForm';
+import Testimonials from '@/components/legal-point/Testimonials';
+import LegalSchema from '@/components/legal-point/LegalSchema';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -19,9 +22,30 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      }
+    },
+    alternates: {
+      canonical: `https://www.nadinezeverino.com/${locale}/legal-point`,
+      languages: {
+        'pt': 'https://www.nadinezeverino.com/pt/legal-point',
+        'en': 'https://www.nadinezeverino.com/en/legal-point',
+        'nl': 'https://www.nadinezeverino.com/nl/legal-point',
+      }
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
+      url: `https://www.nadinezeverino.com/${locale}/legal-point`,
+      siteName: 'Legal Point by Nadine Zeverino',
       type: 'website',
       locale: locale,
       images: [
@@ -33,6 +57,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      images: ['https://www.nadinezeverino.com/media/og-legal.jpg'],
+    },
     icons: {
       icon: '/media/legal-point-logo.png?v=2',
       apple: '/media/legal-point-logo.png?v=2',
@@ -43,6 +73,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function LegalPointPage() {
   return (
     <div className="bg-black min-h-screen text-white selection:bg-[#C5A065] selection:text-black">
+      <LegalSchema />
       <LeadMagnetPopup />
       <LegalNavbar />
       <div id="hero"><LegalHero /></div>
@@ -52,7 +83,9 @@ export default function LegalPointPage() {
       <EbookPromoSection />
       <ProcessTimeline />
       <div id="why-portugal"><WhyChoosePortugal /></div>
+      <Testimonials />
       <div id="about"><LegalAbout /></div>
+      <ContactForm />
       <div id="contact"><FinalCTA /></div>
     </div>
   );

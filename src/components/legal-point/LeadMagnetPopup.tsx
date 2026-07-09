@@ -47,6 +47,14 @@ export default function LeadMagnetPopup() {
   
   useEffect(() => {
     setMounted(true);
+
+    const w = window as unknown as { __openLeadMagnet?: () => void };
+    w.__openLeadMagnet = () => {
+      const state = localStorage.getItem('legalPointLeadMagnet');
+      if (state === 'submitted') return;
+      setIsOpen(true);
+    };
+
     // Check if user already saw or interacted with popup
     const popupState = localStorage.getItem('legalPointLeadMagnet');
     if (popupState === 'dismissed' || popupState === 'submitted') {
@@ -72,6 +80,7 @@ export default function LeadMagnetPopup() {
     return () => {
       clearTimeout(timer);
       document.removeEventListener('mouseleave', handleMouseLeave);
+      delete (window as unknown as { __openLeadMagnet?: () => void }).__openLeadMagnet;
     };
   }, []);
 
@@ -179,6 +188,14 @@ export default function LeadMagnetPopup() {
             className="absolute inset-0 bg-black/80 backdrop-blur-sm"
           />
 
+          {/* Close Button - outside overflow-hidden container */}
+          <button
+            onClick={() => { setIsOpen(false); if (!hasSubmitted) localStorage.setItem('legalPointLeadMagnet', 'dismissed'); }}
+            className="absolute right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-black/80 text-white border border-white/20 shadow-xl hover:bg-white/20 transition-colors"
+          >
+            <X className="h-6 w-6" />
+          </button>
+
           {/* Modal Container */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -187,17 +204,9 @@ export default function LeadMagnetPopup() {
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             className="relative w-full max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-[#C5A065]/10"
           >
-            {/* Close Button */}
-            <button
-              onClick={closePopup}
-              className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-            >
-              <X className="h-5 w-5" />
-            </button>
-
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left Column - Visual / Value Prop */}
-              <div className="relative flex flex-col justify-between overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] p-8 md:p-12">
+              <div className="hidden md:flex relative flex-col justify-between overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] p-8 md:p-12">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
                 
                 {/* Glow Effect */}
@@ -249,7 +258,7 @@ export default function LeadMagnetPopup() {
               </div>
 
               {/* Right Column - Form */}
-              <div className="hidden md:flex relative flex-col justify-center p-8 md:p-12 bg-[#050505]">
+              <div className="flex relative flex-col justify-center p-5 md:p-12 bg-[#050505]">
                 {!hasSubmitted ? (
                   <div className="relative z-10">
                     <h3 className="mb-2 text-2xl font-semibold text-white">

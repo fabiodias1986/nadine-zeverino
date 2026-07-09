@@ -791,7 +791,7 @@
       },
       "step4": {
         "title": "Deal Completion",
-        "desc": "We execute the transaction and hand over the keys and documents."
+        "desc": "We execute the transaction securely via Power of Attorney and arrange the legal transfer of your assets, without you needing to travel."
       }
     },
     "CTA": {
@@ -806,9 +806,15 @@
     },
     "Hero": {
       "tag": "Legal Point by Nadine Zeverino",
-      "title": "Legal Excellence in Portugal",
+      "title": "Secure Property Investment & Legal Representation in Portugal",
       "subtitle": "Tailored legal solutions for global investors and families. Expertise in Real Estate, Successions, and Residency managed with precision, regardless of your location.",
-      "ctaBtn": "Request Strategic Analysis"
+      "ctaBtn": "Request Strategic Analysis",
+      "slide1Title": "Real Estate Investment in Portugal",
+      "slide1TitleGold": "Investment",
+      "slide1Subtitle": "Secure property acquisition for global investors and families",
+      "slide2Title": "Trusted Legal Representation",
+      "slide2TitleGold": "Representation",
+      "slide2Subtitle": "Real Estate, Succession & Residency, handled with precision"
     },
     "Services": {
       "mainTitle": "Strategic Solutions",
@@ -951,6 +957,51 @@
       "emailError": "Invalid Email",
       "phoneError": "Invalid Phone",
       "goToDownloadBtn": "Download Free Ebook"
+    },
+    "ContactForm": {
+      "title": "Request Your Strategic Analysis",
+      "subtitle": "Fill in the form below and we will contact you within 24 hours to discuss your case.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phoneLabel": "Phone / WhatsApp",
+      "phonePlaceholder": "+351 912 345 678",
+      "countryLabel": "Country of Residence",
+      "countryPlaceholder": "Select or type your country",
+      "messageLabel": "Message / Case Details",
+      "messagePlaceholder": "Briefly describe your property investment or legal goals in Portugal...",
+      "submitBtn": "Submit Evaluation Request",
+      "sending": "Sending...",
+      "successMessage": "Thank you! Your request has been submitted successfully. We will contact you within 24 hours.",
+      "errorMessage": "An error occurred. Please try again."
+    },
+    "Testimonials": {
+      "tag": "Trusted by International Clients",
+      "title": "What Our Clients Say",
+      "quote1": "\"Dr. Nadine managed our property acquisition in the Algarve entirely via Power of Attorney. Rigorous due diligence and total peace of mind.\"",
+      "quote1Author": "James R.",
+      "quote1Location": "United Kingdom",
+      "quote2": "\"The transition of our family's cross-border estate was handled with extreme professionalism and strategic tax advice.\"",
+      "quote2Author": "M. van der Meer",
+      "quote2Location": "Netherlands"
+    },
+    "EbookModal": {
+      "title": "Get Your Free Guide",
+      "subtitle": "Download our complete guide to buying property in Portugal with total legal security.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "submitBtn": "Get My Free Guide",
+      "loading": "Processing...",
+      "privacy": "Your data is 100% secure. We do not send spam.",
+      "successTitle": "Download Started!",
+      "successSubtitle": "Thank you! If the download doesn't start automatically, click the button below.",
+      "downloadBtn": "Click to Download",
+      "nameRequired": "Name Required",
+      "emailRequired": "Email Required",
+      "emailError": "Invalid Email"
     },
     "Footer": {
       "rights": "All rights reserved. Professional License No. [Teu Numero]"
