@@ -243,7 +243,7 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#C5A065]/10 border border-[#C5A065]/30 text-[#C5A065] rounded-xl font-medium hover:bg-[#C5A065] hover:text-white transition-all duration-300 group"
           >
-            <span>{t('tag') === 'Trusted by International Clients' ? 'View all reviews on Google' : 'Ver todas as avaliações no Google'}</span>
+            <span>{t('viewGoogle')}</span>
             <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
         </motion.div>

@@ -808,7 +808,7 @@
       "tag": "Legal Point by Nadine Zeverino",
       "title": "Secure Property Investment & Legal Representation in Portugal",
       "subtitle": "Tailored legal solutions for global investors and families. Expertise in Real Estate, Successions, and Residency managed with precision, regardless of your location.",
-      "ctaBtn": "Request Strategic Analysis",
+      "ctaBtn": "Strategic Analysis",
       "slide1Title": "Real Estate Investment in Portugal",
       "slide1TitleGold": "Investment",
       "slide1Subtitle": "Secure property acquisition for global investors and families",
@@ -971,7 +971,7 @@
       "countryPlaceholder": "Select or type your country",
       "messageLabel": "Message / Case Details",
       "messagePlaceholder": "Briefly describe your property investment or legal goals in Portugal...",
-      "submitBtn": "Submit Evaluation Request",
+      "submitBtn": "Submit Evaluation",
       "sending": "Sending...",
       "successMessage": "Thank you! Your request has been submitted successfully. We will contact you within 24 hours.",
       "errorMessage": "An error occurred. Please try again."
@@ -979,6 +979,7 @@
     "Testimonials": {
       "tag": "Trusted by International Clients",
       "title": "What Our Clients Say",
+      "viewGoogle": "View on Google",
       "quote1": "\"Dr. Nadine managed our property acquisition in the Algarve entirely via Power of Attorney. Rigorous due diligence and total peace of mind.\"",
       "quote1Author": "James R.",
       "quote1Location": "United Kingdom",

@@ -808,7 +808,7 @@
       "tag": "Legal Point por Nadine Zeverino",
       "title": "Investimento Seguro e Representação Legal em Portugal",
       "subtitle": "Soluções jurídicas à medida para investidores globais e famílias. Especialização em Imobiliário, Sucessões e Residência gerida com precisão, independentemente da sua localização.",
-      "ctaBtn": "Solicitar Análise Estratégica",
+      "ctaBtn": "Análise Estratégica",
       "slide1Title": "Investimento Imobiliário em Portugal",
       "slide1TitleGold": "Investimento",
       "slide1Subtitle": "Aquisição segura de propriedade para investidores e famílias globais",
@@ -971,7 +971,7 @@
       "countryPlaceholder": "Selecione ou escreva o seu país",
       "messageLabel": "Mensagem / Detalhes do Caso",
       "messagePlaceholder": "Descreva brevemente os seus objetivos de investimento imobiliário ou legais em Portugal...",
-      "submitBtn": "Submeter Pedido de Avaliação",
+      "submitBtn": "Submeter Avaliação",
       "sending": "A enviar...",
       "successMessage": "Obrigado! O seu pedido foi submetido com sucesso. Entraremos em contacto dentro de 24 horas.",
       "errorMessage": "Ocorreu um erro. Por favor, tente novamente."
@@ -979,6 +979,7 @@
     "Testimonials": {
       "tag": "Recomendado por Clientes Internacionais",
       "title": "O Que os Nossos Clientes Dizem",
+      "viewGoogle": "Ver no Google",
       "quote1": "\"A Dra. Nadine geriu a nossa aquisição de imóvel no Algarve inteiramente por Procuração. Due diligence rigorosa e total tranquilidade.\"",
       "quote1Author": "James R.",
       "quote1Location": "Reino Unido",

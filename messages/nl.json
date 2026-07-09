@@ -808,7 +808,7 @@
       "tag": "Legal Point door Nadine Zeverino",
       "title": "Veilige Vastgoedinvestering & Juridische Vertegenwoordiging in Portugal",
       "subtitle": "Juridische oplossingen op maat voor wereldwijde investeerders en gezinnen. Expertise in Vastgoed, Erfenissen en Verblijf met precisie beheerd, ongeacht uw locatie.",
-      "ctaBtn": "Strategische Analyse Aanvragen",
+      "ctaBtn": "Strategische Analyse",
       "slide1Title": "Vastgoedinvestering in Portugal",
       "slide1TitleGold": "Vastgoedinvestering",
       "slide1Subtitle": "Veilige eigendomsverwerving voor wereldwijde investeerders en gezinnen",
@@ -971,7 +971,7 @@
       "countryPlaceholder": "Selecteer of typ uw land",
       "messageLabel": "Bericht / Casusdetails",
       "messagePlaceholder": "Beschrijf kort uw vastgoedinvesterings- of juridische doelen in Portugal...",
-      "submitBtn": "Evaluatieverzoek Indienen",
+      "submitBtn": "Evaluatie Indienen",
       "sending": "Bezig met verzenden...",
       "successMessage": "Dank u! Uw verzoek is succesvol ingediend. Wij nemen binnen 24 uur contact met u op.",
       "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw."
@@ -979,6 +979,7 @@
     "Testimonials": {
       "tag": "Aanbevolen door Internationale Klanten",
       "title": "Wat Onze Klanten Zeggen",
+      "viewGoogle": "Bekijk op Google",
       "quote1": "\"Dr. Nadine beheerde onze vastgoedacquisitie in de Algarve volledig via Volmacht. Grondige due diligence en totale gemoedsrust.\"",
       "quote1Author": "James R.",
       "quote1Location": "Verenigd Koninkrijk",
